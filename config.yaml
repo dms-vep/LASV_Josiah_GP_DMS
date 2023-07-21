@@ -1,0 +1,120 @@
+# Config for analysis
+
+# ----------------------------------------------------------------------------
+# Relative paths from this directory containing the configuration (and where
+# you will run the pipeline) to the subdirectory where the pipeline submodule
+# is cloned, and where you build the docs. Typically your top-level
+# Snakefile will be in the root directory and paths will be `dms-vep-pipeline`
+# and `./`, but in this example they are upstream from this subdirectory.
+# ----------------------------------------------------------------------------
+pipeline_path: dms-vep-pipeline # typically will be `dms-vep-pipeline` for real pipelines
+docs: docs # typically will be `docs` for real pipelines
+
+# ----------------------------------------------------------------------------
+# Details on repo, used for docs. Change this to details for your project.
+# ----------------------------------------------------------------------------
+
+# Name of your main GitHub repo, eg https://github.com/<my_organization>/<my_repo>
+github_repo_url: https://github.com/dms-vep/LASV_Josiah_GP_DMS_v3
+# GitHub blob path to where results files are stored. Typically "{repo}/blob/{branch}",
+# the "test_example" below is specific to this test example being within the pipeline
+# and should not be needed for other pipelines.
+github_blob_url: https://github.com/dms-vep/LASV_Josiah_GP_DMS_v3/blob/main
+# Some descriptions and metadata about the analysis.
+description: Deep mutational scanning of Lassa virus Josiah strain glycoprotein using a barcoded lentiviral platform
+year: 2023
+authors: Kate Crawford, Caleb Carr, and Jesse Bloom
+
+# ----------------------------------------------------------------------------
+# Site numbering, mutation classification, and neut standards
+# ----------------------------------------------------------------------------
+
+# Map sequential 1, 2, numbering of the protein to the desired
+# final reference numbering scheme. Required to have columns named
+# "sequential_site" and "reference_site". If you just want to number in
+# sequential numbering for everything, just make both entries sequential.
+# Should also have a column called "region" that assigns each site to a
+# region of the protein (eg, domain like RBD or NTD).
+site_numbering_map: data/site_numbering_map.csv
+
+# Classify mutations into different categories, such as which ones are
+# designed to be in the library. If you don't have different categories of
+# designed mutations, just include all of the intended mutations with
+# mutation type as "designed". The CSV specified below must have columns
+# named "mutation_type", "amino_acid" or "mutant_aa", and either
+# "reference_site" or "sequential_site" as specified by `site_col` key.
+mutation_design_classification:
+  csv: data/mutation_design_classification.csv  # CSV with data
+  site_col: sequential_site  # site column, should be reference_site or sequential_site
+
+# Neutralization standard barcodes. Should have columns "barcode" and "name"
+# (giving name of this neutralization standard set). Can be empty CSV with
+# those columns if no neutralization standards.
+neut_standard_barcodes: data/neutralization_standard_barcodes.csv
+
+# ----------------------------------------------------------------------------
+# Parameters related to building barcode-variant lookup table
+# ----------------------------------------------------------------------------
+
+# There are two ways you can get the codon variants: download a pre-built codon
+# variant table, or build them from PacBio CCSs yourself. 
+
+# If using pre-built variants specify URL for pre-built codon-variant table and
+# gene (codon) sequence (beginning with "http" or "ftp") or just path to file.
+# If these next two variables are "null" instead, then the variants are built
+# from scratch using parameters below.
+prebuilt_variants: null
+prebuilt_geneseq: null
+
+# Parameters for building variants from PacBio sequencing, only needed if
+# not using pre-built variants.
+pacbio_runs: data/PacBio_runs.csv  # PacBio sequencing data
+pacbio_amplicon: data/PacBio_amplicon.gb  # Genbank file with PacBio amplicon
+pacbio_amplicon_specs: data/PacBio_feature_parse_specs.yaml  # alignparse feature parsing
+variant_tags:  # variant tags in PacBio amplicon, or "null" if no tags
+  variant_tag5:
+    variant_1: G
+    variant_2: C
+    wildtype: A
+  variant_tag3:
+    variant_1: G
+    variant_2: C
+    wildtype: A
+max_ccs_error_rate: 1.0e-4  # only keep CCS if gene/barcode error rate <= this
+consensus_params:  # parameters for building PacBio consensus sequences
+  max_sub_diffs: null
+  max_indel_diffs: null
+  max_minor_sub_frac: 0.2
+  max_minor_indel_frac: 0.2
+  min_support: 2
+
+# created files with sequences of parental protein
+gene_sequence_codon: results/gene_sequence/codon.fasta
+gene_sequence_protein: results/gene_sequence/protein.fasta
+
+# created file with barcode-variant lookup table
+codon_variants: results/variants/codon_variants.csv
+
+# ----------------------------------------------------------------------------
+# Parameters related to counting the variants from barcode sequencing
+# ----------------------------------------------------------------------------
+
+barcode_runs: data/barcode_runs.csv  # Illumina barcode runs, set to null if no runs
+
+# keyword parameters for `dms_variants.illuminabarcodeparser.IlluminaBarcodeParser`
+# https://jbloomlab.github.io/dms_variants/dms_variants.illuminabarcodeparser.html#dms_variants.illuminabarcodeparser.IlluminaBarcodeParser
+illumina_barcode_parser_params:
+  upstream: AACTCCACTAGGAACATTTCTCTCTCGAATCTAGA
+  downstream: ''
+  minq: 20
+  upstream_mismatch: 2
+
+# ----------------------------------------------------------------------------
+# Configuration related to other analyses
+# ----------------------------------------------------------------------------
+
+# For each variable, set to "null" or just don't provide if you aren't doing that type
+# of analysis. Otherwise provide path to configuration for that analysis.
+
+func_effects_config: data/func_effects_config.yml  # Functional effects of mutations
+antibody_escape_config: data/antibody_escape_config.yml  # Antibody/serum escape
