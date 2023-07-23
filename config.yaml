@@ -15,11 +15,11 @@ docs: docs # typically will be `docs` for real pipelines
 # ----------------------------------------------------------------------------
 
 # Name of your main GitHub repo, eg https://github.com/<my_organization>/<my_repo>
-github_repo_url: https://github.com/dms-vep/LASV_Josiah_GP_DMS_v3
+github_repo_url: https://github.com/dms-vep/LASV_Josiah_GP_DMS
 # GitHub blob path to where results files are stored. Typically "{repo}/blob/{branch}",
 # the "test_example" below is specific to this test example being within the pipeline
 # and should not be needed for other pipelines.
-github_blob_url: https://github.com/dms-vep/LASV_Josiah_GP_DMS_v3/blob/main
+github_blob_url: https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main
 # Some descriptions and metadata about the analysis.
 description: Deep mutational scanning of Lassa virus Josiah strain glycoprotein using a barcoded lentiviral platform
 year: 2023
