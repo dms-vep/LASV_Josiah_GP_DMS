@@ -1,0 +1,366 @@
+# Configurations for determining functional effects of mutations
+
+# --------------------------------------------------------------------------------------
+# Configuration for computing functional scores and fitting global epistasis models
+# to each individual selection experiment
+# --------------------------------------------------------------------------------------
+
+# Define default parameters for computing functional scores.
+# Can be provided to individual selections using the alias operator (*)
+func_scores_params_default: &func_scores_params_default
+  pseudocount: 0.5
+  # `min_wt_count` and `min_wt_frac` are designed to raise errors if selection experiment
+  # has excessively low wildtype counts (which will lead to inaccurate estimates).
+  min_wt_count: 1000  # error if not at least this many wildtype counts
+  min_wt_frac: 0.001  # error if not at least this fraction of counts for wildtype
+  # `min_pre_selection_count` and `min_pre_selection_frac` drop variants with low counts
+  # or frequencies that may not have sufficient statistics for good estimates.
+  min_pre_selection_count: 20  # drop variants < this many pre-selection counts
+  # !!! Make min_pre_selection_frac LARGER for larger libraries, such 0.1 / (library size) !!!
+  min_pre_selection_frac: 0.000002  # drop variants that are < this fraction of all counts
+
+# Define default parameters for fitting global epistasis models to each
+# individual selection to get mutationo effects.
+global_epistasis_params: &global_epistasis_params
+  # How to clip functional scores at upper / lower bounds. Allowable values:
+  #  - median_stop: median func score of all variants with stop codons
+  #  - null: no clipping
+  #  - a number: clip at this number
+  clip_lower: median_stop
+  clip_upper: null
+  # Do we collapse barcodes with same variant?
+  collapse_identical_variants: false  # {false, mean, median}
+
+# Define how to compute functional scores. Each key is a selection experiment.
+# A global epistasis model is used to get mutational effects for each selection.
+# Recommended naming of selection experiments is:
+#   <library>-<post-selection sample date as YYMMDD>-<description>-<replicate>
+# Each selection experiment should in turn provide the following keys:
+#  - `post_selection_sample`: sample after selection (eg, infection of cells)
+#  - `pre_selection_sample`: sample pre selection (eg, initial variant frequencies)
+#  - `func_score_params`: parameters for computing functional scores
+#  - `global_epistasis_params`: parameters for fitting global epistasis model
+func_scores:
+  LibA-220601-293T-1:
+    post_selection_sample: LibA-220601-no-antibody-1
+    pre_selection_sample: LibA-220601-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220601-293T-2:
+    post_selection_sample: LibA-220601-no-antibody-2
+    pre_selection_sample: LibA-220601-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220706-293T-1:
+    post_selection_sample: LibA-220706-no-antibody-1
+    pre_selection_sample: LibA-220706-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220706-293T-2:
+    post_selection_sample: LibA-220706-no-antibody-2
+    pre_selection_sample: LibA-220706-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220728-293T-1:
+    post_selection_sample: LibA-220728-no-antibody-1
+    pre_selection_sample: LibA-220728-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220728-293T-2:
+    post_selection_sample: LibA-220728-no-antibody-2
+    pre_selection_sample: LibA-220728-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220823-293T-1:
+    post_selection_sample: LibA-220823-no-antibody-1
+    pre_selection_sample: LibA-220823-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220823-293T-2:
+    post_selection_sample: LibA-220823-no-antibody-2
+    pre_selection_sample: LibA-220823-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220907-293T-1:
+    post_selection_sample: LibA-220907-no-antibody-1
+    pre_selection_sample: LibA-220907-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-220907-293T-2:
+    post_selection_sample: LibA-220907-no-antibody-2
+    pre_selection_sample: LibA-220907-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220706-293T-1:
+    post_selection_sample: LibB-220706-no-antibody-1
+    pre_selection_sample: LibB-220706-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220706-293T-2:
+    post_selection_sample: LibB-220706-no-antibody-2
+    pre_selection_sample: LibB-220706-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220728-293T-1:
+    post_selection_sample: LibB-220728-no-antibody-1
+    pre_selection_sample: LibB-220728-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220728-293T-2:
+    post_selection_sample: LibB-220728-no-antibody-2
+    pre_selection_sample: LibB-220728-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220823-293T-1:
+    post_selection_sample: LibB-220823-no-antibody-1
+    pre_selection_sample: LibB-220823-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220823-293T-2:
+    post_selection_sample: LibB-220823-no-antibody-2
+    pre_selection_sample: LibB-220823-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220907-293T-1:
+    post_selection_sample: LibB-220907-no-antibody-1
+    pre_selection_sample: LibB-220907-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-220907-293T-2:
+    post_selection_sample: LibB-220907-no-antibody-2
+    pre_selection_sample: LibB-220907-VSVG-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+
+  # Human and rodent selections
+  LibA-230502-human-1:
+    post_selection_sample: LibA-230502-no-antibody-human-1
+    pre_selection_sample: LibA-230502-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230502-human-1:
+    post_selection_sample: LibB-230502-no-antibody-human-1
+    pre_selection_sample: LibB-230502-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230502-mastomys-1:
+    post_selection_sample: LibA-230502-no-antibody-mastomys-1
+    pre_selection_sample: LibA-230502-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230502-mastomys-1:
+    post_selection_sample: LibB-230502-no-antibody-mastomys-1
+    pre_selection_sample: LibB-230502-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230513-human-1:
+    post_selection_sample: LibB-230513-no-antibody-human-1
+    pre_selection_sample: LibB-230513-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230513-human-2:
+    post_selection_sample: LibB-230513-no-antibody-human-2
+    pre_selection_sample: LibB-230513-VSVG-human-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230513-mastomys-1:
+    post_selection_sample: LibB-230513-no-antibody-mastomys-1
+    pre_selection_sample: LibB-230513-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230513-mastomys-2:
+    post_selection_sample: LibB-230513-no-antibody-mastomys-2
+    pre_selection_sample: LibB-230513-VSVG-mastomys-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230601-human-1:
+    post_selection_sample: LibA-230601-no-antibody-human-1
+    pre_selection_sample: LibA-230601-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230601-human-2:
+    post_selection_sample: LibA-230601-no-antibody-human-2
+    pre_selection_sample: LibA-230601-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230601-mastomys-1:
+    post_selection_sample: LibA-230601-no-antibody-mastomys-1
+    pre_selection_sample: LibA-230601-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230601-mastomys-2:
+    post_selection_sample: LibA-230601-no-antibody-mastomys-2
+    pre_selection_sample: LibA-230601-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230601-human-1:
+    post_selection_sample: LibB-230601-no-antibody-human-1
+    pre_selection_sample: LibB-230601-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230601-human-2:
+    post_selection_sample: LibB-230601-no-antibody-human-2
+    pre_selection_sample: LibB-230601-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230601-mastomys-1:
+    post_selection_sample: LibB-230601-no-antibody-mastomys-1
+    pre_selection_sample: LibB-230601-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230601-mastomys-2:
+    post_selection_sample: LibB-230601-no-antibody-mastomys-2
+    pre_selection_sample: LibB-230601-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-human-1:
+    post_selection_sample: LibA-230722-no-antibody-human-1
+    pre_selection_sample: LibA-230722-VSVG-human-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-human-2:
+    post_selection_sample: LibA-230722-no-antibody-human-2
+    pre_selection_sample: LibA-230722-VSVG-human-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-human-3:
+    post_selection_sample: LibA-230722-no-antibody-human-3
+    pre_selection_sample: LibA-230722-VSVG-human-3
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-human-4:
+    post_selection_sample: LibA-230722-no-antibody-human-4
+    pre_selection_sample: LibA-230722-VSVG-human-4
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-mastomys-1:
+    post_selection_sample: LibA-230722-no-antibody-mastomys-1
+    pre_selection_sample: LibA-230722-VSVG-mastomys-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-mastomys-2:
+    post_selection_sample: LibA-230722-no-antibody-mastomys-2
+    pre_selection_sample: LibA-230722-VSVG-mastomys-2
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-mastomys-3:
+    post_selection_sample: LibA-230722-no-antibody-mastomys-3
+    pre_selection_sample: LibA-230722-VSVG-mastomys-3
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibA-230722-mastomys-4:
+    post_selection_sample: LibA-230722-no-antibody-mastomys-4
+    pre_selection_sample: LibA-230722-VSVG-mastomys-4
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  
+
+# --------------------------------------------------------------------------------------
+# Configuration for averaging mutation functional effects across selections and plotting
+# them.
+# --------------------------------------------------------------------------------------
+
+# Average/plot mutation functional effects from different selections w `avg_func_effects`
+# Each key is a condition which has the following values:
+#  - `selections`: list of selections for which we average mutation functional effects
+#  - `avg_method`: how to average across the selections, options are "median" and "mean"
+#  - `per_selection_tooltips`: whether to show per-selection effects via tooltips
+#  - `plot_kwargs`: keyword arguments passed to `polyclonal.plot.lineplot_and_heatmap`
+#  - `title`: title of plot. Will be suffixed with "(latent phenotype)" or ("functional score)"
+#  - `legend`: legend added to plot
+
+# Define some defaults for each condition, used via the merge (<<) operator.
+avg_func_effects_default: &avg_func_effects_default
+  avg_method: median
+  per_selection_tooltips: true
+  plot_kwargs:
+    addtl_slider_stats:
+      times_seen: 3
+    heatmap_max_at_least: 1
+    heatmap_min_at_least: -1
+    init_floor_at_zero: false
+    init_site_statistic: mean
+    site_zoom_bar_color_col: region  # supplied in the `site_numbering_map`
+    slider_binding_range_kwargs:
+      times_seen:
+        step: 1
+        min: 1
+        max: 25
+      n_selections:
+        step: 1
+  legend: |
+    Interactive plot of the effects of mutations. Negative values indicated deleterious mutations,
+    positive values indicate beneficial mutations for the measured phenotype.
+
+    Use the site zoom bar at the top to zoom in on specific sites. The line plot shows a summary
+    statistic indicating the effects of mutations at each site. The heat map shows the effects of
+    individual mutations, with parental amino-acid identities indicated by x and gray
+    indicating non-measured mutations.
+
+    You can mouse over points to get details about individual measurements, include measurements
+    in individual selection experiments.
+
+    The options at the bottom of the plot let you modify the display, such as by selecting how
+    many different variants a mutation must be seen in to be shown (*minimum times_seen*),
+    how many different experimental selections the mutation was measured in
+    (*minimum n_selections*), what site summary statistic to show, etc.
+
+    The *minimum max of effect* at site is useful to select the sites where mutations have
+    the most positive functional effects.
+
+# Define the functional effect conditions to average
+avg_func_effects:
+  293T_entry:
+    <<: *avg_func_effects_default
+    title: Mutation effects on entry into 293T cells
+    selections:
+      - LibA-220601-293T-1
+      - LibA-220601-293T-2
+      - LibA-220706-293T-1
+      - LibA-220706-293T-2
+      # - LibA-220728-293T-1
+      - LibA-220728-293T-2
+      - LibA-220823-293T-1
+      - LibA-220823-293T-2
+      - LibA-220907-293T-1
+      - LibA-220907-293T-2
+      - LibB-220706-293T-1
+      - LibB-220706-293T-2
+      # - LibB-220728-293T-1
+      # - LibB-220728-293T-2
+      - LibB-220823-293T-1
+      - LibB-220823-293T-2
+      - LibB-220907-293T-1
+      - LibB-220907-293T-2
+  human_293T_entry:
+    <<: *avg_func_effects_default
+    title: Mutation effects on entry into 293TdeltaDAG1 cells transduced with human DAG1
+    selections:
+      - LibA-230502-human-1
+      - LibB-230502-human-1
+      - LibB-230513-human-1
+      - LibB-230513-human-2
+      - LibA-230601-human-1
+      - LibA-230601-human-2
+      - LibB-230601-human-1
+      - LibB-230601-human-2
+      - LibA-230722-human-1
+      - LibA-230722-human-2
+      - LibA-230722-human-3
+      - LibA-230722-human-4
+  mastomys_293T_entry:
+    <<: *avg_func_effects_default
+    title: Mutation effects on entry into 293TdeltaDAG1 cells transduced with mastomys DAG1
+    selections:
+      - LibA-230502-mastomys-1
+      - LibB-230502-mastomys-1
+      - LibB-230513-mastomys-1
+      - LibB-230513-mastomys-2
+      - LibA-230601-mastomys-1
+      # - LibA-230601-mastomys-2
+      - LibB-230601-mastomys-1
+      - LibB-230601-mastomys-2
+      - LibA-230722-mastomys-1
+      - LibA-230722-mastomys-2
+      - LibA-230722-mastomys-3
+      - LibA-230722-mastomys-4

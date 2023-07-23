@@ -1,0 +1,3 @@
+library,run,fastq
+LibA,LibA-220404,/fh/fast/bloom_j/computational_notebooks/ccarr/2023/LASV_Josiah_GP_DMS_v3/data/ccs_fastq/A_merged_220404.fastq.gz
+LibB,LibB-220404,/fh/fast/bloom_j/computational_notebooks/ccarr/2023/LASV_Josiah_GP_DMS_v3/data/ccs_fastq/B_merged_220404.fastq.gz
