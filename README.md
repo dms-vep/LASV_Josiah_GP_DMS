@@ -40,7 +40,7 @@ The design is not part of the pipeline but contains code that must be run separa
 ## Running the pipeline
 To run the pipeline, build the conda environment `dms-vep-pipeline-3` in the `environment.yml` file of [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3), activate it, and run [snakemake](https://snakemake.readthedocs.io/), such as:
 
-    conda activate dms-vep-pipeline
+    conda activate dms-vep-pipeline-3
     snakemake -j 32 --use-conda -s dms-vep-pipeline-3/Snakefile
 
 To run on the Hutch cluster via [slurm](https://slurm.schedmd.com/), you can run the file [run_Hutch_cluster.bash](run_Hutch_cluster.bash):
