@@ -11,7 +11,7 @@ Most of the analysis is done by the [dms-vep-pipeline-3](https://github.com/dms-
 
     git submodule add https://github.com/dms-vep/dms-vep-pipeline-3
 
-This added the file [.gitmodules](.gitmodules) and the submodule [dms-vep-pipeline-3](dms-vep-pipeline-3), which was then committed to the repo.
+This added the file [.gitmodules](.gitmodules) and the submodule [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3), which was then committed to the repo.
 Note that if you want a specific commit or tag of [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3) or to update to a new commit, follow the [steps here](https://stackoverflow.com/a/10916398), basically:
 
     cd dms-vep-pipeline-3
