@@ -1,0 +1,35 @@
+# Sequencing results for LASV GP mutant libraries
+# Rnd2 (7 cycles both rounds)
+# 8 colonies from each replicate (A & B) were sequenced 210214:
+# 4 additional colonies from each replicate were sequenced 210217:
+# 1/4 additional colonies for replicate A had mixed peaks.
+# Total 23 colonies sequenced.
+
+
+A2_1: AT223GA, C801G
+A2_2: G1091A
+A2_3: None
+A2_4: AA340TG, delT342, TA1177AT
+A2_5: A269G, GA557CC, GAG1252TAC, C1390A
+A2_6: None
+A2_7: CA913AC
+A2_8: A1207G
+A2_9: CAC508TTG, C969G, AT1051CA
+A2_10: None
+A2_11: TTA424CTG, AA625CG, CAA1444ACG
+# A2_12: mixed peaks of WT/mut at mutated site. can't resolve
+# 17 muts/11 colonies = 1.54 average muts
+
+B2_1: None
+B2_2: GT130TA, CT724TC, TAC832GAG
+B2_3: GT158AC, CT502GG
+B2_4: None
+B2_5: A905G, CTG1006AAC, G1154C
+B2_6: CA274GT, A443G, CT733AA, A905G, AA1183GT
+B2_7: CT307AA, C518G, GG587AC, G836A
+B2_8: T548C, G680C, CC1390TG
+B2_9: G490T, ACC1123TCG
+B2_10: GG478TC, GC737TG
+B2_11: ACC673GCG, AT1343CC
+B2_12: TAT598CTC, A955C, GAC1204TTG
+# 29 muts/12 colonies = 2.4 average muts

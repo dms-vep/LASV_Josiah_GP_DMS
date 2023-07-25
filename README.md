@@ -21,10 +21,8 @@ and then `cd ../` back to the top-level directory, and add and commit the update
 You can also make changes to the [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3) that you commit back to that repo.
 
 ### Code and configuration
-The [snakemake](https://snakemake.readthedocs.io/) pipeline itself is run by the [Snakefile](Snakefile), which includes [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3) reads its configuration from [config.yaml](config.yaml).
-The [conda](https://docs.conda.io/) environment used by the pipeline is that specified in the `environment.yml` file in [dms-vep-pipeline-3](dms-vep-pipeline-3).
-
-Additional scripts and notebooks that are specific to this analysis and not part of [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3) are in [./scripts/](scripts) and [./notebooks/](notebooks).
+The [snakemake](https://snakemake.readthedocs.io/) pipeline itself is run by `dms-vep-pipeline-3/Snakefile` which reads its configuration from [config.yaml](config.yaml).
+The [conda](https://docs.conda.io/) environment used by the pipeline is that specified in the `environment.yml` file in [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3).
 
 ### Input data
 Input data for the pipeline are in [./data/](data).
@@ -37,13 +35,13 @@ The pipeline builds HTML documentation for the pipeline in [./docs/](docs), whic
 
 ### Library design
 The design of the mutant library is contained in [./library_design/](library_design).
-That design is not part of the pipeline but contains code that must be run separately with its own [conda](https://docs.conda.io/) environment.
+The design is not part of the pipeline but contains code that must be run separately with its own [conda](https://docs.conda.io/) environment.
 
 ## Running the pipeline
 To run the pipeline, build the conda environment `dms-vep-pipeline-3` in the `environment.yml` file of [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3), activate it, and run [snakemake](https://snakemake.readthedocs.io/), such as:
 
     conda activate dms-vep-pipeline
-    snakemake -j 32 --use-conda --rerun-incomplete
+    snakemake -j 32 --use-conda -s dms-vep-pipeline-3/Snakefile
 
 To run on the Hutch cluster via [slurm](https://slurm.schedmd.com/), you can run the file [run_Hutch_cluster.bash](run_Hutch_cluster.bash):
 

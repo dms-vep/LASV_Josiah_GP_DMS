@@ -1,0 +1,26 @@
+# Sequencing results for LASV GP mutant libraries
+# Rnd3 (7 cycles alll rounds)
+# 8 colonies from each replicate (A & B) were sequenced.
+# Note that 1 colony for repliciate A and 2 colonies for
+# replicate B has duplications of the 5' GAPDH priming site.
+# These duplications are not analyzed here as they are upstream
+# of the mutated gene being analyzed here.
+# Total 16 colonies with 3 primers = 48 samples
+
+A3_1: CA260GC, CC614AG, AAG910CGC
+A3_2: GTG130TAC, AG253TC
+A3_3: T854C, T878C, ACT1276GCG, CTG1345AAC
+A3_4: AAG346TAC, GCT1027TCC, G1104C
+A3_5: None
+A3_6: AT406GC, CA569AC
+A3_7: CTG136TAC, T314A, A344T, TTA658CCC, C699G, C1006G
+A3_8: AC236CG
+
+B3_1: AT223CG, CAC274ATG, TG352CC, GC461AG, AA625CT, G800T
+B3_2: AAT355TGC, TAT598GAC, C1447G
+B3_3: CT179AG, C387A, A670T, A1072G
+B3_4: A322G, AT599CC
+B3_5: CT1148AG
+B3_6: AGC646CAG, TAT1255AAC
+B3_7: C297T, A467T, AGC799TTG
+B3_8: None

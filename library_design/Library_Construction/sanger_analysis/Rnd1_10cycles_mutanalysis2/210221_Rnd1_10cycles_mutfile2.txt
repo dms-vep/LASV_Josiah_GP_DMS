@@ -1,0 +1,24 @@
+# Sequencing results for LASV GP mutant libraries
+# Rnd1-10cycles Cloning 2
+# 8 colonies from each replicate (A & B) were sequenced on 21021:
+# 1/8 colonies in rep A had primer at end of primer binding site, so middle not sequenced
+# Total 15 colonies
+
+A1-10-2_1: CAG7TAC, GGA133CAG, GGT160AGG, T471G, TG628GT, AT1258GG
+A1-10-2_2: GTG547AAC, GGC589CAG, GG1378AC
+A1-10-2_3: None
+# A1-10-2_4: mut in primer binding site, so not fully sequenced
+A1-10-2_5: TA1177AG, delA1183
+A1-10-2_6: AG271TT, C887A
+A1-10-2_7: CAA25ATC, ACA781TTG
+A1-10-2_8: CT313AC, CT382TA
+
+B1-10-2_1: AAC1093TAG
+B1-10-2_2: G960C
+B1-10-2_3: GGC190CTG, ACC643TTG
+B1-10-2_4: GTC139CCG
+B1-10-2_5: T180G, A227G, AC269TG, GGC589AAG, T1359G
+B1-10-2_6: GA1039CC, CGT1135AAC
+B1-10-2_7: T245G, T440G, TGT538GTC, AA904GC
+# B1-10-2_8 also seemed to have a mutation in Illumina priming site
+B1-10-2_8: ATC61TCG, GC332CG, G635C, AA883TT

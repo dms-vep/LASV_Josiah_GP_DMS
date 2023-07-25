@@ -1,0 +1,24 @@
+# Sequencing results for LASV GP mutant libraries
+# Rnd1-7cycles
+# 8 colonies from each replicate (A & B) were sequenced:
+# 1/8 colonies from replicate A was undigested vector, so was dropped
+# Total 15 colonies with 3 primers = 45 samples
+
+A1-7_1: A374T, GTG1021CTC
+A1-7_2: None
+A1-7_3: TC1181CG, CAT1342TAC
+A1-7_4: G304A, GGC478CTG, G604A
+A1-7_5: AG8CC
+A1-7_6: AGC427CTG, TGC1423ATG
+A1-7_8: None
+
+B1-7_1: A1037C
+B1-7_2: AT1GG, G394A, AT760CA, CAT1399GAC
+B1-7_3: None
+B1-7_4: None
+B1-7_5: None
+B1-7_6: None
+B1-7_7: CGT163GCC, AAG1273TCC, AT1364TG, AAG1441TCC
+B1-7_8: GGA520CAC, CTT562ATC
+
+

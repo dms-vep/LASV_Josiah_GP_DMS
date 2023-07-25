@@ -52,6 +52,7 @@ polyclonal_params_default: &polyclonal_params_default
 
 # keyword arguments to `Polyclonal.mut_escape_plot`
 escape_plot_kwargs_default: &escape_plot_kwargs_default
+  alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C','*']
   addtl_slider_stats:
     times_seen: 3
   addtl_tooltip_stats:
@@ -622,11 +623,25 @@ antibody_selections:
 #   - `title`: title of plots
 #   - `legend`: legend added to plots
 
+# keyword arguments to `Polyclonal.mut_escape_plot`
+# same as escape_plot_kwargs_default but * needs to be double escaped because of aliase
+avg_escape_plot_kwargs_default: &avg_escape_plot_kwargs_default
+  alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C',"'*'"]
+  addtl_slider_stats:
+    times_seen: 3
+  addtl_tooltip_stats:
+    - sequential_site
+  heatmap_max_at_least: 2
+  heatmap_min_at_least: -2
+  init_floor_at_zero: false
+  init_site_statistic: sum
+  site_zoom_bar_color_col: region  # supplied in `site_numbering_map`
+
 # Define defaults for each antibody/serum, used via the merge (<<) operator
 avg_antibody_escape_default: &avg_antibody_escape_default
   icXX: 90
   escape_plot_kwargs:
-    <<: *escape_plot_kwargs_default
+    <<: *avg_escape_plot_kwargs_default
     avg_type: median
     per_model_tooltip: true
   plot_hide_stats: *plot_hide_stats_default

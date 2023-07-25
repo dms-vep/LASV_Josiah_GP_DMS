@@ -1,0 +1,13 @@
+﻿Date_Read,Plate,Sample,SampleNum,Virus,PlateLayout,StartDil,DilFactor
+210417,Plate1,25.10C,1,LASV_WT,layout1.csv,20,4
+210417,Plate1,37.2D,2,LASV_WT,layout1.csv,20,4
+210417,Plate1,25.6A,3,LASV_WT,layout1.csv,20,4
+210417,Plate1,37.7H,4,LASV_WT,layout1.csv,20,4
+210417,Plate2-N,8.9F,1,LASV_WT,layout2-N.csv,20,4
+210417,Plate2-N,12.1F,2,LASV_WT,layout2-N.csv,20,4
+210417,Plate2-L,8.9F,1,LASV_WT-L,layout2-L.csv,20,4
+210417,Plate3-M,8.9F,1,LASV_WT-M,layout3-M.csv,20,4
+210417,Plate3-H,8.9F,1,LASV_WT-H,layout3-H.csv,20,4
+210417,Plate4,8.9F,1,LASV-Y150D,layout4.csv,20,4
+210417,Plate4,12.1F,2,LASV-Y150D,layout4.csv,20,4
+210417,Plate4,37.7H,3,LASV-Y150D,layout4.csv,20,4
