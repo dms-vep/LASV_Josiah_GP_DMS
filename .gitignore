@@ -38,11 +38,20 @@ results/func_effects/averages/*
 !results/func_effects/averages/*_func_effects.csv
 !results/func_effects/averages/*_latent_effects.csv
 
+!results/func_effect_shifts
+results/func_effect_shifts/*
+!results/func_effect_shifts/by_comparison
+results/func_effect_shifts/by_comparison/*
+!results/func_effect_shifts/by_comparison/*_shifts.csv
+!results/func_effect_shifts/averages
+results/func_effect_shifts/averages/*
+!results/func_effect_shifts/averages/*_shifts.csv
+
 !results/antibody_escape
 results/antibody_escape/*
 !results/antibody_escape/by_selection
-results/antibody_escape/by_selection/*
-!results/antibody_escape/by_selection/*_prob_escape.csv
+results/antibody_escape/by_selection/*.pickle
+results/antibody_escape/by_selection/*.csv
 !results/antibody_escape/averages
 results/antibody_escape/averages/*
 !results/antibody_escape/averages/*_mut_escape.csv

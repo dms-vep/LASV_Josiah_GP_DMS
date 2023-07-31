@@ -7497,7 +7497,7 @@ The next cell is tagged as <code>parameters</code> to get the passed parameters.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=78baeaa4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=88d831fd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7661,7 +7661,7 @@ The next cell is tagged as <code>parameters</code> to get the passed parameters.
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">neut_standard_fracs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span>
     <span class="p">[</span>
         <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">"results/antibody_escape/by_selection/</span><span class="si">{</span><span class="n">selection</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">sample</span><span class="si">}</span><span class="s2">_neut_standard_fracs.csv"</span>
+            <span class="sa">f</span><span class="s2">"results/antibody_escape/by_selection/</span><span class="si">{</span><span class="n">selection</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">sample</span><span class="si">}</span><span class="s2">_neut_standard_fracs.csv"</span>
         <span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">sample</span><span class="o">=</span><span class="n">sample</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">antibody_samples</span><span class="p">[</span><span class="s2">"sample"</span><span class="p">]</span>
     <span class="p">],</span>
@@ -7694,7 +7694,7 @@ The next cell is tagged as <code>parameters</code> to get the passed parameters.
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">prob_escape</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span>
     <span class="p">[</span>
         <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">"results/antibody_escape/by_selection/</span><span class="si">{</span><span class="n">selection</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">sample</span><span class="si">}</span><span class="s2">_prob_escape.csv"</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">"results/antibody_escape/by_selection/</span><span class="si">{</span><span class="n">selection</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">sample</span><span class="si">}</span><span class="s2">_prob_escape.csv"</span><span class="p">,</span>
             <span class="n">keep_default_na</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
             <span class="n">na_values</span><span class="o">=</span><span class="s2">"nan"</span><span class="p">,</span>
         <span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">sample</span><span class="o">=</span><span class="n">sample</span><span class="p">)</span>
@@ -7790,23 +7790,23 @@ The next cell is tagged as <code>parameters</code> to get the passed parameters.
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-ae57852b8d5145d29a68ecbaf6dedb9c.vega-embed {
+  #altair-viz-bb81f83302924a3dba5d9be27d9c1abe.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ae57852b8d5145d29a68ecbaf6dedb9c.vega-embed details,
-  #altair-viz-ae57852b8d5145d29a68ecbaf6dedb9c.vega-embed details summary {
+  #altair-viz-bb81f83302924a3dba5d9be27d9c1abe.vega-embed details,
+  #altair-viz-bb81f83302924a3dba5d9be27d9c1abe.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ae57852b8d5145d29a68ecbaf6dedb9c"></div>
+<div id="altair-viz-bb81f83302924a3dba5d9be27d9c1abe"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ae57852b8d5145d29a68ecbaf6dedb9c") {
-      outputDiv = document.getElementById("altair-viz-ae57852b8d5145d29a68ecbaf6dedb9c");
+    if (outputDiv.id !== "altair-viz-bb81f83302924a3dba5d9be27d9c1abe") {
+      outputDiv = document.getElementById("altair-viz-bb81f83302924a3dba5d9be27d9c1abe");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -8107,23 +8107,23 @@ Recall we keep variants that meet <strong>either</strong> threshold, and in an i
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-3485cec6ba4d4577be38c0c201f96791.vega-embed {
+  #altair-viz-194aac902ba04ad69d314e64b7ce41a1.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3485cec6ba4d4577be38c0c201f96791.vega-embed details,
-  #altair-viz-3485cec6ba4d4577be38c0c201f96791.vega-embed details summary {
+  #altair-viz-194aac902ba04ad69d314e64b7ce41a1.vega-embed details,
+  #altair-viz-194aac902ba04ad69d314e64b7ce41a1.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3485cec6ba4d4577be38c0c201f96791"></div>
+<div id="altair-viz-194aac902ba04ad69d314e64b7ce41a1"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3485cec6ba4d4577be38c0c201f96791") {
-      outputDiv = document.getElementById("altair-viz-3485cec6ba4d4577be38c0c201f96791");
+    if (outputDiv.id !== "altair-viz-194aac902ba04ad69d314e64b7ce41a1") {
+      outputDiv = document.getElementById("altair-viz-194aac902ba04ad69d314e64b7ce41a1");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -8298,23 +8298,23 @@ We typically retain a higher fraction of barcode counts than variants, since the
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-7530873f12804e6899ea22633d3af936.vega-embed {
+  #altair-viz-042e7b5784ce4406a4995350506e3f04.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7530873f12804e6899ea22633d3af936.vega-embed details,
-  #altair-viz-7530873f12804e6899ea22633d3af936.vega-embed details summary {
+  #altair-viz-042e7b5784ce4406a4995350506e3f04.vega-embed details,
+  #altair-viz-042e7b5784ce4406a4995350506e3f04.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7530873f12804e6899ea22633d3af936"></div>
+<div id="altair-viz-042e7b5784ce4406a4995350506e3f04"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7530873f12804e6899ea22633d3af936") {
-      outputDiv = document.getElementById("altair-viz-7530873f12804e6899ea22633d3af936");
+    if (outputDiv.id !== "altair-viz-042e7b5784ce4406a4995350506e3f04") {
+      outputDiv = document.getElementById("altair-viz-042e7b5784ce4406a4995350506e3f04");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -8524,7 +8524,7 @@ Mouseover points for details.</p>
 <span class="n">mean_prob_escape_chart</span> <span class="o">=</span> <span class="p">(</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">mean_prob_escape</span><span class="p">)</span>
     <span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">"concentration"</span><span class="p">),</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">"concentration"</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">"log"</span><span class="p">)),</span>
         <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span>
             <span class="s2">"probability escape"</span><span class="p">,</span>
             <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">"symlog"</span><span class="p">,</span> <span class="n">constant</span><span class="o">=</span><span class="mf">0.04</span><span class="p">),</span>
@@ -8568,23 +8568,23 @@ Mouseover points for details.</p>
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-4219df29746c4641a2fe74a71c418755.vega-embed {
+  #altair-viz-2e40ddc82808419687e708aa46439063.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4219df29746c4641a2fe74a71c418755.vega-embed details,
-  #altair-viz-4219df29746c4641a2fe74a71c418755.vega-embed details summary {
+  #altair-viz-2e40ddc82808419687e708aa46439063.vega-embed details,
+  #altair-viz-2e40ddc82808419687e708aa46439063.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4219df29746c4641a2fe74a71c418755"></div>
+<div id="altair-viz-2e40ddc82808419687e708aa46439063"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4219df29746c4641a2fe74a71c418755") {
-      outputDiv = document.getElementById("altair-viz-4219df29746c4641a2fe74a71c418755");
+    if (outputDiv.id !== "altair-viz-2e40ddc82808419687e708aa46439063") {
+      outputDiv = document.getElementById("altair-viz-2e40ddc82808419687e708aa46439063");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -8630,7 +8630,7 @@ Mouseover points for details.</p>
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"grid": false}, "point": {"size": 50}}, "data": {"name": "data-17941286d563d97391717fade0ee672b"}, "mark": {"type": "line", "opacity": 0.8, "point": true, "size": 0.75}, "encoding": {"color": {"field": "n_substitutions", "type": "nominal"}, "column": {"field": "censored", "header": {"labelFontSize": 12, "labelFontWeight": "bold"}, "title": null, "type": "nominal"}, "shape": {"field": "use_in_fit", "scale": {"domain": [true, false]}, "type": "nominal"}, "tooltip": [{"field": "sample", "type": "nominal"}, {"field": "concentration", "type": "quantitative"}, {"field": "use_in_fit", "type": "nominal"}, {"field": "n_substitutions", "type": "nominal"}, {"field": "n_variants", "type": "quantitative"}, {"field": "censored", "type": "nominal"}, {"field": "probability escape", "format": ".3g", "type": "quantitative"}], "x": {"field": "concentration", "type": "quantitative"}, "y": {"field": "probability escape", "scale": {"constant": 0.04, "type": "symlog"}, "type": "quantitative"}}, "height": 140, "width": 220, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-17941286d563d97391717fade0ee672b": [{"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "censored to [0, 1]", "probability escape": 0.029476506417228626}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "censored to [0, 1]", "probability escape": 0.07103505907341032}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "censored to [0, 1]", "probability escape": 0.1250064870259481}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6256, "censored": "censored to [0, 1]", "probability escape": 0.19568097826086955}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "0", "n_variants": 4597, "censored": "censored to [0, 1]", "probability escape": 0.02289856428105286}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "1", "n_variants": 7533, "censored": "censored to [0, 1]", "probability escape": 0.053111894331607595}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "2", "n_variants": 6012, "censored": "censored to [0, 1]", "probability escape": 0.09815573852295409}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": ">2", "n_variants": 6256, "censored": "censored to [0, 1]", "probability escape": 0.15195358056265984}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "censored to [0, 1]", "probability escape": 0.027321644550793996}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "censored to [0, 1]", "probability escape": 0.06362412053630692}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "censored to [0, 1]", "probability escape": 0.11437709580838323}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6257, "censored": "censored to [0, 1]", "probability escape": 0.17869897714559693}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "not censored", "probability escape": 0.02969928214052643}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "not censored", "probability escape": 0.07413863002787735}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "not censored", "probability escape": 0.13360625415834998}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6256, "censored": "not censored", "probability escape": 0.21205632992327364}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "0", "n_variants": 4597, "censored": "not censored", "probability escape": 0.0229284750924516}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "1", "n_variants": 7533, "censored": "not censored", "probability escape": 0.054013367848134874}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "2", "n_variants": 6012, "censored": "not censored", "probability escape": 0.1032250499001996}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": ">2", "n_variants": 6256, "censored": "not censored", "probability escape": 0.1602161604859335}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "not censored", "probability escape": 0.02758642592995432}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "not censored", "probability escape": 0.06575190495154652}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "not censored", "probability escape": 0.11929931803060545}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6257, "censored": "not censored", "probability escape": 0.19016217036918653}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"grid": false}, "point": {"size": 50}}, "data": {"name": "data-17941286d563d97391717fade0ee672b"}, "mark": {"type": "line", "opacity": 0.8, "point": true, "size": 0.75}, "encoding": {"color": {"field": "n_substitutions", "type": "nominal"}, "column": {"field": "censored", "header": {"labelFontSize": 12, "labelFontWeight": "bold"}, "title": null, "type": "nominal"}, "shape": {"field": "use_in_fit", "scale": {"domain": [true, false]}, "type": "nominal"}, "tooltip": [{"field": "sample", "type": "nominal"}, {"field": "concentration", "type": "quantitative"}, {"field": "use_in_fit", "type": "nominal"}, {"field": "n_substitutions", "type": "nominal"}, {"field": "n_variants", "type": "quantitative"}, {"field": "censored", "type": "nominal"}, {"field": "probability escape", "format": ".3g", "type": "quantitative"}], "x": {"field": "concentration", "scale": {"type": "log"}, "type": "quantitative"}, "y": {"field": "probability escape", "scale": {"constant": 0.04, "type": "symlog"}, "type": "quantitative"}}, "height": 140, "width": 220, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-17941286d563d97391717fade0ee672b": [{"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "censored to [0, 1]", "probability escape": 0.029476506417228626}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "censored to [0, 1]", "probability escape": 0.07103505907341032}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "censored to [0, 1]", "probability escape": 0.1250064870259481}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6256, "censored": "censored to [0, 1]", "probability escape": 0.19568097826086955}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "0", "n_variants": 4597, "censored": "censored to [0, 1]", "probability escape": 0.02289856428105286}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "1", "n_variants": 7533, "censored": "censored to [0, 1]", "probability escape": 0.053111894331607595}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "2", "n_variants": 6012, "censored": "censored to [0, 1]", "probability escape": 0.09815573852295409}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": ">2", "n_variants": 6256, "censored": "censored to [0, 1]", "probability escape": 0.15195358056265984}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "censored to [0, 1]", "probability escape": 0.027321644550793996}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "censored to [0, 1]", "probability escape": 0.06362412053630692}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "censored to [0, 1]", "probability escape": 0.11437709580838323}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6257, "censored": "censored to [0, 1]", "probability escape": 0.17869897714559693}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "not censored", "probability escape": 0.02969928214052643}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "not censored", "probability escape": 0.07413863002787735}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "not censored", "probability escape": 0.13360625415834998}, {"sample": "LibA-220823-372D-11-1", "concentration": 11.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6256, "censored": "not censored", "probability escape": 0.21205632992327364}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "0", "n_variants": 4597, "censored": "not censored", "probability escape": 0.0229284750924516}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "1", "n_variants": 7533, "censored": "not censored", "probability escape": 0.054013367848134874}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": "2", "n_variants": 6012, "censored": "not censored", "probability escape": 0.1032250499001996}, {"sample": "LibA-220823-372D-2.75-1", "concentration": 2.75, "use_in_fit": false, "n_substitutions": ">2", "n_variants": 6256, "censored": "not censored", "probability escape": 0.1602161604859335}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "0", "n_variants": 4597, "censored": "not censored", "probability escape": 0.02758642592995432}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "1", "n_variants": 7533, "censored": "not censored", "probability escape": 0.06575190495154652}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": "2", "n_variants": 6012, "censored": "not censored", "probability escape": 0.11929931803060545}, {"sample": "LibA-220823-372D-44-1", "concentration": 44.0, "use_in_fit": true, "n_substitutions": ">2", "n_variants": 6257, "censored": "not censored", "probability escape": 0.19016217036918653}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 </div>
@@ -8733,30 +8733,30 @@ If there is more than one epitope, we fit models with fewer epitopes too:</p>
 Fitting a model for 1 epitopes
 #
 # Fitting site-level fixed Hill coefficient and non-neutralized frac model.
-# Starting optimization of 493 parameters at Mon Jul 24 23:43:08 2023.
+# Starting optimization of 493 parameters at Sat Jul 29 14:11:02 2023.
         step    time_sec        loss    fit_loss  reg_escape  reg_spread reg_spatial reg_uniqueness reg_uniqueness2 reg_activity reg_hill_coefficient reg_non_neutralized_frac
-           0    0.023799      3017.2      2977.3           0           0           0              0               0       39.923                    0                        0
-          38      1.0154      2668.8      2619.6      15.148           0           0              0               0       34.064                    0                        0
-# Successfully finished at Mon Jul 24 23:43:09 2023.
+           0    0.024798      3017.2      2977.3           0           0           0              0               0       39.923                    0                        0
+          38      1.1588      2668.8      2619.6      15.148           0           0              0               0       34.064                    0                        0
+# Successfully finished at Sat Jul 29 14:11:03 2023.
 #
 # Fitting fixed Hill coefficient and non-neutralized frac model.
-# Starting optimization of 8953 parameters at Mon Jul 24 23:43:09 2023.
+# Starting optimization of 8953 parameters at Sat Jul 29 14:11:04 2023.
         step    time_sec        loss    fit_loss  reg_escape  reg_spread reg_spatial reg_uniqueness reg_uniqueness2 reg_activity reg_hill_coefficient reg_non_neutralized_frac
-           0    0.035218      3437.8      3132.1      271.67  4.4261e-31           0              0               0       34.064                    0                        0
-         200      6.4239      2745.5      2297.9      350.46      61.131           0              0               0           36                    0                        0
-         358      11.908      2742.3      2288.2      355.06      62.896           0              0               0       36.072                    0                        0
-# Successfully finished at Mon Jul 24 23:43:21 2023.
+           0    0.033836      3437.8      3132.1      271.67  4.4261e-31           0              0               0       34.064                    0                        0
+         200       6.894      2745.5      2297.9      350.46      61.131           0              0               0           36                    0                        0
+         358      12.463      2742.3      2288.2      355.06      62.896           0              0               0       36.072                    0                        0
+# Successfully finished at Sat Jul 29 14:11:16 2023.
 #
 # Fitting model.
-# Starting optimization of 8955 parameters at Mon Jul 24 23:43:21 2023.
+# Starting optimization of 8955 parameters at Sat Jul 29 14:11:16 2023.
         step    time_sec        loss    fit_loss  reg_escape  reg_spread reg_spatial reg_uniqueness reg_uniqueness2 reg_activity reg_hill_coefficient reg_non_neutralized_frac
-           0    0.029143      2709.8      2288.2      355.06      62.896           0              0               0       3.6072                    0                        0
-         200      6.5565      2537.8      2135.4      308.16      48.077           0              0               0       2.7371               42.537                  0.87349
-         400      13.068      2515.2      2129.9      281.67      40.762           0              0               0       2.4766               59.536                  0.87276
-         600      19.707      2509.3      2126.6      275.76      38.776           0              0               0       2.3993               64.851                  0.85836
-         800      26.381      2504.9      2119.8      277.17      38.851           0              0               0       2.3904               65.809                  0.84996
-         979      32.146      2502.5      2113.2      279.97      39.332           0              0               0       2.3896               66.766                  0.85172
-# Successfully finished at Mon Jul 24 23:43:54 2023.
+           0    0.030606      2709.8      2288.2      355.06      62.896           0              0               0       3.6072                    0                        0
+         200       6.942      2537.8      2135.4      308.16      48.077           0              0               0       2.7371               42.537                  0.87349
+         400      13.791      2515.2      2129.9      281.67      40.762           0              0               0       2.4766               59.536                  0.87276
+         600      20.826      2509.3      2126.6      275.76      38.776           0              0               0       2.3993               64.851                  0.85836
+         800      27.997      2504.9      2119.8      277.17      38.851           0              0               0       2.3904               65.809                  0.84996
+         979      34.201      2502.5      2113.2      279.97      39.332           0              0               0       2.3896               66.766                  0.85172
+# Successfully finished at Sat Jul 29 14:11:50 2023.
 Here is the neutralization curve:
 </pre>
 </div>
@@ -8765,23 +8765,23 @@ Here is the neutralization curve:
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-6100d31d513f45fdb81e6b23bf5c5f65.vega-embed {
+  #altair-viz-4ea9a94aa54c421baf99f2043856cb2d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6100d31d513f45fdb81e6b23bf5c5f65.vega-embed details,
-  #altair-viz-6100d31d513f45fdb81e6b23bf5c5f65.vega-embed details summary {
+  #altair-viz-4ea9a94aa54c421baf99f2043856cb2d.vega-embed details,
+  #altair-viz-4ea9a94aa54c421baf99f2043856cb2d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6100d31d513f45fdb81e6b23bf5c5f65"></div>
+<div id="altair-viz-4ea9a94aa54c421baf99f2043856cb2d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6100d31d513f45fdb81e6b23bf5c5f65") {
-      outputDiv = document.getElementById("altair-viz-6100d31d513f45fdb81e6b23bf5c5f65");
+    if (outputDiv.id !== "altair-viz-4ea9a94aa54c421baf99f2043856cb2d") {
+      outputDiv = document.getElementById("altair-viz-4ea9a94aa54c421baf99f2043856cb2d");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -8842,23 +8842,23 @@ Here is the neutralization curve:
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-e4f7128449c847019874618486958964.vega-embed {
+  #altair-viz-b32e3e3c3e1b47a1827d769469f1bdb8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e4f7128449c847019874618486958964.vega-embed details,
-  #altair-viz-e4f7128449c847019874618486958964.vega-embed details summary {
+  #altair-viz-b32e3e3c3e1b47a1827d769469f1bdb8.vega-embed details,
+  #altair-viz-b32e3e3c3e1b47a1827d769469f1bdb8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e4f7128449c847019874618486958964"></div>
+<div id="altair-viz-b32e3e3c3e1b47a1827d769469f1bdb8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e4f7128449c847019874618486958964") {
-      outputDiv = document.getElementById("altair-viz-e4f7128449c847019874618486958964");
+    if (outputDiv.id !== "altair-viz-b32e3e3c3e1b47a1827d769469f1bdb8") {
+      outputDiv = document.getElementById("altair-viz-b32e3e3c3e1b47a1827d769469f1bdb8");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
