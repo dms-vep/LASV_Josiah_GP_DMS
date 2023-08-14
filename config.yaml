@@ -124,7 +124,3 @@ antibody_escape_config: data/antibody_escape_config.yml  # Antibody/serum escape
 # ----------------------------------------------------------------------------
 # These inputs needed for this particular analysis, but not dms-vep-pipeline
 # in general.
-
-# List antibodies and mutations for which we want to calculate IC50s, such
-# as for validation experiments
-validation_neuts_89F: data/validation_neuts_89F.csv
