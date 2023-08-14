@@ -315,18 +315,18 @@ avg_func_effects:
     <<: *avg_func_effects_default
     title: Mutation effects on entry into 293T cells
     selections:
-      - LibA-220601-293T-1
-      - LibA-220601-293T-2
-      - LibA-220706-293T-1
-      - LibA-220706-293T-2
+      # - LibA-220601-293T-1
+      # - LibA-220601-293T-2
+      # - LibA-220706-293T-1
+      # - LibA-220706-293T-2
       # - LibA-220728-293T-1
-      - LibA-220728-293T-2
+      # - LibA-220728-293T-2
       - LibA-220823-293T-1
       - LibA-220823-293T-2
       - LibA-220907-293T-1
       - LibA-220907-293T-2
-      - LibB-220706-293T-1
-      - LibB-220706-293T-2
+      # - LibB-220706-293T-1
+      # - LibB-220706-293T-2
       # - LibB-220728-293T-1
       # - LibB-220728-293T-2
       - LibB-220823-293T-1
@@ -337,12 +337,12 @@ avg_func_effects:
     <<: *avg_func_effects_default
     title: Mutation effects on entry into 293TdeltaDAG1 cells transduced with human DAG1
     selections:
-      - LibA-230502-human-1
+      # - LibA-230502-human-1
       # - LibB-230502-human-1
       - LibB-230513-human-1
       - LibB-230513-human-2
-      - LibA-230601-human-1
-      - LibA-230601-human-2
+      # - LibA-230601-human-1
+      # - LibA-230601-human-2
       - LibB-230601-human-1
       - LibB-230601-human-2
       - LibA-230722-human-1
@@ -353,11 +353,11 @@ avg_func_effects:
     <<: *avg_func_effects_default
     title: Mutation effects on entry into 293TdeltaDAG1 cells transduced with mastomys DAG1
     selections:
-      - LibA-230502-mastomys-1
-      - LibB-230502-mastomys-1
+      # - LibA-230502-mastomys-1
+      # - LibB-230502-mastomys-1
       - LibB-230513-mastomys-1
       - LibB-230513-mastomys-2
-      - LibA-230601-mastomys-1
+      # - LibA-230601-mastomys-1
       # - LibA-230601-mastomys-2
       - LibB-230601-mastomys-1
       - LibB-230601-mastomys-2
@@ -510,7 +510,8 @@ avg_func_effect_shifts_default: &avg_func_effect_shifts_default
 
 # Define the functional effect conditions to average
 avg_func_effect_shifts:
-  aDG_comparison:
+  # Lasso weight of 0.00005
+  aDG_comparison_00005:
     <<: *avg_func_effect_shifts_default
     title: Comparison of functional effects in cells with different aDG receptors
     comparisons:
@@ -520,6 +521,20 @@ avg_func_effect_shifts:
       - LibA-4
       - LibB-1
       - LibB-2
-      - LibB-3
+      # - LibB-3 
+      - LibB-4
+    lasso_shift: 0.00005
+  # Lasso weight of 0.0001
+  aDG_comparison_0001:
+    <<: *avg_func_effect_shifts_default
+    title: Comparison of functional effects in cells with different aDG receptors
+    comparisons:
+      - LibA-1
+      - LibA-2
+      - LibA-3
+      - LibA-4
+      - LibB-1
+      - LibB-2
+      - LibB-3 
       - LibB-4
     lasso_shift: 0.0001
