@@ -521,7 +521,7 @@ avg_func_effect_shifts:
       - LibA-4
       - LibB-1
       - LibB-2
-      # - LibB-3 
+      - LibB-3 
       - LibB-4
     lasso_shift: 0.00005
   # Lasso weight of 0.0001
