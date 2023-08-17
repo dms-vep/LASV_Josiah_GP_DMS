@@ -476,6 +476,7 @@ avg_func_effect_shifts_default: &avg_func_effect_shifts_default
   avg_method: median
   per_comparison_tooltips: true
   plot_kwargs:
+    alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C',"'*'"]
     addtl_slider_stats:
       times_seen: 3
     heatmap_max_at_least: 0.5
@@ -510,22 +511,7 @@ avg_func_effect_shifts_default: &avg_func_effect_shifts_default
 
 # Define the functional effect conditions to average
 avg_func_effect_shifts:
-  # Lasso weight of 0.00005
-  aDG_comparison_00005:
-    <<: *avg_func_effect_shifts_default
-    title: Comparison of functional effects in cells with different aDG receptors
-    comparisons:
-      - LibA-1
-      - LibA-2
-      - LibA-3
-      - LibA-4
-      - LibB-1
-      - LibB-2
-      - LibB-3 
-      - LibB-4
-    lasso_shift: 0.00005
-  # Lasso weight of 0.0001
-  aDG_comparison_0001:
+  aDG_comparison:
     <<: *avg_func_effect_shifts_default
     title: Comparison of functional effects in cells with different aDG receptors
     comparisons:
