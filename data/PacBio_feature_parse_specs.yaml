@@ -36,16 +36,16 @@ PacBio_amplicon:
     # Otherwise list one or more of ‘sequence’, ‘mutations’, ‘accuracy’, ‘cs’, ‘clip5’, and ‘clip3’ to get 
     # the sequence, mutation string, cs tag, or number of clipped nucleotides from each end.
     return: [mutations, accuracy]
-  # Feature of amplicon
-  spacer:
-    # filter: dict keyed by ‘clip5’, ‘clip3’, ‘mutation_nt_count’, and ‘mutation_op_count’
-    # If ‘filter’ itself or any of the keys are missing, the value is set to zero. 
-    # If the value is None (‘null’ in YAML notation), then no filter is applied
-    filter:
-      # mutation_nt_count give number of nucleotide mutations allowed for feature
-      mutation_nt_count: 1
-      # mutation_op_count give number of cs tag mutation operations allowed for feature
-      mutation_op_count: null
+  # # Feature of amplicon
+  # spacer:
+  #   # filter: dict keyed by ‘clip5’, ‘clip3’, ‘mutation_nt_count’, and ‘mutation_op_count’
+  #   # If ‘filter’ itself or any of the keys are missing, the value is set to zero. 
+  #   # If the value is None (‘null’ in YAML notation), then no filter is applied
+  #   filter:
+  #     # mutation_nt_count give number of nucleotide mutations allowed for feature
+  #     mutation_nt_count: 1
+  #     # mutation_op_count give number of cs tag mutation operations allowed for feature
+  #     mutation_op_count: null
   # Feature of amplicon
   barcode:
     # filter: dict keyed by ‘clip5’, ‘clip3’, ‘mutation_nt_count’, and ‘mutation_op_count’
@@ -94,17 +94,17 @@ PacBio_amplicon:
     # the sequence, mutation string, cs tag, or number of clipped nucleotides from each end.
     return: sequence
   # Feature of amplicon
-  illuminaprimer:
-    # filter: dict keyed by ‘clip5’, ‘clip3’, ‘mutation_nt_count’, and ‘mutation_op_count’
-    # If ‘filter’ itself or any of the keys are missing, the value is set to zero. 
-    # If the value is None (‘null’ in YAML notation), then no filter is applied
-    filter:
-      # mutation_nt_count give number of nucleotide mutations allowed for feature
-      mutation_nt_count: 0
-      # mutation_op_count give number of cs tag mutation operations allowed for feature
-      mutation_op_count: null
-    # ’return’: str or list of strings indicating what to return for this feature. 
-    # If ‘returns’ is absent or the value is None (‘null’ in YAML notation), nothing is returned for this feature. 
-    # Otherwise list one or more of ‘sequence’, ‘mutations’, ‘accuracy’, ‘cs’, ‘clip5’, and ‘clip3’ to get 
-    # the sequence, mutation string, cs tag, or number of clipped nucleotides from each end.
-    return: [sequence, accuracy]
+  # illuminaprimer:
+  #   # filter: dict keyed by ‘clip5’, ‘clip3’, ‘mutation_nt_count’, and ‘mutation_op_count’
+  #   # If ‘filter’ itself or any of the keys are missing, the value is set to zero. 
+  #   # If the value is None (‘null’ in YAML notation), then no filter is applied
+  #   filter:
+  #     # mutation_nt_count give number of nucleotide mutations allowed for feature
+  #     mutation_nt_count: 0
+  #     # mutation_op_count give number of cs tag mutation operations allowed for feature
+  #     mutation_op_count: null
+  #   # ’return’: str or list of strings indicating what to return for this feature. 
+  #   # If ‘returns’ is absent or the value is None (‘null’ in YAML notation), nothing is returned for this feature. 
+  #   # Otherwise list one or more of ‘sequence’, ‘mutations’, ‘accuracy’, ‘cs’, ‘clip5’, and ‘clip3’ to get 
+  #   # the sequence, mutation string, cs tag, or number of clipped nucleotides from each end.
+  #   return: [sequence, accuracy]

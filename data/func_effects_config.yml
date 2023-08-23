@@ -131,6 +131,17 @@ func_scores:
     pre_selection_sample: LibB-220907-VSVG-2
     func_score_params: *func_scores_params_default
     global_epistasis_params: *global_epistasis_params
+  LibA-230819-293T-1:
+    post_selection_sample: LibA-230819-no-antibody-1
+    pre_selection_sample: LibA-230819-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+  LibB-230819-293T-1:
+    post_selection_sample: LibB-230819-no-antibody-1
+    pre_selection_sample: LibB-230819-VSVG-1
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params
+
 
   # Human and rodent selections
   LibA-230502-human-1:
@@ -333,6 +344,8 @@ avg_func_effects:
       - LibB-220823-293T-2
       - LibB-220907-293T-1
       - LibB-220907-293T-2
+      # - LibA-230819-293T-1
+      # - LibB-230819-293T-1
   human_293T_entry:
     <<: *avg_func_effects_default
     title: Mutation effects on entry into 293TdeltaDAG1 cells transduced with human DAG1

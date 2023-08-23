@@ -3,24 +3,33 @@
 <p>See <a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS">https://github.com/dms-vep/LASV_Josiah_GP_DMS</a> for full code.</p>
 <div class="toc"><span class="toctitle">Contents</span><ul>
 <li><a href="#barcode-to-codon-variant-lookup-table">Barcode to codon-variant lookup table</a></li>
-<li><a href="#count-variants">Count variants</a></li>
+<li><a href="#count-barcodes-for-variants">Count barcodes for variants</a></li>
 <li><a href="#functional-effects-of-mutations">Functional effects of mutations</a></li>
 <li><a href="#antibodyserum-escape">Antibody/serum escape</a></li>
-<li><a href="#single-mutant-validations">Single mutant validations</a></li>
+<li><a href="#additional-analyses">Additional analyses</a></li>
 </ul>
 </div>
 <h2 id="barcode-to-codon-variant-lookup-table">Barcode to codon-variant lookup table</h2>
+<h4 id="analysis-notebooks">Analysis notebooks</h4>
+<ul>
+<li><a href="notebooks/analyze_pacbio_ccs.html">Analysis of PacBio CCSs</a></li>
+<li><a href="notebooks/build_pacbio_consensus.html">Building barcoded variant consensus sequences</a></li>
+<li><a href="notebooks/build_codon_variants.html">Building of codon-variant table</a></li>
+</ul>
+<h4 id="data-files">Data files</h4>
 <ul>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/gene_sequence/codon.fasta">parental codon sequence</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/gene_sequence/protein.fasta">parental protein sequence</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/variants/codon_variants.csv">barcode to codon-variant lookup table</a></li>
-<li><a href="notebooks/analyze_pacbio_ccs.html">Analysis of PacBio CCSs</a></li>
-<li><a href="notebooks/build_pacbio_consensus.html">Building of consensus sequences for barcoded variants</a></li>
-<li><a href="notebooks/build_codon_variants.html">Building of codon-variant table</a></li>
 </ul>
-<h2 id="count-variants">Count variants</h2>
+<h2 id="count-barcodes-for-variants">Count barcodes for variants</h2>
+<h4 id="analysis-notebooks_1">Analysis notebooks</h4>
 <ul>
-<li><details><summary>Barcode counts (click triangle to expand/collapse)</summary><ul>
+<li><a href="notebooks/analyze_variant_counts.html">Analysis of variant counts</a></li>
+</ul>
+<h4 id="data-files_1">Data files</h4>
+<ul>
+<li><details><summary>Barcode count CSVs (click triangle to expand/collapse)</summary><ul>
 
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-220517-VSVG-1_counts.csv">LibA-220517-VSVG-1</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-220517-VSVG-2_counts.csv">LibA-220517-VSVG-2</a></li>
@@ -164,60 +173,54 @@
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230722-VSVG-mastomys-2_counts.csv">LibA-230722-VSVG-mastomys-2</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230722-VSVG-mastomys-3_counts.csv">LibA-230722-VSVG-mastomys-3</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230722-VSVG-mastomys-4_counts.csv">LibA-230722-VSVG-mastomys-4</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-121F-0.156-1_counts.csv">LibA-230819-121F-0.156-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-121F-0.625-1_counts.csv">LibA-230819-121F-0.625-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-121F-2.5-1_counts.csv">LibA-230819-121F-2.5-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-372D-0.1719-1_counts.csv">LibA-230819-372D-0.1719-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-372D-0.6875-1_counts.csv">LibA-230819-372D-0.6875-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-372D-2.75-1_counts.csv">LibA-230819-372D-2.75-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-no-antibody-1_counts.csv">LibA-230819-no-antibody-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibA-230819-VSVG-1_counts.csv">LibA-230819-VSVG-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-121F-0.156-1_counts.csv">LibB-230819-121F-0.156-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-121F-0.625-1_counts.csv">LibB-230819-121F-0.625-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-121F-2.5-1_counts.csv">LibB-230819-121F-2.5-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-372D-0.1719-1_counts.csv">LibB-230819-372D-0.1719-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-372D-0.6875-1_counts.csv">LibB-230819-372D-0.6875-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-372D-2.75-1_counts.csv">LibB-230819-372D-2.75-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-no-antibody-1_counts.csv">LibB-230819-no-antibody-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/barcode_counts/LibB-230819-VSVG-1_counts.csv">LibB-230819-VSVG-1</a></li>
 </ul></details>
 
 </li>
-<li><a href="notebooks/analyze_variant_counts.html">Analysis of variant counts</a></li>
 </ul>
 <h2 id="functional-effects-of-mutations">Functional effects of mutations</h2>
+<h4 id="final-summary-plots">Final summary plots</h4>
 <ul>
-<li><details><summary>Per-variant functional score CSVs (click triangle to expand/collapse)</summary><ul>
+<li><details><summary>Interactive plots of average mutation functional effects (click triangle to expand/collapse)</summary><ul>
 
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220601-293T-1_func_scores.csv">LibA-220601-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220601-293T-2_func_scores.csv">LibA-220601-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220706-293T-1_func_scores.csv">LibA-220706-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220706-293T-2_func_scores.csv">LibA-220706-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220728-293T-1_func_scores.csv">LibA-220728-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220728-293T-2_func_scores.csv">LibA-220728-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220823-293T-1_func_scores.csv">LibA-220823-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220823-293T-2_func_scores.csv">LibA-220823-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220907-293T-1_func_scores.csv">LibA-220907-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220907-293T-2_func_scores.csv">LibA-220907-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220706-293T-1_func_scores.csv">LibB-220706-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220706-293T-2_func_scores.csv">LibB-220706-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220728-293T-1_func_scores.csv">LibB-220728-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220728-293T-2_func_scores.csv">LibB-220728-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220823-293T-1_func_scores.csv">LibB-220823-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220823-293T-2_func_scores.csv">LibB-220823-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220907-293T-1_func_scores.csv">LibB-220907-293T-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220907-293T-2_func_scores.csv">LibB-220907-293T-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230502-human-1_func_scores.csv">LibA-230502-human-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230502-human-1_func_scores.csv">LibB-230502-human-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230502-mastomys-1_func_scores.csv">LibA-230502-mastomys-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230502-mastomys-1_func_scores.csv">LibB-230502-mastomys-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-human-1_func_scores.csv">LibB-230513-human-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-human-2_func_scores.csv">LibB-230513-human-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-mastomys-1_func_scores.csv">LibB-230513-mastomys-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-mastomys-2_func_scores.csv">LibB-230513-mastomys-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-human-1_func_scores.csv">LibA-230601-human-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-human-2_func_scores.csv">LibA-230601-human-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-mastomys-1_func_scores.csv">LibA-230601-mastomys-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-mastomys-2_func_scores.csv">LibA-230601-mastomys-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-human-1_func_scores.csv">LibB-230601-human-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-human-2_func_scores.csv">LibB-230601-human-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-mastomys-1_func_scores.csv">LibB-230601-mastomys-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-mastomys-2_func_scores.csv">LibB-230601-mastomys-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-1_func_scores.csv">LibA-230722-human-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-2_func_scores.csv">LibA-230722-human-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-3_func_scores.csv">LibA-230722-human-3</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-4_func_scores.csv">LibA-230722-human-4</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-1_func_scores.csv">LibA-230722-mastomys-1</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-2_func_scores.csv">LibA-230722-mastomys-2</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-3_func_scores.csv">LibA-230722-mastomys-3</a></li>
-<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-4_func_scores.csv">LibA-230722-mastomys-4</a></li>
+<li><a href="htmls/293T_entry_func_effects.html">293T_entry</a></li>
+<li><a href="htmls/human_293T_entry_func_effects.html">human_293T_entry</a></li>
+<li><a href="htmls/mastomys_293T_entry_func_effects.html">mastomys_293T_entry</a></li>
 </ul></details>
 
 </li>
+<li><details><summary>Interactive plots of average mutation latent-phenotype effects (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="htmls/293T_entry_latent_effects.html">293T_entry</a></li>
+<li><a href="htmls/human_293T_entry_latent_effects.html">human_293T_entry</a></li>
+<li><a href="htmls/mastomys_293T_entry_latent_effects.html">mastomys_293T_entry</a></li>
+</ul></details>
+
+</li>
+<li><details><summary>Interactive plots of average shifts in functional effects (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="htmls/aDG_comparison_shifts.html">aDG_comparison</a></li>
+</ul></details>
+
+</li>
+</ul>
+<h4 id="analysis-notebooks_2">Analysis notebooks</h4>
+<ul>
 <li><a href="notebooks/analyze_func_scores.html">Analysis of functional scores</a></li>
 <li><details><summary>Notebooks with per-selection global epistasis fitting (click triangle to expand/collapse)</summary><ul>
 
@@ -239,6 +242,8 @@
 <li><a href="notebooks/func_effects_global_epistasis_LibB-220823-293T-2.html">LibB-220823-293T-2</a></li>
 <li><a href="notebooks/func_effects_global_epistasis_LibB-220907-293T-1.html">LibB-220907-293T-1</a></li>
 <li><a href="notebooks/func_effects_global_epistasis_LibB-220907-293T-2.html">LibB-220907-293T-2</a></li>
+<li><a href="notebooks/func_effects_global_epistasis_LibA-230819-293T-1.html">LibA-230819-293T-1</a></li>
+<li><a href="notebooks/func_effects_global_epistasis_LibB-230819-293T-1.html">LibB-230819-293T-1</a></li>
 <li><a href="notebooks/func_effects_global_epistasis_LibA-230502-human-1.html">LibA-230502-human-1</a></li>
 <li><a href="notebooks/func_effects_global_epistasis_LibB-230502-human-1.html">LibB-230502-human-1</a></li>
 <li><a href="notebooks/func_effects_global_epistasis_LibA-230502-mastomys-1.html">LibA-230502-mastomys-1</a></li>
@@ -266,6 +271,85 @@
 </ul></details>
 
 </li>
+<li><details><summary>Notebooks averaging mutation functional effects (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="notebooks/avg_func_effects_293T_entry.html">293T_entry</a></li>
+<li><a href="notebooks/avg_func_effects_human_293T_entry.html">human_293T_entry</a></li>
+<li><a href="notebooks/avg_func_effects_mastomys_293T_entry.html">mastomys_293T_entry</a></li>
+</ul></details>
+
+</li>
+<li><details><summary>Notebooks fitting shifts in functional effects (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="notebooks/func_effect_shifts_LibA-1.html">LibA-1</a></li>
+<li><a href="notebooks/func_effect_shifts_LibA-2.html">LibA-2</a></li>
+<li><a href="notebooks/func_effect_shifts_LibA-3.html">LibA-3</a></li>
+<li><a href="notebooks/func_effect_shifts_LibA-4.html">LibA-4</a></li>
+<li><a href="notebooks/func_effect_shifts_LibB-1.html">LibB-1</a></li>
+<li><a href="notebooks/func_effect_shifts_LibB-2.html">LibB-2</a></li>
+<li><a href="notebooks/func_effect_shifts_LibB-3.html">LibB-3</a></li>
+<li><a href="notebooks/func_effect_shifts_LibB-4.html">LibB-4</a></li>
+</ul></details>
+
+</li>
+<li><details><summary>Notebooks averaging shifts in functional effects (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="notebooks/avg_func_effect_shifts_aDG_comparison.html">aDG_comparison</a></li>
+</ul></details>
+
+</li>
+</ul>
+<h4 id="data-files_2">Data files</h4>
+<ul>
+<li><details><summary>Per-variant functional score CSVs (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220601-293T-1_func_scores.csv">LibA-220601-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220601-293T-2_func_scores.csv">LibA-220601-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220706-293T-1_func_scores.csv">LibA-220706-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220706-293T-2_func_scores.csv">LibA-220706-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220728-293T-1_func_scores.csv">LibA-220728-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220728-293T-2_func_scores.csv">LibA-220728-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220823-293T-1_func_scores.csv">LibA-220823-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220823-293T-2_func_scores.csv">LibA-220823-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220907-293T-1_func_scores.csv">LibA-220907-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-220907-293T-2_func_scores.csv">LibA-220907-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220706-293T-1_func_scores.csv">LibB-220706-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220706-293T-2_func_scores.csv">LibB-220706-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220728-293T-1_func_scores.csv">LibB-220728-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220728-293T-2_func_scores.csv">LibB-220728-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220823-293T-1_func_scores.csv">LibB-220823-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220823-293T-2_func_scores.csv">LibB-220823-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220907-293T-1_func_scores.csv">LibB-220907-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-220907-293T-2_func_scores.csv">LibB-220907-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230819-293T-1_func_scores.csv">LibA-230819-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230819-293T-1_func_scores.csv">LibB-230819-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230502-human-1_func_scores.csv">LibA-230502-human-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230502-human-1_func_scores.csv">LibB-230502-human-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230502-mastomys-1_func_scores.csv">LibA-230502-mastomys-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230502-mastomys-1_func_scores.csv">LibB-230502-mastomys-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-human-1_func_scores.csv">LibB-230513-human-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-human-2_func_scores.csv">LibB-230513-human-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-mastomys-1_func_scores.csv">LibB-230513-mastomys-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230513-mastomys-2_func_scores.csv">LibB-230513-mastomys-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-human-1_func_scores.csv">LibA-230601-human-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-human-2_func_scores.csv">LibA-230601-human-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-mastomys-1_func_scores.csv">LibA-230601-mastomys-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230601-mastomys-2_func_scores.csv">LibA-230601-mastomys-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-human-1_func_scores.csv">LibB-230601-human-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-human-2_func_scores.csv">LibB-230601-human-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-mastomys-1_func_scores.csv">LibB-230601-mastomys-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibB-230601-mastomys-2_func_scores.csv">LibB-230601-mastomys-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-1_func_scores.csv">LibA-230722-human-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-2_func_scores.csv">LibA-230722-human-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-3_func_scores.csv">LibA-230722-human-3</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-human-4_func_scores.csv">LibA-230722-human-4</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-1_func_scores.csv">LibA-230722-mastomys-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-2_func_scores.csv">LibA-230722-mastomys-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-3_func_scores.csv">LibA-230722-mastomys-3</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_scores/LibA-230722-mastomys-4_func_scores.csv">LibA-230722-mastomys-4</a></li>
+</ul></details>
+
+</li>
 <li><details><summary>Per-selection mutation functional effect CSVs (click triangle to expand/collapse)</summary><ul>
 
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibA-220601-293T-1_func_effects.csv">LibA-220601-293T-1</a></li>
@@ -286,6 +370,8 @@
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibB-220823-293T-2_func_effects.csv">LibB-220823-293T-2</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibB-220907-293T-1_func_effects.csv">LibB-220907-293T-1</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibB-220907-293T-2_func_effects.csv">LibB-220907-293T-2</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibA-230819-293T-1_func_effects.csv">LibA-230819-293T-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibB-230819-293T-1_func_effects.csv">LibB-230819-293T-1</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibA-230502-human-1_func_effects.csv">LibA-230502-human-1</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibB-230502-human-1_func_effects.csv">LibB-230502-human-1</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/by_selection/LibA-230502-mastomys-1_func_effects.csv">LibA-230502-mastomys-1</a></li>
@@ -313,14 +399,6 @@
 </ul></details>
 
 </li>
-<li><details><summary>Notebooks averaging mutation functional effects (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="notebooks/avg_func_effects_293T_entry.html">293T_entry</a></li>
-<li><a href="notebooks/avg_func_effects_human_293T_entry.html">human_293T_entry</a></li>
-<li><a href="notebooks/avg_func_effects_mastomys_293T_entry.html">mastomys_293T_entry</a></li>
-</ul></details>
-
-</li>
 <li><details><summary>Average mutation functional effects (CSV files) (click triangle to expand/collapse)</summary><ul>
 
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effects/averages/293T_entry_func_effects.csv">293T_entry</a></li>
@@ -337,35 +415,6 @@
 </ul></details>
 
 </li>
-<li><details><summary>Interactive plots of average mutation functional effects (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="htmls/293T_entry_func_effects.html">293T_entry</a></li>
-<li><a href="htmls/human_293T_entry_func_effects.html">human_293T_entry</a></li>
-<li><a href="htmls/mastomys_293T_entry_func_effects.html">mastomys_293T_entry</a></li>
-</ul></details>
-
-</li>
-<li><details><summary>Interactive plots of average mutation latent-phenotype effects (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="htmls/293T_entry_latent_effects.html">293T_entry</a></li>
-<li><a href="htmls/human_293T_entry_latent_effects.html">human_293T_entry</a></li>
-<li><a href="htmls/mastomys_293T_entry_latent_effects.html">mastomys_293T_entry</a></li>
-</ul></details>
-
-</li>
-<li><details><summary>Notebooks fitting shifts in functional effects (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="notebooks/func_effect_shifts_LibA-1.html">LibA-1</a></li>
-<li><a href="notebooks/func_effect_shifts_LibA-2.html">LibA-2</a></li>
-<li><a href="notebooks/func_effect_shifts_LibA-3.html">LibA-3</a></li>
-<li><a href="notebooks/func_effect_shifts_LibA-4.html">LibA-4</a></li>
-<li><a href="notebooks/func_effect_shifts_LibB-1.html">LibB-1</a></li>
-<li><a href="notebooks/func_effect_shifts_LibB-2.html">LibB-2</a></li>
-<li><a href="notebooks/func_effect_shifts_LibB-3.html">LibB-3</a></li>
-<li><a href="notebooks/func_effect_shifts_LibB-4.html">LibB-4</a></li>
-</ul></details>
-
-</li>
 <li><details><summary>Per-condition functional effect shifts CSVs (click triangle to expand/collapse)</summary><ul>
 
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effect_shifts/by_comparison/LibA-1_shifts.csv">LibA-1</a></li>
@@ -379,26 +428,93 @@
 </ul></details>
 
 </li>
-<li><details><summary>Notebooks averaging shifts in functional effects (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="notebooks/avg_func_effect_shifts_aDG_comparison.html">aDG_comparison</a></li>
-</ul></details>
-
-</li>
 <li><details><summary>Average shifts in functional effects (CSV files) (click triangle to expand/collapse)</summary><ul>
 
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/func_effect_shifts/averages/aDG_comparison_shifts.csv">aDG_comparison</a></li>
 </ul></details>
 
 </li>
-<li><details><summary>Interactive plots of average shifts in functional effects (click triangle to expand/collapse)</summary><ul>
+</ul>
+<h2 id="antibodyserum-escape">Antibody/serum escape</h2>
+<h4 id="final-summary-plots_1">Final summary plots</h4>
+<ul>
+<li><details><summary>antibody escape mutation effect plots (click triangle to expand/collapse)</summary><ul>
 
-<li><a href="htmls/aDG_comparison_shifts.html">aDG_comparison</a></li>
+<li><a href="htmls/377H_mut_effect.html">377H</a></li>
+<li><a href="htmls/89F_mut_effect.html">89F</a></li>
+<li><a href="htmls/2510C_mut_effect.html">2510C</a></li>
+<li><a href="htmls/121F_mut_effect.html">121F</a></li>
+<li><a href="htmls/256A_mut_effect.html">256A</a></li>
+<li><a href="htmls/372D_mut_effect.html">372D</a></li>
+</ul></details>
+
+</li>
+<li><details><summary>antibody escape mutation ICXX plots (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="htmls/377H_mut_icXX.html">377H</a></li>
+<li><a href="htmls/89F_mut_icXX.html">89F</a></li>
+<li><a href="htmls/2510C_mut_icXX.html">2510C</a></li>
+<li><a href="htmls/121F_mut_icXX.html">121F</a></li>
+<li><a href="htmls/256A_mut_icXX.html">256A</a></li>
+<li><a href="htmls/372D_mut_icXX.html">372D</a></li>
 </ul></details>
 
 </li>
 </ul>
-<h2 id="antibodyserum-escape">Antibody/serum escape</h2>
+<h4 id="analysis-notebooks_3">Analysis notebooks</h4>
+<ul>
+<li><details><summary>Fits of polyclonal models to individual antibody escape selections (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220601-377H-1.html">LibA-220601-377H-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220601-377H-2.html">LibA-220601-377H-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-377H-1.html">LibA-220706-377H-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-377H-2.html">LibA-220706-377H-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-377H-1.html">LibB-220706-377H-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-377H-2.html">LibB-220706-377H-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-89F-1.html">LibA-220706-89F-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-89F-2.html">LibA-220706-89F-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-89F-1.html">LibB-220706-89F-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-89F-2.html">LibB-220706-89F-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-2510C-1.html">LibA-220728-2510C-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-2510C-2.html">LibA-220728-2510C-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-2510C-1.html">LibB-220728-2510C-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-2510C-2.html">LibB-220728-2510C-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-121F-1.html">LibA-220728-121F-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-121F-2.html">LibA-220728-121F-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-121F-1.html">LibB-220728-121F-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-121F-2.html">LibB-220728-121F-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-256A-1.html">LibA-220728-256A-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-256A-2.html">LibA-220728-256A-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-256A-1.html">LibB-220728-256A-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-256A-2.html">LibB-220728-256A-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220823-372D-1.html">LibA-220823-372D-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220823-372D-2.html">LibA-220823-372D-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220823-372D-1.html">LibB-220823-372D-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220823-372D-2.html">LibB-220823-372D-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220907-372D-1.html">LibA-220907-372D-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-220907-372D-2.html">LibA-220907-372D-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220907-372D-1.html">LibB-220907-372D-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-220907-372D-2.html">LibB-220907-372D-2</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-230819-121F-1.html">LibA-230819-121F-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-230819-121F-1.html">LibB-230819-121F-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibA-230819-372D-1.html">LibA-230819-372D-1</a></li>
+<li><a href="notebooks/fit_escape_antibody_escape_LibB-230819-372D-1.html">LibB-230819-372D-1</a></li>
+</ul></details>
+
+</li>
+<li><details><summary>Average selections for antibody escape (click triangle to expand/collapse)</summary><ul>
+
+<li><a href="notebooks/avg_escape_antibody_escape_377H.html">377H</a></li>
+<li><a href="notebooks/avg_escape_antibody_escape_89F.html">89F</a></li>
+<li><a href="notebooks/avg_escape_antibody_escape_2510C.html">2510C</a></li>
+<li><a href="notebooks/avg_escape_antibody_escape_121F.html">121F</a></li>
+<li><a href="notebooks/avg_escape_antibody_escape_256A.html">256A</a></li>
+<li><a href="notebooks/avg_escape_antibody_escape_372D.html">372D</a></li>
+</ul></details>
+
+</li>
+</ul>
+<h4 id="data-files_3">Data files</h4>
 <ul>
 <li><details><summary>Probability (fraction) escape for each variant in each antibody escape selection (CSVs) (click triangle to expand/collapse)</summary><ul>
 
@@ -494,52 +610,18 @@
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-220907-372D-2/LibB-220907-372D-11-1_prob_escape.csv">LibB-220907-372D-2 LibB-220907-372D-11-1</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-220907-372D-2/LibB-220907-372D-44-1_prob_escape.csv">LibB-220907-372D-2 LibB-220907-372D-44-1</a></li>
 <li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-220907-372D-2/LibB-220907-372D-176-1_prob_escape.csv">LibB-220907-372D-2 LibB-220907-372D-176-1</a></li>
-</ul></details>
-
-</li>
-<li><details><summary>Fits of polyclonal models to individual antibody escape selections (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220601-377H-1.html">LibA-220601-377H-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220601-377H-2.html">LibA-220601-377H-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-377H-1.html">LibA-220706-377H-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-377H-2.html">LibA-220706-377H-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-377H-1.html">LibB-220706-377H-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-377H-2.html">LibB-220706-377H-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-89F-1.html">LibA-220706-89F-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220706-89F-2.html">LibA-220706-89F-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-89F-1.html">LibB-220706-89F-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220706-89F-2.html">LibB-220706-89F-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-2510C-1.html">LibA-220728-2510C-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-2510C-2.html">LibA-220728-2510C-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-2510C-1.html">LibB-220728-2510C-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-2510C-2.html">LibB-220728-2510C-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-121F-1.html">LibA-220728-121F-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-121F-2.html">LibA-220728-121F-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-121F-1.html">LibB-220728-121F-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-121F-2.html">LibB-220728-121F-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-256A-1.html">LibA-220728-256A-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220728-256A-2.html">LibA-220728-256A-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-256A-1.html">LibB-220728-256A-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220728-256A-2.html">LibB-220728-256A-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220823-372D-1.html">LibA-220823-372D-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220823-372D-2.html">LibA-220823-372D-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220823-372D-1.html">LibB-220823-372D-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220823-372D-2.html">LibB-220823-372D-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220907-372D-1.html">LibA-220907-372D-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibA-220907-372D-2.html">LibA-220907-372D-2</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220907-372D-1.html">LibB-220907-372D-1</a></li>
-<li><a href="notebooks/fit_escape_antibody_escape_LibB-220907-372D-2.html">LibB-220907-372D-2</a></li>
-</ul></details>
-
-</li>
-<li><details><summary>Average selections for antibody escape (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="notebooks/avg_escape_antibody_escape_377H.html">377H</a></li>
-<li><a href="notebooks/avg_escape_antibody_escape_89F.html">89F</a></li>
-<li><a href="notebooks/avg_escape_antibody_escape_2510C.html">2510C</a></li>
-<li><a href="notebooks/avg_escape_antibody_escape_121F.html">121F</a></li>
-<li><a href="notebooks/avg_escape_antibody_escape_256A.html">256A</a></li>
-<li><a href="notebooks/avg_escape_antibody_escape_372D.html">372D</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibA-230819-121F-1/LibA-230819-121F-0.156-1_prob_escape.csv">LibA-230819-121F-1 LibA-230819-121F-0.156-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibA-230819-121F-1/LibA-230819-121F-0.625-1_prob_escape.csv">LibA-230819-121F-1 LibA-230819-121F-0.625-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibA-230819-121F-1/LibA-230819-121F-2.5-1_prob_escape.csv">LibA-230819-121F-1 LibA-230819-121F-2.5-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-230819-121F-1/LibB-230819-121F-0.156-1_prob_escape.csv">LibB-230819-121F-1 LibB-230819-121F-0.156-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-230819-121F-1/LibB-230819-121F-0.625-1_prob_escape.csv">LibB-230819-121F-1 LibB-230819-121F-0.625-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-230819-121F-1/LibB-230819-121F-2.5-1_prob_escape.csv">LibB-230819-121F-1 LibB-230819-121F-2.5-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibA-230819-372D-1/LibA-230819-372D-0.1719-1_prob_escape.csv">LibA-230819-372D-1 LibA-230819-372D-0.1719-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibA-230819-372D-1/LibA-230819-372D-0.6875-1_prob_escape.csv">LibA-230819-372D-1 LibA-230819-372D-0.6875-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibA-230819-372D-1/LibA-230819-372D-2.75-1_prob_escape.csv">LibA-230819-372D-1 LibA-230819-372D-2.75-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-230819-372D-1/LibB-230819-372D-0.1719-1_prob_escape.csv">LibB-230819-372D-1 LibB-230819-372D-0.1719-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-230819-372D-1/LibB-230819-372D-0.6875-1_prob_escape.csv">LibB-230819-372D-1 LibB-230819-372D-0.6875-1</a></li>
+<li><a href="https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main/results/antibody_escape/by_selection/LibB-230819-372D-1/LibB-230819-372D-2.75-1_prob_escape.csv">LibB-230819-372D-1 LibB-230819-372D-2.75-1</a></li>
 </ul></details>
 
 </li>
@@ -565,30 +647,8 @@
 </ul></details>
 
 </li>
-<li><details><summary>antibody escape mutation effect plots (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="htmls/377H_mut_effect.html">377H</a></li>
-<li><a href="htmls/89F_mut_effect.html">89F</a></li>
-<li><a href="htmls/2510C_mut_effect.html">2510C</a></li>
-<li><a href="htmls/121F_mut_effect.html">121F</a></li>
-<li><a href="htmls/256A_mut_effect.html">256A</a></li>
-<li><a href="htmls/372D_mut_effect.html">372D</a></li>
-</ul></details>
-
-</li>
-<li><details><summary>antibody escape mutation ICXX plots (click triangle to expand/collapse)</summary><ul>
-
-<li><a href="htmls/377H_mut_icXX.html">377H</a></li>
-<li><a href="htmls/89F_mut_icXX.html">89F</a></li>
-<li><a href="htmls/2510C_mut_icXX.html">2510C</a></li>
-<li><a href="htmls/121F_mut_icXX.html">121F</a></li>
-<li><a href="htmls/256A_mut_icXX.html">256A</a></li>
-<li><a href="htmls/372D_mut_icXX.html">372D</a></li>
-</ul></details>
-
-</li>
 </ul>
-<h2 id="single-mutant-validations">Single mutant validations</h2>
-<ul>
-<li><a href="notebooks/validation_neuts_89F.html">Notebook correlating measured vs predicted neutralization</a></li>
-</ul>
+<h2 id="additional-analyses">Additional analyses</h2>
+<h4 id="notebook-correlating-functional-effects-on-humandag1-vs-mastomysdag1-expressing-cells"><a href="notebooks/human_mastomys_correlation.html">Notebook correlating functional effects on humanDAG1 vs mastomysDAG1 expressing cells</a></h4>
+<h4 id="notebook-correlating-measured-vs-predicted-functional-effects"><a href="notebooks/validation_titers.html">Notebook correlating measured vs predicted functional effects</a></h4>
+<h4 id="notebook-correlating-measured-vs-predicted-neutralization"><a href="notebooks/validation_neuts_89F.html">Notebook correlating measured vs predicted neutralization</a></h4>

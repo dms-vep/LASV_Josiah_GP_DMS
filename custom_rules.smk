@@ -19,6 +19,47 @@ rule spatial_distances:
     script:
         "scripts/spatial_distances.py"
 
+rule human_mastomys_correlation:
+    """
+    Correlation of functional scores from humanDAG1
+    vs mastomysDAG1 expressing cells.
+    """
+    input:
+        humanDAG1_scores="results/func_effects/averages/human_293T_entry_func_effects.csv",
+        mastomysDAG1_scores="results/func_effects/averages/mastomys_293T_entry_func_effects.csv",
+        nb="notebooks/human_mastomys_correlation.ipynb",
+    output:
+        nb="results/notebooks/human_mastomys_correlation.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/human_mastomys_correlation.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            &> {log}
+        """
+
+rule validation_titers:
+    """
+    Correlation of single mutant validations titers to 
+    predicted values from DMS pipeline.
+    """
+    input:
+        titers="data/single_mutant_functional_validations.csv",
+        predicted_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        nb="notebooks/validation_titers.ipynb",
+    output:
+        nb="results/notebooks/validation_titers.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/validation_titers.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            &> {log}
+        """
 
 rule validation_neuts_89F:
     """
@@ -42,6 +83,8 @@ rule validation_neuts_89F:
         """
 
 
-docs["Single mutant validations"] = {
+docs["Additional analyses"] = {
+    "Notebook correlating functional effects on humanDAG1 vs mastomysDAG1 expressing cells" : rules.human_mastomys_correlation.output.nb,
+    "Notebook correlating measured vs predicted functional effects" : rules.validation_titers.output.nb,
     "Notebook correlating measured vs predicted neutralization": rules.validation_neuts_89F.output.nb,
 }

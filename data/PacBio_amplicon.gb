@@ -17,12 +17,8 @@ FEATURES             Location/Qualifiers
                      /label="LASV GP gene"
      termini5        1..47
                      /label="termini 5' of gene"
-     spacer          1524..1577
-                     /label="spacer between gene and barcode"
      termini3        1594..1665
                      /label="termini 3' of gene"
-     illuminaprimer  1545..1577
-                     /label="Illumina priming site"
 ORIGIN
         1 CTAGCCATTC AGAGgCAGCC GAGCCACsTC GCTCAacgcg tgccaccATG GGACAGATCG
        61 TCACCTTCTT CCAAGAAGTG CCTCATGTCA TCGAGGAGGT GATGAACATC GTGCTCATCG
