@@ -1,7 +1,39 @@
-# Configurations for determining effects of mutations on antibody/sera escape
+# Configurations for determining effects of mutations on assays such as antibody
+# escape, receptor affinity from soluble receptor neutralization, etc.
+# Note that in the configuration for individual selections, "antibody" is used
+# as a synonym for any treatment (receptor, heat, etc), and "no-antibody" is
+# used as a synonym for the untreated conditions.
 
 # --------------------------------------------------------------------------------------
-# Configuration for each antibody selection experiment.
+# Define the selections
+# --------------------------------------------------------------------------------------
+
+# `assays` is keyed by assay (eg, "antibody_escape", "receptor_affinity", etc). Values are:
+#    - `title`: title given to selection in docs
+#    - `selections`: name of key used to define all selections for this assay
+#    - `averages`: name of key used to define averages across selections for this assay.
+#       Leave out this key if not taking averages.
+#    - `prob_escape_scale`: the scale used for the y-axis when plotting prob escape as
+#      a function of concentration. Typically symlog if all values close to zero, linear
+#      otherwise. Should be in the form of keyword arguments to `altair.Scale`.
+#    - `scale_stat`: scale the statistic being estimated for mutation effects by this
+#      number. Typically is 1 (no scaling) unless you want negative values to indicate a
+#      favorable effect (as for soluble receptor selections), in which case use -1.
+#    - `stat_name`: name assigned to statistic, eg, "escape" or "receptor affinity".
+
+assays:
+  antibody_escape:
+    title: Antibody/serum escape
+    selections: antibody_selections
+    averages: avg_antibody_escape
+    prob_escape_scale:
+      type: symlog
+      constant: 0.04
+    scale_stat: 1
+    stat_name: escape
+
+# --------------------------------------------------------------------------------------
+# Configuration for the selection experiments for each assay
 # --------------------------------------------------------------------------------------
 
 # `antibody_selections` is keyed by name of each selection experiment, which includes a
@@ -78,7 +110,7 @@ plot_hide_stats_default: &plot_hide_stats_default
 
 # define the antibody selections
 antibody_selections:
-
+  # --------------------------------------------------------------------------------------
   LibA-220601-377H-1:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -190,6 +222,7 @@ antibody_selections:
         concentration: 20
         use_in_fit: true
 
+  # --------------------------------------------------------------------------------------
   LibA-220706-89F-1:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -260,6 +293,7 @@ antibody_selections:
         concentration: 80
         use_in_fit: true
 
+  # --------------------------------------------------------------------------------------
   LibA-220728-2510C-1:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -330,6 +364,7 @@ antibody_selections:
         concentration: 8
         use_in_fit: true
 
+  # --------------------------------------------------------------------------------------
   LibA-220728-121F-1:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -400,6 +435,42 @@ antibody_selections:
         concentration: 10
         use_in_fit: false
 
+  LibA-230819-121F-1:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: LibA-230819-no-antibody-1
+    antibody_samples:
+      LibA-230819-121F-0.156-1:
+        concentration: 0.156
+        use_in_fit: false
+      LibA-230819-121F-0.625-1:
+        concentration: 0.625
+        use_in_fit: true
+      LibA-230819-121F-2.5-1:
+        concentration: 2.5
+        use_in_fit: true
+  LibB-230819-121F-1:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: LibB-230819-no-antibody-1
+    antibody_samples:
+      LibB-230819-121F-0.156-1:
+        concentration: 0.156
+        use_in_fit: false
+      LibB-230819-121F-0.625-1:
+        concentration: 0.625
+        use_in_fit: true
+      LibB-230819-121F-2.5-1:
+        concentration: 2.5
+        use_in_fit: true
+
+  # --------------------------------------------------------------------------------------
   LibA-220728-256A-1:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -416,7 +487,7 @@ antibody_selections:
         use_in_fit: true
       LibA-220728-256A-50-1:
         concentration: 50
-        use_in_fit: false
+        use_in_fit: true
   LibA-220728-256A-2:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -433,7 +504,7 @@ antibody_selections:
         use_in_fit: true
       LibA-220728-256A-50-1:
         concentration: 50
-        use_in_fit: false
+        use_in_fit: true
 
   LibB-220728-256A-1:
     neut_standard_name: neut_standard
@@ -451,7 +522,7 @@ antibody_selections:
         use_in_fit: true
       LibB-220728-256A-50-1:
         concentration: 50
-        use_in_fit: false
+        use_in_fit: true
   LibB-220728-256A-2:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -468,8 +539,9 @@ antibody_selections:
         use_in_fit: true
       LibB-220728-256A-50-1:
         concentration: 50
-        use_in_fit: false
+        use_in_fit: true
 
+  # --------------------------------------------------------------------------------------
   LibA-220823-372D-1:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -504,7 +576,6 @@ antibody_selections:
       LibA-220823-372D-44-1:
         concentration: 44
         use_in_fit: true
-
 
   LibB-220823-372D-1:
     neut_standard_name: neut_standard
@@ -541,7 +612,6 @@ antibody_selections:
         concentration: 44
         use_in_fit: true
 
-
   LibA-220907-372D-1:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -558,7 +628,7 @@ antibody_selections:
         use_in_fit: true
       LibA-220907-372D-176-1:
         concentration: 176
-        use_in_fit: false
+        use_in_fit: true
   LibA-220907-372D-2:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -575,7 +645,7 @@ antibody_selections:
         use_in_fit: true
       LibA-220907-372D-176-1:
         concentration: 176
-        use_in_fit: false
+        use_in_fit: true
 
   LibB-220907-372D-1:
     neut_standard_name: neut_standard
@@ -593,7 +663,7 @@ antibody_selections:
         use_in_fit: true
       LibB-220907-372D-176-1:
         concentration: 176
-        use_in_fit: false
+        use_in_fit: true
   LibB-220907-372D-2:
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -610,43 +680,7 @@ antibody_selections:
         use_in_fit: true
       LibB-220907-372D-176-1:
         concentration: 176
-        use_in_fit: false
-
-  LibA-230819-121F-1:
-    neut_standard_name: neut_standard
-    prob_escape_filters: *prob_escape_filters_default
-    polyclonal_params: *polyclonal_params_default
-    escape_plot_kwargs: *escape_plot_kwargs_default
-    plot_hide_stats: *plot_hide_stats_default
-    no_antibody_sample: LibA-230819-no-antibody-1
-    antibody_samples:
-      LibA-230819-121F-0.156-1:
-        concentration: 0.156
-        use_in_fit: false
-      LibA-230819-121F-0.625-1:
-        concentration: 0.625
         use_in_fit: true
-      LibA-230819-121F-2.5-1:
-        concentration: 2.5
-        use_in_fit: true
-  LibB-230819-121F-1:
-    neut_standard_name: neut_standard
-    prob_escape_filters: *prob_escape_filters_default
-    polyclonal_params: *polyclonal_params_default
-    escape_plot_kwargs: *escape_plot_kwargs_default
-    plot_hide_stats: *plot_hide_stats_default
-    no_antibody_sample: LibB-230819-no-antibody-1
-    antibody_samples:
-      LibB-230819-121F-0.156-1:
-        concentration: 0.156
-        use_in_fit: false
-      LibB-230819-121F-0.625-1:
-        concentration: 0.625
-        use_in_fit: true
-      LibB-230819-121F-2.5-1:
-        concentration: 2.5
-        use_in_fit: true
-
 
   LibA-230819-372D-1:
     neut_standard_name: neut_standard
@@ -658,10 +692,10 @@ antibody_selections:
     antibody_samples:
       LibA-230819-372D-0.1719-1:
         concentration: 0.1719
-        use_in_fit: false
+        use_in_fit: true
       LibA-230819-372D-0.6875-1:
         concentration: 0.6875
-        use_in_fit: false
+        use_in_fit: true
       LibA-230819-372D-2.75-1:
         concentration: 2.75
         use_in_fit: true
@@ -675,10 +709,10 @@ antibody_selections:
     antibody_samples:
       LibB-230819-372D-0.1719-1:
         concentration: 0.1719
-        use_in_fit: false
+        use_in_fit: true
       LibB-230819-372D-0.6875-1:
         concentration: 0.6875
-        use_in_fit: false
+        use_in_fit: true
       LibB-230819-372D-2.75-1:
         concentration: 2.75
         use_in_fit: true
@@ -713,6 +747,7 @@ avg_escape_plot_kwargs_default: &avg_escape_plot_kwargs_default
 # Define defaults for each antibody/serum, used via the merge (<<) operator
 avg_antibody_escape_default: &avg_antibody_escape_default
   icXX: 50
+  show_icXX_in_docs: false  # Do we link ICXX plots/CSVs in docs? Missing equates to false.
   escape_plot_kwargs:
     <<: *avg_escape_plot_kwargs_default
     avg_type: median
@@ -757,7 +792,17 @@ avg_antibody_escape:
       - LibA-220728-2510C-2
       - LibB-220728-2510C-1
       - LibB-220728-2510C-2
-  121F:
+  121F_best:
+    <<: *avg_antibody_escape_default
+    title: Escape map for antibody 121F
+    selections:
+      - LibA-220728-121F-1
+      - LibA-220728-121F-2
+      - LibB-220728-121F-1
+      - LibB-220728-121F-2
+      # - LibA-230819-121F-1
+      # - LibB-230819-121F-1
+  121F_all:
     <<: *avg_antibody_escape_default
     title: Escape map for antibody 121F
     selections:
@@ -775,7 +820,7 @@ avg_antibody_escape:
       - LibA-220728-256A-2
       - LibB-220728-256A-1
       - LibB-220728-256A-2
-  372D:
+  372D_best:
     <<: *avg_antibody_escape_default
     title: Escape map for antibody 372D
     selections:
@@ -789,3 +834,17 @@ avg_antibody_escape:
       # - LibB-220907-372D-2
       # - LibA-230819-372D-1
       # - LibB-230819-372D-1
+  372D_all:
+    <<: *avg_antibody_escape_default
+    title: Escape map for antibody 372D
+    selections:
+      - LibA-220823-372D-1
+      - LibA-220823-372D-2
+      - LibB-220823-372D-1
+      - LibB-220823-372D-2
+      - LibA-220907-372D-1
+      - LibA-220907-372D-2
+      - LibB-220907-372D-1
+      - LibB-220907-372D-2
+      - LibA-230819-372D-1
+      - LibB-230819-372D-1

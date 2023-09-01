@@ -1,7 +1,7 @@
 # Deep mutational scanning of Lassa virus Josiah strain glycoprotein using a barcoded lentiviral platform
 Study by Kate Crawford, Caleb Carr, and Jesse Bloom.
 
-For documentation of the analysis, see [https://dms-vep.github.io/LASV_Josiah_GP_DMS/](https://dms-vep.github.io/LASV_Josiah_GP_DMS/).
+For documentation of the analysis, see [https://dms-vep.github.io/LASV_Josiah_GP_DMS/](https://dms-vep.github.io/LASV_Josiah_GP_DMS/)
 
 ## Organization of this repo
 

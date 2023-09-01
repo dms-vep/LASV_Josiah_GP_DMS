@@ -56,3 +56,7 @@ results/antibody_escape/by_selection/*.csv
 results/antibody_escape/averages/*
 !results/antibody_escape/averages/*_mut_escape.csv
 !results/antibody_escape/averages/*_mut_icXX.csv
+
+!results/summaries
+results/summaries/*
+!results/summaries/summary.csv

@@ -68,7 +68,7 @@ rule validation_neuts_89F:
     """
     input:
         neuts="data/validation_neuts_89F.csv",
-        predicted_scores="results/antibody_escape/averages/89F_mut_icXX.csv",
+        predicted_scores="results/antibody_escape/averages/89F_mut_effect.csv",
         nb="notebooks/validation_neuts_89F.ipynb",
     output:
         nb="results/notebooks/validation_neuts_89F.ipynb",
@@ -84,7 +84,9 @@ rule validation_neuts_89F:
 
 
 docs["Additional analyses"] = {
-    "Notebook correlating functional effects on humanDAG1 vs mastomysDAG1 expressing cells" : rules.human_mastomys_correlation.output.nb,
-    "Notebook correlating measured vs predicted functional effects" : rules.validation_titers.output.nb,
-    "Notebook correlating measured vs predicted neutralization": rules.validation_neuts_89F.output.nb,
+    "Additional analysis notebooks" : {
+        "Notebook correlating functional effects on humanDAG1 vs mastomysDAG1 expressing cells" : rules.human_mastomys_correlation.output.nb,
+        "Notebook correlating measured vs predicted functional effects" : rules.validation_titers.output.nb,
+        "Notebook correlating measured vs predicted neutralization": rules.validation_neuts_89F.output.nb,
+    },
 }
