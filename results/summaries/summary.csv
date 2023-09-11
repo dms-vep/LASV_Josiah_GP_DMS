@@ -1,5 +1,4 @@
-site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
-1,M,*,-0.004207,-4.313,1,SSP
+site,wildtype,mutant,Arevirumab escape,293T entry,sequential_site,region
 1,M,A,-0.02367,-4.249,1,SSP
 1,M,C,-0.007437,-3.849,1,SSP
 1,M,D,-0.04826,-4.093,1,SSP
@@ -20,7 +19,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 1,M,W,0.6268,-4.224,1,SSP
 1,M,Y,0.02074,-4.098,1,SSP
 1,M,M,0,0,1,SSP
-2,G,*,0.2668,-4.182,2,SSP
 2,G,A,-0.1079,-3.472,2,SSP
 2,G,C,0.0971,-4.225,2,SSP
 2,G,D,-0.01897,-3.458,2,SSP
@@ -41,7 +39,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 2,G,G,0,0,2,SSP
 2,G,H,,-3.804,2,SSP
 2,G,W,,-4.103,2,SSP
-3,Q,*,0.0587,-4.184,3,SSP
 3,Q,A,0.1186,-0.7138,3,SSP
 3,Q,C,0.3159,-1.749,3,SSP
 3,Q,D,0.1864,-4.053,3,SSP
@@ -76,7 +73,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 4,I,T,0.01769,-2.162,4,SSP
 4,I,V,0.06773,-0.4143,4,SSP
 4,I,I,0,0,4,SSP
-4,I,*,,-3.962,4,SSP
 4,I,C,,-3.137,4,SSP
 4,I,E,,-3.208,4,SSP
 4,I,H,,-4.054,4,SSP
@@ -95,7 +91,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 5,V,T,0.04317,-2.864,5,SSP
 5,V,Y,-0.04193,0.1526,5,SSP
 5,V,V,0,0,5,SSP
-5,V,*,,-4.084,5,SSP
 5,V,D,,-4.304,5,SSP
 5,V,E,,-1.933,5,SSP
 5,V,H,,-2.78,5,SSP
@@ -115,10 +110,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 6,T,R,0.1532,-4.316,6,SSP
 6,T,S,-0.06539,-0.2429,6,SSP
 6,T,T,0,0,6,SSP
-6,T,*,,-3.967,6,SSP
 6,T,Q,,-2.739,6,SSP
 6,T,V,,-4.247,6,SSP
-7,F,*,0.03327,-4.165,7,SSP
 7,F,A,-0.08102,-0.2172,7,SSP
 7,F,C,-0.02177,-0.7893,7,SSP
 7,F,G,-0.06182,-2.683,7,SSP
@@ -158,7 +151,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 8,F,Q,,-3.821,8,SSP
 8,F,R,,-4.022,8,SSP
 8,F,W,,-3.688,8,SSP
-9,Q,*,-0.002872,-3.576,9,SSP
 9,Q,C,-0.002575,0.2571,9,SSP
 9,Q,F,0.07372,-2.115,9,SSP
 9,Q,H,-0.04184,-0.4647,9,SSP
@@ -192,11 +184,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 10,E,W,4.803e-05,-1.442,10,SSP
 10,E,Y,0.03901,-1.32,10,SSP
 10,E,E,0,0,10,SSP
-10,E,*,,-4,10,SSP
 10,E,H,,-2.704,10,SSP
 10,E,K,,-4.109,10,SSP
 10,E,P,,-3.869,10,SSP
-11,V,*,0.01868,-2.798,11,SSP
 11,V,A,-0.003076,-0.4983,11,SSP
 11,V,F,0.0002028,-1.769,11,SSP
 11,V,L,-0.05412,-0.5624,11,SSP
@@ -221,7 +211,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 12,P,T,-0.07944,-2.116,12,SSP
 12,P,V,-0.06916,-4.203,12,SSP
 12,P,P,0,0,12,SSP
-12,P,*,,-4.105,12,SSP
 12,P,A,,-3.811,12,SSP
 12,P,W,,-3.93,12,SSP
 13,H,D,0.002209,-1.786,13,SSP
@@ -237,12 +226,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 13,H,W,0.03158,-1.883,13,SSP
 13,H,Y,0.006665,-1.097,13,SSP
 13,H,H,0,0,13,SSP
-13,H,*,,-4.12,13,SSP
 13,H,A,,-1.042,13,SSP
 13,H,K,,-1.567,13,SSP
 13,H,M,,-2.159,13,SSP
 13,H,P,,-4.253,13,SSP
-14,V,*,0.101,-4.255,14,SSP
 14,V,A,0.2437,-1.077,14,SSP
 14,V,E,0.1104,-4.301,14,SSP
 14,V,F,-0.007747,-2.054,14,SSP
@@ -258,7 +245,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 14,V,N,,-4.297,14,SSP
 14,V,Q,,-4.229,14,SSP
 14,V,W,,-4.271,14,SSP
-15,I,*,3.219e-05,-3.982,15,SSP
 15,I,A,0.1732,-0.08314,15,SSP
 15,I,C,-0.0002485,-2.611,15,SSP
 15,I,F,-0.1374,-1.032,15,SSP
@@ -278,7 +264,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 15,I,Q,,-2.399,15,SSP
 15,I,R,,-4.324,15,SSP
 15,I,W,,-2.857,15,SSP
-16,E,*,-0.009831,-4.33,16,SSP
 16,E,D,-0.005389,-0.7876,16,SSP
 16,E,F,-0.004247,-3.733,16,SSP
 16,E,G,0.009596,-1.608,16,SSP
@@ -293,7 +278,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 16,E,C,,-2.886,16,SSP
 16,E,W,,-2.548,16,SSP
 16,E,Y,,-2.246,16,SSP
-17,E,*,-0.004513,-3.716,17,SSP
 17,E,A,-0.08209,-2.917,17,SSP
 17,E,G,0.0607,-1.858,17,SSP
 17,E,K,-0.175,-4.156,17,SSP
@@ -308,7 +292,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 17,E,D,,-1.32,17,SSP
 17,E,T,,-0.6813,17,SSP
 17,E,V,,-3.973,17,SSP
-18,V,*,-0.0005563,-4.071,18,SSP
 18,V,A,-7.887e-05,-2.272,18,SSP
 18,V,E,-0.001627,-4.201,18,SSP
 18,V,L,0.05885,-0.8582,18,SSP
@@ -319,7 +302,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 18,V,V,0,0,18,SSP
 18,V,G,,-2.141,18,SSP
 18,V,K,,-3.78,18,SSP
-19,M,*,0.1739,-4.024,19,SSP
 19,M,A,0.03554,-0.9717,19,SSP
 19,M,C,-0.03658,-2.032,19,SSP
 19,M,E,-0.0298,-2.887,19,SSP
@@ -347,7 +329,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 20,N,S,0.03979,-1.476,20,SSP
 20,N,T,0.01535,-2.037,20,SSP
 20,N,N,0,0,20,SSP
-20,N,*,,-3.161,20,SSP
 20,N,F,,-3.986,20,SSP
 20,N,H,,-4.123,20,SSP
 20,N,I,,-2.86,20,SSP
@@ -355,7 +336,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 20,N,V,,-2.079,20,SSP
 20,N,W,,-4.093,20,SSP
 20,N,Y,,-2.058,20,SSP
-21,I,*,-0.03473,-4.277,21,SSP
 21,I,A,-0.02782,-2.97,21,SSP
 21,I,C,-0.01742,-2.043,21,SSP
 21,I,D,-0.02925,-2.679,21,SSP
@@ -393,7 +373,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 23,L,T,-2.823e-05,-3.559,23,SSP
 23,L,V,0.347,-3.242,23,SSP
 23,L,L,0,0,23,SSP
-23,L,*,,-3.811,23,SSP
 23,L,F,,-2.213,23,SSP
 23,L,G,,-4.001,23,SSP
 23,L,H,,-3.734,23,SSP
@@ -412,7 +391,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 24,I,V,0.01793,-0.9186,24,SSP
 24,I,Y,-0.0001884,-4.207,24,SSP
 24,I,I,0,0,24,SSP
-24,I,*,,-3.399,24,SSP
 24,I,D,,-3.744,24,SSP
 24,I,E,,-4.184,24,SSP
 24,I,K,,-3.97,24,SSP
@@ -431,7 +409,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 25,A,V,-0.08047,-2.826,25,SSP
 25,A,Y,-0.000575,-4.241,25,SSP
 25,A,A,0,0,25,SSP
-25,A,*,,-3.535,25,SSP
 25,A,E,,-3.417,25,SSP
 25,A,H,,-2.594,25,SSP
 25,A,K,,-4.106,25,SSP
@@ -444,7 +421,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 26,L,S,-0.01267,-1.921,26,SSP
 26,L,Y,-0.01456,-1.073,26,SSP
 26,L,L,0,0,26,SSP
-26,L,*,,-4.013,26,SSP
 26,L,D,,-3.975,26,SSP
 26,L,E,,-4.043,26,SSP
 26,L,K,,-3.758,26,SSP
@@ -452,7 +428,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 26,L,R,,-3.917,26,SSP
 26,L,T,,-2.938,26,SSP
 26,L,V,,-0.7965,26,SSP
-27,S,*,0.00559,-4.251,27,SSP
 27,S,A,0.00919,-1.5,27,SSP
 27,S,C,0.1361,-1.813,27,SSP
 27,S,F,0.1733,-2.686,27,SSP
@@ -473,7 +448,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 27,S,H,,-3.943,27,SSP
 27,S,Q,,-3.9,27,SSP
 27,S,W,,-4.119,27,SSP
-28,V,*,-0.0003397,-3.997,28,SSP
 28,V,A,-0.05039,-0.599,28,SSP
 28,V,C,0.001484,-0.02325,28,SSP
 28,V,E,0.04367,-4.227,28,SSP
@@ -529,10 +503,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 31,V,S,-0.01137,-2.288,31,SSP
 31,V,Y,0.1019,-2.952,31,SSP
 31,V,V,0,0,31,SSP
-31,V,*,,-4.162,31,SSP
 31,V,G,,-2.491,31,SSP
 31,V,H,,-4.044,31,SSP
-32,L,*,0.004313,-3.76,32,SSP
 32,L,C,-0.02531,0.1676,32,SSP
 32,L,D,-0.02847,-3.782,32,SSP
 32,L,E,-0.002873,-4.168,32,SSP
@@ -552,7 +524,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 32,L,H,,-4.132,32,SSP
 32,L,N,,-3.412,32,SSP
 32,L,Q,,-4.213,32,SSP
-33,K,*,0.2825,-4.175,33,SSP
 33,K,C,0.0396,-3.04,33,SSP
 33,K,E,0.06801,-4.229,33,SSP
 33,K,F,0.002668,-4.057,33,SSP
@@ -572,7 +543,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 33,K,D,,-3.357,33,SSP
 33,K,H,,-2.792,33,SSP
 33,K,W,,-3.944,33,SSP
-34,G,*,0.02099,-3.253,34,SSP
 34,G,A,-0.05417,0.4933,34,SSP
 34,G,C,-0.01487,-1.589,34,SSP
 34,G,D,0.1791,-4.169,34,SSP
@@ -605,12 +575,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 35,L,V,0.07245,-0.1263,35,SSP
 35,L,Y,-0.00512,-3.193,35,SSP
 35,L,L,0,0,35,SSP
-35,L,*,,-3.417,35,SSP
 35,L,D,,-4.107,35,SSP
 35,L,H,,-4.099,35,SSP
 35,L,K,,-2.995,35,SSP
 35,L,N,,-4.176,35,SSP
-36,Y,*,0.07278,-4.114,36,SSP
 36,Y,C,-0.02435,0.0807,36,SSP
 36,Y,D,-0.0005813,-4.221,36,SSP
 36,Y,F,-0.01909,0.0687,36,SSP
@@ -628,7 +596,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 36,Y,P,,-4.037,36,SSP
 36,Y,R,,-4.174,36,SSP
 36,Y,W,,0.06949,36,SSP
-37,N,*,-0.01023,-2.486,37,SSP
 37,N,E,0.001223,-3.381,37,SSP
 37,N,G,-0.003507,-2.125,37,SSP
 37,N,K,-0.001595,-3.652,37,SSP
@@ -685,7 +652,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 39,A,V,0.08074,-0.1959,39,SSP
 39,A,Y,0.2528,0.1831,39,SSP
 39,A,A,0,0,39,SSP
-40,T,*,6.15e-05,-4.194,40,SSP
 40,T,A,-0.01771,-0.9428,40,SSP
 40,T,D,0.0003163,-2.604,40,SSP
 40,T,F,-0.0167,-3.312,40,SSP
@@ -705,7 +671,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 40,T,E,,-3.635,40,SSP
 40,T,P,,-4.201,40,SSP
 40,T,Y,,-1.335,40,SSP
-41,C,*,-0.001227,-3.961,41,SSP
 41,C,A,0.01098,0.0416,41,SSP
 41,C,E,0.0004533,-4.124,41,SSP
 41,C,F,0.3122,-4.122,41,SSP
@@ -725,7 +690,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 41,C,N,,-2.761,41,SSP
 41,C,P,,-4.248,41,SSP
 41,C,Q,,-4.028,41,SSP
-42,G,*,0.0003098,-3.674,42,SSP
 42,G,A,-0.008902,-1.704,42,SSP
 42,G,C,-0.00561,-3.706,42,SSP
 42,G,D,-0.04683,-2.753,42,SSP
@@ -744,7 +708,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 42,G,P,,-1.258,42,SSP
 42,G,Q,,-1.286,42,SSP
 42,G,T,,-3.016,42,SSP
-43,L,*,-4.597e-05,-4.078,43,SSP
 43,L,A,-0.1034,0.4292,43,SSP
 43,L,F,-0.07286,-0.783,43,SSP
 43,L,G,0.002027,-0.5886,43,SSP
@@ -760,7 +723,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 43,L,L,0,0,43,SSP
 43,L,C,,-2.118,43,SSP
 43,L,N,,-4.051,43,SSP
-44,V,*,-0.0139,-4.296,44,SSP
 44,V,A,-0.1728,-0.1419,44,SSP
 44,V,E,0.02954,-4.181,44,SSP
 44,V,K,0.005583,-2.449,44,SSP
@@ -777,7 +739,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 44,V,G,,-0.5036,44,SSP
 44,V,N,,-4.053,44,SSP
 44,V,W,,0.7849,44,SSP
-45,G,*,-0.04567,-4.129,45,SSP
 45,G,A,0.09889,-0.1321,45,SSP
 45,G,E,-0.1021,0.03508,45,SSP
 45,G,K,0.182,-1.223,45,SSP
@@ -791,7 +752,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 45,G,G,0,0,45,SSP
 45,G,T,,-1.27,45,SSP
 45,G,W,,-2.539,45,SSP
-46,L,*,0.09627,-4.161,46,SSP
 46,L,A,0.01083,-0.8518,46,SSP
 46,L,C,-0.01953,-0.2729,46,SSP
 46,L,E,0.1964,-4.123,46,SSP
@@ -812,7 +772,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 46,L,Y,-0.008278,-1.56,46,SSP
 46,L,L,0,0,46,SSP
 46,L,D,,-3.933,46,SSP
-47,V,*,0.08867,-4.122,47,SSP
 47,V,A,0.02963,-0.2665,47,SSP
 47,V,C,0.1195,-0.06675,47,SSP
 47,V,D,-0.007213,-4.172,47,SSP
@@ -833,7 +792,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 47,V,Y,-0.04543,-3.136,47,SSP
 47,V,V,0,0,47,SSP
 47,V,H,,-4.268,47,SSP
-48,T,*,0.1926,-3.891,48,SSP
 48,T,A,0.05143,0.3707,48,SSP
 48,T,C,0.2231,-0.6294,48,SSP
 48,T,D,0.1497,-4.126,48,SSP
@@ -854,7 +812,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 48,T,T,0,0,48,SSP
 48,T,E,,-3.314,48,SSP
 48,T,Q,,-4.146,48,SSP
-49,F,*,0.002293,-3.595,49,SSP
 49,F,C,-0.004087,-3.556,49,SSP
 49,F,E,0.1517,-3.992,49,SSP
 49,F,G,0.3165,-2.971,49,SSP
@@ -872,7 +829,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 49,F,F,0,0,49,SSP
 49,F,A,,-4.075,49,SSP
 49,F,W,,-4.011,49,SSP
-50,L,*,-0.004433,-4.218,50,SSP
 50,L,A,-0.07273,-0.0577,50,SSP
 50,L,E,0.0134,-3.665,50,SSP
 50,L,F,-0.004614,-1.236,50,SSP
@@ -891,7 +847,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 50,L,Y,-0.08994,0.1705,50,SSP
 50,L,L,0,0,50,SSP
 50,L,H,,-4.181,50,SSP
-51,L,*,0.1765,-4.217,51,SSP
 51,L,A,-0.02294,-0.5419,51,SSP
 51,L,C,-0.02402,-0.5796,51,SSP
 51,L,D,0.03347,-3.801,51,SSP
@@ -912,7 +867,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 51,L,Y,0.1139,-0.743,51,SSP
 51,L,L,0,0,51,SSP
 51,L,N,,-4.104,51,SSP
-52,L,*,0.03398,-4.3,52,SSP
 52,L,A,0.2427,-4.043,52,SSP
 52,L,E,0.01312,-4.124,52,SSP
 52,L,F,-0.0798,0.7343,52,SSP
@@ -932,7 +886,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 52,L,H,,-4.043,52,SSP
 52,L,I,,-3.422,52,SSP
 52,L,N,,-3.865,52,SSP
-53,C,*,0.000216,-4.152,53,SSP
 53,C,A,-0.000458,-1.98,53,SSP
 53,C,D,0.002232,-1.968,53,SSP
 53,C,E,0.2546,-2.417,53,SSP
@@ -949,7 +902,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 53,C,Y,0.001513,-3.699,53,SSP
 53,C,C,0,0,53,SSP
 53,C,F,,-3.457,53,SSP
-54,G,*,-0.001926,-4.168,54,SSP
 54,G,A,-0.001193,-3.736,54,SSP
 54,G,D,0.1156,-0.3507,54,SSP
 54,G,E,-0.03203,-0.7117,54,SSP
@@ -980,14 +932,12 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 55,R,T,-0.01669,-0.8669,55,SSP
 55,R,V,0.1505,-1.987,55,SSP
 55,R,R,0,0,55,SSP
-55,R,*,,-4.046,55,SSP
 55,R,C,,-3.157,55,SSP
 55,R,F,,-2.105,55,SSP
 55,R,N,,-1.464,55,SSP
 55,R,Q,,-1.55,55,SSP
 55,R,W,,-2.697,55,SSP
 55,R,Y,,-1.895,55,SSP
-56,S,*,-0.004477,-4.206,56,SSP
 56,S,C,-0.1325,-0.4461,56,SSP
 56,S,F,0.02463,-4.109,56,SSP
 56,S,G,0.00684,-4.268,56,SSP
@@ -1006,7 +956,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 56,S,P,,-3.437,56,SSP
 56,S,Q,,-4.118,56,SSP
 56,S,W,,-3.934,56,SSP
-57,C,*,0.03699,-4.187,57,SSP
 57,C,A,0.2695,-4.193,57,SSP
 57,C,F,0.1382,-4.041,57,SSP
 57,C,G,0.1258,-4.346,57,SSP
@@ -1023,7 +972,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 57,C,E,,-3.772,57,SSP
 57,C,K,,-4.213,57,SSP
 57,C,Q,,-4.187,57,SSP
-58,T,*,0.03508,-4.274,58,SSP
 58,T,A,-0.001274,-1.603,58,SSP
 58,T,C,0.04234,-1.044,58,SSP
 58,T,E,-0.138,-1.583,58,SSP
@@ -1044,7 +992,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 58,T,D,,-1.046,58,SSP
 58,T,P,,-4.231,58,SSP
 58,T,W,,-1.869,58,SSP
-59,T,*,-0.001375,-4.209,59,GP1
 59,T,A,0.1704,0.2421,59,GP1
 59,T,C,-0.001039,-0.9137,59,GP1
 59,T,D,-0.02445,-0.7187,59,GP1
@@ -1065,7 +1012,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 59,T,Y,0.01684,-0.4215,59,GP1
 59,T,T,0,0,59,GP1
 59,T,Q,,-0.4206,59,GP1
-60,S,*,0.03486,-4.271,60,GP1
 60,S,A,-0.02314,-0.3841,60,GP1
 60,S,C,-0.01543,-0.3165,60,GP1
 60,S,D,-0.04418,0.4452,60,GP1
@@ -1086,7 +1032,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 60,S,W,-0.07646,-2.359,60,GP1
 60,S,Y,-0.1823,-0.02698,60,GP1
 60,S,S,0,0,60,GP1
-61,L,*,-0.1017,-4.258,61,GP1
 61,L,A,0.02197,-1.09,61,GP1
 61,L,C,-0.0176,-1.091,61,GP1
 61,L,D,-0.02004,-1.799,61,GP1
@@ -1107,7 +1052,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 61,L,W,-0.05048,0.5844,61,GP1
 61,L,Y,0.02807,-0.3988,61,GP1
 61,L,L,0,0,61,GP1
-62,Y,*,-0.02935,-3.721,62,GP1
 62,Y,A,0.004713,-1.48,62,GP1
 62,Y,C,-0.03199,-3.025,62,GP1
 62,Y,D,-0.001888,-2.338,62,GP1
@@ -1126,7 +1070,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 62,Y,V,-0.04302,-0.423,62,GP1
 62,Y,Y,0,0,62,GP1
 62,Y,M,,-1.044,62,GP1
-63,K,*,0.02185,-4.199,63,GP1
 63,K,A,-0.004232,-0.4317,63,GP1
 63,K,D,0.007553,-0.1823,63,GP1
 63,K,E,-0.0083,-0.9255,63,GP1
@@ -1147,7 +1090,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 63,K,K,0,0,63,GP1
 63,K,C,,-2.433,63,GP1
 63,K,H,,-1.685,63,GP1
-64,G,*,0.2577,-4.231,64,GP1
 64,G,A,0.06093,-1.167,64,GP1
 64,G,C,0.03163,-3.386,64,GP1
 64,G,D,-0.139,-0.1348,64,GP1
@@ -1167,7 +1109,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 64,G,W,0.2002,-3.413,64,GP1
 64,G,Y,0.02502,-1.488,64,GP1
 64,G,G,0,0,64,GP1
-65,V,*,-0.04507,-4.048,65,GP1
 65,V,A,-0.004636,-0.5162,65,GP1
 65,V,C,0.2465,-1.413,65,GP1
 65,V,E,-0.02672,0.1667,65,GP1
@@ -1185,7 +1126,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 65,V,T,-0.04836,-0.8291,65,GP1
 65,V,Y,-0.00555,-1.094,65,GP1
 65,V,V,0,0,65,GP1
-66,Y,*,0.02765,-4.325,66,GP1
 66,Y,A,-0.02391,-2.561,66,GP1
 66,Y,C,-0.04897,-2.971,66,GP1
 66,Y,E,-0.0181,-3.854,66,GP1
@@ -1206,7 +1146,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 66,Y,D,,-3.93,66,GP1
 66,Y,G,,-4.113,66,GP1
 66,Y,Q,,-4.145,66,GP1
-67,E,*,-0.01819,-4.115,67,GP1
 67,E,A,-0.2902,0.01245,67,GP1
 67,E,D,-0.04107,-0.1789,67,GP1
 67,E,F,0.0107,-1.499,67,GP1
@@ -1226,7 +1165,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 67,E,Y,-0.02769,-0.997,67,GP1
 67,E,E,0,0,67,GP1
 67,E,C,,-3.787,67,GP1
-68,L,*,-0.01559,-4.158,68,GP1
 68,L,A,0.002518,-4.094,68,GP1
 68,L,C,0.0003657,-4.097,68,GP1
 68,L,E,0.006903,-4.019,68,GP1
@@ -1247,7 +1185,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 68,L,L,0,0,68,GP1
 68,L,D,,-3.129,68,GP1
 68,L,H,,-3.674,68,GP1
-69,Q,*,0.001226,-3.614,69,GP1
 69,Q,D,-0.001818,-0.4358,69,GP1
 69,Q,E,-0.01101,-0.1042,69,GP1
 69,Q,F,-0.004727,-3.2,69,GP1
@@ -1292,11 +1229,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 71,L,T,-0.005536,-0.9298,71,GP1
 71,L,Y,-0.00135,-3.95,71,GP1
 71,L,L,0,0,71,GP1
-71,L,*,,-3.635,71,GP1
 71,L,N,,-4.13,71,GP1
 71,L,R,,-3.606,71,GP1
 71,L,V,,-0.6683,71,GP1
-72,E,*,-6.143e-05,-4.161,72,GP1
 72,E,A,-0.01251,-1.618,72,GP1
 72,E,D,0.3707,-0.8266,72,GP1
 72,E,G,-0.006218,-0.6794,72,GP1
@@ -1317,7 +1252,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 72,E,H,,-1.801,72,GP1
 72,E,P,,-3.769,72,GP1
 72,E,Q,,-0.9061,72,GP1
-73,L,*,0.000456,-4.173,73,GP1
 73,L,C,-6.1e-05,-3.069,73,GP1
 73,L,D,0.00723,-3.971,73,GP1
 73,L,E,0.09453,-4.053,73,GP1
@@ -1356,8 +1290,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 74,N,W,-0.001306,-2.639,74,GP1
 74,N,Y,0.1321,-1.203,74,GP1
 74,N,N,0,0,74,GP1
-74,N,*,,-4.153,74,GP1
-75,M,*,-0.006203,-4.325,75,GP1
 75,M,A,-0.0002593,-2.719,75,GP1
 75,M,D,-0.001347,-4.117,75,GP1
 75,M,E,-0.001518,-3.562,75,GP1
@@ -1377,7 +1309,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 75,M,M,0,0,75,GP1
 75,M,C,,-3.144,75,GP1
 75,M,P,,-4.061,75,GP1
-76,E,*,-0.1011,-3.823,76,GP1
 76,E,A,-0.005753,-0.8785,76,GP1
 76,E,C,-0.03817,-1.456,76,GP1
 76,E,D,-0.002722,-1.102,76,GP1
@@ -1398,7 +1329,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 76,E,W,0.06152,0.2435,76,GP1
 76,E,Y,0.02841,-0.658,76,GP1
 76,E,E,0,0,76,GP1
-77,T,*,0.01481,-4.159,77,GP1
 77,T,A,-0.003777,0.05802,77,GP1
 77,T,I,-0.04541,0.1815,77,GP1
 77,T,L,-0.01964,0.1067,77,GP1
@@ -1413,7 +1343,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 77,T,D,,0.2092,77,GP1
 77,T,F,,-2.166,77,GP1
 77,T,K,,-0.7666,77,GP1
-78,L,*,-0.02434,-3.516,78,GP1
 78,L,A,0.01984,-4.092,78,GP1
 78,L,C,0.01508,-3.821,78,GP1
 78,L,D,0.08393,-3.508,78,GP1
@@ -1449,7 +1378,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 79,N,V,0.8568,-1.952,79,GP1
 79,N,Y,0.1555,0.3453,79,GP1
 79,N,N,0,0,79,GP1
-79,N,*,,-3.892,79,GP1
 79,N,D,,-1.869,79,GP1
 79,N,H,,0.1265,79,GP1
 80,M,E,-0.08051,-1.852,80,GP1
@@ -1462,7 +1390,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 80,M,V,0.2924,-1.194,80,GP1
 80,M,W,-0.01313,-2.632,80,GP1
 80,M,M,0,0,80,GP1
-80,M,*,,-4.202,80,GP1
 81,T,A,0.06574,-1.468,81,GP1
 81,T,C,0.004287,-2.082,81,GP1
 81,T,F,-0.001859,-3.601,81,GP1
@@ -1477,13 +1404,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 81,T,S,0.2677,-0.3542,81,GP1
 81,T,V,-0.002897,-3.285,81,GP1
 81,T,T,0,0,81,GP1
-81,T,*,,-3.123,81,GP1
 81,T,D,,-4.206,81,GP1
 81,T,E,,-4.049,81,GP1
 81,T,H,,-4.009,81,GP1
 81,T,W,,-1.936,81,GP1
 81,T,Y,,-3.354,81,GP1
-82,M,*,0.3343,-4.164,82,GP1
 82,M,A,-0.1373,-3.825,82,GP1
 82,M,C,0.07264,-0.4678,82,GP1
 82,M,E,0.06187,-3.943,82,GP1
@@ -1513,7 +1438,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 83,P,T,0.01476,-4.288,83,GP1
 83,P,V,0.05077,-0.7816,83,GP1
 83,P,P,0,0,83,GP1
-83,P,*,,-3.851,83,GP1
 83,P,C,,-3.72,83,GP1
 83,P,D,,-2.126,83,GP1
 83,P,E,,-3.585,83,GP1
@@ -1523,7 +1447,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 83,P,Q,,-3.463,83,GP1
 83,P,W,,-2.589,83,GP1
 83,P,Y,,-2.325,83,GP1
-84,L,*,-0.009395,-4.139,84,GP1
 84,L,D,0.001545,-3.111,84,GP1
 84,L,F,-0.00789,-4.104,84,GP1
 84,L,H,0.01183,-3.195,84,GP1
@@ -1562,7 +1485,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 85,S,W,0.01353,-1.615,85,GP1
 85,S,Y,0.3647,-0.274,85,GP1
 85,S,S,0,0,85,GP1
-85,S,*,,-4.183,85,GP1
 85,S,P,,-1.897,85,GP1
 86,C,A,-0.009837,-4.126,86,GP1
 86,C,D,-0.0004537,-3.944,86,GP1
@@ -1576,14 +1498,12 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 86,C,V,0.047,-4.175,86,GP1
 86,C,Y,0.151,-4.289,86,GP1
 86,C,C,0,0,86,GP1
-86,C,*,,-4.071,86,GP1
 86,C,H,,-4.131,86,GP1
 86,C,I,,-0.6018,86,GP1
 86,C,K,,-4.213,86,GP1
 86,C,M,,-3.96,86,GP1
 86,C,P,,-3.062,86,GP1
 86,C,W,,-2.277,86,GP1
-87,T,*,-0.0004257,-2.997,87,GP1
 87,T,A,-0.121,0.2563,87,GP1
 87,T,C,-0.0009903,-1.309,87,GP1
 87,T,D,0.5114,-3.151,87,GP1
@@ -1604,7 +1524,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 87,T,Y,-0.0844,-1.858,87,GP1
 87,T,T,0,0,87,GP1
 87,T,H,,-2.897,87,GP1
-88,K,*,0.2298,-4.274,88,GP1
 88,K,A,0.004204,0.1849,88,GP1
 88,K,C,0.06537,-1.058,88,GP1
 88,K,D,-0.03594,-3.265,88,GP1
@@ -1625,7 +1544,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 88,K,W,0.124,-0.7412,88,GP1
 88,K,Y,0.1263,-0.3932,88,GP1
 88,K,K,0,0,88,GP1
-89,N,*,-5.357e-05,-4.08,89,GP1
 89,N,A,0.05006,-3.273,89,GP1
 89,N,C,-0.001262,-4.265,89,GP1
 89,N,D,0.8918,-0.1986,89,GP1
@@ -1646,7 +1564,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 89,N,G,,-2.244,89,GP1
 89,N,P,,-3.611,89,GP1
 89,N,Q,,-2.054,89,GP1
-90,N,*,-0.000917,-3.844,90,GP1
 90,N,A,-0.02725,0.1306,90,GP1
 90,N,C,0.000331,-0.6498,90,GP1
 90,N,D,-0.08662,-0.01432,90,GP1
@@ -1667,7 +1584,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 90,N,W,0.006847,0.3648,90,GP1
 90,N,Y,-0.252,-0.6932,90,GP1
 90,N,N,0,0,90,GP1
-91,S,*,0.00809,-4.34,91,GP1
 91,S,A,0.01939,-1.55,91,GP1
 91,S,C,0.001858,-3.66,91,GP1
 91,S,D,-0.05457,-1.531,91,GP1
@@ -1703,12 +1619,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 92,H,V,0.9184,0.4112,92,GP1
 92,H,Y,0.5038,-0.01031,92,GP1
 92,H,H,0,0,92,GP1
-92,H,*,,-3.231,92,GP1
 92,H,E,,-3.232,92,GP1
 92,H,K,,-2.139,92,GP1
 92,H,Q,,-0.1605,92,GP1
 92,H,W,,-2.042,92,GP1
-93,H,*,0.004683,-4.002,93,GP1
 93,H,A,-0.01006,-3.229,93,GP1
 93,H,D,0.0002945,-4.166,93,GP1
 93,H,E,0.001256,-3.259,93,GP1
@@ -1726,7 +1640,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 93,H,H,0,0,93,GP1
 93,H,M,,-3.684,93,GP1
 93,H,W,,-3.556,93,GP1
-94,Y,*,-0.0007373,-3.671,94,GP1
 94,Y,A,-0.03657,-3.81,94,GP1
 94,Y,D,0.0005883,-3.881,94,GP1
 94,Y,F,0.1062,-0.5848,94,GP1
@@ -1746,7 +1659,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 95,I,I,0,0,95,GP1
 95,I,L,,0.3074,95,GP1
 95,I,Y,,-1.424,95,GP1
-96,M,*,9.953e-05,-4.04,96,GP1
 96,M,F,0.1171,-0.5976,96,GP1
 96,M,H,0.0008303,0.6428,96,GP1
 96,M,I,-0.01902,-0.6688,96,GP1
@@ -1763,7 +1675,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 96,M,M,0,0,96,GP1
 96,M,D,,-2.532,96,GP1
 96,M,P,,-2.452,96,GP1
-97,V,*,-0.1519,-4.287,97,GP1
 97,V,A,0.02852,-0.3993,97,GP1
 97,V,D,-0.001558,-3.908,97,GP1
 97,V,E,-0.04832,-3.647,97,GP1
@@ -1804,7 +1715,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 98,G,W,0.0009773,-2.316,98,GP1
 98,G,Y,0.03845,-0.4413,98,GP1
 98,G,G,0,0,98,GP1
-99,N,*,-0.06092,-4.312,99,GP1
 99,N,A,0.02862,-0.5825,99,GP1
 99,N,C,-0.0295,-0.1303,99,GP1
 99,N,D,0.2561,-0.4599,99,GP1
@@ -1824,7 +1734,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 99,N,V,-0.06021,0.08882,99,GP1
 99,N,Y,0.1264,-0.04588,99,GP1
 99,N,N,0,0,99,GP1
-100,E,*,0.02819,-4.159,100,GP1
 100,E,A,-0.006487,0.4071,100,GP1
 100,E,D,-0.008804,0.07692,100,GP1
 100,E,F,-0.0389,-0.2608,100,GP1
@@ -1843,7 +1752,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 100,E,W,-0.1785,-0.1178,100,GP1
 100,E,Y,-0.02619,-0.5713,100,GP1
 100,E,E,0,0,100,GP1
-101,T,*,0.02983,-3.775,101,GP1
 101,T,A,-0.04493,0.1512,101,GP1
 101,T,C,0.01984,0.08095,101,GP1
 101,T,D,0.02422,-0.1103,101,GP1
@@ -1864,7 +1772,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 101,T,W,0.1051,0.1935,101,GP1
 101,T,Y,-0.0006947,-0.2828,101,GP1
 101,T,T,0,0,101,GP1
-102,G,*,-0.02143,-4.319,102,GP1
 102,G,A,0.03083,-2.333,102,GP1
 102,G,C,-0.01396,-3.968,102,GP1
 102,G,D,-0.02434,-2.92,102,GP1
@@ -1883,7 +1790,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 102,G,W,0.2239,-3.838,102,GP1
 102,G,Y,0.000999,-2.406,102,GP1
 102,G,G,0,0,102,GP1
-103,L,*,-0.01797,-4.137,103,GP1
 103,L,A,0.003525,-1.841,103,GP1
 103,L,C,-0.04942,-4.018,103,GP1
 103,L,D,-0.2745,-3.995,103,GP1
@@ -1904,7 +1810,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 103,L,Y,0.07296,-3.527,103,GP1
 103,L,L,0,0,103,GP1
 103,L,W,,-3.856,103,GP1
-104,E,*,-0.09404,-4.223,104,GP1
 104,E,A,0.0177,-0.7369,104,GP1
 104,E,C,-0.01936,-0.2873,104,GP1
 104,E,D,0.1447,-2.054,104,GP1
@@ -1925,7 +1830,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 104,E,W,-0.05648,-3.211,104,GP1
 104,E,Y,0.0001898,-4.092,104,GP1
 104,E,E,0,0,104,GP1
-105,L,*,-0.04719,-4.051,105,GP1
 105,L,A,0.0006823,-0.603,105,GP1
 105,L,E,-0.0001852,-3.589,105,GP1
 105,L,F,0.04159,-0.125,105,GP1
@@ -1961,7 +1865,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 106,T,H,,-1.746,106,GP1
 106,T,K,,-3.463,106,GP1
 106,T,M,,-1.026,106,GP1
-107,L,*,-0.07633,-4.197,107,GP1
 107,L,A,-0.007094,-4.245,107,GP1
 107,L,C,-0.06967,-4.036,107,GP1
 107,L,E,-0.0103,-3.676,107,GP1
@@ -1981,7 +1884,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 107,L,W,-0.07533,-1.887,107,GP1
 107,L,Y,-0.01507,-0.8583,107,GP1
 107,L,L,0,0,107,GP1
-108,T,*,-0.06262,-4.157,108,GP1
 108,T,A,-0.01149,-0.2477,108,GP1
 108,T,G,-0.03744,0.1058,108,GP1
 108,T,I,-0.02577,-2.048,108,GP1
@@ -1996,7 +1898,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 108,T,F,,-3.091,108,GP1
 108,T,P,,-2.379,108,GP1
 108,T,Y,,-3.524,108,GP1
-109,N,*,-0.00401,-4.079,109,GP1
 109,N,C,0.1249,-3.39,109,GP1
 109,N,D,1.031,-1.103,109,GP1
 109,N,F,0.0001073,-2.92,109,GP1
@@ -2015,7 +1916,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 109,N,N,0,0,109,GP1
 109,N,A,,-2.455,109,GP1
 109,N,W,,-3.868,109,GP1
-110,T,*,-0.0006319,-4.295,110,GP1
 110,T,A,0.1581,-0.1207,110,GP1
 110,T,C,0.01955,-1.506,110,GP1
 110,T,D,0.1398,-0.6095,110,GP1
@@ -2036,7 +1936,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 110,T,W,-0.01366,-0.4959,110,GP1
 110,T,Y,0.1184,-0.9516,110,GP1
 110,T,T,0,0,110,GP1
-111,S,*,-7.2e-06,-2.317,111,GP1
 111,S,A,0.1225,-1.313,111,GP1
 111,S,C,-0.001109,-1.786,111,GP1
 111,S,F,-0.00393,-0.8927,111,GP1
@@ -2072,7 +1971,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 112,I,V,0.003363,0.4779,112,GP1
 112,I,Y,-0.02876,-0.8105,112,GP1
 112,I,I,0,0,112,GP1
-112,I,*,,-3.52,112,GP1
 112,I,A,,-0.7469,112,GP1
 112,I,Q,,-1.005,112,GP1
 113,I,D,0.09937,-2.32,113,GP1
@@ -2086,7 +1984,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 113,I,T,0.2421,0.04457,113,GP1
 113,I,V,0.1981,-0.6934,113,GP1
 113,I,I,0,0,113,GP1
-113,I,*,,-2.115,113,GP1
 113,I,A,,-1.542,113,GP1
 113,I,C,,-2.003,113,GP1
 113,I,K,,-3.61,113,GP1
@@ -2136,7 +2033,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 116,K,V,0.36,0.5107,116,GP1
 116,K,Y,0.08862,-0.2784,116,GP1
 116,K,K,0,0,116,GP1
-116,K,*,,-1.296,116,GP1
 116,K,D,,-0.5794,116,GP1
 116,K,G,,-0.3611,116,GP1
 116,K,P,,0.448,116,GP1
@@ -2155,7 +2051,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 117,F,V,0.4649,0.5308,117,GP1
 117,F,Y,0.09746,-0.2704,117,GP1
 117,F,F,0,0,117,GP1
-117,F,*,,-2.487,117,GP1
 117,F,R,,-1.023,117,GP1
 118,C,D,-0.00903,-4.091,118,GP1
 118,C,F,-0.000598,-4.139,118,GP1
@@ -2172,7 +2067,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 118,C,V,-0.007847,-3.841,118,GP1
 118,C,Y,-0.08837,-3.976,118,GP1
 118,C,C,0,0,118,GP1
-118,C,*,,-3.056,118,GP1
 118,C,W,,-4.136,118,GP1
 119,N,C,0.0002406,-3.984,119,GP1
 119,N,D,1.091,0.5069,119,GP1
@@ -2191,7 +2085,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 119,N,Y,1.051,0.0373,119,GP1
 119,N,N,0,0,119,GP1
 119,N,V,,-0.8871,119,GP1
-120,L,*,-0.02763,-4.201,120,GP1
 120,L,A,0.6259,-0.01995,120,GP1
 120,L,D,-0.01818,-3.244,120,GP1
 120,L,E,0.1732,-2.161,120,GP1
@@ -2210,7 +2103,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 120,L,W,1.109,0.8768,120,GP1
 120,L,Y,0.5124,0.5138,120,GP1
 120,L,L,0,0,120,GP1
-121,S,*,0.005473,-4.105,121,GP1
 121,S,A,0.1893,0.5757,121,GP1
 121,S,C,0.3723,-2.621,121,GP1
 121,S,D,0.8895,-0.4978,121,GP1
@@ -2243,7 +2135,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 122,D,V,0.000496,-1.094,122,GP1
 122,D,Y,-0.03686,-0.571,122,GP1
 122,D,D,0,0,122,GP1
-122,D,*,,-4.132,122,GP1
 122,D,K,,-0.3374,122,GP1
 122,D,M,,-0.6321,122,GP1
 123,A,C,0.214,-1.772,123,GP1
@@ -2276,7 +2167,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 124,H,Y,1.489,-1.7,124,GP1
 124,H,H,0,0,124,GP1
 124,H,Q,,-1.375,124,GP1
-125,K,*,-0.0002726,-2.891,125,GP1
 125,K,A,0.2812,0.3523,125,GP1
 125,K,C,0.5052,-1.357,125,GP1
 125,K,D,0.03226,0.3177,125,GP1
@@ -2297,7 +2187,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 125,K,Y,0.3095,0.7347,125,GP1
 125,K,K,0,0,125,GP1
 125,K,P,,-0.068,125,GP1
-126,K,*,-0.001289,-4.056,126,GP1
 126,K,C,0.0616,0.8542,126,GP1
 126,K,D,0.0003104,0.5299,126,GP1
 126,K,E,-0.002873,0.8533,126,GP1
@@ -2354,8 +2243,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 128,L,W,0.2722,0.1595,128,GP1
 128,L,Y,0.07122,0.5807,128,GP1
 128,L,L,0,0,128,GP1
-128,L,*,,-3.456,128,GP1
-129,Y,*,-0.1199,-4.314,129,GP1
 129,Y,A,0.5504,-1.326,129,GP1
 129,Y,C,-0.0008903,-2.748,129,GP1
 129,Y,D,0.5143,-2.958,129,GP1
@@ -2394,8 +2281,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 130,D,W,0.01812,0.1928,130,GP1
 130,D,Y,0.00223,0.4158,130,GP1
 130,D,D,0,0,130,GP1
-130,D,*,,-3.8,130,GP1
-131,H,*,0.1122,-3.268,131,GP1
 131,H,A,0.2122,0.08136,131,GP1
 131,H,C,0.05749,0.1551,131,GP1
 131,H,D,0.1465,0.3192,131,GP1
@@ -2416,7 +2301,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 131,H,W,-0.01125,0.6317,131,GP1
 131,H,Y,0.2841,0.3346,131,GP1
 131,H,H,0,0,131,GP1
-132,A,*,-0.002084,-2.532,132,GP1
 132,A,C,-0.000618,-0.3847,132,GP1
 132,A,D,-0.03261,-1.988,132,GP1
 132,A,F,0.0001292,0.2138,132,GP1
@@ -2453,8 +2337,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 133,L,W,-0.02034,0.09424,133,GP1
 133,L,Y,0.2423,0.4136,133,GP1
 133,L,L,0,0,133,GP1
-133,L,*,,-3.933,133,GP1
-134,M,*,0.008953,-4.232,134,GP1
 134,M,A,0.004693,-1.093,134,GP1
 134,M,C,0.004543,-3.687,134,GP1
 134,M,E,1.381,-2.006,134,GP1
@@ -2475,7 +2357,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 134,M,M,0,0,134,GP1
 134,M,D,,-3.553,134,GP1
 134,M,G,,-1.438,134,GP1
-135,S,*,0.01906,-4.338,135,GP1
 135,S,A,-0.02335,-0.6736,135,GP1
 135,S,C,0.09153,-2.415,135,GP1
 135,S,D,0.3741,-1.407,135,GP1
@@ -2496,7 +2377,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 135,S,W,0.002257,-1.346,135,GP1
 135,S,Y,0.4639,0.4658,135,GP1
 135,S,S,0,0,135,GP1
-136,I,*,0.002801,-4.163,136,GP1
 136,I,A,-0.001651,0.01528,136,GP1
 136,I,E,-0.01181,-4.095,136,GP1
 136,I,F,0.01532,-1.437,136,GP1
@@ -2517,7 +2397,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 136,I,C,,-1.791,136,GP1
 136,I,D,,-3.997,136,GP1
 136,I,Q,,-3.175,136,GP1
-137,I,*,0.0004587,-3.38,137,GP1
 137,I,L,0.01077,0.1457,137,GP1
 137,I,M,-0.01327,0.09136,137,GP1
 137,I,N,-0.00787,-3.597,137,GP1
@@ -2544,10 +2423,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 138,S,W,6.12e-05,-0.5202,138,GP1
 138,S,Y,1.277,-1.482,138,GP1
 138,S,S,0,0,138,GP1
-138,S,*,,-3.749,138,GP1
 138,S,D,,-1.065,138,GP1
 138,S,K,,-1.204,138,GP1
-139,T,*,0.2782,-4.211,139,GP1
 139,T,A,0.2396,-0.1836,139,GP1
 139,T,C,0.0007073,-0.2193,139,GP1
 139,T,F,0.0178,-2.159,139,GP1
@@ -2567,7 +2444,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 139,T,T,0,0,139,GP1
 139,T,D,,-2.29,139,GP1
 139,T,Q,,-2.921,139,GP1
-140,F,*,-0.000832,-4.181,140,GP1
 140,F,A,-0.00358,-1.647,140,GP1
 140,F,C,-2.667e-05,-3.871,140,GP1
 140,F,D,-0.01152,-4.114,140,GP1
@@ -2604,7 +2480,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 141,H,M,,-0.4839,141,GP1
 141,H,S,,-2.86,141,GP1
 141,H,W,,-3.381,141,GP1
-142,L,*,0.0617,-4.162,142,GP1
 142,L,A,0.4364,0.9059,142,GP1
 142,L,C,0.00238,-0.9072,142,GP1
 142,L,D,0.6654,-2.498,142,GP1
@@ -2645,7 +2520,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 143,S,W,-0.04103,-2.707,143,GP1
 143,S,Y,0.8098,-3.454,143,GP1
 143,S,S,0,0,143,GP1
-143,S,*,,-4.065,143,GP1
 144,I,A,0.3581,-2.415,144,GP1
 144,I,F,0.000704,-3.473,144,GP1
 144,I,H,0.2522,-0.8612,144,GP1
@@ -2662,7 +2536,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 144,I,W,-0.005217,-3.404,144,GP1
 144,I,Y,0.01258,-2.634,144,GP1
 144,I,I,0,0,144,GP1
-144,I,*,,-3.837,144,GP1
 144,I,C,,-3.83,144,GP1
 144,I,D,,-3.909,144,GP1
 144,I,E,,-3.423,144,GP1
@@ -2678,7 +2551,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 145,P,P,0,0,145,GP1
 145,P,E,,-3.217,145,GP1
 145,P,N,,-0.1998,145,GP1
-146,N,*,-0.0004977,-3.625,146,GP1
 146,N,A,-0.007323,,146,GP1
 146,N,E,0.03667,-0.9171,146,GP1
 146,N,F,-0.0007677,0.2641,146,GP1
@@ -2696,7 +2568,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 146,N,N,0,0,146,GP1
 146,N,H,,0.4167,146,GP1
 146,N,P,,-3.39,146,GP1
-147,F,*,0.007313,-4.146,147,GP1
 147,F,A,0.9539,-1.059,147,GP1
 147,F,C,0.2107,-3.156,147,GP1
 147,F,D,0.00623,-1.307,147,GP1
@@ -2737,8 +2608,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 148,N,W,0.01169,-2.351,148,GP1
 148,N,Y,0.4135,-1.332,148,GP1
 148,N,N,0,0,148,GP1
-148,N,*,,-3.704,148,GP1
-149,Q,*,-0.02355,-4.268,149,GP1
 149,Q,A,0.007093,0.3156,149,GP1
 149,Q,C,0.3073,-0.7534,149,GP1
 149,Q,D,0.173,0.9476,149,GP1
@@ -2774,9 +2643,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 150,Y,T,0.8483,-1.851,150,GP1
 150,Y,W,0.001771,-1.516,150,GP1
 150,Y,Y,0,0,150,GP1
-150,Y,*,,-3.686,150,GP1
 150,Y,V,,-1.578,150,GP1
-151,E,*,0.00929,-3.45,151,GP1
 151,E,A,-0.07868,-2.146,151,GP1
 151,E,C,-0.04501,-1.408,151,GP1
 151,E,D,0.09558,0.6294,151,GP1
@@ -2796,7 +2663,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 151,E,V,0.3132,-1.316,151,GP1
 151,E,Y,-0.09778,-1.034,151,GP1
 151,E,E,0,0,151,GP1
-152,A,*,-0.02717,-3.971,152,GP1
 152,A,C,0.3328,-0.834,152,GP1
 152,A,D,0.0513,0.8457,152,GP1
 152,A,E,0.07049,0.5246,152,GP1
@@ -2817,7 +2683,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 152,A,Y,0.2108,0.3112,152,GP1
 152,A,A,0,0,152,GP1
 152,A,W,,-2.593,152,GP1
-153,M,*,-0.0006673,-3.131,153,GP1
 153,M,A,0.08492,-1.74,153,GP1
 153,M,C,-0.001746,0.7412,153,GP1
 153,M,E,0.02116,-1.442,153,GP1
@@ -2837,7 +2702,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 153,M,W,0.06734,-1.798,153,GP1
 153,M,Y,1.087,-1.73,153,GP1
 153,M,M,0,0,153,GP1
-154,S,*,-0.001742,-3.843,154,GP1
 154,S,A,0.006866,0.3131,154,GP1
 154,S,C,-0.02402,-0.2957,154,GP1
 154,S,D,0.1437,0.6212,154,GP1
@@ -2856,7 +2720,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 154,S,Y,-0.02476,0.07104,154,GP1
 154,S,S,0,0,154,GP1
 154,S,P,,-1.849,154,GP1
-155,C,*,-0.0103,-4.138,155,GP1
 155,C,A,0.0221,-3.694,155,GP1
 155,C,D,-0.0243,-3.574,155,GP1
 155,C,E,0.0263,-3.945,155,GP1
@@ -2877,7 +2740,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 155,C,W,0.002003,-4.064,155,GP1
 155,C,Y,-0.009503,-3.62,155,GP1
 155,C,C,0,0,155,GP1
-156,D,*,0.2471,-4.193,156,GP1
 156,D,A,-0.0481,0.3416,156,GP1
 156,D,C,0.2325,-0.624,156,GP1
 156,D,E,0.09515,0.6039,156,GP1
@@ -2897,7 +2759,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 156,D,W,0.008263,-0.5979,156,GP1
 156,D,Y,-0.05634,0.1729,156,GP1
 156,D,D,0,0,156,GP1
-157,F,*,0.02392,-4.23,157,GP1
 157,F,C,-0.01022,-1.692,157,GP1
 157,F,D,-0.006537,-2.026,157,GP1
 157,F,E,0.5534,-2.412,157,GP1
@@ -2917,7 +2778,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 157,F,W,0.2644,0.385,157,GP1
 157,F,Y,0.05777,0.05906,157,GP1
 157,F,F,0,0,157,GP1
-158,N,*,-0.002417,-4.136,158,GP1
 158,N,A,0.001226,0.584,158,GP1
 158,N,C,0.1231,0.269,158,GP1
 158,N,D,0.08596,0.3289,158,GP1
@@ -2936,7 +2796,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 158,N,T,-0.1587,-0.1319,158,GP1
 158,N,Y,0.1494,0.04293,158,GP1
 158,N,N,0,0,158,GP1
-159,G,*,-8.097e-05,-4.213,159,GP1
 159,G,A,-0.02082,0.2945,159,GP1
 159,G,C,0.1241,-0.01406,159,GP1
 159,G,D,0.1497,0.3265,159,GP1
@@ -2956,7 +2815,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 159,G,Y,0.06237,-0.08907,159,GP1
 159,G,G,0,0,159,GP1
 159,G,P,,-0.3095,159,GP1
-160,G,*,0.1291,-4.128,160,GP1
 160,G,A,0.2323,0.448,160,GP1
 160,G,C,-0.02936,-3.725,160,GP1
 160,G,D,0.7265,-0.1949,160,GP1
@@ -2976,7 +2834,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 160,G,Y,0.3959,0.2862,160,GP1
 160,G,G,0,0,160,GP1
 160,G,M,,-2.21,160,GP1
-161,K,*,-0.00712,-4.207,161,GP1
 161,K,A,-0.0017,0.5175,161,GP1
 161,K,C,0.09432,-0.4509,161,GP1
 161,K,E,-0.007133,0.3949,161,GP1
@@ -2997,7 +2854,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 161,K,Y,0.01319,0.3068,161,GP1
 161,K,K,0,0,161,GP1
 161,K,D,,0.1404,161,GP1
-162,I,*,-0.02968,-4.168,162,GP1
 162,I,C,0.0265,-1.365,162,GP1
 162,I,F,0.1083,0.2035,162,GP1
 162,I,G,-0.0002961,-2.022,162,GP1
@@ -3015,7 +2871,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 162,I,D,,-3.546,162,GP1
 162,I,E,,-4.097,162,GP1
 162,I,S,,-3.169,162,GP1
-163,S,*,-0.04777,-3.979,163,GP1
 163,S,A,0.08308,-0.1384,163,GP1
 163,S,C,-0.1616,-0.8861,163,GP1
 163,S,D,-0.01512,-0.4472,163,GP1
@@ -3036,7 +2891,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 163,S,W,-0.02815,-0.0271,163,GP1
 163,S,Y,-0.01166,-0.7394,163,GP1
 163,S,S,0,0,163,GP1
-164,V,*,0.0009267,-4.207,164,GP1
 164,V,A,0.01164,-0.94,164,GP1
 164,V,C,-0.003056,-3.843,164,GP1
 164,V,D,-0.006513,-4.011,164,GP1
@@ -3056,7 +2910,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 164,V,W,1.34,-1.587,164,GP1
 164,V,Y,0.1885,-1.502,164,GP1
 164,V,V,0,0,164,GP1
-165,Q,*,0.05615,-4.056,165,GP1
 165,Q,A,-0.0004957,-2.905,165,GP1
 165,Q,E,0.003853,-0.5604,165,GP1
 165,Q,G,0.004207,-3.832,165,GP1
@@ -3076,7 +2929,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 165,Q,I,,-2.994,165,GP1
 165,Q,N,,-3.997,165,GP1
 165,Q,Y,,-3.234,165,GP1
-166,Y,*,0.3102,-4.067,166,GP1
 166,Y,A,0.2083,-3.239,166,GP1
 166,Y,C,0.2245,-4.059,166,GP1
 166,Y,D,0.001705,-3.643,166,GP1
@@ -3097,7 +2949,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 166,Y,W,0.1322,-2.966,166,GP1
 166,Y,Y,0,0,166,GP1
 166,Y,P,,-3.876,166,GP1
-167,N,*,0.02611,-4.228,167,GP1
 167,N,A,-0.01378,-0.5444,167,GP1
 167,N,C,-0.000943,-3.864,167,GP1
 167,N,D,-0.02037,0.1102,167,GP1
@@ -3133,7 +2984,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 168,L,E,,-2.351,168,GP1
 168,L,K,,-3.752,168,GP1
 168,L,Q,,-3.295,168,GP1
-169,S,*,0.001507,-4.248,169,GP1
 169,S,A,-0.009228,-0.6211,169,GP1
 169,S,C,-0.02036,-1.782,169,GP1
 169,S,D,-0.1065,0.1217,169,GP1
@@ -3154,7 +3004,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 169,S,W,0.4001,-1.128,169,GP1
 169,S,Y,0.09373,-0.5964,169,GP1
 169,S,S,0,0,169,GP1
-170,H,*,-0.02026,-3.645,170,GP1
 170,H,A,0.01655,,170,GP1
 170,H,F,-0.0001233,0.5166,170,GP1
 170,H,I,-0.000879,-1.976,170,GP1
@@ -3187,8 +3036,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 171,S,W,-0.01095,0.4733,171,GP1
 171,S,Y,-0.1273,0.3604,171,GP1
 171,S,S,0,0,171,GP1
-171,S,*,,-4.101,171,GP1
-172,Y,*,0.165,-4.039,172,GP1
 172,Y,A,-0.005554,0.2499,172,GP1
 172,Y,C,0.04452,-0.9364,172,GP1
 172,Y,D,0.004577,0.786,172,GP1
@@ -3209,7 +3056,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 172,Y,V,-0.05039,-0.5931,172,GP1
 172,Y,W,0.03865,0.05897,172,GP1
 172,Y,Y,0,0,172,GP1
-173,A,*,-0.009803,-4.248,173,GP1
 173,A,C,-0.02263,-0.2697,173,GP1
 173,A,D,-0.04612,-0.7544,173,GP1
 173,A,E,0.006835,0.2991,173,GP1
@@ -3230,7 +3076,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 173,A,W,-0.005847,-1.409,173,GP1
 173,A,Y,0.02791,-0.9305,173,GP1
 173,A,A,0,0,173,GP1
-174,G,*,0.05183,-4.292,174,GP1
 174,G,A,-0.03531,0.3185,174,GP1
 174,G,C,-0.1742,-0.4046,174,GP1
 174,G,D,0.005716,0.4145,174,GP1
@@ -3267,7 +3112,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 175,D,V,0.2425,-1.047,175,GP1
 175,D,Y,0.01376,-0.2075,175,GP1
 175,D,D,0,0,175,GP1
-175,D,*,,-3.772,175,GP1
 175,D,C,,-0.8075,175,GP1
 176,A,C,-0.01821,-1.315,176,GP1
 176,A,D,-0.04097,-3.577,176,GP1
@@ -3285,10 +3129,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 176,A,V,-0.07196,-0.1658,176,GP1
 176,A,Y,0.09261,-3.829,176,GP1
 176,A,A,0,0,176,GP1
-176,A,*,,-4.065,176,GP1
 176,A,H,,-2.743,176,GP1
 176,A,W,,-1.973,176,GP1
-177,A,*,0.065,-3.952,177,GP1
 177,A,C,-0.3325,-0.4683,177,GP1
 177,A,D,0.08532,-0.6884,177,GP1
 177,A,F,0.0632,0.06141,177,GP1
@@ -3307,7 +3149,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 177,A,Y,0.004118,0.09036,177,GP1
 177,A,A,0,0,177,GP1
 177,A,E,,-0.09391,177,GP1
-178,N,*,0.03242,-4.226,178,GP1
 178,N,A,0.0001357,-1.307,178,GP1
 178,N,D,0.2058,-0.3374,178,GP1
 178,N,F,-0.01988,0.1227,178,GP1
@@ -3325,7 +3166,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 178,N,V,0.04095,-0.2112,178,GP1
 178,N,Y,-0.01149,0.2741,178,GP1
 178,N,N,0,0,178,GP1
-179,H,*,-0.2479,-3.878,179,GP1
 179,H,A,-0.1244,-0.5012,179,GP1
 179,H,C,0.1636,-2.857,179,GP1
 179,H,D,0.0264,-1.291,179,GP1
@@ -3346,7 +3186,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 179,H,W,-0.01392,-2.28,179,GP1
 179,H,Y,0.02948,-0.3944,179,GP1
 179,H,H,0,0,179,GP1
-180,C,*,-0.01769,-3.692,180,GP1
 180,C,D,-0.004562,-3.216,180,GP1
 180,C,F,0.1795,-3.135,180,GP1
 180,C,I,0.008682,-3.339,180,GP1
@@ -3366,7 +3205,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 180,C,E,,-2.817,180,GP1
 180,C,G,,-1.129,180,GP1
 180,C,H,,-4.163,180,GP1
-181,G,*,-0.002468,-3.986,181,GP1
 181,G,A,-0.02808,-0.7669,181,GP1
 181,G,C,-0.1212,0.1846,181,GP1
 181,G,D,-0.04335,-0.2648,181,GP1
@@ -3401,7 +3239,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 182,T,V,0.197,-0.9256,182,GP1
 182,T,Y,-0.06611,-0.9268,182,GP1
 182,T,T,0,0,182,GP1
-183,V,*,0.2976,-4.05,183,GP1
 183,V,A,0.006624,-0.3199,183,GP1
 183,V,E,0.6574,0.0714,183,GP1
 183,V,F,0.166,-0.3851,183,GP1
@@ -3434,8 +3271,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 184,A,V,0.03351,-0.3265,184,GP1
 184,A,Y,0.03856,-2.337,184,GP1
 184,A,A,0,0,184,GP1
-184,A,*,,-4.143,184,GP1
-185,N,*,-0.00246,-3.88,185,GP1
 185,N,D,0.03619,-0.2494,185,GP1
 185,N,E,7.777e-05,-2.048,185,GP1
 185,N,F,-0.00127,-3.901,185,GP1
@@ -3455,7 +3290,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 185,N,G,,-2.429,185,GP1
 185,N,H,,-2.479,185,GP1
 185,N,W,,-2.208,185,GP1
-186,G,*,0.1472,-4.204,186,GP1
 186,G,A,-0.02877,-0.4905,186,GP1
 186,G,C,-0.004571,-0.2364,186,GP1
 186,G,D,-0.03698,0.1963,186,GP1
@@ -3493,19 +3327,16 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 187,V,W,-0.0008973,-3.484,187,GP1
 187,V,Y,0.004183,-3.937,187,GP1
 187,V,V,0,0,187,GP1
-187,V,*,,-2.83,187,GP1
 188,L,F,-0.1588,-0.7979,188,GP1
 188,L,P,0.03353,-4.188,188,GP1
 188,L,R,0.0009547,-1.843,188,GP1
 188,L,T,0.02947,-0.5335,188,GP1
 188,L,Y,-0.3172,-3.659,188,GP1
 188,L,L,0,0,188,GP1
-188,L,*,,-4.162,188,GP1
 188,L,H,,-1.824,188,GP1
 188,L,K,,-2.562,188,GP1
 188,L,N,,-3.616,188,GP1
 188,L,S,,-2.009,188,GP1
-189,Q,*,0.7739,-4.175,189,GP1
 189,Q,A,-0.002881,-0.8105,189,GP1
 189,Q,G,-0.02998,0.8256,189,GP1
 189,Q,H,-0.0036,0.3118,189,GP1
@@ -3538,11 +3369,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 190,T,V,-0.07674,0.3865,190,GP1
 190,T,Y,-0.003067,-4.016,190,GP1
 190,T,T,0,0,190,GP1
-190,T,*,,-2.952,190,GP1
 190,T,E,,-3.127,190,GP1
 190,T,F,,-3.232,190,GP1
 190,T,P,,-0.06385,190,GP1
-191,F,*,0.0004367,-3.87,191,GP1
 191,F,E,0.0007703,-3.931,191,GP1
 191,F,I,-0.06205,-1.297,191,GP1
 191,F,K,0.1702,-3.506,191,GP1
@@ -3558,7 +3387,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 191,F,F,0,0,191,GP1
 191,F,A,,-0.8729,191,GP1
 191,F,N,,-3.772,191,GP1
-192,M,*,0.1491,-4.057,192,GP1
 192,M,A,-0.03777,-0.1264,192,GP1
 192,M,C,-0.00406,0.2291,192,GP1
 192,M,D,0.005253,-2.135,192,GP1
@@ -3578,7 +3406,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 192,M,H,,-3.755,192,GP1
 192,M,P,,-4.13,192,GP1
 192,M,Y,,-4.264,192,GP1
-193,R,*,-0.05148,-4.2,193,GP1
 193,R,A,-0.01047,-0.5414,193,GP1
 193,R,D,-0.02159,-1.659,193,GP1
 193,R,E,0.08902,0.1412,193,GP1
@@ -3598,7 +3425,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 193,R,Y,-0.04248,-1.241,193,GP1
 193,R,R,0,0,193,GP1
 193,R,C,,-0.0286,193,GP1
-194,M,*,-0.002124,-4.191,194,GP1
 194,M,A,-6.327e-05,0.2689,194,GP1
 194,M,C,-0.000494,0.1958,194,GP1
 194,M,E,0.0761,-4.068,194,GP1
@@ -3637,7 +3463,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 195,A,Y,-0.04455,0.2511,195,GP1
 195,A,A,0,0,195,GP1
 195,A,P,,-3.941,195,GP1
-196,W,*,0.1394,-4.212,196,GP1
 196,W,A,0.01031,-1.225,196,GP1
 196,W,C,-0.03545,-2.335,196,GP1
 196,W,D,-8.93e-05,-3.831,196,GP1
@@ -3658,7 +3483,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 196,W,V,0.1189,0.04792,196,GP1
 196,W,Y,0.06863,-0.7518,196,GP1
 196,W,W,0,0,196,GP1
-197,G,*,-0.01045,-3.062,197,GP1
 197,G,A,-0.01346,-1.167,197,GP1
 197,G,C,0.01099,-1.032,197,GP1
 197,G,D,0.005563,-0.8294,197,GP1
@@ -3679,7 +3503,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 197,G,Y,-0.07155,-1.08,197,GP1
 197,G,G,0,0,197,GP1
 197,G,H,,0.0981,197,GP1
-198,G,*,0.003427,-4.238,198,GP1
 198,G,A,-0.03342,0.3355,198,GP1
 198,G,C,0.01514,-2.219,198,GP1
 198,G,D,-0.05612,-0.5047,198,GP1
@@ -3699,7 +3522,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 198,G,W,0.0445,-0.2002,198,GP1
 198,G,Y,0.05448,-0.4968,198,GP1
 198,G,G,0,0,198,GP1
-199,S,*,-0.04369,-4.123,199,GP1
 199,S,A,0.05981,-0.05574,199,GP1
 199,S,C,-0.08373,-1.763,199,GP1
 199,S,D,-0.03409,-0.7419,199,GP1
@@ -3720,7 +3542,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 199,S,W,0.02477,-0.0929,199,GP1
 199,S,Y,0.051,-0.08623,199,GP1
 199,S,S,0,0,199,GP1
-200,Y,*,-0.02798,-4.258,200,GP1
 200,Y,A,-0.01895,-0.8713,200,GP1
 200,Y,D,0.08452,-1.908,200,GP1
 200,Y,E,-0.1401,-0.2869,200,GP1
@@ -3741,7 +3562,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 200,Y,W,-0.2025,-0.3723,200,GP1
 200,Y,Y,0,0,200,GP1
 200,Y,C,,-1.875,200,GP1
-201,I,*,-0.02401,-4.117,201,GP1
 201,I,A,0.05556,-0.012,201,GP1
 201,I,D,-0.00419,-0.1783,201,GP1
 201,I,E,-0.03061,0.3023,201,GP1
@@ -3792,7 +3612,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 203,L,V,-0.02063,0.1697,203,GP1
 203,L,Y,0.003763,-0.8294,203,GP1
 203,L,L,0,0,203,GP1
-203,L,*,,-3.853,203,GP1
 203,L,G,,-0.2555,203,GP1
 203,L,I,,-1.359,203,GP1
 203,L,W,,-3.294,203,GP1
@@ -3810,9 +3629,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 204,D,V,0.02677,0.08629,204,GP1
 204,D,Y,0.008755,-0.5713,204,GP1
 204,D,D,0,0,204,GP1
-204,D,*,,-3.729,204,GP1
 204,D,K,,-1.194,204,GP1
-205,S,*,-0.0004367,-3.904,205,GP1
 205,S,A,0.01105,-0.5276,205,GP1
 205,S,C,-0.003168,-0.03291,205,GP1
 205,S,D,-0.1135,0.4798,205,GP1
@@ -3833,7 +3650,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 205,S,Y,-0.02413,0.03568,205,GP1
 205,S,S,0,0,205,GP1
 205,S,G,,-1.262,205,GP1
-206,G,*,0.2023,-4.176,206,GP1
 206,G,A,-0.0508,-2.319,206,GP1
 206,G,C,-0.04248,-0.8445,206,GP1
 206,G,D,0.127,-0.05732,206,GP1
@@ -3852,7 +3668,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 206,G,Y,0.1383,0.115,206,GP1
 206,G,G,0,0,206,GP1
 206,G,W,,-0.6431,206,GP1
-207,R,*,0.133,-4.255,207,GP1
 207,R,A,-0.02624,-0.4516,207,GP1
 207,R,C,0.1603,-0.499,207,GP1
 207,R,D,0.1634,0.09843,207,GP1
@@ -3873,7 +3688,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 207,R,W,-0.076,0.1261,207,GP1
 207,R,Y,0.1304,0.1314,207,GP1
 207,R,R,0,0,207,GP1
-208,G,*,-0.0006437,-3.859,208,GP1
 208,G,A,0.1854,0.1935,208,GP1
 208,G,C,-0.04753,-0.2192,208,GP1
 208,G,D,0.09206,-0.1925,208,GP1
@@ -3894,7 +3708,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 208,G,Y,-0.007855,0.6256,208,GP1
 208,G,G,0,0,208,GP1
 208,G,Q,,-1.514,208,GP1
-209,N,*,-0.1231,-4.093,209,GP1
 209,N,A,-0.1512,-0.8303,209,GP1
 209,N,C,-0.01053,-0.6475,209,GP1
 209,N,D,0.02204,0.3367,209,GP1
@@ -3915,7 +3728,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 209,N,Y,0.08675,-0.1812,209,GP1
 209,N,N,0,0,209,GP1
 209,N,W,,-0.156,209,GP1
-210,W,*,0.001288,-3.7,210,GP1
 210,W,A,-0.02358,-0.419,210,GP1
 210,W,C,-0.003317,-0.5808,210,GP1
 210,W,E,-0.02819,0.2062,210,GP1
@@ -3948,9 +3760,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 211,D,T,-0.05852,0.5578,211,GP1
 211,D,V,0.03167,-0.3548,211,GP1
 211,D,D,0,0,211,GP1
-211,D,*,,-3.495,211,GP1
 211,D,Y,,-0.05826,211,GP1
-212,C,*,0.03793,-3.774,212,GP1
 212,C,A,0.004967,-2.931,212,GP1
 212,C,D,0.00323,-3.285,212,GP1
 212,C,E,-0.05845,-3.539,212,GP1
@@ -3971,7 +3781,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 212,C,Y,0.4878,-4.213,212,GP1
 212,C,C,0,0,212,GP1
 212,C,Q,,-3.141,212,GP1
-213,I,*,-0.02475,-4.067,213,GP1
 213,I,A,-0.0594,-0.7037,213,GP1
 213,I,C,-0.05253,-0.5124,213,GP1
 213,I,E,-0.02676,-0.5852,213,GP1
@@ -3992,7 +3801,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 213,I,I,0,0,213,GP1
 213,I,D,,-2.417,213,GP1
 213,I,W,,-2.97,213,GP1
-214,M,*,0.01611,-4.135,214,GP1
 214,M,A,0.0422,-0.5379,214,GP1
 214,M,E,0.02877,0.3475,214,GP1
 214,M,F,0.007733,-0.3962,214,GP1
@@ -4027,11 +3835,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 215,T,S,-0.03467,-0.00444,215,GP1
 215,T,V,-0.00824,-0.3839,215,GP1
 215,T,T,0,0,215,GP1
-215,T,*,,-4.173,215,GP1
 215,T,R,,-3.726,215,GP1
 215,T,W,,-3.841,215,GP1
 215,T,Y,,-2.977,215,GP1
-216,S,*,-0.0007827,-3.682,216,GP1
 216,S,A,0.09651,-0.6139,216,GP1
 216,S,C,-0.0341,-0.8034,216,GP1
 216,S,E,0.118,0.08488,216,GP1
@@ -4051,7 +3857,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 216,S,S,0,0,216,GP1
 216,S,D,,-0.8944,216,GP1
 216,S,H,,-0.8776,216,GP1
-217,Y,*,0.0265,-4.212,217,GP1
 217,Y,A,-0.00274,-0.1323,217,GP1
 217,Y,C,-0.1846,-1.219,217,GP1
 217,Y,D,-0.000222,-1.008,217,GP1
@@ -4090,9 +3895,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 218,Q,W,0.004356,-1.525,218,GP1
 218,Q,Y,-0.01495,-1.047,218,GP1
 218,Q,Q,0,0,218,GP1
-218,Q,*,,-4.068,218,GP1
 218,Q,E,,-0.1853,218,GP1
-219,Y,*,0.3268,-4.166,219,GP1
 219,Y,A,-0.01559,-3.95,219,GP1
 219,Y,C,-0.001822,-3.673,219,GP1
 219,Y,D,0.006093,-2.651,219,GP1
@@ -4112,7 +3915,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 219,Y,P,,-3.632,219,GP1
 219,Y,Q,,-3.828,219,GP1
 219,Y,W,,-0.1695,219,GP1
-220,L,*,-0.02022,-4.098,220,GP1
 220,L,A,-0.06352,-2.568,220,GP1
 220,L,C,0.1991,-2.442,220,GP1
 220,L,D,-0.02441,-4.115,220,GP1
@@ -4133,7 +3935,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 220,L,Y,-0.111,-3.897,220,GP1
 220,L,L,0,0,220,GP1
 220,L,Q,,-3.894,220,GP1
-221,I,*,-0.00114,-3.524,221,GP1
 221,I,A,-0.007613,-0.5842,221,GP1
 221,I,F,-0.01803,-0.3496,221,GP1
 221,I,H,0.06007,0.1741,221,GP1
@@ -4167,10 +3968,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 222,I,W,-0.000682,0.1359,222,GP1
 222,I,Y,0.002989,-2.667,222,GP1
 222,I,I,0,0,222,GP1
-222,I,*,,-3.064,222,GP1
 222,I,D,,-3.361,222,GP1
 222,I,G,,-3.748,222,GP1
-223,Q,*,-0.02233,-3.703,223,GP1
 223,Q,A,-0.1909,-0.6883,223,GP1
 223,Q,D,-0.007847,-2.264,223,GP1
 223,Q,E,0.07587,-0.7883,223,GP1
@@ -4207,11 +4006,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 224,N,T,0.1594,0.138,224,GP1
 224,N,Y,-0.004043,-2.519,224,GP1
 224,N,N,0,0,224,GP1
-224,N,*,,-2.357,224,GP1
 224,N,F,,-2.827,224,GP1
 224,N,P,,-2.22,224,GP1
 224,N,V,,-0.09442,224,GP1
-225,T,*,-0.0002785,-3.779,225,GP1
 225,T,A,0.03869,-0.8493,225,GP1
 225,T,C,0.02222,-0.215,225,GP1
 225,T,D,0.002436,-1.36,225,GP1
@@ -4247,11 +4044,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 226,T,V,-0.000883,0.09658,226,GP1
 226,T,Y,0.1812,-1.352,226,GP1
 226,T,T,0,0,226,GP1
-226,T,*,,-3.946,226,GP1
 226,T,A,,-1.473,226,GP1
 226,T,C,,-3.77,226,GP1
 226,T,G,,-0.2236,226,GP1
-227,W,*,0.03841,-4.183,227,GP1
 227,W,A,-0.01412,-1.953,227,GP1
 227,W,C,0.1357,-1.63,227,GP1
 227,W,E,-0.03783,-0.4068,227,GP1
@@ -4271,7 +4066,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 227,W,V,-0.06464,-0.585,227,GP1
 227,W,Y,-0.09973,-0.04006,227,GP1
 227,W,W,0,0,227,GP1
-228,E,*,0.1551,-4.183,228,GP1
 228,E,A,0.009017,-0.2459,228,GP1
 228,E,D,-0.1839,-0.2342,228,GP1
 228,E,F,-0.004738,0.08203,228,GP1
@@ -4310,8 +4104,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 229,D,V,0.1127,-0.9674,229,GP1
 229,D,Y,0.01476,-0.4063,229,GP1
 229,D,D,0,0,229,GP1
-229,D,*,,-2.635,229,GP1
-230,H,*,0.003387,-4.142,230,GP1
 230,H,A,0.02062,-3.376,230,GP1
 230,H,C,-0.02414,-0.1901,230,GP1
 230,H,D,0.02548,-2.619,230,GP1
@@ -4330,7 +4122,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 230,H,V,-0.04869,-1.429,230,GP1
 230,H,Y,-0.01262,-0.3999,230,GP1
 230,H,H,0,0,230,GP1
-231,C,*,-0.0007977,-4.181,231,GP1
 231,C,A,0.0217,-2.723,231,GP1
 231,C,D,-9.067e-06,-4.091,231,GP1
 231,C,F,-0.0202,-4.25,231,GP1
@@ -4351,7 +4142,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 231,C,C,0,0,231,GP1
 231,C,E,,-2.115,231,GP1
 231,C,Q,,-4.035,231,GP1
-232,Q,*,0.1053,-4.287,232,GP1
 232,Q,A,0.02306,-0.1042,232,GP1
 232,Q,D,0.3323,-0.5923,232,GP1
 232,Q,E,-0.1466,-0.2667,232,GP1
@@ -4372,7 +4162,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 232,Q,Y,-0.002904,-2.564,232,GP1
 232,Q,Q,0,0,232,GP1
 232,Q,C,,-0.258,232,GP1
-233,F,*,-0.002293,-3.832,233,GP1
 233,F,A,0.06455,0.1072,233,GP1
 233,F,C,0.1472,-0.6192,233,GP1
 233,F,G,0.1625,-0.3938,233,GP1
@@ -4410,7 +4199,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 234,S,V,-0.0004853,-0.7821,234,GP1
 234,S,Y,0.0005587,-3.649,234,GP1
 234,S,S,0,0,234,GP1
-234,S,*,,-3.165,234,GP1
 234,S,E,,-4.168,234,GP1
 235,R,A,-0.02103,0.01451,235,GP1
 235,R,C,-0.1278,-2.28,235,GP1
@@ -4427,7 +4215,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 235,R,V,0.08128,-2.211,235,GP1
 235,R,W,0.0003363,-3.796,235,GP1
 235,R,R,0,0,235,GP1
-235,R,*,,-4.152,235,GP1
 235,R,D,,-0.01719,235,GP1
 235,R,F,,-3.729,235,GP1
 235,R,K,,-0.02422,235,GP1
@@ -4445,12 +4232,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 236,P,V,0.1658,0.1501,236,GP1
 236,P,W,-0.0005597,-0.3658,236,GP1
 236,P,P,0,0,236,GP1
-236,P,*,,-4.051,236,GP1
 236,P,E,,-1.744,236,GP1
 236,P,G,,-0.6735,236,GP1
 236,P,M,,-1.359,236,GP1
 236,P,Y,,-1.719,236,GP1
-237,S,*,-0.01096,-3.923,237,GP1
 237,S,E,-0.00336,-3.439,237,GP1
 237,S,F,0.000992,-2.981,237,GP1
 237,S,K,0.0105,-3.578,237,GP1
@@ -4476,13 +4261,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 238,P,V,0.0042,-1.729,238,GP1
 238,P,Y,-0.0936,-4.071,238,GP1
 238,P,P,0,0,238,GP1
-238,P,*,,-3.746,238,GP1
 238,P,E,,-3.202,238,GP1
 238,P,F,,-3.679,238,GP1
 238,P,G,,-3.645,238,GP1
 238,P,M,,-2.812,238,GP1
 238,P,N,,-3.838,238,GP1
-239,I,*,-0.0003041,-3.878,239,GP1
 239,I,A,-0.00349,-4.178,239,GP1
 239,I,C,7.503e-05,-3.769,239,GP1
 239,I,D,0.000558,-3.521,239,GP1
@@ -4501,7 +4284,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 239,I,I,0,0,239,GP1
 239,I,E,,-3.316,239,GP1
 239,I,K,,-3.96,239,GP1
-240,G,*,-0.0006967,-4.232,240,GP1
 240,G,A,-0.003753,-1.411,240,GP1
 240,G,D,-0.0001655,-4.161,240,GP1
 240,G,E,0.06685,-3.781,240,GP1
@@ -4522,7 +4304,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 240,G,G,0,0,240,GP1
 240,G,C,,-3.747,240,GP1
 240,G,W,,-0.6697,240,GP1
-241,Y,*,0.000917,-3.942,241,GP1
 241,Y,C,0.0223,-3.374,241,GP1
 241,Y,F,0.0845,0.1705,241,GP1
 241,Y,H,0.01689,-3.687,241,GP1
@@ -4555,7 +4336,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 242,L,V,-0.05614,-1.37,242,GP1
 242,L,Y,0.006226,-4.184,242,GP1
 242,L,L,0,0,242,GP1
-242,L,*,,-3.662,242,GP1
 242,L,D,,-4.21,242,GP1
 242,L,G,,-2.588,242,GP1
 242,L,Q,,-2.623,242,GP1
@@ -4574,8 +4354,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 243,G,T,0.00748,-0.4174,243,GP1
 243,G,V,0.1872,-0.675,243,GP1
 243,G,G,0,0,243,GP1
-243,G,*,,-4.055,243,GP1
-244,L,*,0.005543,-3.316,244,GP1
 244,L,F,0.05736,-1.441,244,GP1
 244,L,M,-0.00233,0.3624,244,GP1
 244,L,S,0.2207,-4.139,244,GP1
@@ -4588,7 +4366,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 244,L,N,,-2.069,244,GP1
 244,L,R,,-3.88,244,GP1
 244,L,T,,-3.575,244,GP1
-245,L,*,-0.02521,-4.262,245,GP1
 245,L,A,-0.003753,-0.1837,245,GP1
 245,L,C,0.01269,-0.3597,245,GP1
 245,L,F,0.008347,-2.59,245,GP1
@@ -4608,7 +4385,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 245,L,Y,0.06044,-1.39,245,GP1
 245,L,L,0,0,245,GP1
 245,L,D,,-3.67,245,GP1
-246,S,*,-0.003747,-3.253,246,GP1
 246,S,A,-0.01801,0.4243,246,GP1
 246,S,C,0.09986,0.153,246,GP1
 246,S,D,0.1503,-1.611,246,GP1
@@ -4629,7 +4405,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 246,S,S,0,0,246,GP1
 246,S,Q,,-0.9523,246,GP1
 246,S,W,,-2.458,246,GP1
-247,Q,*,0.03314,-3.957,247,GP1
 247,Q,A,0.01567,-1.712,247,GP1
 247,Q,E,0.3196,0.6034,247,GP1
 247,Q,F,-0.01082,-0.537,247,GP1
@@ -4648,7 +4423,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 247,Q,W,-0.004733,-0.05853,247,GP1
 247,Q,Y,0.00322,0.1668,247,GP1
 247,Q,Q,0,0,247,GP1
-248,R,*,-0.001406,-4.166,248,GP1
 248,R,A,0.08307,-0.1565,248,GP1
 248,R,C,-0.005843,-2.222,248,GP1
 248,R,D,0.002403,-1.074,248,GP1
@@ -4684,11 +4458,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 249,T,V,0.336,0.03499,249,GP1
 249,T,Y,0.2561,0.08785,249,GP1
 249,T,T,0,0,249,GP1
-249,T,*,,-4.082,249,GP1
 249,T,C,,-1.986,249,GP1
 249,T,P,,-1.853,249,GP1
 249,T,W,,-2.194,249,GP1
-250,R,*,0.2232,-4.091,250,GP1
 250,R,A,0.05113,0.06041,250,GP1
 250,R,C,0.1151,-2.333,250,GP1
 250,R,E,-0.01156,-0.9769,250,GP1
@@ -4722,7 +4494,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 251,D,W,0.0009867,-0.6123,251,GP1
 251,D,Y,0.2325,0.4256,251,GP1
 251,D,D,0,0,251,GP1
-252,I,*,-0.001458,-4.11,252,GP1
 252,I,A,-0.0909,0.9274,252,GP1
 252,I,C,0.01965,-0.532,252,GP1
 252,I,D,-0.00334,-2.199,252,GP1
@@ -4742,7 +4513,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 252,I,Y,0.1463,0.3722,252,GP1
 252,I,I,0,0,252,GP1
 252,I,H,,-0.2055,252,GP1
-253,Y,*,-0.005493,-3.982,253,GP1
 253,Y,A,0.702,-1.426,253,GP1
 253,Y,C,0.01912,-3.96,253,GP1
 253,Y,D,-0.006117,-3.909,253,GP1
@@ -4763,7 +4533,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 253,Y,W,0.4244,0.4282,253,GP1
 253,Y,Y,0,0,253,GP1
 253,Y,E,,-3.707,253,GP1
-254,I,*,0.02224,-4.108,254,GP1
 254,I,D,1.273,-1.625,254,GP1
 254,I,E,0.1836,-1.714,254,GP1
 254,I,F,0.69,0.4521,254,GP1
@@ -4783,7 +4552,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 254,I,Y,0.6719,-0.2033,254,GP1
 254,I,I,0,0,254,GP1
 254,I,A,,-1.095,254,GP1
-255,S,*,0.02622,-4.296,255,GP1
 255,S,A,-0.0144,0.494,255,GP1
 255,S,C,0.005053,-3.907,255,GP1
 255,S,E,0.000471,-1.962,255,GP1
@@ -4802,7 +4570,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 255,S,Y,0.1765,-3.909,255,GP1
 255,S,S,0,0,255,GP1
 255,S,W,,-3.874,255,GP1
-256,R,*,0.1177,-4.02,256,GP1
 256,R,C,0.000798,-3.068,256,GP1
 256,R,F,0.2058,-4.189,256,GP1
 256,R,G,-0.004727,-4.191,256,GP1
@@ -4823,7 +4590,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 256,R,Q,,-3.981,256,GP1
 256,R,T,,-4.201,256,GP1
 256,R,W,,-4.316,256,GP1
-257,R,*,0.007054,-3.931,257,GP1
 257,R,A,-0.003091,-1.619,257,GP1
 257,R,E,-0.003057,-4.104,257,GP1
 257,R,G,0.3854,-3.984,257,GP1
@@ -4841,7 +4607,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 257,R,D,,-2.873,257,GP1
 257,R,F,,-2.929,257,GP1
 257,R,I,,-1.813,257,GP1
-258,L,*,-0.004713,-4.112,258,GP1
 258,L,I,0.454,-0.4721,258,GP1
 258,L,K,-0.03092,-3.578,258,GP1
 258,L,M,0.05113,-0.6319,258,GP1
@@ -4860,7 +4625,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 258,L,E,,-3.717,258,GP1
 258,L,G,,-3.966,258,GP1
 258,L,H,,-3.659,258,GP1
-259,L,*,0.03251,-4.17,259,GP1
 259,L,A,0.1693,-4.268,259,GP1
 259,L,E,-0.02033,-4.146,259,GP1
 259,L,F,0.0009323,-4.203,259,GP1
@@ -4879,7 +4643,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 259,L,Y,-0.04903,-3.635,259,GP1
 259,L,L,0,0,259,GP1
 259,L,W,,-4.188,259,GP1
-260,G,*,0.00357,-4.095,260,GP2
 260,G,A,0.112,-0.5175,260,GP2
 260,G,C,0.001393,-3.728,260,GP2
 260,G,D,-0.02205,-0.03713,260,GP2
@@ -4900,7 +4663,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 260,G,Y,0.09041,-0.4355,260,GP2
 260,G,G,0,0,260,GP2
 260,G,P,,-4.073,260,GP2
-261,T,*,-0.04709,-3.656,261,GP2
 261,T,A,-0.02516,-0.6955,261,GP2
 261,T,C,0.2645,-1.254,261,GP2
 261,T,D,0.2326,0.04396,261,GP2
@@ -4921,7 +4683,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 261,T,W,0.04524,-0.5527,261,GP2
 261,T,Y,-0.002543,0.1488,261,GP2
 261,T,T,0,0,261,GP2
-262,F,*,-0.0005683,-4.152,262,GP2
 262,F,C,0.2443,-2.377,262,GP2
 262,F,D,-0.0005997,-1.573,262,GP2
 262,F,E,0.004103,-3.079,262,GP2
@@ -4951,13 +4712,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 263,T,R,0.03971,-0.4199,263,GP2
 263,T,S,0.02143,0.1894,263,GP2
 263,T,T,0,0,263,GP2
-263,T,*,,-4.084,263,GP2
 263,T,F,,-0.6393,263,GP2
 263,T,M,,-2.341,263,GP2
 263,T,Q,,-1.896,263,GP2
 263,T,W,,-2.717,263,GP2
 263,T,Y,,-2.018,263,GP2
-264,W,*,0.4264,-4.164,264,GP2
 264,W,A,-0.006614,-3.96,264,GP2
 264,W,C,0.2726,-3.99,264,GP2
 264,W,D,0.2053,-4.04,264,GP2
@@ -4989,7 +4748,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 266,L,N,-0.0006383,-1.806,266,GP2
 266,L,L,0,0,266,GP2
 266,L,Y,,-2.795,266,GP2
-267,S,*,-0.02697,-3.938,267,GP2
 267,S,A,-0.04481,-0.00489,267,GP2
 267,S,C,0.1054,-1.364,267,GP2
 267,S,D,0.08799,-0.1545,267,GP2
@@ -5028,10 +4786,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 268,D,V,0.008258,-1.018,268,GP2
 268,D,Y,0.02093,-1.149,268,GP2
 268,D,D,0,0,268,GP2
-268,D,*,,-1.98,268,GP2
 268,D,Q,,-1.391,268,GP2
 268,D,W,,-1.336,268,GP2
-269,S,*,-0.001333,-3.873,269,GP2
 269,S,A,-0.0222,0.5175,269,GP2
 269,S,C,-0.02043,-0.2279,269,GP2
 269,S,D,0.0217,0.2595,269,GP2
@@ -5051,7 +4807,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 269,S,W,0.07919,-0.869,269,GP2
 269,S,Y,-0.1019,0.2403,269,GP2
 269,S,S,0,0,269,GP2
-270,E,*,0.02273,-4.163,270,GP2
 270,E,A,-0.02213,-0.731,270,GP2
 270,E,C,-0.03269,-1.292,270,GP2
 270,E,D,-0.01486,-0.2339,270,GP2
@@ -5070,7 +4825,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 270,E,E,0,0,270,GP2
 270,E,F,,-2.535,270,GP2
 270,E,W,,0.4635,270,GP2
-271,G,*,-0.003657,-3.762,271,GP2
 271,G,A,-0.02482,0.2371,271,GP2
 271,G,C,-0.02041,-0.8545,271,GP2
 271,G,D,-0.1004,-0.01949,271,GP2
@@ -5090,7 +4844,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 271,G,G,0,0,271,GP2
 271,G,E,,0.1683,271,GP2
 271,G,Q,,-0.6416,271,GP2
-272,K,*,-0.0473,-4.262,272,GP2
 272,K,A,0.002139,0.2802,272,GP2
 272,K,C,-0.006403,-0.2391,272,GP2
 272,K,D,0.03089,-0.6457,272,GP2
@@ -5111,7 +4864,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 272,K,W,-0.09329,-0.5909,272,GP2
 272,K,Y,0.02255,0.2178,272,GP2
 272,K,K,0,0,272,GP2
-273,D,*,0.02767,-4.181,273,GP2
 273,D,A,0.1886,-0.3992,273,GP2
 273,D,C,0.01518,-1.825,273,GP2
 273,D,E,-0.005827,-0.05221,273,GP2
@@ -5132,7 +4884,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 273,D,W,-0.02259,-0.5296,273,GP2
 273,D,Y,-0.07764,-0.3916,273,GP2
 273,D,D,0,0,273,GP2
-274,T,*,0.03192,-3.647,274,GP2
 274,T,A,0.0966,-0.0194,274,GP2
 274,T,D,0.2567,0.0291,274,GP2
 274,T,E,-0.006087,0.2789,274,GP2
@@ -5167,7 +4918,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 275,P,C,,-0.9933,275,GP2
 275,P,E,,0.001205,275,GP2
 275,P,G,,-1.743,275,GP2
-276,G,*,-9.437e-05,-3.594,276,GP2
 276,G,A,-0.08138,-0.6926,276,GP2
 276,G,C,-0.00617,-1.446,276,GP2
 276,G,D,0.06676,-0.5988,276,GP2
@@ -5187,7 +4937,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 276,G,H,,-1.973,276,GP2
 276,G,K,,-1.964,276,GP2
 276,G,Q,,-0.1469,276,GP2
-277,G,*,0.02001,-3.812,277,GP2
 277,G,A,0.2087,-2.237,277,GP2
 277,G,C,-0.04754,-3.925,277,GP2
 277,G,D,-0.02767,-3.83,277,GP2
@@ -5207,7 +4956,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 277,G,P,,-3.813,277,GP2
 277,G,Q,,-3.218,277,GP2
 277,G,Y,,-4.203,277,GP2
-278,Y,*,0.1107,-4.306,278,GP2
 278,Y,A,0.0004477,-2.107,278,GP2
 278,Y,C,0.006535,-0.9779,278,GP2
 278,Y,F,0.1276,-0.1909,278,GP2
@@ -5226,7 +4974,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 278,Y,W,-0.000104,-1.284,278,GP2
 278,Y,Y,0,0,278,GP2
 278,Y,E,,-1.749,278,GP2
-279,C,*,-0.01881,-3.014,279,GP2
 279,C,F,-0.001283,-4.25,279,GP2
 279,C,G,0.01919,-4.136,279,GP2
 279,C,I,0.1208,-3.963,279,GP2
@@ -5242,7 +4989,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 279,C,D,,-1.885,279,GP2
 279,C,T,,-4.168,279,GP2
 279,C,W,,-3.74,279,GP2
-280,L,*,0.02636,-2.701,280,GP2
 280,L,A,0.002983,-4.136,280,GP2
 280,L,C,0.1499,-3.849,280,GP2
 280,L,F,-0.001317,-0.6502,280,GP2
@@ -5276,7 +5022,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 281,T,V,-8.191e-05,-0.6427,281,GP2
 281,T,Y,-0.008408,-0.07255,281,GP2
 281,T,T,0,0,281,GP2
-281,T,*,,-3.724,281,GP2
 281,T,P,,-4.216,281,GP2
 282,R,A,0.0166,-1.884,282,GP2
 282,R,C,0.1617,-1.502,282,GP2
@@ -5295,7 +5040,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 282,R,G,,-4.198,282,GP2
 282,R,P,,-3.869,282,GP2
 282,R,W,,-1.229,282,GP2
-283,W,*,0.2027,-4.307,283,GP2
 283,W,A,0.1157,-1.321,283,GP2
 283,W,C,0.2529,-1.755,283,GP2
 283,W,E,0.02231,-1.21,283,GP2
@@ -5316,7 +5060,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 283,W,I,,-0.2786,283,GP2
 283,W,K,,-4.252,283,GP2
 283,W,P,,-4.256,283,GP2
-284,M,*,0.00054,-3.8,284,GP2
 284,M,A,-0.001677,-1.467,284,GP2
 284,M,C,-0.02298,-1.027,284,GP2
 284,M,F,-0.02334,-1.398,284,GP2
@@ -5334,7 +5077,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 284,M,Y,-0.002076,0.4954,284,GP2
 284,M,M,0,0,284,GP2
 284,M,E,,0.08439,284,GP2
-285,L,*,-0.0004973,-3.108,285,GP2
 285,L,E,-0.001738,-4.23,285,GP2
 285,L,F,-0.0008553,-0.9762,285,GP2
 285,L,K,-0.002228,-3.702,285,GP2
@@ -5353,7 +5095,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 285,L,H,,-4.17,285,GP2
 285,L,I,,-0.4169,285,GP2
 285,L,Y,,-0.6987,285,GP2
-286,I,*,1.522e-05,-3.143,286,GP2
 286,I,D,0.008717,-3.657,286,GP2
 286,I,F,-0.003488,-0.2839,286,GP2
 286,I,K,-0.3581,-4.159,286,GP2
@@ -5373,7 +5114,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 286,I,E,,-2.894,286,GP2
 286,I,G,,-2.935,286,GP2
 286,I,H,,-4.082,286,GP2
-287,E,*,0.002804,-4.149,287,GP2
 287,E,A,0.003855,-0.4131,287,GP2
 287,E,C,-0.0491,-0.4825,287,GP2
 287,E,D,0.0575,-0.5794,287,GP2
@@ -5394,7 +5134,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 287,E,Y,0.2805,-0.9773,287,GP2
 287,E,E,0,0,287,GP2
 287,E,W,,-1.587,287,GP2
-288,A,*,-0.001343,-4.169,288,GP2
 288,A,D,-0.005057,0.3032,288,GP2
 288,A,E,-0.058,-0.2788,288,GP2
 288,A,F,-0.01535,0.2732,288,GP2
@@ -5415,7 +5154,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 288,A,A,0,0,288,GP2
 288,A,C,,-1.481,288,GP2
 288,A,Q,,-1.084,288,GP2
-289,E,*,-0.01009,-4.131,289,GP2
 289,E,A,-0.0199,-2.31,289,GP2
 289,E,G,0.007884,-1.732,289,GP2
 289,E,K,-0.02843,-0.8758,289,GP2
@@ -5440,7 +5178,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 290,L,G,,-2.962,290,GP2
 290,L,H,,-0.9989,290,GP2
 290,L,M,,0.7658,290,GP2
-291,K,*,0.4347,-4.231,291,GP2
 291,K,A,-0.004467,-1.356,291,GP2
 291,K,E,0.00468,-3.345,291,GP2
 291,K,L,-0.06279,-0.5744,291,GP2
@@ -5468,7 +5205,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 292,C,C,0,0,292,GP2
 292,C,I,,-2.597,292,GP2
 292,C,P,,-4.026,292,GP2
-293,F,*,0.07853,-4.231,293,GP2
 293,F,A,0.001846,-4.185,293,GP2
 293,F,D,-0.09507,-4.073,293,GP2
 293,F,H,0.02259,-4.051,293,GP2
@@ -5504,9 +5240,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 294,G,W,-0.2284,-1.367,294,GP2
 294,G,Y,-0.0003673,,294,GP2
 294,G,G,0,0,294,GP2
-294,G,*,,-2.167,294,GP2
 294,G,I,,-3.026,294,GP2
-295,N,*,0.3398,-3.732,295,GP2
 295,N,D,-0.00348,-1.248,295,GP2
 295,N,F,0.0349,-4.197,295,GP2
 295,N,G,-0.004857,-3.089,295,GP2
@@ -5526,7 +5260,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 295,N,N,0,0,295,GP2
 295,N,A,,-3.102,295,GP2
 295,N,E,,-3.18,295,GP2
-296,T,*,-0.0004883,-4.022,296,GP2
 296,T,A,0.00218,0.2914,296,GP2
 296,T,C,-0.04272,-1.498,296,GP2
 296,T,D,-0.04376,-2.979,296,GP2
@@ -5560,7 +5293,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 297,A,V,-0.004577,-1.187,297,GP2
 297,A,Y,0.02991,-3.32,297,GP2
 297,A,A,0,0,297,GP2
-297,A,*,,-1.958,297,GP2
 297,A,C,,-0.5754,297,GP2
 297,A,K,,-2.792,297,GP2
 297,A,M,,-0.9726,297,GP2
@@ -5581,7 +5313,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 298,V,W,-0.01578,-1.397,298,GP2
 298,V,Y,-0.008615,-1.82,298,GP2
 298,V,V,0,0,298,GP2
-298,V,*,,-2.042,298,GP2
 298,V,D,,-3.884,298,GP2
 298,V,Q,,-0.8784,298,GP2
 299,A,D,0.005977,-3.082,299,GP2
@@ -5602,7 +5333,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 299,A,H,,-3.385,299,GP2
 299,A,P,,-3.599,299,GP2
 299,A,W,,-3.776,299,GP2
-300,K,*,-0.004128,-4.259,300,GP2
 300,K,A,-0.02297,0.2681,300,GP2
 300,K,E,0.03966,-0.05536,300,GP2
 300,K,G,0.01523,-1.095,300,GP2
@@ -5636,11 +5366,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 301,C,W,0.05291,-2.58,301,GP2
 301,C,Y,-0.07088,-4.011,301,GP2
 301,C,C,0,0,301,GP2
-301,C,*,,-0.338,301,GP2
 301,C,E,,-3.502,301,GP2
 301,C,K,,-4.087,301,GP2
 301,C,P,,-4.03,301,GP2
-302,N,*,0.0008113,-4.06,302,GP2
 302,N,A,-0.09127,-1.216,302,GP2
 302,N,C,-0.009805,-2.577,302,GP2
 302,N,D,0.5531,-2.227,302,GP2
@@ -5661,7 +5389,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 302,N,W,0.00817,-1.304,302,GP2
 302,N,Y,-0.05932,-2.436,302,GP2
 302,N,N,0,0,302,GP2
-303,E,*,-0.0234,-4.245,303,GP2
 303,E,A,-0.01711,-0.405,303,GP2
 303,E,D,-0.03002,-0.7107,303,GP2
 303,E,F,-0.005351,-0.1011,303,GP2
@@ -5680,7 +5407,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 303,E,Y,-0.001485,-1.027,303,GP2
 303,E,E,0,0,303,GP2
 303,E,C,,-2.151,303,GP2
-304,K,*,0.004123,-3.56,304,GP2
 304,K,A,-0.1878,0.8144,304,GP2
 304,K,E,0.0176,-0.6787,304,GP2
 304,K,L,0.03863,-1.374,304,GP2
@@ -5697,7 +5423,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 304,K,I,,-0.8503,304,GP2
 304,K,N,,-2.03,304,GP2
 304,K,P,,-4.165,304,GP2
-305,H,*,0.00436,-3.925,305,GP2
 305,H,F,0.0001304,-2.571,305,GP2
 305,H,G,-0.01424,-0.6908,305,GP2
 305,H,I,0.01907,-3.806,305,GP2
@@ -5731,11 +5456,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 306,D,W,0.135,-2.002,306,GP2
 306,D,Y,0.0778,-0.9063,306,GP2
 306,D,D,0,0,306,GP2
-306,D,*,,-4.194,306,GP2
 306,D,F,,-0.7532,306,GP2
 306,D,P,,-1.576,306,GP2
 306,D,Q,,-0.972,306,GP2
-307,E,*,0.04639,-4.074,307,GP2
 307,E,A,-0.0102,-0.3089,307,GP2
 307,E,C,-0.003244,-1.016,307,GP2
 307,E,D,-0.02866,-0.3705,307,GP2
@@ -5755,7 +5478,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 307,E,E,0,0,307,GP2
 307,E,H,,-1.63,307,GP2
 307,E,R,,-1.822,307,GP2
-308,E,*,-0.1873,-3.979,308,GP2
 308,E,A,0.3007,-4.118,308,GP2
 308,E,D,-0.02558,-4.097,308,GP2
 308,E,G,-0.001849,-3.92,308,GP2
@@ -5773,7 +5495,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 308,E,E,0,0,308,GP2
 308,E,F,,-2.784,308,GP2
 308,E,I,,-3.874,308,GP2
-309,F,*,0.2221,-3.266,309,GP2
 309,F,A,0.000451,-4.163,309,GP2
 309,F,C,0.0004747,-3.731,309,GP2
 309,F,G,0.2034,-4.16,309,GP2
@@ -5791,7 +5512,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 309,F,D,,-2.818,309,GP2
 309,F,H,,-3.037,309,GP2
 309,F,P,,-3.257,309,GP2
-310,C,*,0.0006477,-3.62,310,GP2
 310,C,G,0.002993,-4.258,310,GP2
 310,C,L,0.001712,-4.056,310,GP2
 310,C,R,-0.0002127,-4.322,310,GP2
@@ -5821,11 +5541,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 311,D,V,0.4603,-4.23,311,GP2
 311,D,Y,0.3453,-4.275,311,GP2
 311,D,D,0,0,311,GP2
-311,D,*,,-4.034,311,GP2
 311,D,C,,-3.989,311,GP2
 311,D,K,,-2.607,311,GP2
 311,D,W,,-4.133,311,GP2
-312,M,*,-0.002995,-3.625,312,GP2
 312,M,C,-0.0003417,-2.063,312,GP2
 312,M,D,0.0001828,-3.274,312,GP2
 312,M,F,-0.04429,-3.753,312,GP2
@@ -5874,11 +5592,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 314,R,V,-0.01724,-3.199,314,GP2
 314,R,Y,-0.01647,-3.357,314,GP2
 314,R,R,0,0,314,GP2
-314,R,*,,-3.436,314,GP2
 314,R,F,,-2.763,314,GP2
 314,R,I,,-0.869,314,GP2
 314,R,W,,-3.962,314,GP2
-315,L,*,-0.2213,-2.354,315,GP2
 315,L,I,-0.0006367,-0.9895,315,GP2
 315,L,K,5.957e-06,-4.041,315,GP2
 315,L,M,-0.1859,-2.539,315,GP2
@@ -5896,7 +5612,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 315,L,N,,-3.083,315,GP2
 315,L,Q,,-4.274,315,GP2
 315,L,Y,,-4.063,315,GP2
-316,F,*,0.03507,-3.912,316,GP2
 316,F,E,0.003114,-3.779,316,GP2
 316,F,L,0.03122,-0.4338,316,GP2
 316,F,M,0.07433,-0.7185,316,GP2
@@ -5937,14 +5652,12 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 318,F,V,0.01274,-4.088,318,GP2
 318,F,Y,0.01372,-1.898,318,GP2
 318,F,F,0,0,318,GP2
-318,F,*,,-4.013,318,GP2
 318,F,D,,-2.218,318,GP2
 318,F,H,,-3.883,318,GP2
 318,F,K,,-3.104,318,GP2
 318,F,P,,-3.458,318,GP2
 318,F,Q,,-3.977,318,GP2
 318,F,T,,-4.119,318,GP2
-319,N,*,-0.02815,-3.719,319,GP2
 319,N,C,-0.003786,-2.053,319,GP2
 319,N,D,0.1656,-1.929,319,GP2
 319,N,F,-0.04016,-4.191,319,GP2
@@ -5972,10 +5685,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 320,K,S,-0.2086,-0.2621,320,GP2
 320,K,T,-0.0196,-0.6738,320,GP2
 320,K,K,0,0,320,GP2
-320,K,*,,-4.175,320,GP2
 320,K,H,,-0.347,320,GP2
 320,K,P,,-3.995,320,GP2
-321,Q,*,-0.004953,-3.273,321,GP2
 321,Q,F,-0.002515,-0.05731,321,GP2
 321,Q,H,-0.09469,0.1958,321,GP2
 321,Q,I,-0.0004463,-0.03386,321,GP2
@@ -6018,7 +5729,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 324,Q,S,-0.004514,0.2099,324,GP2
 324,Q,T,0.007963,-1.313,324,GP2
 324,Q,Q,0,0,324,GP2
-324,Q,*,,-3.929,324,GP2
 324,Q,K,,-0.315,324,GP2
 324,Q,V,,0.4758,324,GP2
 325,R,G,0.01942,-0.3205,325,GP2
@@ -6031,11 +5741,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 325,R,V,-0.0007793,-0.09269,325,GP2
 325,R,Y,-0.000145,0.4353,325,GP2
 325,R,R,0,0,325,GP2
-325,R,*,,-3.011,325,GP2
 325,R,C,,-0.2498,325,GP2
 325,R,D,,-3.192,325,GP2
 325,R,I,,-0.1613,325,GP2
-326,L,*,0.000643,-4.081,326,GP2
 326,L,M,0.001896,0.4667,326,GP2
 326,L,P,1.117,-4.218,326,GP2
 326,L,Q,0.04675,-0.5141,326,GP2
@@ -6048,7 +5756,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 326,L,G,,-2.414,326,GP2
 326,L,K,,-4.119,326,GP2
 326,L,R,,-4.152,326,GP2
-327,K,*,-0.004037,-4.144,327,GP2
 327,K,C,0.001834,-3.007,327,GP2
 327,K,E,0.000386,-2.569,327,GP2
 327,K,F,-0.01125,-1.077,327,GP2
@@ -6090,7 +5797,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 329,E,V,-0.1332,-1.291,329,GP2
 329,E,Y,-0.02062,-1.089,329,GP2
 329,E,E,0,0,329,GP2
-329,E,*,,-4.206,329,GP2
 329,E,C,,-3.393,329,GP2
 329,E,D,,0.1867,329,GP2
 329,E,G,,-4.101,329,GP2
@@ -6123,7 +5829,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 331,Q,V,-0.03358,-0.2802,331,GP2
 331,Q,Y,0.08314,0.8853,331,GP2
 331,Q,Q,0,0,331,GP2
-331,Q,*,,-4.186,331,GP2
 331,Q,A,,0.2359,331,GP2
 331,Q,G,,0.1811,331,GP2
 332,M,A,-0.000641,0.2633,332,GP2
@@ -6142,10 +5847,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 332,M,V,0.04591,0.09573,332,GP2
 332,M,Y,-0.006761,-0.0376,332,GP2
 332,M,M,0,0,332,GP2
-332,M,*,,-3.831,332,GP2
 332,M,D,,0.8092,332,GP2
 332,M,W,,0.3831,332,GP2
-333,S,*,-0.04127,-3.292,333,GP2
 333,S,A,-0.005624,-0.3067,333,GP2
 333,S,C,-0.05156,-1.17,333,GP2
 333,S,D,-0.0002684,0.4334,333,GP2
@@ -6185,9 +5888,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 334,I,W,0.01081,-0.7681,334,GP2
 334,I,Y,0.1751,-0.00285,334,GP2
 334,I,I,0,0,334,GP2
-334,I,*,,-3.721,334,GP2
 334,I,D,,-2.952,334,GP2
-335,Q,*,0.0001205,-4.142,335,GP2
 335,Q,A,-0.000347,-0.6765,335,GP2
 335,Q,E,0.007432,-0.3444,335,GP2
 335,Q,G,0.1301,-0.0123,335,GP2
@@ -6204,7 +5905,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 335,Q,Q,0,0,335,GP2
 335,Q,F,,0.562,335,GP2
 335,Q,H,,0.3248,335,GP2
-336,L,*,-0.006578,-4.05,336,GP2
 336,L,E,0.03533,-4.327,336,GP2
 336,L,G,-0.01317,-3.062,336,GP2
 336,L,K,0.1278,-3.475,336,GP2
@@ -6222,7 +5922,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 336,L,D,,-3.641,336,GP2
 336,L,H,,-1.294,336,GP2
 336,L,Y,,-3.85,336,GP2
-337,I,*,-0.00214,-4.123,337,GP2
 337,I,D,-0.001438,-4.269,337,GP2
 337,I,E,0.01476,-3.734,337,GP2
 337,I,F,0.1818,0.8691,337,GP2
@@ -6243,7 +5942,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 337,I,G,,-2.646,337,GP2
 337,I,K,,-4.097,337,GP2
 337,I,P,,-3.63,337,GP2
-338,N,*,0.001225,-3.33,338,GP2
 338,N,D,0.0006997,-0.09735,338,GP2
 338,N,F,0.5496,-1.245,338,GP2
 338,N,K,0.7498,-1.454,338,GP2
@@ -6259,7 +5957,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 338,N,I,,-0.2419,338,GP2
 338,N,P,,-1.45,338,GP2
 338,N,W,,-3.936,338,GP2
-339,K,*,-0.008137,-4.027,339,GP2
 339,K,A,0.1052,-4.022,339,GP2
 339,K,D,-0.08739,0.8054,339,GP2
 339,K,E,0.09116,0.7196,339,GP2
@@ -6295,7 +5992,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 340,A,P,,-4.034,340,GP2
 340,A,R,,-4.236,340,GP2
 340,A,S,,-4.293,340,GP2
-341,V,*,-0.001923,-3.212,341,GP2
 341,V,A,-0.04934,-1.374,341,GP2
 341,V,C,-0.007518,-0.4122,341,GP2
 341,V,E,-0.002112,-4.088,341,GP2
@@ -6315,7 +6011,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 341,V,Y,0.001434,-1.659,341,GP2
 341,V,V,0,0,341,GP2
 341,V,D,,-3.133,341,GP2
-342,N,*,0.1337,-2.454,342,GP2
 342,N,D,1.379e-06,-0.3032,342,GP2
 342,N,K,-0.0009937,-3.022,342,GP2
 342,N,L,0.05934,-1.336,342,GP2
@@ -6346,9 +6041,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 343,A,V,0.1223,-0.7413,343,GP2
 343,A,Y,0.4015,-0.3967,343,GP2
 343,A,A,0,0,343,GP2
-343,A,*,,-4.171,343,GP2
 343,A,Q,,-0.1711,343,GP2
-344,L,*,-0.0112,-4.07,344,GP2
 344,L,A,0.08366,-3.72,344,GP2
 344,L,E,0.02617,-2.128,344,GP2
 344,L,F,-0.06256,-2.377,344,GP2
@@ -6380,7 +6073,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 345,I,V,0.07909,0.3886,345,GP2
 345,I,Y,0.003157,-4.211,345,GP2
 345,I,I,0,0,345,GP2
-345,I,*,,-3.036,345,GP2
 345,I,A,,-1.545,345,GP2
 345,I,D,,-3.283,345,GP2
 345,I,G,,-3.871,345,GP2
@@ -6388,7 +6080,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 345,I,K,,-2.396,345,GP2
 345,I,M,,-1.407,345,GP2
 345,I,R,,-4.06,345,GP2
-346,N,*,-0.0002546,-4.145,346,GP2
 346,N,D,0.08134,-1.172,346,GP2
 346,N,F,-0.08221,-4.169,346,GP2
 346,N,G,-0.002996,-2.859,346,GP2
@@ -6423,10 +6114,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 347,D,V,-0.01627,-4.104,347,GP2
 347,D,Y,-0.01308,-4.239,347,GP2
 347,D,D,0,0,347,GP2
-347,D,*,,-4.127,347,GP2
 347,D,M,,-2.195,347,GP2
 347,D,W,,-3.242,347,GP2
-348,Q,*,-0.008373,-3.869,348,GP2
 348,Q,E,0.1416,-1.244,348,GP2
 348,Q,F,0.05207,-2.241,348,GP2
 348,Q,H,0.2206,-0.9588,348,GP2
@@ -6443,7 +6132,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 348,Q,G,,-1.715,348,GP2
 348,Q,N,,-1.921,348,GP2
 348,Q,P,,-2.812,348,GP2
-349,L,*,0.2522,-3.995,349,GP2
 349,L,A,-0.08455,-1.55,349,GP2
 349,L,F,0.01571,-4.241,349,GP2
 349,L,H,0.002463,-1.527,349,GP2
@@ -6463,7 +6151,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 349,L,N,,0.4471,349,GP2
 349,L,W,,-3.238,349,GP2
 349,L,Y,,-2.471,349,GP2
-350,I,*,-0.0002507,-4.079,350,GP2
 350,I,F,-0.003733,-2.009,350,GP2
 350,I,L,0.1426,0.1047,350,GP2
 350,I,M,0.4195,-2.274,350,GP2
@@ -6489,12 +6176,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 351,M,T,0.08274,-0.09943,351,GP2
 351,M,V,0.007812,0.2692,351,GP2
 351,M,M,0,0,351,GP2
-351,M,*,,-2.298,351,GP2
 351,M,K,,-3.713,351,GP2
 351,M,Q,,-1.206,351,GP2
 351,M,R,,-4.133,351,GP2
 351,M,W,,0.8861,351,GP2
-352,K,*,-0.03344,-3.196,352,GP2
 352,K,C,-0.000894,-2.577,352,GP2
 352,K,E,0.02795,-3.595,352,GP2
 352,K,F,-0.004469,-1.516,352,GP2
@@ -6525,12 +6210,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 353,N,S,0.006197,-3.096,353,GP2
 353,N,T,-0.0003048,-3.034,353,GP2
 353,N,N,0,0,353,GP2
-353,N,*,,-2.386,353,GP2
 353,N,F,,-4.112,353,GP2
 353,N,G,,-4.245,353,GP2
 353,N,V,,-4.097,353,GP2
 353,N,Y,,-4.008,353,GP2
-354,H,*,-0.004277,-3.101,354,GP2
 354,H,A,0.1113,-0.08114,354,GP2
 354,H,F,-0.01539,-0.3255,354,GP2
 354,H,G,0.09893,-0.6661,354,GP2
@@ -6552,7 +6235,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 355,L,S,-0.01565,-3.981,355,GP2
 355,L,V,0.000193,-0.6964,355,GP2
 355,L,L,0,0,355,GP2
-355,L,*,,-3.646,355,GP2
 355,L,A,,-3.793,355,GP2
 355,L,D,,-4.059,355,GP2
 355,L,E,,-4.148,355,GP2
@@ -6560,7 +6242,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 355,L,R,,-4.183,355,GP2
 355,L,T,,-3.891,355,GP2
 355,L,Y,,-3.931,355,GP2
-356,R,*,0.1669,-3.579,356,GP2
 356,R,G,-0.01276,-3.506,356,GP2
 356,R,I,0.001087,-4.043,356,GP2
 356,R,K,-0.008074,-1.712,356,GP2
@@ -6588,7 +6269,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 357,D,W,0.007,-2.549,357,GP2
 357,D,Y,0.3663,-4.018,357,GP2
 357,D,D,0,0,357,GP2
-357,D,*,,-2.161,357,GP2
 357,D,C,,-4.145,357,GP2
 357,D,E,,-3.101,357,GP2
 357,D,M,,-4.101,357,GP2
@@ -6603,7 +6283,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 358,I,I,0,0,358,GP2
 358,I,K,,-1.996,358,GP2
 358,I,P,,-3.97,358,GP2
-359,M,*,0.2105,-3.334,359,GP2
 359,M,F,0.06601,-0.0933,359,GP2
 359,M,I,-0.003073,-0.2651,359,GP2
 359,M,K,-0.00374,-4.11,359,GP2
@@ -6633,7 +6312,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 360,G,V,-0.1575,-2.971,360,GP2
 360,G,Y,-0.0005633,-0.6721,360,GP2
 360,G,G,0,0,360,GP2
-360,G,*,,-3.869,360,GP2
 360,G,F,,-0.1496,360,GP2
 360,G,M,,-1.292,360,GP2
 360,G,Q,,-0.3898,360,GP2
@@ -6651,7 +6329,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 361,I,V,0.02577,-0.1363,361,GP2
 361,I,Y,-0.0005173,-3.244,361,GP2
 361,I,I,0,0,361,GP2
-361,I,*,,-3.779,361,GP2
 361,I,C,,-3.294,361,GP2
 361,I,P,,-2.896,361,GP2
 361,I,Q,,-3.511,361,GP2
@@ -6667,13 +6344,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 362,P,T,0.001316,-3.248,362,GP2
 362,P,V,-0.0003002,-2.138,362,GP2
 362,P,P,0,0,362,GP2
-362,P,*,,-0.8451,362,GP2
 362,P,A,,-2.257,362,GP2
 362,P,K,,-2.136,362,GP2
 362,P,Q,,-2.838,362,GP2
 362,P,W,,-2.681,362,GP2
 362,P,Y,,-2.392,362,GP2
-363,Y,*,-0.1716,-4.223,363,GP2
 363,Y,C,-0.02384,-3.141,363,GP2
 363,Y,D,-0.002665,-3.591,363,GP2
 363,Y,F,0.2092,0.02796,363,GP2
@@ -6694,7 +6369,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 363,Y,Y,0,0,363,GP2
 363,Y,A,,-3.17,363,GP2
 363,Y,E,,-2.829,363,GP2
-364,C,*,-0.02999,-4.203,364,GP2
 364,C,A,-0.007523,-3.986,364,GP2
 364,C,D,0.01002,-1.296,364,GP2
 364,C,E,-0.01049,-3.295,364,GP2
@@ -6728,12 +6402,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 365,N,V,-0.002441,-3.966,365,GP2
 365,N,Y,-0.0006623,-4.306,365,GP2
 365,N,N,0,0,365,GP2
-365,N,*,,-3.785,365,GP2
 365,N,C,,-3.137,365,GP2
 365,N,D,,-2.507,365,GP2
 365,N,K,,-3.745,365,GP2
 365,N,M,,-4.029,365,GP2
-366,Y,*,0.0002096,-2.261,366,GP2
 366,Y,A,0.06623,-3.705,366,GP2
 366,Y,F,-0.03801,-2.066,366,GP2
 366,Y,I,-0.004503,-3.994,366,GP2
@@ -6749,7 +6421,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 366,Y,H,,-2.47,366,GP2
 366,Y,T,,-4.123,366,GP2
 366,Y,W,,-3.569,366,GP2
-367,S,*,-0.004987,-2.96,367,GP2
 367,S,A,0.01055,-2.409,367,GP2
 367,S,C,-0.0007233,-3.28,367,GP2
 367,S,D,0.334,-4.063,367,GP2
@@ -6767,7 +6438,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 367,S,S,0,0,367,GP2
 367,S,P,,-4.09,367,GP2
 367,S,W,,-2.48,367,GP2
-368,K,*,-0.001802,-3.778,368,GP2
 368,K,E,0.2316,-3.455,368,GP2
 368,K,G,-0.0003014,-3.857,368,GP2
 368,K,L,0.03707,-1.353,368,GP2
@@ -6783,7 +6453,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 368,K,K,0,0,368,GP2
 368,K,A,,-3.288,368,GP2
 368,K,H,,-2.661,368,GP2
-369,Y,*,0.08423,-4.029,369,GP2
 369,Y,A,-0.001505,-4.054,369,GP2
 369,Y,F,-0.01425,0.4705,369,GP2
 369,Y,I,-0.005427,-3.498,369,GP2
@@ -6799,7 +6468,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 369,Y,N,,-1.785,369,GP2
 369,Y,R,,-3.143,369,GP2
 369,Y,V,,-2.293,369,GP2
-370,W,*,0.208,-4.131,370,GP2
 370,W,C,0.006047,-3.909,370,GP2
 370,W,F,0.1634,-3.78,370,GP2
 370,W,L,-0.0003257,-3.934,370,GP2
@@ -6828,9 +6496,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 371,Y,T,0.0002044,-4.065,371,GP2
 371,Y,V,-0.04194,-3.829,371,GP2
 371,Y,Y,0,0,371,GP2
-371,Y,*,,-3.969,371,GP2
 371,Y,C,,-2.639,371,GP2
-372,L,*,0.001322,-3.809,372,GP2
 372,L,F,0.0005483,-3.782,372,GP2
 372,L,I,-0.03241,-1.708,372,GP2
 372,L,P,0.1297,-4.145,372,GP2
@@ -6847,7 +6513,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 372,L,N,,-3.968,372,GP2
 372,L,W,,-2.714,372,GP2
 372,L,Y,,-2.626,372,GP2
-373,N,*,-0.05569,-2.251,373,GP2
 373,N,D,-0.01912,-3.632,373,GP2
 373,N,F,0.005809,-0.986,373,GP2
 373,N,G,-0.01536,-2.867,373,GP2
@@ -6867,7 +6532,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 373,N,A,,-3.53,373,GP2
 373,N,C,,-2.942,373,GP2
 373,N,E,,-0.9599,373,GP2
-374,H,*,-0.01728,-3.586,374,GP2
 374,H,A,-0.0009133,-1.724,374,GP2
 374,H,D,-0.1035,-0.1954,374,GP2
 374,H,E,0.01943,0.2604,374,GP2
@@ -6888,7 +6552,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 374,H,Y,0.01987,-1.489,374,GP2
 374,H,H,0,0,374,GP2
 374,H,C,,-1.617,374,GP2
-375,T,*,0.01636,-3.998,375,GP2
 375,T,A,0.02103,-2.229,375,GP2
 375,T,C,0.001985,-4.15,375,GP2
 375,T,D,-0.1188,-2.811,375,GP2
@@ -6927,7 +6590,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 376,T,V,-0.01505,-0.6341,376,GP2
 376,T,Y,-0.01133,-0.4494,376,GP2
 376,T,T,0,0,376,GP2
-376,T,*,,-3.99,376,GP2
 376,T,Q,,-0.7003,376,GP2
 376,T,W,,-2.65,376,GP2
 377,T,A,-0.01791,-1.39,377,GP2
@@ -6948,10 +6610,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 377,T,W,-0.002027,-2.577,377,GP2
 377,T,Y,0.09633,-1.243,377,GP2
 377,T,T,0,0,377,GP2
-377,T,*,,-4.189,377,GP2
 377,T,C,,-1.216,377,GP2
 377,T,Q,,-1.308,377,GP2
-378,G,*,-0.0346,-2.952,378,GP2
 378,G,A,-0.01585,-0.2209,378,GP2
 378,G,C,-0.006745,-1.237,378,GP2
 378,G,D,0.009753,-1.909,378,GP2
@@ -6986,7 +6646,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 379,R,W,0.1689,-0.06695,379,GP2
 379,R,Y,-0.01324,0.03985,379,GP2
 379,R,R,0,0,379,GP2
-379,R,*,,-4.246,379,GP2
 380,T,A,-0.003319,0.07,380,GP2
 380,T,C,0.02199,-0.6239,380,GP2
 380,T,F,0.00034,-2.007,380,GP2
@@ -7004,7 +6663,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 380,T,D,,-4.03,380,GP2
 380,T,K,,-2.123,380,GP2
 380,T,Q,,-1.561,380,GP2
-381,S,*,0.2285,-3.691,381,GP2
 381,S,A,-0.001181,-2.101,381,GP2
 381,S,F,-0.003627,-4.136,381,GP2
 381,S,G,-0.006738,-1.756,381,GP2
@@ -7032,7 +6690,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 382,L,V,0.0277,-1.413,382,GP2
 382,L,Y,0.04224,-4.011,382,GP2
 382,L,L,0,0,382,GP2
-382,L,*,,-2.567,382,GP2
 382,L,A,,-3.13,382,GP2
 382,L,C,,-0.165,382,GP2
 382,L,G,,-3.635,382,GP2
@@ -7040,7 +6697,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 382,L,R,,-3.697,382,GP2
 382,L,T,,-1.489,382,GP2
 382,L,W,,-3.814,382,GP2
-383,P,*,-0.01837,-3.817,383,GP2
 383,P,A,-0.00179,-2.388,383,GP2
 383,P,C,0.0007637,-4.141,383,GP2
 383,P,E,0.0002623,-1.769,383,GP2
@@ -7059,7 +6715,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 383,P,Y,-0.001497,-3.386,383,GP2
 383,P,P,0,0,383,GP2
 383,P,F,,-3.433,383,GP2
-384,K,*,0.008543,-3.832,384,GP2
 384,K,E,0.009829,-3.462,384,GP2
 384,K,F,0.001158,-1.873,384,GP2
 384,K,I,-0.006364,-2.19,384,GP2
@@ -7075,7 +6730,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 384,K,C,,-2.615,384,GP2
 384,K,Q,,-1.742,384,GP2
 384,K,W,,-3.369,384,GP2
-385,C,*,-0.001121,-3.813,385,GP2
 385,C,D,0.003177,-4.053,385,GP2
 385,C,F,0.01126,-4.223,385,GP2
 385,C,G,0.001844,-3.926,385,GP2
@@ -7093,7 +6747,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 385,C,A,,-4.159,385,GP2
 385,C,K,,-3.361,385,GP2
 385,C,M,,-4.268,385,GP2
-386,W,*,-0.0273,-3.726,386,GP2
 386,W,A,-0.00632,-4.033,386,GP2
 386,W,G,-0.0007,-3.852,386,GP2
 386,W,K,-3.109e-05,-3.762,386,GP2
@@ -7105,7 +6758,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 386,W,W,0,0,386,GP2
 386,W,C,,-4.239,386,GP2
 386,W,T,,-3.668,386,GP2
-387,L,*,-0.01171,-3.641,387,GP2
 387,L,E,0.005847,-0.8708,387,GP2
 387,L,G,-0.03385,-1.261,387,GP2
 387,L,K,0.2412,0.03137,387,GP2
@@ -7120,7 +6772,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 387,L,L,0,0,387,GP2
 387,L,P,,-4.132,387,GP2
 387,L,Y,,-0.7079,387,GP2
-388,V,*,-0.02075,-3.514,388,GP2
 388,V,A,-0.005363,-1.121,388,GP2
 388,V,C,0.008283,-0.5253,388,GP2
 388,V,D,-0.006903,-2.755,388,GP2
@@ -7138,7 +6789,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 388,V,N,,-1.237,388,GP2
 388,V,R,,-4.172,388,GP2
 388,V,Y,,-3.933,388,GP2
-389,S,*,0.1606,-3.773,389,GP2
 389,S,A,0.01051,-0.1753,389,GP2
 389,S,C,0.05478,-0.1442,389,GP2
 389,S,D,-8.367e-05,-0.4123,389,GP2
@@ -7159,7 +6809,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 389,S,W,-0.02809,-1.428,389,GP2
 389,S,Y,0.000652,-0.8125,389,GP2
 389,S,S,0,0,389,GP2
-390,N,*,-0.01305,-4.054,390,GP2
 390,N,A,0.0003453,-0.7846,390,GP2
 390,N,D,-0.01734,-0.3114,390,GP2
 390,N,E,-0.01506,-0.1114,390,GP2
@@ -7180,7 +6829,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 390,N,Y,0.05466,-1.016,390,GP2
 390,N,N,0,0,390,GP2
 390,N,C,,-2.256,390,GP2
-391,G,*,-0.3198,-3.81,391,GP2
 391,G,A,-0.05611,-0.5522,391,GP2
 391,G,C,0.002736,-2.559,391,GP2
 391,G,D,-0.1867,-0.3957,391,GP2
@@ -7217,7 +6865,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 392,S,Y,-0.0167,-0.1964,392,GP2
 392,S,S,0,0,392,GP2
 392,S,M,,-1.28,392,GP2
-393,Y,*,-0.0607,-4.197,393,GP2
 393,Y,A,-0.0002377,-1.903,393,GP2
 393,Y,C,4.423e-05,-3.752,393,GP2
 393,Y,D,-0.04302,-3.576,393,GP2
@@ -7238,7 +6885,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 393,Y,W,0.00025,-1.56,393,GP2
 393,Y,Y,0,0,393,GP2
 393,Y,K,,-4.109,393,GP2
-394,L,*,0.1533,-2.872,394,GP2
 394,L,A,0.1011,-2.822,394,GP2
 394,L,C,-0.003368,-3.389,394,GP2
 394,L,D,0.006027,-4.153,394,GP2
@@ -7258,7 +6904,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 394,L,Y,0.1513,-2.716,394,GP2
 394,L,L,0,0,394,GP2
 394,L,M,,-2.919,394,GP2
-395,N,*,0.1701,-4.138,395,GP2
 395,N,A,0.3707,-0.027,395,GP2
 395,N,D,0.009069,-0.1032,395,GP2
 395,N,E,0.004257,-0.7408,395,GP2
@@ -7278,7 +6923,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 395,N,W,0.1363,-3.558,395,GP2
 395,N,Y,-0.03848,-1.422,395,GP2
 395,N,N,0,0,395,GP2
-396,E,*,-0.00969,-4.202,396,GP2
 396,E,A,0.04127,-0.3928,396,GP2
 396,E,C,0.07409,-1.993,396,GP2
 396,E,D,0.02113,-1.175,396,GP2
@@ -7299,7 +6943,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 396,E,W,-0.003208,-0.5983,396,GP2
 396,E,Y,-0.02459,-0.853,396,GP2
 396,E,E,0,0,396,GP2
-397,T,*,0.00398,-3.768,397,GP2
 397,T,A,-0.005807,0.1383,397,GP2
 397,T,C,-0.0105,-0.6549,397,GP2
 397,T,D,0.00396,-2.084,397,GP2
@@ -7318,7 +6961,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 397,T,V,0.05552,-0.2384,397,GP2
 397,T,Y,0.1323,-0.1859,397,GP2
 397,T,T,0,0,397,GP2
-398,H,*,-0.00429,-3.772,398,GP2
 398,H,E,0.001705,0.01015,398,GP2
 398,H,F,0.1891,-0.3476,398,GP2
 398,H,I,0.03654,-0.4335,398,GP2
@@ -7337,7 +6979,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 398,H,H,0,0,398,GP2
 398,H,A,,0.6397,398,GP2
 398,H,D,,-0.006115,398,GP2
-399,F,*,-0.01673,-3.902,399,GP2
 399,F,A,-0.0006677,-4.161,399,GP2
 399,F,C,-0.001937,-3.762,399,GP2
 399,F,E,-0.000848,-3.148,399,GP2
@@ -7375,7 +7016,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 400,S,W,-0.05016,-1.051,400,GP2
 400,S,Y,-0.0143,-0.2283,400,GP2
 400,S,S,0,0,400,GP2
-400,S,*,,-3.168,400,GP2
 400,S,D,,-1.545,400,GP2
 401,D,A,-0.00146,-0.6841,401,GP2
 401,D,C,0.06385,-1.595,401,GP2
@@ -7409,7 +7049,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 402,D,V,-0.008677,-0.6001,402,GP2
 402,D,Y,-0.00506,-1.854,402,GP2
 402,D,D,0,0,402,GP2
-402,D,*,,-3.114,402,GP2
 402,D,A,,-0.3374,402,GP2
 402,D,G,,-1.151,402,GP2
 403,I,E,0.000612,-2.814,403,GP2
@@ -7424,12 +7063,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 403,I,T,-0.05542,-3.919,403,GP2
 403,I,V,0.2057,-1.133,403,GP2
 403,I,I,0,0,403,GP2
-403,I,*,,-2.61,403,GP2
 403,I,D,,-3.61,403,GP2
 403,I,P,,-3.606,403,GP2
 403,I,W,,-2.913,403,GP2
 403,I,Y,,-4.107,403,GP2
-404,E,*,0.001667,-4.061,404,GP2
 404,E,A,0.03762,-0.2573,404,GP2
 404,E,C,0.000557,-0.747,404,GP2
 404,E,D,-0.1303,-0.1017,404,GP2
@@ -7450,7 +7087,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 404,E,W,0.03231,-1.335,404,GP2
 404,E,Y,0.4843,-0.05195,404,GP2
 404,E,E,0,0,404,GP2
-405,Q,*,-0.01,-3.428,405,GP2
 405,Q,A,0.2663,-1.998,405,GP2
 405,Q,H,0.008937,-4.185,405,GP2
 405,Q,I,0.03527,-2.784,405,GP2
@@ -7470,7 +7106,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 405,Q,F,,-1.357,405,GP2
 405,Q,G,,-3.453,405,GP2
 405,Q,V,,-2.971,405,GP2
-406,Q,*,-0.01011,-4.062,406,GP2
 406,Q,A,0.1155,-0.6194,406,GP2
 406,Q,E,0.002074,-0.3851,406,GP2
 406,Q,F,0.001313,-1.643,406,GP2
@@ -7487,7 +7122,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 406,Q,Y,0.00942,-0.9921,406,GP2
 406,Q,Q,0,0,406,GP2
 406,Q,C,,-1.979,406,GP2
-407,A,*,0.0008173,-1.156,407,GP2
 407,A,E,-0.004547,-2.121,407,GP2
 407,A,F,-0.0004143,-2.023,407,GP2
 407,A,I,3.823e-06,-0.6406,407,GP2
@@ -7506,7 +7140,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 407,A,N,,-4.046,407,GP2
 407,A,P,,-3.857,407,GP2
 407,A,Y,,-2.324,407,GP2
-408,D,*,0.002212,-3.882,408,GP2
 408,D,A,-0.003535,-2.181,408,GP2
 408,D,C,0.007276,-0.9368,408,GP2
 408,D,E,0.001854,0.7289,408,GP2
@@ -7525,7 +7158,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 408,D,Y,-0.1241,-0.795,408,GP2
 408,D,D,0,0,408,GP2
 408,D,K,,-2.711,408,GP2
-409,N,*,0.0001558,-4.194,409,GP2
 409,N,A,-0.01839,-2.088,409,GP2
 409,N,C,0.0002872,-3.61,409,GP2
 409,N,D,0.006173,-0.5695,409,GP2
@@ -7546,7 +7178,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 409,N,N,0,0,409,GP2
 409,N,G,,-2.53,409,GP2
 409,N,Q,,-2.146,409,GP2
-410,M,*,0.001366,-4.12,410,GP2
 410,M,A,0.0001957,-2.725,410,GP2
 410,M,E,0.09942,-1.881,410,GP2
 410,M,F,0.0002767,-2.266,410,GP2
@@ -7565,7 +7196,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 410,M,C,,-0.6543,410,GP2
 410,M,G,,-3.664,410,GP2
 410,M,S,,-1.155,410,GP2
-411,I,*,0.001968,-2.889,411,GP2
 411,I,F,-0.05343,-0.8995,411,GP2
 411,I,K,0.0004147,-4.339,411,GP2
 411,I,L,-0.02091,-1.05,411,GP2
@@ -7583,7 +7213,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 411,I,P,,-2.46,411,GP2
 411,I,R,,-4.038,411,GP2
 411,I,Y,,-3.429,411,GP2
-412,T,*,0.194,-4.199,412,GP2
 412,T,A,-0.028,-1.414,412,GP2
 412,T,I,-0.009149,-0.9411,412,GP2
 412,T,K,0.1999,-4.331,412,GP2
@@ -7600,7 +7229,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 412,T,N,,-3.896,412,GP2
 412,T,R,,-3.718,412,GP2
 412,T,Y,,-4.04,412,GP2
-413,E,*,0.1586,-4.226,413,GP2
 413,E,A,-0.01124,-1.07,413,GP2
 413,E,G,-0.03137,-2.099,413,GP2
 413,E,H,8.977e-05,,413,GP2
@@ -7628,7 +7256,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 414,M,V,0.01376,-0.08478,414,GP2
 414,M,Y,0.08888,-0.8028,414,GP2
 414,M,M,0,0,414,GP2
-414,M,*,,-4.165,414,GP2
 414,M,G,,-2.926,414,GP2
 414,M,H,,-3.517,414,GP2
 414,M,K,,-3.873,414,GP2
@@ -7642,7 +7269,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 415,L,R,0.008655,-4.235,415,GP2
 415,L,V,0.2393,-3.849,415,GP2
 415,L,L,0,0,415,GP2
-415,L,*,,-4.058,415,GP2
 415,L,E,,-4.223,415,GP2
 415,L,F,,-2.426,415,GP2
 415,L,G,,-2.755,415,GP2
@@ -7652,7 +7278,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 415,L,S,,-4.204,415,GP2
 415,L,W,,-4.029,415,GP2
 415,L,Y,,-4.033,415,GP2
-416,Q,*,-0.04375,-4.316,416,GP2
 416,Q,A,-0.04322,-0.8547,416,GP2
 416,Q,E,-0.01156,-1.198,416,GP2
 416,Q,G,-2.336e-05,-2.747,416,GP2
@@ -7670,7 +7295,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 416,Q,F,,-2.288,416,GP2
 416,Q,H,,-3.13,416,GP2
 416,Q,Y,,-2.696,416,GP2
-417,K,*,-0.2244,-4.237,417,GP2
 417,K,A,-0.00548,-0.5054,417,GP2
 417,K,E,-0.001317,-0.06445,417,GP2
 417,K,L,0.07641,-1.798,417,GP2
@@ -7687,7 +7311,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 417,K,G,,-1.107,417,GP2
 417,K,H,,0.2829,417,GP2
 417,K,P,,-3.802,417,GP2
-418,E,*,0.001596,-4.208,418,GP2
 418,E,A,0.0006377,-2.079,418,GP2
 418,E,D,0.0555,-0.04691,418,GP2
 418,E,G,-0.009157,-3.405,418,GP2
@@ -7705,7 +7328,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 418,E,N,,-2.967,418,GP2
 418,E,P,,-4.245,418,GP2
 418,E,Y,,-3.32,418,GP2
-419,Y,*,-0.0005003,-2.782,419,GP2
 419,Y,A,-0.000223,-4.125,419,GP2
 419,Y,C,0.001019,-4.231,419,GP2
 419,Y,D,-0.00415,-3.885,419,GP2
@@ -7723,7 +7345,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 419,Y,E,,-2.882,419,GP2
 419,Y,M,,-2.997,419,GP2
 419,Y,Q,,-0.5721,419,GP2
-420,M,*,0.02498,-4.241,420,GP2
 420,M,F,-0.01033,-0.0491,420,GP2
 420,M,G,-0.01001,-1.004,420,GP2
 420,M,I,-0.05245,0.1849,420,GP2
@@ -7738,7 +7359,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 420,M,M,0,0,420,GP2
 420,M,P,,-3.667,420,GP2
 420,M,Q,,-1.425,420,GP2
-421,E,*,0.001443,-4.282,421,GP2
 421,E,A,-0.02575,-0.216,421,GP2
 421,E,D,0.004318,-0.3266,421,GP2
 421,E,G,-0.02629,-0.9468,421,GP2
@@ -7756,7 +7376,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 421,E,E,0,0,421,GP2
 421,E,C,,-1.525,421,GP2
 421,E,P,,-3.071,421,GP2
-422,R,*,0.0009443,-4.208,422,GP2
 422,R,A,-0.02441,-3.273,422,GP2
 422,R,F,-0.01844,-3.858,422,GP2
 422,R,G,0.3066,-4.12,422,GP2
@@ -7786,13 +7405,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 424,G,S,-0.1596,-0.1477,424,GP2
 424,G,V,-0.01387,-2.597,424,GP2
 424,G,G,0,0,424,GP2
-424,G,*,,-3.91,424,GP2
 424,G,M,,-0.9206,424,GP2
 424,G,N,,-1.895,424,GP2
 424,G,P,,-3.827,424,GP2
 424,G,T,,-3.236,424,GP2
 424,G,Y,,-2.575,424,GP2
-425,K,*,-0.1053,-4.156,425,GP2
 425,K,E,0.08991,-2.774,425,GP2
 425,K,G,-0.01429,-2.199,425,GP2
 425,K,H,0.000945,-1.489,425,GP2
@@ -7820,10 +7437,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 426,T,V,0.09122,-1.312,426,GP2
 426,T,Y,-0.009003,-4.118,426,GP2
 426,T,T,0,0,426,GP2
-426,T,*,,-3.71,426,GP2
 426,T,C,,-1.165,426,GP2
 426,T,R,,-4.248,426,GP2
-427,P,*,0.204,-4.098,427,GP2
 427,P,F,0.05287,-3.747,427,GP2
 427,P,H,0.347,-4.232,427,GP2
 427,P,I,-0.01228,-3.982,427,GP2
@@ -7841,7 +7456,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 427,P,N,,-4.137,427,GP2
 427,P,V,,-4.344,427,GP2
 427,P,Y,,-4.316,427,GP2
-428,L,*,0.00838,-3.841,428,GP2
 428,L,F,0.006383,-4.121,428,GP2
 428,L,H,-0.003969,-4.204,428,GP2
 428,L,I,-0.1383,-0.3255,428,GP2
@@ -7860,7 +7474,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 428,L,D,,-3.835,428,GP2
 428,L,G,,-4.192,428,GP2
 428,L,W,,-4.263,428,GP2
-429,G,*,0.08323,-4.054,429,GP2
 429,G,A,0.0123,-1.26,429,GP2
 429,G,C,-0.04321,-1.73,429,GP2
 429,G,F,-0.003563,-2.529,429,GP2
@@ -7884,7 +7497,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 430,L,T,0.003256,-4.155,430,GP2
 430,L,V,0.0005227,-4.03,430,GP2
 430,L,L,0,0,430,GP2
-430,L,*,,-2.538,430,GP2
 430,L,D,,-2.55,430,GP2
 430,L,E,,-3.52,430,GP2
 430,L,G,,-4.13,430,GP2
@@ -7893,7 +7505,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 430,L,M,,-2.244,430,GP2
 430,L,Q,,-2.59,430,GP2
 430,L,Y,,-4.147,430,GP2
-431,V,*,0.009863,-2.082,431,GP2
 431,V,A,0.01104,-2.314,431,GP2
 431,V,F,-0.06643,-2.621,431,GP2
 431,V,G,0.008237,-4.117,431,GP2
@@ -7925,13 +7536,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 432,D,T,-0.06565,-4.097,432,GP2
 432,D,V,0.01209,-4.235,432,GP2
 432,D,D,0,0,432,GP2
-432,D,*,,-4.227,432,GP2
 432,D,A,,-4.2,432,GP2
 432,D,H,,-1.164,432,GP2
 432,D,I,,-4.29,432,GP2
 432,D,P,,-4.032,432,GP2
 432,D,Y,,-4.162,432,GP2
-433,L,*,0.002544,-3.673,433,GP2
 433,L,A,-0.001189,-0.7402,433,GP2
 433,L,F,0.007987,-0.2954,433,GP2
 433,L,I,-0.001114,-0.07208,433,GP2
@@ -7955,7 +7564,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 434,F,V,0.02722,-3.213,434,GP2
 434,F,Y,-0.01361,-1.998,434,GP2
 434,F,F,0,0,434,GP2
-434,F,*,,-4.079,434,GP2
 434,F,A,,-3.801,434,GP2
 434,F,C,,-3.216,434,GP2
 434,F,D,,-4.018,434,GP2
@@ -7963,7 +7571,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 434,F,K,,-4.173,434,GP2
 434,F,M,,-2.872,434,GP2
 434,F,N,,-4.217,434,GP2
-435,V,*,0.009657,-4.205,435,GP2
 435,V,A,-0.1005,-1.377,435,GP2
 435,V,C,-0.01035,-0.8467,435,GP2
 435,V,D,-0.00493,-3.759,435,GP2
@@ -7982,7 +7589,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 435,V,V,0,0,435,GP2
 435,V,P,,-4.228,435,GP2
 435,V,Q,,-1.703,435,GP2
-436,F,*,-0.00661,-2.809,436,GP2
 436,F,A,0.005249,-0.6522,436,GP2
 436,F,C,0.002463,-2.484,436,GP2
 436,F,I,-0.005325,-0.9644,436,GP2
@@ -8012,7 +7618,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 437,S,V,-0.001086,-0.4043,437,GP2
 437,S,Y,-7.65e-05,-3.713,437,GP2
 437,S,S,0,0,437,GP2
-437,S,*,,-4.101,437,GP2
 437,S,D,,-3.425,437,GP2
 437,S,H,,-3.123,437,GP2
 437,S,K,,-2.014,437,GP2
@@ -8029,7 +7634,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 438,T,S,0.1065,-0.414,438,GP2
 438,T,Y,-0.1007,-1.619,438,GP2
 438,T,T,0,0,438,GP2
-438,T,*,,-4.191,438,GP2
 438,T,C,,-0.699,438,GP2
 438,T,H,,-4.102,438,GP2
 438,T,K,,-3.923,438,GP2
@@ -8047,12 +7651,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 439,S,V,-0.0258,-0.8249,439,GP2
 439,S,Y,0.0006733,-3.552,439,GP2
 439,S,S,0,0,439,GP2
-439,S,*,,-4.021,439,GP2
 439,S,E,,-3.75,439,GP2
 439,S,H,,-3.314,439,GP2
 439,S,K,,-1.845,439,GP2
 439,S,P,,-2.136,439,GP2
-440,F,*,0.0002858,-4.05,440,GP2
 440,F,C,-0.02172,-1.574,440,GP2
 440,F,D,0.05245,-3.476,440,GP2
 440,F,H,0.0107,-4.144,440,GP2
@@ -8072,7 +7674,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 440,F,A,,-1.021,440,GP2
 440,F,E,,-3.768,440,GP2
 440,F,G,,-3.622,440,GP2
-441,Y,*,9.53e-05,-4.163,441,GP2
 441,Y,A,0.01523,-1.48,441,GP2
 441,Y,C,-0.01282,-1.245,441,GP2
 441,Y,D,0.274,-4.232,441,GP2
@@ -8111,9 +7712,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 442,L,W,0.1294,-4.205,442,GP2
 442,L,Y,0.006701,-3.452,442,GP2
 442,L,L,0,0,442,GP2
-442,L,*,,-4.314,442,GP2
 442,L,E,,-3.018,442,GP2
-443,I,*,0.003487,-4.022,443,GP2
 443,I,A,0.02661,-1.406,443,GP2
 443,I,D,0.04103,-4.213,443,GP2
 443,I,F,0.2228,-1.495,443,GP2
@@ -8147,9 +7746,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 444,S,W,-0.0003987,-4.343,444,GP2
 444,S,Y,0.0003933,-4.055,444,GP2
 444,S,S,0,0,444,GP2
-444,S,*,,-4.008,444,GP2
 444,S,E,,-4.021,444,GP2
-445,I,*,0.000267,-1.536,445,GP2
 445,I,C,0.1869,-2.221,445,GP2
 445,I,F,0.2012,-4.199,445,GP2
 445,I,G,-0.01283,-1.357,445,GP2
@@ -8169,7 +7766,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 445,I,H,,-3.646,445,GP2
 445,I,K,,-2.027,445,GP2
 445,I,W,,-4.102,445,GP2
-446,F,*,0.002813,-3.138,446,GP2
 446,F,A,0.0276,-1.671,446,GP2
 446,F,D,-0.02929,-3,446,GP2
 446,F,E,-0.003803,-4.146,446,GP2
@@ -8205,7 +7801,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 447,L,W,5.093e-05,-0.435,447,GP2
 447,L,Y,0.03313,-3.287,447,GP2
 447,L,L,0,0,447,GP2
-447,L,*,,-3.796,447,GP2
 447,L,K,,-4.186,447,GP2
 447,L,N,,-2.871,447,GP2
 448,H,A,-0.09724,-1.885,448,GP2
@@ -8223,7 +7818,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 448,H,Y,-0.02209,-1.325,448,GP2
 448,H,H,0,0,448,GP2
 448,H,G,,-2.511,448,GP2
-449,L,*,-0.02023,-4.117,449,GP2
 449,L,A,-0.00405,-2.592,449,GP2
 449,L,F,0.02284,-3.79,449,GP2
 449,L,G,-0.003008,-2.527,449,GP2
@@ -8244,7 +7838,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 449,L,C,,-1.927,449,GP2
 449,L,D,,-4.152,449,GP2
 449,L,E,,-4.131,449,GP2
-450,V,*,0.001744,-3.289,450,GP2
 450,V,A,0.06079,-0.1883,450,GP2
 450,V,C,-0.08441,-0.1165,450,GP2
 450,V,F,-0.006707,-0.7568,450,GP2
@@ -8261,7 +7854,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 450,V,T,-0.02308,-0.4627,450,GP2
 450,V,V,0,0,450,GP2
 450,V,D,,-3.9,450,GP2
-451,K,*,-0.01265,-4.117,451,GP2
 451,K,A,-0.0005597,-0.7736,451,GP2
 451,K,E,-0.04076,-1.047,451,GP2
 451,K,G,-0.00399,-0.2045,451,GP2
@@ -8280,7 +7872,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 451,K,I,,-3.303,451,GP2
 451,K,T,,-1.817,451,GP2
 451,K,Y,,-2.212,451,GP2
-452,I,*,0.02,-3.992,452,GP2
 452,I,A,0.005553,-2.865,452,GP2
 452,I,F,-0.03048,0.3167,452,GP2
 452,I,L,0.1246,-0.4282,452,GP2
@@ -8308,7 +7899,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 453,P,T,0.005297,-3.809,453,GP2
 453,P,V,0.666,-3.554,453,GP2
 453,P,P,0,0,453,GP2
-453,P,*,,-3.91,453,GP2
 453,P,A,,-3.613,453,GP2
 453,P,C,,-2.72,453,GP2
 453,P,D,,-4.098,453,GP2
@@ -8332,7 +7922,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 454,T,G,,-3.88,454,GP2
 454,T,M,,-3.476,454,GP2
 454,T,R,,-3.96,454,GP2
-455,H,*,0.01775,-4.103,455,GP2
 455,H,A,0.02439,-2.141,455,GP2
 455,H,C,-0.01412,-2.498,455,GP2
 455,H,L,-0.05177,-3.861,455,GP2
@@ -8365,9 +7954,7 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 456,R,W,-0.0005367,-4.207,456,GP2
 456,R,Y,-0.0001435,-4.194,456,GP2
 456,R,R,0,0,456,GP2
-456,R,*,,-4.133,456,GP2
 456,R,H,,-1.772,456,GP2
-457,H,*,0.2096,-4.154,457,GP2
 457,H,L,0.1068,-4.201,457,GP2
 457,H,N,-0.06797,-4.076,457,GP2
 457,H,P,0.01647,-3.361,457,GP2
@@ -8397,11 +7984,9 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 458,I,V,0.2989,0.2605,458,GP2
 458,I,Y,-0.0981,-2.367,458,GP2
 458,I,I,0,0,458,GP2
-458,I,*,,-4.018,458,GP2
 458,I,E,,-2.292,458,GP2
 458,I,G,,-3.958,458,GP2
 458,I,P,,-2.212,458,GP2
-459,V,*,0.000457,-4.157,459,GP2
 459,V,A,-0.01594,-1.482,459,GP2
 459,V,C,0.3235,-1.783,459,GP2
 459,V,E,-0.03946,-1.203,459,GP2
@@ -8421,7 +8006,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 459,V,D,,-0.5435,459,GP2
 459,V,Q,,-0.6546,459,GP2
 459,V,Y,,-2.28,459,GP2
-460,G,*,0.003827,-4.11,460,GP2
 460,G,A,-0.005433,-1.8,460,GP2
 460,G,D,0.05262,-1.726,460,GP2
 460,G,F,-0.01648,-2.575,460,GP2
@@ -8438,7 +8022,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 460,G,H,,-1.017,460,GP2
 460,G,K,,-3.022,460,GP2
 460,G,P,,-3.965,460,GP2
-461,K,*,0.2945,-4.101,461,GP2
 461,K,A,-0.097,0.6507,461,GP2
 461,K,E,-0.005155,0.3734,461,GP2
 461,K,F,-0.03248,-2.337,461,GP2
@@ -8455,7 +8038,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 461,K,W,-0.01764,-0.8655,461,GP2
 461,K,Y,-0.004243,-1.486,461,GP2
 461,K,K,0,0,461,GP2
-462,S,*,0.0002894,-3.944,462,GP2
 462,S,A,-0.00516,-0.9691,462,GP2
 462,S,C,0.01633,-1.452,462,GP2
 462,S,F,0.2548,-0.7152,462,GP2
@@ -8476,7 +8058,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 462,S,S,0,0,462,GP2
 462,S,D,,-0.194,462,GP2
 462,S,E,,-0.3186,462,GP2
-463,C,*,0.0005957,-4.223,463,GP2
 463,C,A,-0.02579,-4.304,463,GP2
 463,C,D,-0.0062,-4.28,463,GP2
 463,C,F,0.0853,-4.176,463,GP2
@@ -8496,7 +8077,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 463,C,C,0,0,463,GP2
 463,C,M,,-4.196,463,GP2
 463,C,P,,-3.129,463,GP2
-464,P,*,0.006597,-4.272,464,GP2
 464,P,A,0.0959,-3.994,464,GP2
 464,P,F,-0.0004447,-4.128,464,GP2
 464,P,H,0.05607,-4.322,464,GP2
@@ -8515,7 +8095,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 464,P,D,,-4.281,464,GP2
 464,P,G,,-4.255,464,GP2
 464,P,W,,-3.245,464,GP2
-465,K,*,-0.002445,-4.269,465,GP2
 465,K,A,-0.01245,-1.552,465,GP2
 465,K,C,0.0006943,-3.801,465,GP2
 465,K,D,-0.002989,-3.685,465,GP2
@@ -8550,13 +8129,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 466,P,V,0.00137,-4.15,466,GP2
 466,P,Y,0.0003235,-4.166,466,GP2
 466,P,P,0,0,466,GP2
-466,P,*,,-4.074,466,GP2
 466,P,A,,-4.226,466,GP2
 466,P,C,,-3.666,466,GP2
 466,P,E,,-4.045,466,GP2
 466,P,G,,-4.096,466,GP2
 466,P,W,,-3.886,466,GP2
-467,H,*,0.3657,-4.242,467,GP2
 467,H,A,-0.006813,-3.961,467,GP2
 467,H,C,0.0006063,-1.478,467,GP2
 467,H,E,0.003797,-4.207,467,GP2
@@ -8577,7 +8154,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 467,H,D,,-4.163,467,GP2
 467,H,N,,-4.215,467,GP2
 467,H,Y,,-4.119,467,GP2
-468,R,*,0.007957,-3.884,468,GP2
 468,R,D,0.01032,-4.146,468,GP2
 468,R,G,-0.06698,-4.159,468,GP2
 468,R,I,0.001047,-3.865,468,GP2
@@ -8604,7 +8180,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 469,L,V,0.1925,-0.2208,469,GP2
 469,L,Y,-0.0006577,-3.305,469,GP2
 469,L,L,0,0,469,GP2
-469,L,*,,-4.175,469,GP2
 469,L,A,,-4.021,469,GP2
 469,L,E,,-4.21,469,GP2
 469,L,G,,-2.855,469,GP2
@@ -8628,7 +8203,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 470,N,V,-0.03576,-4.143,470,GP2
 470,N,Y,0.2209,-4.299,470,GP2
 470,N,N,0,0,470,GP2
-470,N,*,,-4.21,470,GP2
 470,N,A,,-2.654,470,GP2
 470,N,E,,-3.988,470,GP2
 470,N,M,,-3.798,470,GP2
@@ -8649,10 +8223,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 471,H,W,0.169,-0.425,471,GP2
 471,H,Y,-0.03794,0.1441,471,GP2
 471,H,H,0,0,471,GP2
-471,H,*,,-2.048,471,GP2
 471,H,P,,0.2164,471,GP2
 471,H,Q,,0.3197,471,GP2
-472,M,*,-0.003169,-4.279,472,GP2
 472,M,A,-0.002022,0.06702,472,GP2
 472,M,C,-0.0213,-0.6317,472,GP2
 472,M,D,-0.0004923,,472,GP2
@@ -8684,7 +8256,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 473,G,V,0.3772,-4.246,473,GP2
 473,G,Y,-0.000577,-4.184,473,GP2
 473,G,G,0,0,473,GP2
-473,G,*,,-3.489,473,GP2
 473,G,C,,-4.15,473,GP2
 473,G,F,,-3.966,473,GP2
 473,G,I,,-3.769,473,GP2
@@ -8702,12 +8273,10 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 474,I,V,0.06502,0.2097,474,GP2
 474,I,Y,-0.07243,-1.992,474,GP2
 474,I,I,0,0,474,GP2
-474,I,*,,-3.869,474,GP2
 474,I,A,,-2.639,474,GP2
 474,I,C,,-0.9527,474,GP2
 474,I,E,,-0.6283,474,GP2
 474,I,H,,-2.023,474,GP2
-475,C,*,0.4796,-4.175,475,GP2
 475,C,A,-0.008437,-4.201,475,GP2
 475,C,E,0.04057,-4.21,475,GP2
 475,C,F,0.07387,-4.269,475,GP2
@@ -8728,7 +8297,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 475,C,C,0,0,475,GP2
 475,C,D,,-3.641,475,GP2
 475,C,P,,-2.812,475,GP2
-476,S,*,0.2254,-4.2,476,GP2
 476,S,A,-0.2166,-0.3598,476,GP2
 476,S,C,0.01296,-0.3038,476,GP2
 476,S,D,0.204,-3.742,476,GP2
@@ -8761,13 +8329,11 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 477,C,W,0.001206,-2.788,477,GP2
 477,C,Y,-0.001967,-4.184,477,GP2
 477,C,C,0,0,477,GP2
-477,C,*,,-4.045,477,GP2
 477,C,A,,-2.322,477,GP2
 477,C,D,,-3.965,477,GP2
 477,C,I,,-4.216,477,GP2
 477,C,N,,-4.233,477,GP2
 477,C,P,,-4.038,477,GP2
-478,G,*,-0.05523,-4.214,478,GP2
 478,G,C,0.2582,-2.297,478,GP2
 478,G,E,-0.01946,-1.336,478,GP2
 478,G,L,0.1185,-1.547,478,GP2
@@ -8782,7 +8348,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 478,G,I,,-3.599,478,GP2
 478,G,M,,-0.9097,478,GP2
 478,G,Y,,-0.9863,478,GP2
-479,L,*,-0.001993,-4.182,479,GP2
 479,L,A,-0.01398,0.04605,479,GP2
 479,L,D,-0.000368,0.043,479,GP2
 479,L,F,-0.3039,-0.2994,479,GP2
@@ -8801,7 +8366,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 479,L,W,0.0006307,-0.6593,479,GP2
 479,L,Y,0.03044,-0.2167,479,GP2
 479,L,L,0,0,479,GP2
-480,Y,*,0.2638,-4.261,480,GP2
 480,Y,C,0.003244,-4.136,480,GP2
 480,Y,D,0.0005383,-3.853,480,GP2
 480,Y,F,0.00616,0.0207,480,GP2
@@ -8822,7 +8386,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 480,Y,G,,-4.09,480,GP2
 480,Y,P,,-3.825,480,GP2
 480,Y,Q,,-3.489,480,GP2
-481,K,*,0.06938,-4.264,481,GP2
 481,K,A,-0.03641,-0.02794,481,GP2
 481,K,C,0.0512,0.12,481,GP2
 481,K,D,-0.02309,0.6063,481,GP2
@@ -8843,7 +8406,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 481,K,W,-0.001477,-0.5911,481,GP2
 481,K,Y,0.2751,0.1473,481,GP2
 481,K,K,0,0,481,GP2
-482,Q,*,-0.2214,-4.274,482,GP2
 482,Q,A,-0.005491,-0.02695,482,GP2
 482,Q,D,0.02354,-1.219,482,GP2
 482,Q,E,-0.009893,-0.7951,482,GP2
@@ -8864,7 +8426,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 482,Q,C,,-1.933,482,GP2
 482,Q,G,,-2.128,482,GP2
 482,Q,H,,-0.6434,482,GP2
-483,P,*,-0.001835,-4.234,483,GP2
 483,P,A,0.1137,-1.404,483,GP2
 483,P,D,-5.627e-08,-0.935,483,GP2
 483,P,F,-0.1131,0.028,483,GP2
@@ -8900,10 +8461,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 484,G,W,0.1506,0.2002,484,GP2
 484,G,Y,0.2428,-1.05,484,GP2
 484,G,G,0,0,484,GP2
-484,G,*,,-4.223,484,GP2
 484,G,C,,-0.4216,484,GP2
 484,G,E,,-2.944,484,GP2
-485,V,*,-0.01902,-4.277,485,GP2
 485,V,A,0.04694,0.3478,485,GP2
 485,V,D,-0.007729,-1.985,485,GP2
 485,V,E,-0.3426,-1.049,485,GP2
@@ -8935,10 +8494,8 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 486,P,V,0.00369,-1.353,486,GP2
 486,P,Y,-0.04005,-0.7074,486,GP2
 486,P,P,0,0,486,GP2
-486,P,*,,-3.964,486,GP2
 486,P,E,,0.3619,486,GP2
 486,P,N,,-2.426,486,GP2
-487,V,*,0.09333,-4.243,487,GP2
 487,V,A,-0.1217,-3.016,487,GP2
 487,V,F,-0.001906,-3.866,487,GP2
 487,V,I,0.01363,0.4098,487,GP2
@@ -8954,7 +8511,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 487,V,Q,,-3.341,487,GP2
 487,V,S,,-1.288,487,GP2
 487,V,Y,,-3.161,487,GP2
-488,K,*,-0.0008147,-4.226,488,GP2
 488,K,E,-0.00131,-0.9068,488,GP2
 488,K,F,0.03824,-0.868,488,GP2
 488,K,G,-0.001831,-1.75,488,GP2
@@ -8975,7 +8531,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 488,K,D,,-3.555,488,GP2
 488,K,W,,-1.731,488,GP2
 488,K,Y,,-0.2213,488,GP2
-489,W,*,-0.00225,-4.243,489,GP2
 489,W,C,0.00732,-4.157,489,GP2
 489,W,E,-0.008843,-2.036,489,GP2
 489,W,F,-0.03625,-2.12,489,GP2
@@ -8994,7 +8549,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 489,W,G,,-3.627,489,GP2
 489,W,Q,,-4.157,489,GP2
 489,W,Y,,-2.982,489,GP2
-490,K,*,-0.03102,-4.259,490,GP2
 490,K,A,-0.001078,-0.4435,490,GP2
 490,K,E,0.1114,-1.033,490,GP2
 490,K,F,0.02078,-0.6662,490,GP2
@@ -9013,7 +8567,6 @@ site,wildtype,mutant,arevirumab escape,293T entry,sequential_site,region
 490,K,K,0,0,490,GP2
 490,K,C,,-0.3184,490,GP2
 490,K,G,,-2.995,490,GP2
-491,R,*,-0.1817,-2.014,491,GP2
 491,R,C,0.0001316,-0.3315,491,GP2
 491,R,E,0.1966,-2.7,491,GP2
 491,R,F,0.0742,-0.9649,491,GP2

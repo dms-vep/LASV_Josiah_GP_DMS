@@ -86,7 +86,7 @@ polyclonal_params_default: &polyclonal_params_default
 escape_plot_kwargs_default: &escape_plot_kwargs_default
   alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C','*']
   addtl_slider_stats:
-    times_seen: 3
+    times_seen: 2
   addtl_tooltip_stats:
     - sequential_site
   heatmap_max_at_least: 2
@@ -106,7 +106,7 @@ plot_hide_stats_default: &plot_hide_stats_default
     csv_col: effect
     init: -1.5
     min_filters:
-      times_seen: 3
+      times_seen: 2
 
 # define the antibody selections
 antibody_selections:
@@ -735,7 +735,7 @@ antibody_selections:
 avg_escape_plot_kwargs_default: &avg_escape_plot_kwargs_default
   alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C',"'*'"]
   addtl_slider_stats:
-    times_seen: 3
+    times_seen: 2
   addtl_tooltip_stats:
     - sequential_site
   heatmap_max_at_least: 2
@@ -743,6 +743,7 @@ avg_escape_plot_kwargs_default: &avg_escape_plot_kwargs_default
   init_floor_at_zero: false
   init_site_statistic: sum
   site_zoom_bar_color_col: region  # supplied in `site_numbering_map`
+  init_n_models: 4
 
 # Define defaults for each antibody/serum, used via the merge (<<) operator
 avg_antibody_escape_default: &avg_antibody_escape_default
@@ -792,7 +793,7 @@ avg_antibody_escape:
       - LibA-220728-2510C-2
       - LibB-220728-2510C-1
       - LibB-220728-2510C-2
-  121F_best:
+  121F:
     <<: *avg_antibody_escape_default
     title: Escape map for antibody 121F
     selections:
@@ -802,16 +803,6 @@ avg_antibody_escape:
       - LibB-220728-121F-2
       # - LibA-230819-121F-1
       # - LibB-230819-121F-1
-  121F_all:
-    <<: *avg_antibody_escape_default
-    title: Escape map for antibody 121F
-    selections:
-      - LibA-220728-121F-1
-      - LibA-220728-121F-2
-      - LibB-220728-121F-1
-      - LibB-220728-121F-2
-      - LibA-230819-121F-1
-      - LibB-230819-121F-1
   256A:
     <<: *avg_antibody_escape_default
     title: Escape map for antibody 256A
@@ -820,7 +811,7 @@ avg_antibody_escape:
       - LibA-220728-256A-2
       - LibB-220728-256A-1
       - LibB-220728-256A-2
-  372D_best:
+  372D:
     <<: *avg_antibody_escape_default
     title: Escape map for antibody 372D
     selections:
@@ -834,17 +825,3 @@ avg_antibody_escape:
       # - LibB-220907-372D-2
       # - LibA-230819-372D-1
       # - LibB-230819-372D-1
-  372D_all:
-    <<: *avg_antibody_escape_default
-    title: Escape map for antibody 372D
-    selections:
-      - LibA-220823-372D-1
-      - LibA-220823-372D-2
-      - LibB-220823-372D-1
-      - LibB-220823-372D-2
-      - LibA-220907-372D-1
-      - LibA-220907-372D-2
-      - LibB-220907-372D-1
-      - LibB-220907-372D-2
-      - LibA-230819-372D-1
-      - LibB-230819-372D-1
