@@ -54,9 +54,13 @@ results/antibody_escape/by_selection/*.pickle
 results/antibody_escape/by_selection/*.csv
 !results/antibody_escape/averages
 results/antibody_escape/averages/*
-!results/antibody_escape/averages/*_mut_escape.csv
+!results/antibody_escape/averages/*_mut_effect.csv
 !results/antibody_escape/averages/*_mut_icXX.csv
 
 !results/summaries
 results/summaries/*
 !results/summaries/summary.csv
+
+!results/filtered_antibody_escape_CSVs
+results/filtered_antibody_escape_CSVs/*
+!results/filtered_antibody_escape_CSVs/*_filtered_mut_effect.csv
