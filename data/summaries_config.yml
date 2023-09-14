@@ -6,7 +6,7 @@
 # --------------------------------------------------------------------------------------
 
 summary:
-  min_times_seen: 3  # only include mutations with times_seen >= this
+  min_times_seen: 2  # only include mutations with times_seen >= this
   min_frac_models: 1  # only include mutations in >= this fraction of models
   alphabet: [A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y]  # amino acids to include
   init_floor_escape_at_zero: true  # initially floor site escape to be >= 0?
@@ -19,9 +19,11 @@ summary:
       max_at_least: 1  # make heatmap max at least
       min_at_least: -1  # make heatmap min at least this
       antibody_list:  # antibodies to include: keys name used for `avg_escape`, values name for plot
-        372D: 372D 
+        89F: 89F
         121F: 121F 
-        89F: 89F 
+        372D: 372D 
+        
+         
   func_effects: # effects of mutations on function
     293T entry:  # name of functional selection
       condition: 293T_entry  # condition specified in `avg_func_effects`
@@ -30,7 +32,7 @@ summary:
       negative_color: "#F0E442"  # yellow
       max_at_least: 1
       min_at_least: 0
-      init_min_value: -3  # initial min value in slider
+      init_min_value: -1.5  # initial min value in slider
   other_assays: {} # other assays that we show, empty dict if no assays being shown
   title: Effects of mutations to glycoprotein (GP) of Lassa virus Josiah strain on antibody escape and DG-mediated cell entry as measured in lentiviral deep mutational scanning
   legend: |

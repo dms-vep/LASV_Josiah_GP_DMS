@@ -64,3 +64,7 @@ results/summaries/*
 !results/filtered_antibody_escape_CSVs
 results/filtered_antibody_escape_CSVs/*
 !results/filtered_antibody_escape_CSVs/*_filtered_mut_effect.csv
+
+!results/mapped_scores_onto_pdb/
+results/mapped_scores_onto_pdb/*
+!results/mapped_scores_onto_pdb/*.pdb

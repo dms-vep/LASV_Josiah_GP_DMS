@@ -19,6 +19,54 @@ rule spatial_distances:
     script:
         "scripts/spatial_distances.py"
 
+
+rule averaged_ridgeplot_func_scores:
+    """
+    Average the functional score variants by type
+    and display as a ridgeplot for the final functional 
+    selections used in the averages.
+    """
+    input:
+        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        nb="notebooks/visualize_func_scores_by_variant_type.ipynb",
+    params:
+        libA_1="LibA-220823-293T-1",
+        libA_2="LibA-220823-293T-2",
+        libA_3="LibA-220907-293T-1",
+        libA_4="LibA-220907-293T-2",
+        libB_1="LibB-220823-293T-1",
+        libB_2="LibB-220823-293T-2",
+        libB_3="LibB-220907-293T-1",
+        libB_4="LibB-220907-293T-2",
+        summary_dir="results/func_scores/",
+        score_dir="results/func_scores/",
+        html_dir="results/averaged_func_scores_ridgeplot/"
+    output:
+        html_output="results/averaged_func_scores_ridgeplot/averaged_func_scores_ridgeplot.html",
+        nb="results/notebooks/visualize_func_scores_by_variant_type.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/averaged_ridgeplot_func_scores.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p libA_1 {params.libA_1} \
+            -p libA_2 {params.libA_2} \
+            -p libA_3 {params.libA_3} \
+            -p libA_4 {params.libA_4} \
+            -p libB_1 {params.libB_1} \
+            -p libB_2 {params.libB_2} \
+            -p libB_3 {params.libB_3} \
+            -p libB_4 {params.libB_4} \
+            -p summary_dir {params.summary_dir} \
+            -p score_dir {params.score_dir} \
+            -p html_dir {params.html_dir} \
+            -p html_output {output.html_output} \
+            &> {log}
+        """
+
+
 rule human_mastomys_correlation:
     """
     Correlation of functional scores from humanDAG1
@@ -32,7 +80,9 @@ rule human_mastomys_correlation:
     params:
         MTS=2, # min_times_seen
         n_selections=8,
+        html_dir="results/DAG1_ortholog_correlations/"
     output:
+        html_output="results/DAG1_ortholog_correlations/DAG1_ortholog_correlations.html",
         nb="results/notebooks/human_mastomys_correlation.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -46,6 +96,8 @@ rule human_mastomys_correlation:
             -p mastomysDAG1_data_path {input.mastomysDAG1_scores} \
             -p MTS {params.MTS} \
             -p n_selections {params.n_selections} \
+            -p html_dir {params.html_dir} \
+            -p html_output {output.html_output} \
             &> {log}
         """
 
@@ -160,10 +212,68 @@ rule get_filtered_escape_CSVs:
             -p filtered_escape_372D {output.filtered_escape_372D} \
             &> {log}
         """
-    
+
+rule map_scores_onto_pdb_structure:
+    """
+    Map filtered functional and antibody scores onto pdb structure.
+    """
+    input:
+        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        pdb_file="data/7puy.pdb",
+        filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
+        filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
+        filtered_escape_2510C="results/filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv",
+        filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
+        filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
+        filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        nb="notebooks/pdb_mapping.ipynb",
+    params:
+        min_times_seen=2,
+        n_selections=8,
+        out_dir="results/mapped_scores_onto_pdb/",
+    output:
+        pdb_func="results/mapped_scores_onto_pdb/func_scores.pdb",
+        pdb_377H="results/mapped_scores_onto_pdb/377H_escape.pdb",
+        pdb_89F="results/mapped_scores_onto_pdb/89F_escape.pdb",
+        pdb_2510C="results/mapped_scores_onto_pdb/2510C_escape.pdb",
+        pdb_121F="results/mapped_scores_onto_pdb/121F_escape.pdb",
+        pdb_256A="results/mapped_scores_onto_pdb/256A_escape.pdb",
+        pdb_372D="results/mapped_scores_onto_pdb/372D_escape.pdb",
+        nb="results/notebooks/pdb_mapping.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/map_scores_onto_pdb_structure.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p func_scores {input.func_scores} \
+            -p pdb_file {input.pdb_file} \
+            -p filtered_escape_377H {input.filtered_escape_377H} \
+            -p filtered_escape_89F {input.filtered_escape_89F} \
+            -p filtered_escape_2510C {input.filtered_escape_2510C} \
+            -p filtered_escape_121F {input.filtered_escape_121F} \
+            -p filtered_escape_256A {input.filtered_escape_256A} \
+            -p filtered_escape_372D {input.filtered_escape_372D} \
+            -p min_times_seen {params.min_times_seen} \
+            -p n_selections {params.n_selections} \
+            -p out_dir {params.out_dir} \
+            -p pdb_func {output.pdb_func} \
+            -p pdb_377H {output.pdb_377H} \
+            -p pdb_89F {output.pdb_89F} \
+            -p pdb_2510C {output.pdb_2510C} \
+            -p pdb_121F {output.pdb_121F} \
+            -p pdb_256A {output.pdb_256A} \
+            -p pdb_372D {output.pdb_372D} \
+            &> {log}
+        """
 
 
 docs["Additional analyses and data files"] = {
+    "Averaged functional score distributions by variant type" : {
+        "Interactive averaged functional score ridgeplot" : rules.averaged_ridgeplot_func_scores.output.html_output,
+        "Notebook creating averaged functional score ridgeplot" : rules.averaged_ridgeplot_func_scores.output.nb,
+    },
     "Correlations of DAG1 ortholog functional selections" : {
         "Notebook correlating functional effects on humanDAG1 vs mastomysDAG1 expressing cells" : rules.human_mastomys_correlation.output.nb,
     },
@@ -181,5 +291,8 @@ docs["Additional analyses and data files"] = {
             "CSV with filtered 256A antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_256A,
             "CSV with filtered 372D antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_372D,
         },
-    }
+    },
+    "Mapped data onto pdb structure" : {
+        "Notebook mapping score onto pdb structure" : rules.map_scores_onto_pdb_structure.output.nb,
+    },
 }

@@ -7358,7 +7358,8 @@ a.anchor-link {
     if (!diagrams.length) {
       return;
     }
-    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.esm.min.mjs")).default;
+    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.3.1/mermaid.esm.min.mjs")).default;
+    const parser = new DOMParser();
 
     mermaid.initialize({
       maxTextSize: 100000,
@@ -7374,39 +7375,52 @@ a.anchor-link {
     let _nextMermaidId = 0;
 
     function makeMermaidImage(svg) {
-      const img = document.createElement('img');
-      const maxWidth = svg.match(/max-width: (\d+)/);
-      if (maxWidth && maxWidth[1]) {
-        const width = parseInt(maxWidth[1]);
-        if (width && !Number.isNaN(width) && Number.isFinite(width)) {
-          img.width = width;
-        }
+      const img = document.createElement("img");
+      const doc = parser.parseFromString(svg, "image/svg+xml");
+      const svgEl = doc.querySelector("svg");
+      const { maxWidth } = svgEl?.style || {};
+      const firstTitle = doc.querySelector("title");
+      const firstDesc = doc.querySelector("desc");
+
+      img.setAttribute("src", `data:image/svg+xml,${encodeURIComponent(svg)}`);
+      if (maxWidth) {
+        img.width = parseInt(maxWidth);
       }
-      img.setAttribute('src', `data:image/svg+xml,${encodeURIComponent(svg)}`);
-      return img;
+      if (firstTitle) {
+        img.setAttribute("alt", firstTitle.textContent);
+      }
+      if (firstDesc) {
+        const caption = document.createElement("figcaption");
+        caption.className = "sr-only";
+        caption.textContent = firstDesc.textContent;
+        return [img, caption];
+      }
+      return [img];
     }
 
     async function makeMermaidError(text) {
-      let errorMessage = '';
+      let errorMessage = "";
       try {
         await mermaid.parse(text);
       } catch (err) {
         errorMessage = `${err}`;
       }
 
-      const result = document.createElement('details');
-      const summary = document.createElement('summary');
-      const pre = document.createElement('pre');
-      const code = document.createElement('code');
+      const result = document.createElement("details");
+      result.className = 'jp-RenderedMermaid-Details';
+      const summary = document.createElement("summary");
+      summary.className = 'jp-RenderedMermaid-Summary';
+      const pre = document.createElement("pre");
+      const code = document.createElement("code");
       code.innerText = text;
       pre.appendChild(code);
       summary.appendChild(pre);
       result.appendChild(summary);
 
-      const warning = document.createElement('pre');
+      const warning = document.createElement("pre");
       warning.innerText = errorMessage;
       result.appendChild(warning);
-      return result;
+      return [result];
     }
 
     async function renderOneMarmaid(src) {
@@ -7416,30 +7430,41 @@ a.anchor-link {
       const el = document.createElement("div");
       el.style.visibility = "hidden";
       document.body.appendChild(el);
-      let result = null;
+      let results = null;
+      let output = null;
       try {
         const { svg } = await mermaid.render(id, raw, el);
-        result = makeMermaidImage(svg);
+        results = makeMermaidImage(svg);
+        output = document.createElement("figure");
+        results.map(output.appendChild, output);
       } catch (err) {
         parent.classList.add("jp-mod-warning");
-        result = await makeMermaidError(raw);
+        results = await makeMermaidError(raw);
+        output = results[0];
       } finally {
         el.remove();
       }
       parent.classList.add("jp-RenderedMermaid");
-      parent.appendChild(result);
+      parent.appendChild(output);
     }
 
     void Promise.all([...diagrams].map(renderOneMarmaid));
   });
 </script>
 <style>
-  .jp-RenderedMarkdown .jp-Mermaid:not(.jp-RenderedMermaid) {
+  .jp-Mermaid:not(.jp-RenderedMermaid) {
     display: none;
   }
-  .jp-RenderedMarkdown .jp-RenderedMermaid.jp-mod-warning {
+
+  .jp-RenderedMermaid {
+    overflow: auto;
+    display: flex;
+  }
+
+  .jp-RenderedMermaid.jp-mod-warning {
     width: auto;
-    padding: 10px;
+    padding: 0.5em;
+    margin-top: 0.5em;
     border: var(--jp-border-width) solid var(--jp-warn-color2);
     border-radius: var(--jp-border-radius);
     color: var(--jp-ui-font-color1);
@@ -7447,17 +7472,32 @@ a.anchor-link {
     white-space: pre-wrap;
     word-wrap: break-word;
   }
-  .jp-RenderedMarkdown .jp-RenderedMermaid.jp-mod-warning details > pre {
+
+  .jp-RenderedMermaid figure {
+    margin: 0;
+    overflow: auto;
+    max-width: 100%;
+  }
+
+  .jp-RenderedMermaid img {
+    max-width: 100%;
+  }
+
+  .jp-RenderedMermaid-Details > pre {
     margin-top: 1em;
   }
-  .jp-RenderedMarkdown .jp-RenderedMermaid.jp-mod-warning summary {
+
+  .jp-RenderedMermaid-Summary {
     color: var(--jp-warn-color2);
   }
-  .jp-RenderedMarkdown .jp-RenderedMermaid.jp-mod-warning summary > pre {
-    display: inline-block;
-  }
-  .jp-RenderedMermaid > .mermaid {
+
+  .jp-RenderedMermaid:not(.jp-mod-warning) pre {
     display: none;
+  }
+
+  .jp-RenderedMermaid-Summary > pre {
+    display: inline-block;
+    white-space: normal;
   }
 </style>
 <!-- End of mermaid configuration --></head>
@@ -7655,9 +7695,9 @@ Clipping lower bound of functional scores to -3.938
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jupyter-widgets jp-OutputArea-output" id="899db8e3-3a92-4ee8-b8f9-dc9e1f7d1513" tabindex="0">
+<div class="jupyter-widgets jp-OutputArea-output" id="c15799a4-d6a7-4f9c-bdd8-7d54e5a11241" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('899db8e3-3a92-4ee8-b8f9-dc9e1f7d1513');
+var element = document.getElementById('c15799a4-d6a7-4f9c-bdd8-7d54e5a11241');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "df1ee9a8392b432a9a52405f397362bb", "version_major": 2, "version_minor": 0}
@@ -7673,9 +7713,9 @@ var element = document.getElementById('899db8e3-3a92-4ee8-b8f9-dc9e1f7d1513');
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jupyter-widgets jp-OutputArea-output" id="a3b1df4a-e118-49d7-b6b5-e2fdd547d56c" tabindex="0">
+<div class="jupyter-widgets jp-OutputArea-output" id="cb18c173-4a11-4d05-bc3a-ece54c896e9b" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('a3b1df4a-e118-49d7-b6b5-e2fdd547d56c');
+var element = document.getElementById('cb18c173-4a11-4d05-bc3a-ece54c896e9b');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "5055583a0e58439696d0c9dea1549f6e", "version_major": 2, "version_minor": 0}
@@ -7692,9 +7732,9 @@ INFO: Pandarallel will use Memory file system to transfer data between the main 
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jupyter-widgets jp-OutputArea-output" id="ca23b6f0-444e-4f39-9e8c-dd98ab0c4b20" tabindex="0">
+<div class="jupyter-widgets jp-OutputArea-output" id="b0b1576a-a837-4cab-8eac-9572fbacd7c2" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('ca23b6f0-444e-4f39-9e8c-dd98ab0c4b20');
+var element = document.getElementById('b0b1576a-a837-4cab-8eac-9572fbacd7c2');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "a93dc9b55e4544f08203af00099f1b3e", "version_major": 2, "version_minor": 0}
@@ -7711,9 +7751,9 @@ dropping: 0 variantswhich have mutations at those sites.
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jupyter-widgets jp-OutputArea-output" id="e22842af-1940-452e-8cf5-090238e6e983" tabindex="0">
+<div class="jupyter-widgets jp-OutputArea-output" id="1ba7e2dc-8f48-480e-9f3a-01596e1fbdfb" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('e22842af-1940-452e-8cf5-090238e6e983');
+var element = document.getElementById('1ba7e2dc-8f48-480e-9f3a-01596e1fbdfb');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "254ff39d3e854d9dad8e0601f1c298b8", "version_major": 2, "version_minor": 0}
