@@ -25,7 +25,7 @@ summary:
         
          
   func_effects: # effects of mutations on function
-    293T entry:  # name of functional selection
+    Entry in 293T cells:  # name of functional selection
       condition: 293T_entry  # condition specified in `avg_func_effects`
       effect_type: func_effects  # "func_effects" or "latent_effects"
       positive_color: "#009E73"  # green

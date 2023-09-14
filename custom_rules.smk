@@ -271,11 +271,12 @@ rule map_scores_onto_pdb_structure:
 
 docs["Additional analyses and data files"] = {
     "Averaged functional score distributions by variant type" : {
-        "Interactive averaged functional score ridgeplot" : rules.averaged_ridgeplot_func_scores.output.html_output,
-        "Notebook creating averaged functional score ridgeplot" : rules.averaged_ridgeplot_func_scores.output.nb,
+        "Interactive plot showing averaged functional score distributions by variant type" : rules.averaged_ridgeplot_func_scores.output.html_output,
+        "Notebook creating averaged functional score distributions" : rules.averaged_ridgeplot_func_scores.output.nb,
     },
     "Correlations of DAG1 ortholog functional selections" : {
-        "Notebook correlating functional effects on humanDAG1 vs mastomysDAG1 expressing cells" : rules.human_mastomys_correlation.output.nb,
+        "Interactive plot showing correlations between DAG1 ortholog functional selections" : rules.human_mastomys_correlation.output.html_output,
+        "Notebook correlating functional effects of humanDAG1 vs mastomysDAG1 expressing cells" : rules.human_mastomys_correlation.output.nb,
     },
     "Functional and antibody selection validations" : {
         "Notebook correlating measured vs predicted functional effects" : rules.validation_titers.output.nb,
