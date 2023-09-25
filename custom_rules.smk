@@ -157,6 +157,34 @@ rule validation_neuts_89F:
             &> {log}
         """
 
+
+rule visualize_RBD_regions:
+    """
+    Heatmaps of alpha-dystroglycan and LAMP1
+    binding residues.
+    """
+    input:
+        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        nb="notebooks/visualize_RBD_regions.ipynb",
+    params:
+        min_times_seen=2,
+        n_selections=8,
+    output:
+        nb="results/notebooks/visualize_RBD_regions.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/visualize_RBD_regions.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p func_scores {input.func_scores} \
+            -p min_times_seen {params.min_times_seen} \
+            -p n_selections {params.n_selections} \
+            &> {log}
+        """
+
+
 rule get_filtered_escape_CSVs:
     """
     Filter antibody escape data based on configuration 
@@ -281,6 +309,9 @@ docs["Additional analyses and data files"] = {
     "Functional and antibody selection validations" : {
         "Notebook correlating measured vs predicted functional effects" : rules.validation_titers.output.nb,
         "Notebook correlating measured vs predicted neutralization": rules.validation_neuts_89F.output.nb,
+    },
+    "Receptor binding residue heatmaps" : {
+        "Notebook creating heatmaps for alpha-DG and LAMP1 binding residues" : rules.visualize_RBD_regions.output.nb,
     },
     "Filtered antibody escape data" : {
         "Notebook applying filters to antibody escape data" : rules.get_filtered_escape_CSVs.output.nb,
