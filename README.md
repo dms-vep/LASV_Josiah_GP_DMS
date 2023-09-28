@@ -33,9 +33,9 @@ Only some of these results are tracked to save space (see [.gitignore](.gitignor
 
 The pipeline builds HTML documentation for the pipeline in [./docs/](docs), which is rendered via GitHub Pages at [https://dms-vep.github.io/LASV_Josiah_GP_DMS/](https://dms-vep.github.io/LASV_Josiah_GP_DMS/).
 
-### Library design
-The design of the mutant library is contained in [./library_design/](library_design).
-The design is not part of the pipeline but contains code that must be run separately with its own [conda](https://docs.conda.io/) environment.
+### Non-pipeline analyses
+All other non-pipeline analyses (library construction, phylogeny analysis, virus titers, and virus neutralization assays) are contained in [./non-pipeline_analyses/](non-pipeline_analyses).
+This directory is not part of the pipeline but contains code that must be run separately with its own [conda](https://docs.conda.io/) environments.
 
 ## Running the pipeline
 To run the pipeline, build the conda environment `dms-vep-pipeline-3` in the `environment.yml` file of [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3), activate it, and run [snakemake](https://snakemake.readthedocs.io/), such as:
