@@ -260,7 +260,8 @@ rule map_scores_onto_pdb_structure:
         n_selections=8,
         out_dir="results/mapped_scores_onto_pdb/",
     output:
-        pdb_func="results/mapped_scores_onto_pdb/func_scores.pdb",
+        pdb_func_min="results/mapped_scores_onto_pdb/func_scores_min.pdb",
+        pdb_func_max="results/mapped_scores_onto_pdb/func_scores_max.pdb",
         pdb_377H="results/mapped_scores_onto_pdb/377H_escape.pdb",
         pdb_89F="results/mapped_scores_onto_pdb/89F_escape.pdb",
         pdb_2510C="results/mapped_scores_onto_pdb/2510C_escape.pdb",
@@ -286,7 +287,8 @@ rule map_scores_onto_pdb_structure:
             -p min_times_seen {params.min_times_seen} \
             -p n_selections {params.n_selections} \
             -p out_dir {params.out_dir} \
-            -p pdb_func {output.pdb_func} \
+            -p pdb_func_min {output.pdb_func_min} \
+            -p pdb_func_max {output.pdb_func_max} \
             -p pdb_377H {output.pdb_377H} \
             -p pdb_89F {output.pdb_89F} \
             -p pdb_2510C {output.pdb_2510C} \

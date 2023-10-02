@@ -7498,6 +7498,30 @@ a.anchor-link {
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">polyclonal</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="c1"># Plotting colors</span>
+<span class="n">tol_muted_adjusted</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"#000000"</span><span class="p">,</span>
+    <span class="s2">"#CC6677"</span><span class="p">,</span> 
+    <span class="s2">"#1f78b4"</span><span class="p">,</span> 
+    <span class="s2">"#DDCC77"</span><span class="p">,</span> 
+    <span class="s2">"#117733"</span><span class="p">,</span> 
+    <span class="s2">"#882255"</span><span class="p">,</span> 
+    <span class="s2">"#88CCEE"</span><span class="p">,</span>
+    <span class="s2">"#44AA99"</span><span class="p">,</span> 
+    <span class="s2">"#999933"</span><span class="p">,</span> 
+    <span class="s2">"#AA4499"</span><span class="p">,</span> 
+    <span class="s2">"#EE7733"</span><span class="p">,</span>
+    <span class="s2">"#CC3311"</span><span class="p">,</span>
+    <span class="s2">"#DDDDDD"</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># Seaborn style settings</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s2">"figure.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="s2">"savefig.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">})</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">"ticks"</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="n">tol_muted_adjusted</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7526,7 +7550,8 @@ a.anchor-link {
 <span class="n">n_selections</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">out_dir</span> <span class="o">=</span> <span class="kc">None</span>
 
-<span class="n">pdb_func</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">pdb_func_min</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">pdb_func_max</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pdb_377H</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pdb_89F</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pdb_2510C</span> <span class="o">=</span> <span class="kc">None</span>
@@ -7538,7 +7563,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=bd7b180d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=2c37be9e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7570,7 +7595,8 @@ a.anchor-link {
 <span class="n">min_times_seen</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">n_selections</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">out_dir</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/"</span>
-<span class="n">pdb_func</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/func_scores.pdb"</span>
+<span class="n">pdb_func_min</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/func_scores_min.pdb"</span>
+<span class="n">pdb_func_max</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/func_scores_max.pdb"</span>
 <span class="n">pdb_377H</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/377H_escape.pdb"</span>
 <span class="n">pdb_89F</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/89F_escape.pdb"</span>
 <span class="n">pdb_2510C</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/2510C_escape.pdb"</span>
@@ -7605,7 +7631,8 @@ a.anchor-link {
 <span class="c1"># n_selections = 8</span>
 <span class="c1"># out_dir = "../results/mapped_scores_onto_pdb/"</span>
 
-<span class="c1"># pdb_func = "../results/mapped_scores_onto_pdb/func_scores.pdb"</span>
+<span class="c1"># pdb_func_min = "../results/mapped_scores_onto_pdb/func_scores_min.pdb"</span>
+<span class="c1"># pdb_func_max = "../results/mapped_scores_onto_pdb/func_scores_max.pdb"</span>
 <span class="c1"># pdb_377H = "../results/mapped_scores_onto_pdb/377H_escape.pdb"</span>
 <span class="c1"># pdb_89F = "../results/mapped_scores_onto_pdb/89F_escape.pdb"</span>
 <span class="c1"># pdb_2510C = "../results/mapped_scores_onto_pdb/2510C_escape.pdb"</span>
@@ -7632,10 +7659,11 @@ a.anchor-link {
 <span class="sd">    """</span>
     
     <span class="n">functional_scores</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">func_scores_file</span><span class="p">)</span>
-    
+
+    <span class="c1"># Filter for minimum selections, times seen and no stop codons</span>
     <span class="n">functional_scores</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">functional_scores</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
-            <span class="s2">"n_selections &gt;= @n_selections and times_seen &gt;= @min_times_seen"</span>
+            <span class="s2">"n_selections &gt;= @n_selections and times_seen &gt;= @min_times_seen and mutant != '*'"</span>
         <span class="p">)</span>
         <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"mutant"</span><span class="p">,</span> <span class="s2">"times_seen"</span><span class="p">,</span> <span class="s2">"wildtype"</span><span class="p">])</span>
         <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"site"</span><span class="p">])</span>
@@ -7644,6 +7672,10 @@ a.anchor-link {
         <span class="p">})</span>
         <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
     <span class="p">)</span>
+
+    <span class="c1"># Scores greater than 0</span>
+    <span class="n">max_scores</span> <span class="o">=</span> <span class="n">functional_scores</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">functional_scores</span><span class="p">[</span><span class="s2">"effect"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">][</span><span class="s2">"site"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Sites greater than 0: </span><span class="si">{</span><span class="n">max_scores</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     
     <span class="n">functional_scores_aA</span> <span class="o">=</span> <span class="n">functional_scores</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">functional_scores_bB</span> <span class="o">=</span> <span class="n">functional_scores</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -7671,7 +7703,9 @@ a.anchor-link {
 
     <span class="n">functional_scores</span> <span class="o">=</span> <span class="n">functional_scores</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">"site"</span> <span class="p">:</span> <span class="s2">"int"</span><span class="p">})</span> 
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of summed functional scores: </span><span class="si">{</span><span class="n">functional_scores</span><span class="p">[</span><span class="s1">'effect'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of averaged functional scores: </span><span class="si">{</span><span class="n">functional_scores</span><span class="p">[</span><span class="s1">'effect'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Functional score range: </span><span class="si">{</span><span class="n">functional_scores</span><span class="p">[</span><span class="s1">'effect'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">functional_scores</span><span class="p">[</span><span class="s1">'effect'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
 
     <span class="n">polyclonal</span><span class="o">.</span><span class="n">pdb_utils</span><span class="o">.</span><span class="n">reassign_b_factor</span><span class="p">(</span>
         <span class="n">input_pdbfile</span><span class="o">=</span><span class="n">input_pdb_file</span><span class="p">,</span>
@@ -7701,6 +7735,9 @@ a.anchor-link {
 <span class="sd">    """</span>
     
     <span class="n">escape_scores</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">escape_scores_file</span><span class="p">)</span>
+
+    <span class="c1"># Add dummy phenotype column</span>
+    <span class="n">escape_scores</span><span class="p">[</span><span class="s2">"phenotype"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"escape"</span>
     
     <span class="n">escape_scores</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">escape_scores</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"site"</span><span class="p">])</span>
@@ -7737,6 +7774,11 @@ a.anchor-link {
     <span class="n">escape_scores</span> <span class="o">=</span> <span class="n">escape_scores</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">"site"</span> <span class="p">:</span> <span class="s2">"int"</span><span class="p">})</span> 
 
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"95th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"99th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
 
     <span class="n">polyclonal</span><span class="o">.</span><span class="n">pdb_utils</span><span class="o">.</span><span class="n">reassign_b_factor</span><span class="p">(</span>
         <span class="n">input_pdbfile</span><span class="o">=</span><span class="n">input_pdb_file</span><span class="p">,</span>
@@ -7763,8 +7805,9 @@ a.anchor-link {
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">out_dir</span><span class="p">)</span>
 
-<span class="c1"># Functional scores mapped to pdb structure</span>
-<span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
+<span class="c1"># Functional scores mapped to pdb structure for scores less than and greater than 0</span>
+<span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func_min</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
+<span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func_max</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
 
 <span class="c1"># Antibody files</span>
 <span class="n">antibodies</span> <span class="o">=</span> <span class="p">[</span>
@@ -7799,13 +7842,50 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>50th percentile of summed functional scores: -1.859275
+<pre>Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
+50th percentile of averaged functional scores: -1.7703166666666668
+Functional score range: -4.15625 to 0.5850444444444444
+
+Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
+50th percentile of averaged functional scores: -1.7703166666666668
+Functional score range: -4.15625 to 0.5850444444444444
+
 50th percentile of summed escape scores: 0.20373249999999998
+75th percentile of summed escape scores: 0.7013
+90th percentile of summed escape scores: 1.29705
+95th percentile of summed escape scores: 1.8643701
+99th percentile of summed escape scores: 6.940110000000001
+
 50th percentile of summed escape scores: -0.07459299999999995
+75th percentile of summed escape scores: 0.28646
+90th percentile of summed escape scores: 1.169869
+95th percentile of summed escape scores: 6.7504
+99th percentile of summed escape scores: 17.96848
+
 50th percentile of summed escape scores: 0.1513664
+75th percentile of summed escape scores: 0.6123959000000001
+90th percentile of summed escape scores: 1.310104
+95th percentile of summed escape scores: 2.175774
+99th percentile of summed escape scores: 4.4696102
+
 50th percentile of summed escape scores: 0.08614284999999999
+75th percentile of summed escape scores: 0.63430895
+90th percentile of summed escape scores: 2.0737002500000052
+95th percentile of summed escape scores: 3.975534
+99th percentile of summed escape scores: 11.075025
+
 50th percentile of summed escape scores: 0.051686
+75th percentile of summed escape scores: 0.37280267
+90th percentile of summed escape scores: 0.7983226
+95th percentile of summed escape scores: 1.1802359999999998
+99th percentile of summed escape scores: 2.10099526
+
 50th percentile of summed escape scores: 0.14853199999999997
+75th percentile of summed escape scores: 0.6100228
+90th percentile of summed escape scores: 1.1972004000000007
+95th percentile of summed escape scores: 1.687465
+99th percentile of summed escape scores: 3.9693435
+
 </pre>
 </div>
 </div>
