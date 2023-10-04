@@ -1,0 +1,11 @@
+name: pdb_r_analysis
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - jupyterlab
+  - r-essentials
+  - r-irkernel
+  - r-bio3d
