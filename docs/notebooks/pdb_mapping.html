@@ -7331,7 +7331,7 @@ a.anchor-link {
     if (!diagrams.length) {
       return;
     }
-    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.3.1/mermaid.esm.min.mjs")).default;
+    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.0/mermaid.esm.min.mjs")).default;
     const parser = new DOMParser();
 
     mermaid.initialize({
@@ -7498,30 +7498,6 @@ a.anchor-link {
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">polyclonal</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-
-<span class="c1"># Plotting colors</span>
-<span class="n">tol_muted_adjusted</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">"#000000"</span><span class="p">,</span>
-    <span class="s2">"#CC6677"</span><span class="p">,</span> 
-    <span class="s2">"#1f78b4"</span><span class="p">,</span> 
-    <span class="s2">"#DDCC77"</span><span class="p">,</span> 
-    <span class="s2">"#117733"</span><span class="p">,</span> 
-    <span class="s2">"#882255"</span><span class="p">,</span> 
-    <span class="s2">"#88CCEE"</span><span class="p">,</span>
-    <span class="s2">"#44AA99"</span><span class="p">,</span> 
-    <span class="s2">"#999933"</span><span class="p">,</span> 
-    <span class="s2">"#AA4499"</span><span class="p">,</span> 
-    <span class="s2">"#EE7733"</span><span class="p">,</span>
-    <span class="s2">"#CC3311"</span><span class="p">,</span>
-    <span class="s2">"#DDDDDD"</span><span class="p">,</span>
-<span class="p">]</span>
-
-<span class="c1"># Seaborn style settings</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s2">"figure.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="s2">"savefig.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">})</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">"ticks"</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="n">tol_muted_adjusted</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7563,7 +7539,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=16c04536">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=1dc6446e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7730,15 +7706,19 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">escape_scores_to_b_factors</span><span class="p">(</span><span class="n">input_pdb_file</span><span class="p">,</span> <span class="n">output_pdb_file</span><span class="p">,</span> <span class="n">escape_scores_file</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""</span>
-<span class="sd">    Function to map funcitonal scores to a pdb structure</span>
+<span class="sd">    Function to map escape scores to a pdb structure</span>
 <span class="sd">    using mut_escape_pdb_b_factor function from polyclonal.</span>
 <span class="sd">    """</span>
     
     <span class="n">escape_scores</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">escape_scores_file</span><span class="p">)</span>
+    <span class="n">antibody_name</span> <span class="o">=</span> <span class="n">escape_scores_file</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"_"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="c1"># Add dummy phenotype column</span>
     <span class="n">escape_scores</span><span class="p">[</span><span class="s2">"phenotype"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"escape"</span>
-    
+    <span class="c1"># Clip lower scores to 0</span>
+    <span class="n">escape_scores</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span> <span class="o">=</span> <span class="n">escape_scores</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Calculate site sums</span>
     <span class="n">escape_scores</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">escape_scores</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"site"</span><span class="p">])</span>
         <span class="o">.</span><span class="n">aggregate</span><span class="p">({</span>
@@ -7746,6 +7726,15 @@ a.anchor-link {
         <span class="p">})</span>
         <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
     <span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">antibody_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max summed escape: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="c1"># Verify max matches altair plots</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"95th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"99th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
     
     <span class="n">escape_scores_aA</span> <span class="o">=</span> <span class="n">escape_scores</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="n">escape_scores_bB</span> <span class="o">=</span> <span class="n">escape_scores</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -7772,13 +7761,6 @@ a.anchor-link {
     <span class="p">)</span>
 
     <span class="n">escape_scores</span> <span class="o">=</span> <span class="n">escape_scores</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">"site"</span> <span class="p">:</span> <span class="s2">"int"</span><span class="p">})</span> 
-
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"95th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"99th percentile of summed escape scores: </span><span class="si">{</span><span class="n">escape_scores</span><span class="p">[</span><span class="s1">'escape_median'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">()</span>
 
     <span class="n">polyclonal</span><span class="o">.</span><span class="n">pdb_utils</span><span class="o">.</span><span class="n">reassign_b_factor</span><span class="p">(</span>
         <span class="n">input_pdbfile</span><span class="o">=</span><span class="n">input_pdb_file</span><span class="p">,</span>
@@ -7811,20 +7793,20 @@ a.anchor-link {
 
 <span class="c1"># Antibody files</span>
 <span class="n">antibodies</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">filtered_escape_377H</span><span class="p">,</span>
-    <span class="n">filtered_escape_89F</span><span class="p">,</span>
     <span class="n">filtered_escape_2510C</span><span class="p">,</span>
     <span class="n">filtered_escape_121F</span><span class="p">,</span>
+    <span class="n">filtered_escape_377H</span><span class="p">,</span>
     <span class="n">filtered_escape_256A</span><span class="p">,</span> 
     <span class="n">filtered_escape_372D</span><span class="p">,</span>
+    <span class="n">filtered_escape_89F</span><span class="p">,</span>
 <span class="p">]</span>
 <span class="n">output_files</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">pdb_377H</span><span class="p">,</span>
-    <span class="n">pdb_89F</span><span class="p">,</span>
     <span class="n">pdb_2510C</span><span class="p">,</span>
     <span class="n">pdb_121F</span><span class="p">,</span>
+    <span class="n">pdb_377H</span><span class="p">,</span>
     <span class="n">pdb_256A</span><span class="p">,</span>
     <span class="n">pdb_372D</span><span class="p">,</span>
+    <span class="n">pdb_89F</span><span class="p">,</span>
 <span class="p">]</span>
 
 <span class="c1"># Escape scores mapped to pdb structure</span>
@@ -7850,41 +7832,53 @@ Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
 50th percentile of averaged functional scores: -1.7703166666666668
 Functional score range: -4.15625 to 0.5850444444444444
 
-50th percentile of summed escape scores: 0.20373249999999998
-75th percentile of summed escape scores: 0.7013
-90th percentile of summed escape scores: 1.29705
-95th percentile of summed escape scores: 1.8643701
-99th percentile of summed escape scores: 6.940110000000001
+2510C
+Max summed escape: 49.7267132
+50th percentile of summed escape scores: 0.299705
+75th percentile of summed escape scores: 0.76013575
+90th percentile of summed escape scores: 1.4507009
+95th percentile of summed escape scores: 2.32659475
+99th percentile of summed escape scores: 4.5219645
 
-50th percentile of summed escape scores: -0.07459299999999995
-75th percentile of summed escape scores: 0.28646
-90th percentile of summed escape scores: 1.169869
-95th percentile of summed escape scores: 6.7504
-99th percentile of summed escape scores: 17.96848
+121F
+Max summed escape: 15.08039
+50th percentile of summed escape scores: 0.31859465
+75th percentile of summed escape scores: 0.86309
+90th percentile of summed escape scores: 2.3419285000000003
+95th percentile of summed escape scores: 4.02105855
+99th percentile of summed escape scores: 10.847190120000016
 
-50th percentile of summed escape scores: 0.1513664
-75th percentile of summed escape scores: 0.6123959000000001
-90th percentile of summed escape scores: 1.310104
-95th percentile of summed escape scores: 2.175774
-99th percentile of summed escape scores: 4.4696102
+377H
+Max summed escape: 57.9146
+50th percentile of summed escape scores: 0.38629104999999997
+75th percentile of summed escape scores: 0.9139374250000001
+90th percentile of summed escape scores: 1.6164092000000003
+95th percentile of summed escape scores: 2.1874281
+99th percentile of summed escape scores: 6.811227899999981
 
-50th percentile of summed escape scores: 0.08614284999999999
-75th percentile of summed escape scores: 0.63430895
-90th percentile of summed escape scores: 2.0737002500000052
-95th percentile of summed escape scores: 3.975534
-99th percentile of summed escape scores: 11.075025
+256A
+Max summed escape: 36.52199
+50th percentile of summed escape scores: 0.13888
+75th percentile of summed escape scores: 0.47176419999999997
+90th percentile of summed escape scores: 0.8699674000000001
+95th percentile of summed escape scores: 1.255513319999999
+99th percentile of summed escape scores: 2.1082667984
 
-50th percentile of summed escape scores: 0.051686
-75th percentile of summed escape scores: 0.37280267
-90th percentile of summed escape scores: 0.7983226
-95th percentile of summed escape scores: 1.1802359999999998
-99th percentile of summed escape scores: 2.10099526
+372D
+Max summed escape: 14.577847
+50th percentile of summed escape scores: 0.315604137
+75th percentile of summed escape scores: 0.7863209999999999
+90th percentile of summed escape scores: 1.358576
+95th percentile of summed escape scores: 1.8110713999999986
+99th percentile of summed escape scores: 4.046765379999982
 
-50th percentile of summed escape scores: 0.14853199999999997
-75th percentile of summed escape scores: 0.6100228
-90th percentile of summed escape scores: 1.1972004000000007
-95th percentile of summed escape scores: 1.687465
-99th percentile of summed escape scores: 3.9693435
+89F
+Max summed escape: 34.1402
+50th percentile of summed escape scores: 0.37237800000000004
+75th percentile of summed escape scores: 0.86904
+90th percentile of summed escape scores: 1.66813
+95th percentile of summed escape scores: 7.1308
+99th percentile of summed escape scores: 17.395824000000037
 
 </pre>
 </div>

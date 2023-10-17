@@ -135,13 +135,15 @@ rule validation_neuts_89F:
     predicted values from DMS pipeline.
     """
     input:
+        frac_infected="data/validation_frac_infected_89F.csv",
         neuts="data/validation_neuts_89F.csv",
         predicted_scores="results/antibody_escape/averages/89F_mut_effect.csv",
         nb="notebooks/validation_neuts_89F.ipynb",
     params:
         out_dir="results/validation_plots/",
     output:
-        saved_image_path="results/validation_plots/89F_validation_correlation.svg",
+        neuts_image_path="results/validation_plots/validation_neut_curves_89F.svg",
+        corr_image_path="results/validation_plots/89F_validation_correlation.svg",
         nb="results/notebooks/validation_neuts_89F.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -150,10 +152,12 @@ rule validation_neuts_89F:
     shell:
         """
         papermill {input.nb} {output.nb} \
+            -p fraction_infected_89F_path {input.frac_infected} \
             -p validation_neuts_89F_path {input.neuts} \
             -p model_predictions_path {input.predicted_scores} \
             -p out_dir {params.out_dir} \
-            -p saved_image_path {output.saved_image_path} \
+            -p neuts_image_path {output.neuts_image_path} \
+            -p corr_image_path {output.corr_image_path} \
             &> {log}
         """
 
@@ -198,6 +202,12 @@ rule get_filtered_escape_CSVs:
         escape_121F="results/antibody_escape/averages/121F_mut_effect.csv",
         escape_256A="results/antibody_escape/averages/256A_mut_effect.csv",
         escape_372D="results/antibody_escape/averages/372D_mut_effect.csv",
+        contacts_89F="data/antibody_contacts/antibody_contacts_89F.csv",
+        contacts_377H="data/antibody_contacts/antibody_contacts_377H.csv",
+        contacts_256A="data/antibody_contacts/antibody_contacts_256A.csv",
+        contacts_2510C="data/antibody_contacts/antibody_contacts_2510C.csv",
+        contacts_121F="data/antibody_contacts/antibody_contacts_121F.csv",
+        contacts_372D="data/antibody_contacts/antibody_contacts_372D.csv",
         nb="notebooks/get_filtered_CSVs.ipynb",
     params:
         min_times_seen=2,
@@ -205,6 +215,7 @@ rule get_filtered_escape_CSVs:
         n_selections=8,
         frac_models=1,
         out_dir="results/filtered_antibody_escape_CSVs/",
+        out_dir_images="results/antibody_escape_profiles/",
     output:
         filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
         filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
@@ -212,6 +223,14 @@ rule get_filtered_escape_CSVs:
         filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
         filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
         filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        scale_bar_89F="results/antibody_escape_profiles/89F_scale_bar.svg",
+        scale_bar_377H="results/antibody_escape_profiles/377H_scale_bar.svg",
+        scale_bar_256A="results/antibody_escape_profiles/256A_scale_bar.svg",
+        scale_bar_2510C="results/antibody_escape_profiles/2510C_scale_bar.svg",
+        scale_bar_121F="results/antibody_escape_profiles/121F_scale_bar.svg",
+        scale_bar_372D="results/antibody_escape_profiles/372D_scale_bar.svg",
+        saved_image_path="results/antibody_escape_profiles/antibody_escape_profiles.svg",
+        validation_image_path="results/antibody_escape_profiles/validation_escape_profile.svg",
         nb="results/notebooks/get_filtered_CSVs.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -227,19 +246,84 @@ rule get_filtered_escape_CSVs:
             -p escape_121F {input.escape_121F} \
             -p escape_256A {input.escape_256A} \
             -p escape_372D {input.escape_372D} \
+            -p contacts_89F {input.contacts_89F} \
+            -p contacts_377H {input.contacts_377H} \
+            -p contacts_256A {input.contacts_256A} \
+            -p contacts_2510C {input.contacts_2510C} \
+            -p contacts_121F {input.contacts_121F} \
+            -p contacts_372D {input.contacts_372D} \
             -p min_times_seen {params.min_times_seen} \
             -p min_func_score {params.min_func_score} \
             -p n_selections {params.n_selections} \
             -p frac_models {params.frac_models} \
             -p out_dir {params.out_dir} \
+            -p out_dir_images {params.out_dir_images} \
             -p filtered_escape_377H {output.filtered_escape_377H} \
             -p filtered_escape_89F {output.filtered_escape_89F} \
             -p filtered_escape_2510C {output.filtered_escape_2510C} \
             -p filtered_escape_121F {output.filtered_escape_121F} \
             -p filtered_escape_256A {output.filtered_escape_256A} \
             -p filtered_escape_372D {output.filtered_escape_372D} \
+            -p scale_bar_89F {output.scale_bar_89F} \
+            -p scale_bar_377H {output.scale_bar_377H} \
+            -p scale_bar_256A {output.scale_bar_256A} \
+            -p scale_bar_2510C {output.scale_bar_2510C} \
+            -p scale_bar_121F {output.scale_bar_121F} \
+            -p scale_bar_372D {output.scale_bar_372D} \
+            -p saved_image_path {output.saved_image_path} \
+            -p validation_image_path {output.validation_image_path} 
             &> {log}
         """
+
+rule escape_sites_stratified_by_antibody_distance:
+    """
+    Stratify escape sites by distance to antibody.
+    """
+    input:
+        contacts_89F="data/antibody_contacts/antibody_contacts_89F.csv",
+        contacts_377H="data/antibody_contacts/antibody_contacts_377H.csv",
+        contacts_256A="data/antibody_contacts/antibody_contacts_256A.csv",
+        contacts_2510C="data/antibody_contacts/antibody_contacts_2510C.csv",
+        contacts_121F="data/antibody_contacts/antibody_contacts_121F.csv",
+        contacts_372D="data/antibody_contacts/antibody_contacts_372D.csv",
+        filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
+        filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
+        filtered_escape_2510C="results/filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv",
+        filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
+        filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
+        filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        nb="notebooks/escape_vs_antibody_distance.ipynb",
+    params:
+        out_dir="results/antibody_escape_profiles/",
+    output:
+        saved_image_path="results/antibody_escape_profiles/antibody_escape_by_distance.svg",
+        nb="results/notebooks/escape_vs_antibody_distance.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/escape_sites_stratified_by_antibody_distance.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p contacts_89F {input.contacts_89F} \
+            -p contacts_377H {input.contacts_377H} \
+            -p contacts_256A {input.contacts_256A} \
+            -p contacts_2510C {input.contacts_2510C} \
+            -p contacts_121F {input.contacts_121F} \
+            -p contacts_372D {input.contacts_372D} \
+            -p filtered_escape_377H {input.filtered_escape_377H} \
+            -p filtered_escape_89F {input.filtered_escape_89F} \
+            -p filtered_escape_2510C {input.filtered_escape_2510C} \
+            -p filtered_escape_121F {input.filtered_escape_121F} \
+            -p filtered_escape_256A {input.filtered_escape_256A} \
+            -p filtered_escape_372D {input.filtered_escape_372D} \
+            -p func_scores {input.func_scores} \
+            -p out_dir {params.out_dir} \
+            -p saved_image_path {output.saved_image_path}
+            &> {log}
+        """
+
 
 rule map_scores_onto_pdb_structure:
     """
@@ -294,7 +378,7 @@ rule map_scores_onto_pdb_structure:
             -p pdb_2510C {output.pdb_2510C} \
             -p pdb_121F {output.pdb_121F} \
             -p pdb_256A {output.pdb_256A} \
-            -p pdb_372D {output.pdb_372D} \
+            -p pdb_372D {output.pdb_372D} 
             &> {log}
         """
 
@@ -325,6 +409,9 @@ docs["Additional analyses and data files"] = {
             "CSV with filtered 256A antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_256A,
             "CSV with filtered 372D antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_372D,
         },
+    },
+    "Antibody escape stratified by distance to antibody" : {
+        "Notebook plotting escape by distance to antibody" : rules.escape_sites_stratified_by_antibody_distance.output.nb,
     },
     "Mapped data onto pdb structure" : {
         "Notebook mapping score onto pdb structure" : rules.map_scores_onto_pdb_structure.output.nb,
