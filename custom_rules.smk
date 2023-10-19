@@ -229,6 +229,7 @@ rule get_filtered_escape_CSVs:
         scale_bar_2510C="results/antibody_escape_profiles/2510C_scale_bar.svg",
         scale_bar_121F="results/antibody_escape_profiles/121F_scale_bar.svg",
         scale_bar_372D="results/antibody_escape_profiles/372D_scale_bar.svg",
+        escape_scale_bar="results/antibody_escape_profiles/escape_scale_bar.svg",
         saved_image_path="results/antibody_escape_profiles/antibody_escape_profiles.svg",
         validation_image_path="results/antibody_escape_profiles/validation_escape_profile.svg",
         nb="results/notebooks/get_filtered_CSVs.ipynb",
@@ -270,6 +271,7 @@ rule get_filtered_escape_CSVs:
             -p scale_bar_2510C {output.scale_bar_2510C} \
             -p scale_bar_121F {output.scale_bar_121F} \
             -p scale_bar_372D {output.scale_bar_372D} \
+            -p escape_scale_bar {output.escape_scale_bar} \
             -p saved_image_path {output.saved_image_path} \
             -p validation_image_path {output.validation_image_path} 
             &> {log}
