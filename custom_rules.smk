@@ -173,7 +173,9 @@ rule visualize_RBD_regions:
     params:
         min_times_seen=2,
         n_selections=8,
+        html_dir="results/func_scores_distributions/",
     output:
+        html_output="results/func_scores_distributions/func_scores_distributions.html",
         nb="results/notebooks/visualize_RBD_regions.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -185,6 +187,8 @@ rule visualize_RBD_regions:
             -p func_scores {input.func_scores} \
             -p min_times_seen {params.min_times_seen} \
             -p n_selections {params.n_selections} \
+            -p html_dir {params.html_dir} \
+            -p html_output {output.html_output}
             &> {log}
         """
 
@@ -223,12 +227,7 @@ rule get_filtered_escape_CSVs:
         filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
         filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
         filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
-        scale_bar_89F="results/antibody_escape_profiles/89F_scale_bar.svg",
-        scale_bar_377H="results/antibody_escape_profiles/377H_scale_bar.svg",
-        scale_bar_256A="results/antibody_escape_profiles/256A_scale_bar.svg",
-        scale_bar_2510C="results/antibody_escape_profiles/2510C_scale_bar.svg",
-        scale_bar_121F="results/antibody_escape_profiles/121F_scale_bar.svg",
-        scale_bar_372D="results/antibody_escape_profiles/372D_scale_bar.svg",
+        func_effect_scale_bar="results/antibody_escape_profiles/func_effect_scale_bar.svg",
         escape_scale_bar="results/antibody_escape_profiles/escape_scale_bar.svg",
         saved_image_path="results/antibody_escape_profiles/antibody_escape_profiles.svg",
         validation_image_path="results/antibody_escape_profiles/validation_escape_profile.svg",
@@ -265,12 +264,7 @@ rule get_filtered_escape_CSVs:
             -p filtered_escape_121F {output.filtered_escape_121F} \
             -p filtered_escape_256A {output.filtered_escape_256A} \
             -p filtered_escape_372D {output.filtered_escape_372D} \
-            -p scale_bar_89F {output.scale_bar_89F} \
-            -p scale_bar_377H {output.scale_bar_377H} \
-            -p scale_bar_256A {output.scale_bar_256A} \
-            -p scale_bar_2510C {output.scale_bar_2510C} \
-            -p scale_bar_121F {output.scale_bar_121F} \
-            -p scale_bar_372D {output.scale_bar_372D} \
+            -p func_effect_scale_bar {output.func_effect_scale_bar} \
             -p escape_scale_bar {output.escape_scale_bar} \
             -p saved_image_path {output.saved_image_path} \
             -p validation_image_path {output.validation_image_path} 
@@ -398,8 +392,9 @@ docs["Additional analyses and data files"] = {
         "Notebook correlating measured vs predicted functional effects" : rules.validation_titers.output.nb,
         "Notebook correlating measured vs predicted neutralization": rules.validation_neuts_89F.output.nb,
     },
-    "Receptor binding residue heatmaps" : {
-        "Notebook creating heatmaps for alpha-DG and LAMP1 binding residues" : rules.visualize_RBD_regions.output.nb,
+    "Functional scores for different GPC regions" : {
+        "Interactive plot showing functional scores for different GPC regions" : rules.visualize_RBD_regions.output.html_output,
+        "Notebook visualizing functional scores for different GPC regions" : rules.visualize_RBD_regions.output.nb,
     },
     "Filtered antibody escape data" : {
         "Notebook applying filters to antibody escape data" : rules.get_filtered_escape_CSVs.output.nb,
