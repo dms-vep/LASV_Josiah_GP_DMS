@@ -294,6 +294,7 @@ rule escape_sites_stratified_by_antibody_distance:
         out_dir="results/antibody_escape_profiles/",
     output:
         saved_image_path="results/antibody_escape_profiles/antibody_escape_by_distance.svg",
+        func_distance_image_path="results/antibody_escape_profiles/func_effect_by_distance.svg",
         nb="results/notebooks/escape_vs_antibody_distance.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -316,7 +317,8 @@ rule escape_sites_stratified_by_antibody_distance:
             -p filtered_escape_372D {input.filtered_escape_372D} \
             -p func_scores {input.func_scores} \
             -p out_dir {params.out_dir} \
-            -p saved_image_path {output.saved_image_path}
+            -p saved_image_path {output.saved_image_path} \
+            -p func_distance_image_path {output.func_distance_image_path}
             &> {log}
         """
 
