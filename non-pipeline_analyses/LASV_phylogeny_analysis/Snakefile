@@ -1,0 +1,57 @@
+# Description:
+# Main snakemake file that contains the rules, the output files, and 
+# configures the order of rule execution.
+
+# Author:
+# Caleb Carr
+
+# Imports
+import pandas as pd 
+import os
+from snakemake.utils import min_version
+min_version("7.25.4")
+
+# Initialize config file global variable
+configfile: "Configure/config.yml"
+
+
+# Rules included from Rules/ directory 
+include: "Rules/download_and_process_accessions.smk"
+include: "Rules/extract_GPC_ORFs.smk"
+include: "Rules/align_sequences.smk"
+include: "Rules/build_trees.smk"
+include: "Rules/remove_duplicates.smk"
+include: "Rules/calculate_variation.smk"
+include: "Rules/run_notebooks.smk"
+
+# Output files
+rule all:
+    """ 
+    This rule controls all the output files expected from the workflow. 
+    """
+    input:
+        # Trees
+        config["S_segment_tree_output"],
+        config["GPC_protein_tree_output"],
+        config["GPC_protein_reduced_tree_output"],
+        config["GPC_codon_tree_output"],
+        config["GPC_codon_reduced_tree_output"],
+        # Sequence variation
+        config["GPC_protein_variation"],
+        # Figures
+        config["GPC_protein_validation_alignment_figure"],
+        config["GPC_codon_reduced_tree_figure"],
+        config["GPC_protein_reduced_tree_figure"],
+        config["Amino_acid_identity_to_josiah_figure"],
+        config["GPC_diversity_figure"]
+
+# Make DAG of rule execution
+rule make_DAG:
+    """
+    This rule produces a DAG graph of rule execution order.
+    """
+    shell:
+        """
+        mkdir -p Results/DAG/
+        snakemake --rulegraph | dot -Tpdf > Results/DAG/dag.pdf
+        """

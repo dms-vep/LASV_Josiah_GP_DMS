@@ -70,3 +70,4 @@ results/mapped_scores_onto_pdb/*
 !results/mapped_scores_onto_pdb/*.pdb
 
 non-pipeline_analyses/pdb_viewing/*
+non-pipeline_analyses/LASV_phylogeny_analysis/Results/*

@@ -1,0 +1,22 @@
+__default__:
+    partition: campus-new
+    cpus: 16
+    time: 0-2
+    mem: 32000
+    name: "{rule}"
+    output: "logs_slurm/{rule}.{wildcards}.out"
+
+download_and_process_accessions:
+    cpus: 2
+
+reduce_similar_sequences:
+    cpus: 4
+
+align_reduced_protein_sequences:
+    cpus: 4
+
+edit_reduced_fasta_headers:
+    cpus: 4
+
+build_reduced_GPC_protein_tree:
+    cpus: 8

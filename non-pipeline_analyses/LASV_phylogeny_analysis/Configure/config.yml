@@ -1,0 +1,152 @@
+#################################################---START INPUT DATA---#######################################################
+
+# List of accessions file
+Accession_list: Configure/Input_Data/all_LASV_accessions_081023.txt
+
+# Reference genome to match strain used for DMS
+Reference_genome: Configure/Input_Data/LASV_S_reference_NC_004296.fasta
+
+# Reference protein feature file to match strain used for DMS
+Protein_features: Configure/Input_Data/LASV_GPC_reference_NP_694870.gp
+
+# Outgroup reference genomes
+# Mammarenavirus mopeiaense:
+# NC_006575 from NCBI virus Mopeia viruses ref sequence on 090523
+# DQ328874 from Amanat et al 2018
+# Mammarenavirus choriomeningitidis: 
+# NC_004294 from NCBI virus ref sequence on 090523
+# NC_077807 from NCBI virus ref sequence on 090523
+# Mammarenavirus machupoense:
+# NC_005078 Machupo virus from NCBI virus ref sequence on 090523
+# Mammarenavirus juninense:
+# NC_005081 Junin virus from NCBI virus ref sequence on 090523
+Add_outgroups: False # True to add or False if not
+Outgroup_reference_genomes: Configure/Input_Data/Outgroup_S_references.fasta
+Outgroup_reference_metadata: Configure/Input_Data/Outgroup_S_references_metadata.tsv
+
+# Directory for DMS data
+DMS_data_dir: Configure/Input_Data/DMS_Data/
+
+# Size threshold filters
+# LASV S segment ~ 3kb and LASV L segment ~ 7kb
+Genome_size_threshold_lower: 1000
+Genome_size_threshold_upper: 4000
+# Minimum size ORF when translating to protein
+# LASV GPC is ~ 1.5kb
+Min_ORF_threshold: 1455 # 485 amino acids
+
+# Specific gene or segment
+# Leave empty if none required
+Desired_segment: S
+
+# Maximum fraction of ambiuous bases allowed
+max_frac_N: 0
+
+# Sequences to remove
+Accessions_to_exclude:
+  - MK107912 # this sequences is an outlier with many more bases that do not align
+  - MK281631 # this sequences has many 'X' amino acids
+  - MK118006 # this sequences has many 'X' and more bases that do not align
+  - MT193286 # this sequences has many 'X' and more bases that do not align
+  - MT193287 # this sequences has many 'X' and more bases that do not align
+  - K117948 # this sequences has many 'X' and more bases that do not align
+  - MK117981 # this sequences has many 'X' and more bases that do not align
+  - MK118036 # this sequences has many 'X' and more bases that do not align
+  - MK118037 # this sequences has many 'X' and more bases that do not align
+  - MH887756 # this sequences has many 'X' and more bases that do not align
+  - MH157039 # this sequences has many 'X' and more bases that do not align
+  - MH053490 # this sequences has many 'X' and more bases that do not align
+  - MK117951 # this sequences has many 'X' and more bases that do not align
+  - MK118005 # this sequences has many 'X' and more bases that do not align
+  - MK118034 # this sequences has many 'X' and more bases that do not align
+  - MK117850 # this sequences has many 'X' and more bases that do not align
+  - MK117954 # this sequences has many 'X' and more bases that do not align
+  - MK117977 # this sequences has many 'X' and more bases that do not align
+  - MK118013 # more of a borderline one b/c of 'X'
+  - MK118015 # this sequences has many 'X' and more bases that do not align
+  - MK118017 # this sequences has many 'X' and more bases that do not align
+  - MK118032 # this sequences has many 'X' and more bases that do not align
+  - MH053523 # this sequences has many 'X' and more bases that do not align
+  - MK118027 # more of a borderline one b/c has N bases instead of stop codon and adds trailing amino acids
+
+# Sequences used for validation
+Validation_sequence_names:
+  - Josiah_NC_004296_reverse_complement_2018-08-13 # Reference strain
+  - GA391_OL774861_reverse_complement_1977-XX-XX # 37.7H, 25.10C, 37.2D
+  - Lassa_virus_H-sapiens-wt_NGA_2018_ISTH_1024_MH157037_2018-02-14 # 8.9F
+  - LM395-SLE-2009_KM822115_2009-XX-XX # 12.1F
+  - LASV_H-sapiens-tc_NGA_2016_IRR_007_MK107922_2016-01-18 # 37.7H, 25.6A
+
+# Temp files
+Temp_fasta_file: Results/temp_fasta_file.fasta
+Temp_alignment_file: Results/temp_alignment_file.fasta
+
+#################################################---END INPUT DATA---#########################################################
+
+#################################################---START OUTPUT DATA---######################################################
+
+# Metadata output
+Metadata: Results/LASV_S_segment_metadata.tsv
+
+# Fasta nucelotide file ouput
+Nucleotide_sequences: Results/LASV_S_segment_nucleotide.fasta
+
+# Fasta codon file output
+Codon_sequences: Results/LASV_GPC_codon.fasta
+
+# Fasta protein file output
+Protein_sequences: Results/LASV_GPC_protein.fasta
+Protein_reduced_sequences: Results/LASV_GPC_protein_reduced.fasta
+Protein_validation_sequences: Results/LASV_GPC_protein_validation_isolates.fasta
+
+# Log outputs
+Outgroup_addition_log: Results/outrgroup_addition_log.txt
+Sequence_verification_log: Results/sequence_verification_log.txt
+Duplicate_removal_log: Results/duplicate_removal_log.txt
+Validation_addition_log: Results/validation_addition_log.txt
+
+# Alignment file outputs
+S_segment_alignment: Results/LASV_S_segment_alignment.fasta
+GPC_protein_alignment: Results/LASV_GPC_protein_alignment.fasta
+GPC_protein_reduced_alignment: Results/LASV_GPC_protein_reduced_alignment.fasta
+GPC_protein_validation_alignment: Results/LASV_GPC_protein_validation_isolates_alignment.fasta
+GPC_codon_alignment: Results/LASV_GPC_codon_alignment.fasta
+GPC_codon_reduced_alignment: Results/LASV_GPC_codon_reduced_alignment.fasta
+# Deduplicated alignment file outputs
+S_segment_alignment_deduplicated: Results/LASV_S_segment_alignment_deduplicated.fasta
+GPC_protein_alignment_deduplicated: Results/LASV_GPC_protein_alignment_deduplicated.fasta
+GPC_codon_alignment_deduplicated: Results/LASV_GPC_codon_alignment_deduplicated.fasta
+# Alignment temp file outputs prior to fasta header edits
+GPC_protein_alignment_temp: Results/LASV_GPC_protein_alignment_temp.fasta
+GPC_protein_reduced_alignment_temp: Results/LASV_GPC_protein_reduced_alignment_temp.fasta
+
+# Tree file params
+S_segment_tree_prefix: Results/S_segment_tree/IQTree/LASV_S_segment
+GPC_protein_tree_prefix: Results/GPC_protein_tree/IQTree/LASV_GPC_protein
+GPC_protein_reduced_tree_prefix: Results/GPC_protein_reduced_tree/IQTree/LASV_GPC_reduced_protein
+GPC_codon_tree_prefix: Results/GPC_codon_tree/IQTree/LASV_GPC_codon
+GPC_codon_reduced_tree_prefix: Results/GPC_codon_reduced_tree/IQTree/LASV_GPC_reduced_codon
+Outgroup: Pinneo-NIG-1969_KM822128_1969-XX-XX
+Outgroup2: 812285_MG812675_1976-XX-XX # same GPC protein sequence as Pinneo-NIG-1969_KM822128_1969-XX-XX
+Outgroup3: AN20410_NC_006575_2004-12-17 # Mopeia virus
+Outgroup4: Carvallo_NC_005078_2002-07-05 # Machupo virus
+
+# Tree file output
+S_segment_tree_output: Results/S_segment_tree/IQTree/LASV_S_segment.iqtree
+GPC_protein_tree_output: Results/GPC_protein_tree/IQTree/LASV_GPC_protein.iqtree
+GPC_protein_reduced_tree_output: Results/GPC_protein_reduced_tree/IQTree/LASV_GPC_reduced_protein.iqtree
+GPC_codon_tree_output: Results/GPC_codon_tree/IQTree/LASV_GPC_codon.iqtree
+GPC_codon_reduced_tree_output: Results/GPC_codon_reduced_tree/IQTree/LASV_GPC_reduced_codon.iqtree
+
+# Final figures
+Figures_dir: Results/Figures/
+GPC_codon_reduced_tree_figure: Results/Figures/LASV_GPC_reduced_codon_tree.svg
+GPC_protein_reduced_tree_figure: Results/Figures/LASV_GPC_reduced_protein_tree.svg
+GPC_protein_validation_alignment_figure: Results/Figures/validation_isolates_msa.svg
+Amino_acid_identity_to_josiah_figure: Results/Figures/amino_acid_identity.svg
+GPC_diversity_figure: Results/Figures/LASV_GPC_diversity.svg
+
+# Site level entropy and n effective amino acids
+GPC_protein_variation: Results/GPC_protein_variation.csv
+
+#################################################---END OUTPUT DATA---########################################################
