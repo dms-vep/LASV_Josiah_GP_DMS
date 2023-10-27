@@ -192,6 +192,54 @@ rule visualize_RBD_regions:
             &> {log}
         """
 
+rule compare_to_natural:
+    """
+    Compare DMS to data to natural sequences and show
+    any validation neutralization assays for isolates
+    identified for escape.
+    """
+    input:
+        filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
+        filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
+        filtered_escape_2510C="results/filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv",
+        filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
+        filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
+        filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        natural_sequence_variation="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv",
+        natural_GPC_sequence_alignment="non-pipeline_analyses/LASV_phylogeny_analysis/Results/LASV_GPC_protein_alignment.fasta",
+        fraction_infected_natural_isolates="data/validation_frac_infected_natural_isolates.csv",
+        nb="notebooks/compare_to_natural_data.ipynb",
+    params:
+        min_times_seen=2,
+        n_selections=8,
+        out_dir="results/validation_plots/",
+    output:
+        neuts_image_path="results/validation_plots/validation_neut_curves_natural_isolates.svg",
+        nb="results/notebooks/compare_to_natural_data.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/compare_to_natural.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p filtered_escape_377H {input.filtered_escape_377H} \
+            -p filtered_escape_89F {input.filtered_escape_89F} \
+            -p filtered_escape_2510C {input.filtered_escape_2510C} \
+            -p filtered_escape_121F {input.filtered_escape_121F} \
+            -p filtered_escape_256A {input.filtered_escape_256A} \
+            -p filtered_escape_372D {input.filtered_escape_372D} \
+            -p func_scores {input.func_scores} \
+            -p natural_sequence_variation {input.natural_sequence_variation} \
+            -p natural_GPC_sequence_alignment {input.natural_GPC_sequence_alignment} \
+            -p fraction_infected_natural_isolates {input.fraction_infected_natural_isolates} \
+            -p min_times_seen {params.min_times_seen} \
+            -p n_selections {params.n_selections} \
+            -p out_dir {params.out_dir} \
+            -p neuts_image_path {output.neuts_image_path}
+            &> {log}
+        """
 
 rule get_filtered_escape_CSVs:
     """
@@ -397,6 +445,9 @@ docs["Additional analyses and data files"] = {
     "Functional scores for different GPC regions" : {
         "Interactive plot showing functional scores for different GPC regions" : rules.visualize_RBD_regions.output.html_output,
         "Notebook visualizing functional scores for different GPC regions" : rules.visualize_RBD_regions.output.nb,
+    },
+    "Comparisons of natural Lassa GPC diveristy to DMS data" : {
+        "Notebook analyzing natural sequence diversity in comparison to DMS data" : rules.compare_to_natural.output.nb,
     },
     "Filtered antibody escape data" : {
         "Notebook applying filters to antibody escape data" : rules.get_filtered_escape_CSVs.output.nb,

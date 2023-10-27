@@ -69,6 +69,14 @@ results/filtered_antibody_escape_CSVs/*
 results/mapped_scores_onto_pdb/*
 !results/mapped_scores_onto_pdb/*.pdb
 
+!results/antibody_escape_profiles/
+results/antibody_escape_profiles/*
+!results/antibody_escape_profiles/*.svg
+
+!results/validation_plots/
+results/validation_plots/*
+!results/validation_plots/*.svg
+
 non-pipeline_analyses/pdb_viewing/*
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/*
 !non-pipeline_analyses/LASV_phylogeny_analysis/Results/Figures/
