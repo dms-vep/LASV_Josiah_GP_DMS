@@ -205,6 +205,12 @@ rule compare_to_natural:
         filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
         filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
         filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        contacts_89F="data/antibody_contacts/antibody_contacts_89F.csv",
+        contacts_377H="data/antibody_contacts/antibody_contacts_377H.csv",
+        contacts_256A="data/antibody_contacts/antibody_contacts_256A.csv",
+        contacts_2510C="data/antibody_contacts/antibody_contacts_2510C.csv",
+        contacts_121F="data/antibody_contacts/antibody_contacts_121F.csv",
+        contacts_372D="data/antibody_contacts/antibody_contacts_372D.csv",
         func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
         natural_sequence_variation="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv",
         natural_GPC_sequence_alignment="non-pipeline_analyses/LASV_phylogeny_analysis/Results/LASV_GPC_protein_alignment.fasta",
@@ -214,8 +220,11 @@ rule compare_to_natural:
         min_times_seen=2,
         n_selections=8,
         out_dir="results/validation_plots/",
+        out_dir_escape="results/antibody_escape_profiles/",
     output:
         neuts_image_path="results/validation_plots/validation_neut_curves_natural_isolates.svg",
+        corr_image_path="results/validation_plots/natural_isolate_validation_correlation.svg",
+        escape_image_path="results/antibody_escape_profiles/natural_isolate_escape_profiles.svg",
         nb="results/notebooks/compare_to_natural_data.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -230,6 +239,12 @@ rule compare_to_natural:
             -p filtered_escape_121F {input.filtered_escape_121F} \
             -p filtered_escape_256A {input.filtered_escape_256A} \
             -p filtered_escape_372D {input.filtered_escape_372D} \
+            -p contacts_89F {input.contacts_89F} \
+            -p contacts_377H {input.contacts_377H} \
+            -p contacts_256A {input.contacts_256A} \
+            -p contacts_2510C {input.contacts_2510C} \
+            -p contacts_121F {input.contacts_121F} \
+            -p contacts_372D {input.contacts_372D} \
             -p func_scores {input.func_scores} \
             -p natural_sequence_variation {input.natural_sequence_variation} \
             -p natural_GPC_sequence_alignment {input.natural_GPC_sequence_alignment} \
@@ -237,7 +252,10 @@ rule compare_to_natural:
             -p min_times_seen {params.min_times_seen} \
             -p n_selections {params.n_selections} \
             -p out_dir {params.out_dir} \
-            -p neuts_image_path {output.neuts_image_path}
+            -p out_dir_escape {params.out_dir_escape} \
+            -p neuts_image_path {output.neuts_image_path} \
+            -p corr_image_path {output.corr_image_path} \
+            -p escape_image_path {output.escape_image_path}
             &> {log}
         """
 
