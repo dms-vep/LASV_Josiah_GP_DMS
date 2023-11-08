@@ -7547,7 +7547,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=54eeecf6">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=606dc63e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7587,7 +7587,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c9da9104-53a4-419b-a5b2-0b111b748adf">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c9da9104-53a4-419b-a5b2-0b111b748adf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7603,174 +7603,7 @@ a.anchor-link {
 
 <span class="c1"># Rename effect column</span>
 <span class="n">functional_scores</span> <span class="o">=</span> <span class="n">functional_scores</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"effect"</span> <span class="p">:</span> <span class="s2">"effect on cell entry"</span><span class="p">})</span>
-
-<span class="n">functional_scores</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>site</th>
-<th>wildtype</th>
-<th>mutant</th>
-<th>effect on cell entry</th>
-<th>effect_std</th>
-<th>times_seen</th>
-<th>n_selections</th>
-<th>phenotype</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>1</td>
-<td>M</td>
-<td>*</td>
-<td>-4.3130</td>
-<td>0.2709</td>
-<td>38.500</td>
-<td>8</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>1</th>
-<td>1</td>
-<td>M</td>
-<td>A</td>
-<td>-4.2490</td>
-<td>0.1943</td>
-<td>9.375</td>
-<td>8</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>2</th>
-<td>1</td>
-<td>M</td>
-<td>C</td>
-<td>-3.8490</td>
-<td>0.3788</td>
-<td>14.000</td>
-<td>8</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>3</th>
-<td>1</td>
-<td>M</td>
-<td>D</td>
-<td>-4.0930</td>
-<td>0.4541</td>
-<td>12.000</td>
-<td>8</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>4</th>
-<td>1</td>
-<td>M</td>
-<td>E</td>
-<td>-4.1490</td>
-<td>0.4836</td>
-<td>6.750</td>
-<td>8</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>...</th>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr>
-<th>10350</th>
-<td>492</td>
-<td>*</td>
-<td>*</td>
-<td>0.0000</td>
-<td>0.0000</td>
-<td>NaN</td>
-<td>8</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>10351</th>
-<td>492</td>
-<td>*</td>
-<td>-</td>
-<td>0.2054</td>
-<td>0.8061</td>
-<td>2.000</td>
-<td>4</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>10352</th>
-<td>492</td>
-<td>*</td>
-<td>L</td>
-<td>0.4992</td>
-<td>0.7405</td>
-<td>1.875</td>
-<td>8</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>10353</th>
-<td>492</td>
-<td>*</td>
-<td>R</td>
-<td>-0.1445</td>
-<td>0.7934</td>
-<td>1.000</td>
-<td>4</td>
-<td>functional_effect</td>
-</tr>
-<tr>
-<th>10354</th>
-<td>492</td>
-<td>*</td>
-<td>W</td>
-<td>-0.2635</td>
-<td>0.3244</td>
-<td>1.250</td>
-<td>4</td>
-<td>functional_effect</td>
-</tr>
-</tbody>
-</table>
-<p>10355 rows × 8 columns</p>
-</div>
 </div>
 </div>
 </div>
@@ -7860,23 +7693,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-855d6c7a44e640ca86990be283f6539a.vega-embed {
+  #altair-viz-586535bd489142e68e5744b28f5f8cb7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-855d6c7a44e640ca86990be283f6539a.vega-embed details,
-  #altair-viz-855d6c7a44e640ca86990be283f6539a.vega-embed details summary {
+  #altair-viz-586535bd489142e68e5744b28f5f8cb7.vega-embed details,
+  #altair-viz-586535bd489142e68e5744b28f5f8cb7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-855d6c7a44e640ca86990be283f6539a"></div>
+<div id="altair-viz-586535bd489142e68e5744b28f5f8cb7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-855d6c7a44e640ca86990be283f6539a") {
-      outputDiv = document.getElementById("altair-viz-855d6c7a44e640ca86990be283f6539a");
+    if (outputDiv.id !== "altair-viz-586535bd489142e68e5744b28f5f8cb7") {
+      outputDiv = document.getElementById("altair-viz-586535bd489142e68e5744b28f5f8cb7");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -7998,23 +7831,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-6a3654a73db04381844419ec6c83a220.vega-embed {
+  #altair-viz-033dc95736ce4dbfa05077537c2068d6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6a3654a73db04381844419ec6c83a220.vega-embed details,
-  #altair-viz-6a3654a73db04381844419ec6c83a220.vega-embed details summary {
+  #altair-viz-033dc95736ce4dbfa05077537c2068d6.vega-embed details,
+  #altair-viz-033dc95736ce4dbfa05077537c2068d6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6a3654a73db04381844419ec6c83a220"></div>
+<div id="altair-viz-033dc95736ce4dbfa05077537c2068d6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6a3654a73db04381844419ec6c83a220") {
-      outputDiv = document.getElementById("altair-viz-6a3654a73db04381844419ec6c83a220");
+    if (outputDiv.id !== "altair-viz-033dc95736ce4dbfa05077537c2068d6") {
+      outputDiv = document.getElementById("altair-viz-033dc95736ce4dbfa05077537c2068d6");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -8085,18 +7918,20 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Filter functional scores minimum times seen and selections</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Filter functional scores minimum times seen and selections </span>
+<span class="c1"># and remove stop codons</span>
 <span class="n">functional_scores</span> <span class="o">=</span> <span class="p">(</span>
     <span class="n">functional_scores</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span>
         <span class="p">(</span><span class="n">functional_scores</span><span class="p">[</span><span class="s2">"times_seen"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">min_times_seen</span><span class="p">)</span>
         <span class="o">&amp;</span>
         <span class="p">(</span><span class="n">functional_scores</span><span class="p">[</span><span class="s2">"n_selections"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">n_selections</span><span class="p">)</span>
+        <span class="o">&amp;</span>
+        <span class="p">(</span><span class="n">functional_scores</span><span class="p">[</span><span class="s2">"mutant"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"*"</span><span class="p">)</span>
     <span class="p">]</span>
 <span class="p">)</span>
 <span class="c1"># Remove stop mutations and groupby site</span>
 <span class="n">functional_scores</span> <span class="o">=</span> <span class="p">(</span>
     <span class="n">functional_scores</span>
-    <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">functional_scores</span><span class="p">[</span><span class="s2">"mutant"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"*"</span><span class="p">]</span>
     <span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"site"</span><span class="p">)</span>
     <span class="o">.</span><span class="n">aggregate</span><span class="p">({</span>
         <span class="s2">"wildtype"</span> <span class="p">:</span> <span class="s2">"first"</span><span class="p">,</span>
@@ -8274,23 +8109,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-2ab13c9002cd476f834f51e048e1afcf.vega-embed {
+  #altair-viz-f7497916efe74a068c61947caf783af6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2ab13c9002cd476f834f51e048e1afcf.vega-embed details,
-  #altair-viz-2ab13c9002cd476f834f51e048e1afcf.vega-embed details summary {
+  #altair-viz-f7497916efe74a068c61947caf783af6.vega-embed details,
+  #altair-viz-f7497916efe74a068c61947caf783af6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2ab13c9002cd476f834f51e048e1afcf"></div>
+<div id="altair-viz-f7497916efe74a068c61947caf783af6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2ab13c9002cd476f834f51e048e1afcf") {
-      outputDiv = document.getElementById("altair-viz-2ab13c9002cd476f834f51e048e1afcf");
+    if (outputDiv.id !== "altair-viz-f7497916efe74a068c61947caf783af6") {
+      outputDiv = document.getElementById("altair-viz-f7497916efe74a068c61947caf783af6");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
@@ -8457,23 +8292,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-519188f3aa1b4d798ed5b76449e40754.vega-embed {
+  #altair-viz-ba6ea110cb504983ade8330db787ff0a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-519188f3aa1b4d798ed5b76449e40754.vega-embed details,
-  #altair-viz-519188f3aa1b4d798ed5b76449e40754.vega-embed details summary {
+  #altair-viz-ba6ea110cb504983ade8330db787ff0a.vega-embed details,
+  #altair-viz-ba6ea110cb504983ade8330db787ff0a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-519188f3aa1b4d798ed5b76449e40754"></div>
+<div id="altair-viz-ba6ea110cb504983ade8330db787ff0a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-519188f3aa1b4d798ed5b76449e40754") {
-      outputDiv = document.getElementById("altair-viz-519188f3aa1b4d798ed5b76449e40754");
+    if (outputDiv.id !== "altair-viz-ba6ea110cb504983ade8330db787ff0a") {
+      outputDiv = document.getElementById("altair-viz-ba6ea110cb504983ade8330db787ff0a");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",

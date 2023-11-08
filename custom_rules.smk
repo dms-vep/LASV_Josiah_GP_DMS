@@ -221,10 +221,14 @@ rule compare_to_natural:
         n_selections=8,
         out_dir="results/validation_plots/",
         out_dir_escape="results/antibody_escape_profiles/",
+        out_dir_natural="results/natural_isolate_escape/",
     output:
         neuts_image_path="results/validation_plots/validation_neut_curves_natural_isolates.svg",
         corr_image_path="results/validation_plots/natural_isolate_validation_correlation.svg",
-        escape_image_path="results/antibody_escape_profiles/natural_isolate_escape_profiles.svg",
+        escape_top10_image_path="results/antibody_escape_profiles/natural_isolate_top10_escape_profiles.svg",
+        escape_all_image_path="results/antibody_escape_profiles/natural_isolate_all_escape_profiles.svg",
+        html_output="results/natural_isolate_escape/natural_isolate_escape.html",
+        natural_escape="results/natural_isolate_escape/natural_isolate_escape.svg",
         nb="results/notebooks/compare_to_natural_data.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -253,9 +257,13 @@ rule compare_to_natural:
             -p n_selections {params.n_selections} \
             -p out_dir {params.out_dir} \
             -p out_dir_escape {params.out_dir_escape} \
+            -p out_dir_natural {params.out_dir_natural} \
             -p neuts_image_path {output.neuts_image_path} \
             -p corr_image_path {output.corr_image_path} \
-            -p escape_image_path {output.escape_image_path}
+            -p escape_top10_image_path {output.escape_top10_image_path} \
+            -p escape_all_image_path {output.escape_all_image_path} \
+            -p html_output {output.html_output} \
+            -p natural_escape {output.natural_escape}
             &> {log}
         """
 
@@ -358,6 +366,8 @@ rule escape_sites_stratified_by_antibody_distance:
         nb="notebooks/escape_vs_antibody_distance.ipynb",
     params:
         out_dir="results/antibody_escape_profiles/",
+        min_times_seen=2,
+        n_selections=8,
     output:
         saved_image_path="results/antibody_escape_profiles/antibody_escape_by_distance.svg",
         func_distance_image_path="results/antibody_escape_profiles/func_effect_by_distance.svg",
@@ -383,6 +393,8 @@ rule escape_sites_stratified_by_antibody_distance:
             -p filtered_escape_372D {input.filtered_escape_372D} \
             -p func_scores {input.func_scores} \
             -p out_dir {params.out_dir} \
+            -p min_times_seen {params.min_times_seen} \
+            -p n_selections {params.n_selections} \
             -p saved_image_path {output.saved_image_path} \
             -p func_distance_image_path {output.func_distance_image_path}
             &> {log}
@@ -465,6 +477,7 @@ docs["Additional analyses and data files"] = {
         "Notebook visualizing functional scores for different GPC regions" : rules.visualize_RBD_regions.output.nb,
     },
     "Comparisons of natural Lassa GPC diveristy to DMS data" : {
+        "Interactive plot showing antibody escape in relation to natural diversity" : rules.compare_to_natural.output.html_output,
         "Notebook analyzing natural sequence diversity in comparison to DMS data" : rules.compare_to_natural.output.nb,
     },
     "Filtered antibody escape data" : {
