@@ -7521,6 +7521,7 @@ a.anchor-link {
 <span class="n">filtered_escape_121F</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">filtered_escape_256A</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">filtered_escape_372D</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">natural_sequence_variation</span> <span class="o">=</span> <span class="kc">None</span>
 
 <span class="n">min_times_seen</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">n_selections</span> <span class="o">=</span> <span class="kc">None</span>
@@ -7534,12 +7535,13 @@ a.anchor-link {
 <span class="n">pdb_121F</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pdb_256A</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pdb_372D</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">pdb_natural_variation</span> <span class="o">=</span> <span class="kc">None</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=587405e7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=f2090b15">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7568,6 +7570,9 @@ a.anchor-link {
 <span class="n">filtered_escape_372D</span> <span class="o">=</span> <span class="p">(</span>
     <span class="s2">"results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv"</span>
 <span class="p">)</span>
+<span class="n">natural_sequence_variation</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv"</span>
+<span class="p">)</span>
 <span class="n">min_times_seen</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">n_selections</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">out_dir</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/"</span>
@@ -7579,6 +7584,7 @@ a.anchor-link {
 <span class="n">pdb_121F</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/121F_escape.pdb"</span>
 <span class="n">pdb_256A</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/256A_escape.pdb"</span>
 <span class="n">pdb_372D</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/372D_escape.pdb"</span>
+<span class="n">pdb_natural_variation</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/natural_variation.pdb"</span>
 </pre></div>
 </div>
 </div>
@@ -7602,6 +7608,7 @@ a.anchor-link {
 <span class="c1"># filtered_escape_121F = "../results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv"</span>
 <span class="c1"># filtered_escape_256A = "../results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv"</span>
 <span class="c1"># filtered_escape_372D = "../results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv"</span>
+<span class="c1"># natural_sequence_variation = "../non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv"</span>
 
 <span class="c1"># min_times_seen = 2</span>
 <span class="c1"># n_selections = 8</span>
@@ -7615,6 +7622,69 @@ a.anchor-link {
 <span class="c1"># pdb_121F = "../results/mapped_scores_onto_pdb/121F_escape.pdb"</span>
 <span class="c1"># pdb_256A = "../results/mapped_scores_onto_pdb/256A_escape.pdb"</span>
 <span class="c1"># pdb_372D = "../results/mapped_scores_onto_pdb/372D_escape.pdb"</span>
+<span class="c1"># pdb_natural_variation = "../results/mapped_scores_onto_pdb/natural_variation.pdb"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=73735c1b-6222-4099-9db2-3b1b8746c2c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">natural_variation_to_b_factors</span><span class="p">(</span><span class="n">input_pdb_file</span><span class="p">,</span> <span class="n">output_pdb_file</span><span class="p">,</span> <span class="n">natural_variation_file</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    Function to map natural variation to a pdb structure</span>
+<span class="sd">    using mut_escape_pdb_b_factor function from polyclonal.</span>
+<span class="sd">    """</span>
+
+    <span class="n">natural_variation</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">natural_variation_file</span><span class="p">)</span>
+
+    <span class="n">natural_variation_aA</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"n_effective"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">natural_variation_bB</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"n_effective"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">natural_variation_cC</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"n_effective"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    
+    <span class="n">natural_variation_aA</span><span class="p">[</span><span class="s2">"chain"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">natural_variation_aA</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"A"</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">259</span> <span class="k">else</span> <span class="s2">"a"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
+    
+    <span class="n">natural_variation_bB</span><span class="p">[</span><span class="s2">"chain"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">natural_variation_bB</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"B"</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">259</span> <span class="k">else</span> <span class="s2">"b"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
+    
+    <span class="n">natural_variation_cC</span><span class="p">[</span><span class="s2">"chain"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">natural_variation_cC</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"C"</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">259</span> <span class="k">else</span> <span class="s2">"c"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
+    
+    <span class="n">natural_variation</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span>
+            <span class="n">natural_variation_aA</span><span class="p">,</span>
+            <span class="n">natural_variation_bB</span><span class="p">,</span>
+            <span class="n">natural_variation_cC</span><span class="p">,</span>
+        <span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="n">natural_variation</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">"site"</span> <span class="p">:</span> <span class="s2">"int"</span><span class="p">})</span> 
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Natural sequence variation:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of effective amino acids: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of effective amino acids: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of effective amino acids: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Effective amino acid score range: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+    <span class="n">polyclonal</span><span class="o">.</span><span class="n">pdb_utils</span><span class="o">.</span><span class="n">reassign_b_factor</span><span class="p">(</span>
+        <span class="n">input_pdbfile</span><span class="o">=</span><span class="n">input_pdb_file</span><span class="p">,</span>
+        <span class="n">output_pdbfile</span><span class="o">=</span><span class="n">output_pdb_file</span><span class="p">,</span>
+        <span class="n">df</span><span class="o">=</span><span class="n">natural_variation</span><span class="p">,</span>
+        <span class="n">metric_col</span><span class="o">=</span><span class="s2">"n_effective"</span><span class="p">,</span>
+        <span class="n">site_col</span><span class="o">=</span><span class="s2">"site"</span><span class="p">,</span>
+        <span class="n">chain_col</span><span class="o">=</span><span class="s2">"chain"</span><span class="p">,</span>
+    <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7625,7 +7695,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">input_pdb_file</span><span class="p">,</span> <span class="n">output_pdb_file</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores_file</span><span class="p">):</span>
@@ -7635,6 +7705,7 @@ a.anchor-link {
 <span class="sd">    """</span>
     
     <span class="n">functional_scores</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">func_scores_file</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Functional DMS scores:"</span><span class="p">)</span>
 
     <span class="c1"># Filter for minimum selections, times seen and no stop codons</span>
     <span class="n">functional_scores</span> <span class="o">=</span> <span class="p">(</span>
@@ -7701,7 +7772,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">escape_scores_to_b_factors</span><span class="p">(</span><span class="n">input_pdb_file</span><span class="p">,</span> <span class="n">output_pdb_file</span><span class="p">,</span> <span class="n">escape_scores_file</span><span class="p">):</span>
@@ -7780,12 +7851,15 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Make output dir if doesn't exist</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">out_dir</span><span class="p">)</span>
+
+<span class="c1"># Natural variation (effective amino acids) mapped to pdb structure</span>
+<span class="n">natural_variation_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_natural_variation</span><span class="p">,</span> <span class="n">natural_sequence_variation</span><span class="p">)</span>
 
 <span class="c1"># Functional scores mapped to pdb structure for scores less than and greater than 0</span>
 <span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func_min</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
@@ -7824,10 +7898,18 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
+<pre>Natural sequence variation:
+50th percentile of effective amino acids: 1.0
+75th percentile of effective amino acids: 1.046662070004872
+90th percentile of effective amino acids: 1.350658160685738
+Effective amino acid score range: 1.0 to 3.591798972760884
+
+Functional DMS scores:
+Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
 50th percentile of averaged functional scores: -1.7703166666666668
 Functional score range: -4.15625 to 0.5850444444444444
 
+Functional DMS scores:
 Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
 50th percentile of averaged functional scores: -1.7703166666666668
 Functional score range: -4.15625 to 0.5850444444444444

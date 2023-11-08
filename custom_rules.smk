@@ -188,7 +188,7 @@ rule visualize_RBD_regions:
             -p min_times_seen {params.min_times_seen} \
             -p n_selections {params.n_selections} \
             -p html_dir {params.html_dir} \
-            -p html_output {output.html_output}
+            -p html_output {output.html_output} \
             &> {log}
         """
 
@@ -263,7 +263,7 @@ rule compare_to_natural:
             -p escape_top10_image_path {output.escape_top10_image_path} \
             -p escape_all_image_path {output.escape_all_image_path} \
             -p html_output {output.html_output} \
-            -p natural_escape {output.natural_escape}
+            -p natural_escape {output.natural_escape} \
             &> {log}
         """
 
@@ -341,7 +341,7 @@ rule get_filtered_escape_CSVs:
             -p func_effect_scale_bar {output.func_effect_scale_bar} \
             -p escape_scale_bar {output.escape_scale_bar} \
             -p saved_image_path {output.saved_image_path} \
-            -p validation_image_path {output.validation_image_path} 
+            -p validation_image_path {output.validation_image_path} \
             &> {log}
         """
 
@@ -396,7 +396,7 @@ rule escape_sites_stratified_by_antibody_distance:
             -p min_times_seen {params.min_times_seen} \
             -p n_selections {params.n_selections} \
             -p saved_image_path {output.saved_image_path} \
-            -p func_distance_image_path {output.func_distance_image_path}
+            -p func_distance_image_path {output.func_distance_image_path} \
             &> {log}
         """
 
@@ -414,6 +414,7 @@ rule map_scores_onto_pdb_structure:
         filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
         filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
         filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        natural_sequence_variation="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv",
         nb="notebooks/pdb_mapping.ipynb",
     params:
         min_times_seen=2,
@@ -428,6 +429,7 @@ rule map_scores_onto_pdb_structure:
         pdb_121F="results/mapped_scores_onto_pdb/121F_escape.pdb",
         pdb_256A="results/mapped_scores_onto_pdb/256A_escape.pdb",
         pdb_372D="results/mapped_scores_onto_pdb/372D_escape.pdb",
+        pdb_natural_variation="results/mapped_scores_onto_pdb/natural_variation.pdb",
         nb="results/notebooks/pdb_mapping.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -444,6 +446,7 @@ rule map_scores_onto_pdb_structure:
             -p filtered_escape_121F {input.filtered_escape_121F} \
             -p filtered_escape_256A {input.filtered_escape_256A} \
             -p filtered_escape_372D {input.filtered_escape_372D} \
+            -p natural_sequence_variation {input.natural_sequence_variation} \
             -p min_times_seen {params.min_times_seen} \
             -p n_selections {params.n_selections} \
             -p out_dir {params.out_dir} \
@@ -454,7 +457,8 @@ rule map_scores_onto_pdb_structure:
             -p pdb_2510C {output.pdb_2510C} \
             -p pdb_121F {output.pdb_121F} \
             -p pdb_256A {output.pdb_256A} \
-            -p pdb_372D {output.pdb_372D} 
+            -p pdb_372D {output.pdb_372D} \
+            -p pdb_natural_variation {output.pdb_natural_variation} \
             &> {log}
         """
 
