@@ -7527,7 +7527,11 @@ a.anchor-link {
     <span class="k">return</span> <span class="p">[</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">rgb2hex</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span> <span class="k">for</span> <span class="n">tup</span> <span class="ow">in</span> <span class="n">cmap</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">)))]</span>
 
 <span class="c1"># Seaborn style settings</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s2">"figure.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> <span class="s2">"savefig.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">})</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="p">{</span>
+    <span class="s2">"figure.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span> 
+    <span class="s2">"savefig.dpi"</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span>
+    <span class="s2">"svg.fonttype"</span><span class="p">:</span><span class="s2">"none"</span><span class="p">,</span>
+<span class="p">})</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">"ticks"</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="n">tol_muted_adjusted</span><span class="p">)</span>
 
@@ -7599,7 +7603,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=88408c01">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=50a81138">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
