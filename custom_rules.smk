@@ -227,8 +227,16 @@ rule compare_to_natural:
         corr_image_path="results/validation_plots/natural_isolate_validation_correlation.svg",
         escape_top10_image_path="results/antibody_escape_profiles/natural_isolate_top10_escape_profiles.svg",
         escape_all_image_path="results/antibody_escape_profiles/natural_isolate_all_escape_profiles.svg",
-        html_output="results/natural_isolate_escape/natural_isolate_escape.html",
         natural_escape="results/natural_isolate_escape/natural_isolate_escape.svg",
+        html_func_vs_natural="results/natural_isolate_escape/func_vs_natural.html",
+        html_func_vs_escape="results/natural_isolate_escape/func_vs_escape.html",
+        html_func_vs_escape_all_abs="results/natural_isolate_escape/func_vs_escape_all_abs.html",
+        html_nat_mut_freqs_vs_escape="results/natural_isolate_escape/nat_mut_freqs_vs_escape.html",
+        html_nat_mut_freqs_vs_escape_all_abs="results/natural_isolate_escape/nat_mut_freqs_vs_escape_all_abs.html",
+        html_natural_vs_escape="results/natural_isolate_escape/natural_vs_escape.html",
+        html_natural_vs_escape_all_abs="results/natural_isolate_escape/natural_vs_escape_all_abs.html",
+        html_natural_vs_epitope_escape="results/natural_isolate_escape/natural_vs_epitope_escape.html",
+        html_natural_vs_epitope_with_strong_sites="results/natural_isolate_escape/natural_vs_epitope_with_strong_sites.html",
         nb="results/notebooks/compare_to_natural_data.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -262,8 +270,16 @@ rule compare_to_natural:
             -p corr_image_path {output.corr_image_path} \
             -p escape_top10_image_path {output.escape_top10_image_path} \
             -p escape_all_image_path {output.escape_all_image_path} \
-            -p html_output {output.html_output} \
             -p natural_escape {output.natural_escape} \
+            -p html_func_vs_natural {output.html_func_vs_natural} \
+            -p html_func_vs_escape {output.html_func_vs_escape} \
+            -p html_func_vs_escape_all_abs {output.html_func_vs_escape_all_abs} \
+            -p html_nat_mut_freqs_vs_escape {output.html_nat_mut_freqs_vs_escape} \
+            -p html_nat_mut_freqs_vs_escape_all_abs {output.html_nat_mut_freqs_vs_escape_all_abs} \
+            -p html_natural_vs_escape {output.html_natural_vs_escape} \
+            -p html_natural_vs_escape_all_abs {output.html_natural_vs_escape_all_abs} \
+            -p html_natural_vs_epitope_escape {output.html_natural_vs_epitope_escape} \
+            -p html_natural_vs_epitope_with_strong_sites {output.html_natural_vs_epitope_with_strong_sites} \
             &> {log}
         """
 
@@ -481,8 +497,18 @@ docs["Additional analyses and data files"] = {
         "Notebook visualizing functional scores for different GPC regions" : rules.visualize_RBD_regions.output.nb,
     },
     "Comparisons of natural Lassa GPC diveristy to DMS data" : {
-        "Interactive plot showing antibody escape in relation to natural diversity" : rules.compare_to_natural.output.html_output,
         "Notebook analyzing natural sequence diversity in comparison to DMS data" : rules.compare_to_natural.output.nb,
+        "Interactive plots comparing DMS data and natural sequence diversity" : {
+            "Interactive plot showing correlation of natural diversity and functional scores" : rules.compare_to_natural.output.html_func_vs_natural,
+            "Interactive plot showing correlation of functional scores and antibody escape" : rules.compare_to_natural.output.html_func_vs_escape,
+            "Interactive plot showing correlation of functional scores and antibody escape across all antibodies" : rules.compare_to_natural.output.html_func_vs_escape_all_abs,
+            "Interactive plot showing correlation of mutation frequencies and antibody escape" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape,
+            "Interactive plot showing correlation of mutation frequencies and antibody escape across all antibodies" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape_all_abs,
+            "Interactive plot showing correlation of natural diversity and antibody escape" : rules.compare_to_natural.output.html_natural_vs_escape,
+            "Interactive plot showing correlation of natural diversity and antibody escape across all antibodies" : rules.compare_to_natural.output.html_natural_vs_escape_all_abs,
+            "Interactive plot showing correlation of natural diversity and antibody escape grouped by antibody epitopes" :  rules.compare_to_natural.output.html_natural_vs_epitope_escape,
+            "Interactive plot showing correlation of mutation frequencies and antibody escape grouped by antibody epitopes" : rules.compare_to_natural.output.html_natural_vs_epitope_with_strong_sites,
+        },
     },
     "Filtered antibody escape data" : {
         "Notebook applying filters to antibody escape data" : rules.get_filtered_escape_CSVs.output.nb,
