@@ -1,0 +1,54 @@
+# Description:
+# Main snakemake file that contains the rules, the output files, and 
+# configures the order of rule execution.
+
+# Author:
+# Caleb Carr
+
+# Imports
+import pandas as pd 
+import os
+from snakemake.utils import min_version
+min_version("7.25.4")
+
+# Initialize config file global variable
+configfile: "Configure/config.yml"
+
+
+# Rules included from Rules/ directory 
+include: "Rules/download_and_process_accessions.smk"
+include: "Rules/align_sequences.smk"
+include: "Rules/build_trees.smk"
+include: "Rules/run_notebooks.smk"
+
+# Output files
+rule all:
+    """ This rule controls all the output files expected from the workflow. """
+    input:
+        # Accession lists
+        config["mRNA_accession_list"],
+        config["Protein_accession_list"],
+        # Fasta sequences
+        config["CDS_sequences"],
+        config["Protein_sequences"],
+        # Metadata
+        config["Metadata"],
+        # Alignment
+        config["Reduced_protein_alignment"],
+        config["Protein_alignment"],
+        # Tree
+        config["Protein_tree_output"],
+        # Figures
+        config["Consensus_glycosylation_site"],
+        config["Human_and_mastomys_msa"],
+
+# Make DAG of rule execution
+rule make_DAG:
+    """
+    This rule produces a DAG graph of rule execution order.
+    """
+    shell:
+        """
+        mkdir -p Results/DAG/
+        snakemake --rulegraph | dot -Tpdf > Results/DAG/dag.pdf
+        """

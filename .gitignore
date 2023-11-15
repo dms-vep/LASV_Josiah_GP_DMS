@@ -80,3 +80,5 @@ results/validation_plots/*
 non-pipeline_analyses/pdb_viewing/*
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/*
 !non-pipeline_analyses/LASV_phylogeny_analysis/Results/Figures/
+non-pipeline_analyses/DAG1_phylogeny_analysis/Results/*
+!non-pipeline_analyses/DAG1_phylogeny_analysis/Results/Figures/

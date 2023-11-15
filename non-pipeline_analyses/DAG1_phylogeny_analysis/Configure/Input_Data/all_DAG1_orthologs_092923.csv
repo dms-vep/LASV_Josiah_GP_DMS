@@ -1,0 +1,528 @@
+Gene ID,Gene symbol,Description,Scientific name,Common name,RefSeq Transcript accessions,RefSeq Protein accessions,SPARCLE ID,Curation Status,RefseqSelect,Default sequence
+1605,DAG1,dystroglycan 1,Homo sapiens,human,NM_004393.6,NP_004384.5,,curated,RefseqSelect,default-seq
+13138,Dag1,dystroglycan 1,Mus musculus,house mouse,NM_001276482.1,NP_001263411.1,,curated,RefseqSelect,default-seq
+114489,Dag1,dystroglycan 1,Rattus norvegicus,Norway rat,NM_053697.1,NP_446149.1,,curated,RefseqSelect,default-seq
+281439,DAG1,dystroglycan 1,Bos taurus,cattle,XM_024982387.1,XP_024838155.1,,model,,default-seq
+286829,dag1,dystroglycan 1,Danio rerio,zebrafish,NM_173274.1,NP_775381.1,,curated,,default-seq
+460372,DAG1,dystroglycan 1,Pan troglodytes,chimpanzee,XM_001164754.6,XP_001164754.1,,model,,default-seq
+476623,DAG1,dystroglycan 1,Canis lupus familiaris,dog,NM_001033992.1,NP_001029164.1,,curated,,default-seq
+549272,dag1,dystroglycan 1,Xenopus tropicalis,tropical clawed frog,NM_001016518.2,NP_001016518.1,,curated,,default-seq
+706179,DAG1,dystroglycan 1,Macaca mulatta,Rhesus monkey,XM_015130798.2,XP_014986284.1,,model,,default-seq
+100009278,DAG1,dystroglycan 1,Oryctolagus cuniculus,rabbit,NM_001101700.1,NP_001095170.1,,curated,,default-seq
+100027899,DAG1,dystroglycan 1,Monodelphis domestica,gray short-tailed opossum,XM_001378027.5,XP_001378064.2,,model,,default-seq
+100049058,DAG1,dystroglycan 1,Gallus gallus,chicken,NM_001097540.2,NP_001091009.2,,curated,,default-seq
+100053150,DAG1,dystroglycan 1,Equus caballus,horse,XM_001497613.6,XP_001497663.2,,model,,default-seq
+100087939,DAG1,dystroglycan 1,Ornithorhynchus anatinus,platypus,XM_029049956.2,XP_028905789.1,,model,,default-seq
+100174781,DAG1,dystroglycan 1,Felis catus,domestic cat,NM_001130839.1,NP_001124311.1,,curated,,default-seq
+100228833,DAG1,dystroglycan 1,Taeniopygia guttata,zebra finch,XM_030283531.3,XP_030139391.1,,model,,default-seq
+100395530,DAG1,dystroglycan 1,Callithrix jacchus,white-tufted-ear marmoset,XM_035275510.2,XP_035131401.2,,model,,default-seq
+100447405,DAG1,dystroglycan 1,Pongo abelii,Sumatran orangutan,XM_003776246.4,XP_003776294.4,,model,,default-seq
+100475723,DAG1,dystroglycan 1,Ailuropoda melanoleuca,giant panda,XM_011226639.3,XP_011224941.1,,model,,default-seq
+100547027,DAG1,dystroglycan 1,Meleagris gallopavo,turkey,XM_010718333.2,XP_010716635.1,,model,,default-seq
+100565815,dag1,dystroglycan 1,Anolis carolinensis,green anole,XM_003217546.3,XP_003217594.1,,model,,default-seq
+100579781,DAG1,dystroglycan 1,Nomascus leucogenys,northern white-cheeked gibbon,XM_003257064.3,XP_003257112.1,,model,,default-seq
+100620392,DAG1,dystroglycan 1,Sus scrofa,pig,XM_021068740.1,XP_020924399.1,,model,,default-seq
+100675937,DAG1,dystroglycan 1,Loxodonta africana,African savanna elephant,XM_003409654.2,XP_003409702.1,,model,,default-seq
+100706865,dag1,dystroglycan 1,Oreochromis niloticus,Nile tilapia,XM_005469760.4,XP_005469817.1,,model,,default-seq
+100734382,Dag1,dystroglycan 1,Cavia porcellus,domestic guinea pig,XM_003476671.4,XP_003476719.1,,model,,default-seq
+100762216,Dag1,dystroglycan 1,Cricetulus griseus,Chinese hamster,XM_003500350.5,XP_003500398.1,,model,,default-seq
+100922973,DAG1,dystroglycan 1,Sarcophilus harrisii,Tasmanian devil,XM_031959184.1,XP_031815044.1,,model,,default-seq
+100956236,DAG1,dystroglycan 1,Otolemur garnettii,small-eared galago,XM_012811930.2,XP_012667384.1,,model,,default-seq
+100987680,DAG1,dystroglycan 1,Pan paniscus,pygmy chimpanzee,XM_003818856.4,XP_003818904.3,,model,,default-seq
+101020285,DAG1,dystroglycan 1,Papio anubis,olive baboon,XM_009200764.3,XP_009199028.1,,model,,default-seq
+101048670,DAG1,dystroglycan 1,Saimiri boliviensis,Bolivian squirrel monkey,XM_003936659.3,XP_003936708.1,,model,,default-seq
+101078584,dag1,dystroglycan 1,Takifugu rubripes,torafugu,XM_029826227.1,XP_029682087.1,,model,,default-seq
+101103515,DAG1,dystroglycan 1,Ovis aries,sheep,XM_027957634.2,XP_027813435.1,,model,,default-seq
+101138300,DAG1,dystroglycan 1,Gorilla gorilla gorilla,western lowland gorilla,XM_004034145.4,XP_004034193.4,,model,,default-seq
+101165049,dag1,dystroglycan 1,Oryzias latipes,Japanese medaka,XM_004069021.4,XP_004069069.1,,model,,default-seq
+101275482,DAG1,dystroglycan 1,Orcinus orca,killer whale,XM_004283948.3,XP_004283996.1,,model,,default-seq
+101317529,DAG1,dystroglycan 1,Tursiops truncatus,common bottlenose dolphin,XM_033864959.1,XP_033720850.1,,model,,default-seq
+101358535,LOC101358535,dystroglycan 1,Trichechus manatus latirostris,Florida manatee,XM_004368534.1,XP_004368591.1,,model,,default-seq
+101385379,DAG1,dystroglycan 1,Odobenus rosmarus divergens,Pacific walrus,XM_004399244.1,XP_004399301.1,,model,,default-seq
+101403714,LOC101403714,dystroglycan 1,Ceratotherium simum simum,southern white rhinoceros,XM_004419705.2,XP_004419762.1,,model,,default-seq
+101446907,DAG1,dystroglycan 1,Dasypus novemcinctus,nine-banded armadillo,XM_004451877.4,XP_004451934.2,,model,,default-seq
+101468018,dag1,dystroglycan 1,Maylandia zebra,zebra mbuna,XM_004558974.3,XP_004559031.1,,model,,default-seq
+101526389,DAG1,dystroglycan 1,Ochotona princeps,American pika,XM_058678674.1,XP_058534657.1,,model,,default-seq
+101542779,DAG1,dystroglycan 1,Sorex araneus,European shrew,XM_055135977.1,XP_054991952.1,,model,,default-seq
+101575623,Dag1,dystroglycan 1,Octodon degus,degu,XM_004625097.3,XP_004625154.1,,model,,default-seq
+101595565,Dag1,dystroglycan 1,Jaculus jaculus,lesser Egyptian jerboa,XM_045136411.1,XP_044992346.1,,model,,default-seq
+101630794,DAG1,dystroglycan 1,Condylura cristata,star-nosed mole,XM_004676161.2,XP_004676218.1,,model,,default-seq
+101664189,DAG1,dystroglycan 1,Echinops telfairi,small Madagascar hedgehog,XM_004715163.4,XP_004715220.1,,model,,default-seq
+101677695,DAG1,dystroglycan 1,Mustela putorius furo,domestic ferret,XM_004760648.3,XP_004760705.1,,model,,default-seq
+101714190,Dag1,dystroglycan 1,Heterocephalus glaber,naked mole-rat,XM_004834039.3,XP_004834096.2,,model,,default-seq
+101789918,DAG1,dystroglycan 1,Anas platyrhynchos,mallard,XM_038185745.1,XP_038041673.1,,model,,default-seq
+101810430,DAG1,dystroglycan 1,Ficedula albicollis,Collared flycatcher,XM_005052884.2,XP_005052941.1,,model,,default-seq
+101838330,Dag1,dystroglycan 1,Mesocricetus auratus,golden hamster,XM_013116968.3,XP_012972422.1,,model,,default-seq
+101872819,LOC101872819,dystroglycan 1,Melopsittacus undulatus,budgerigar,XM_005141571.3,XP_005141628.2,,model,,default-seq
+101916670,DAG1,dystroglycan 1,Falco peregrinus,peregrine falcon,XM_005229922.4,XP_005229979.2,,model,,default-seq
+101953406,DAG1,dystroglycan 1,Chrysemys picta,Painted turtle,XM_005313755.3,XP_005313812.1,,model,,default-seq
+101967102,Dag1,dystroglycan 1,Ictidomys tridecemlineatus,thirteen-lined ground squirrel,XM_005326921.2,XP_005326978.1,,model,,default-seq
+101984436,Dag1,dystroglycan 1,Microtus ochrogaster,prairie vole,XM_005347891.2,XP_005347948.1,,model,,default-seq
+102014285,Dag1,dystroglycan 1,Chinchilla lanigera,long-tailed chinchilla,XM_005410205.2,XP_005410262.1,,model,,default-seq
+102041911,DAG1,dystroglycan 1,Geospiza fortis,medium ground-finch,XM_031058222.1,XP_030914082.1,,model,,default-seq
+102055456,DAG1,dystroglycan 1,Falco cherrug,Saker falcon,XM_055707521.1,XP_055563496.1,,model,,default-seq
+102075173,DAG1,dystroglycan 1,Zonotrichia albicollis,white-throated sparrow,XM_005485538.3,XP_005485595.1,,model,,default-seq
+102086860,DAG1,dystroglycan 1,Columba livia,rock pigeon,XM_013369173.2,XP_013224627.1,,model,,default-seq
+102100530,DAG1,dystroglycan 1,Pseudopodoces humilis,Tibetan ground-tit,XM_005522200.2,XP_005522257.1,,model,,default-seq
+102146250,DAG1,dystroglycan 1,Macaca fascicularis,crab-eating macaque,XM_005547119.3,XP_005547176.1,,model,,default-seq
+102178403,DAG1,dystroglycan 1,Capra hircus,goat,XM_018066667.1,XP_017922156.1,,model,,default-seq
+102197126,dag1,dystroglycan 1,Pundamilia nyererei,,XM_005740877.1,XP_005740934.1,,model,,default-seq
+102220562,dag1,dystroglycan 1,Xiphophorus maculatus,southern platyfish,XM_023324899.1,XP_023180667.1,,model,,default-seq
+102246007,DAG1,dystroglycan 1,Myotis brandtii,Brandt's bat,XM_014538958.1,XP_014394444.1,,model,,default-seq
+102277285,DAG1,dystroglycan 1,Bos mutus,wild yak,XM_014477091.1,XP_014332577.1,,model,,default-seq
+102294576,dag1,dystroglycan 1,Haplochromis burtoni,Burton's mouthbrooder,XM_005928943.3,XP_005929005.1,,model,,default-seq
+102363437,DAG1,dystroglycan 1,Latimeria chalumnae,coelacanth,XM_005986996.2,XP_005987058.1,,model,,default-seq
+102374895,DAG1,dystroglycan 1,Alligator sinensis,Chinese alligator,XM_006024997.3,XP_006025059.1,,model,,default-seq
+102404079,DAG1,dystroglycan 1,Bubalus bubalis,water buffalo,XM_006053262.4,XP_006053324.4,,model,,default-seq
+102439306,DAG1,dystroglycan 1,Myotis lucifugus,little brown bat,XM_006107071.2,XP_006107133.1,,model,,default-seq
+102450703,DAG1,dystroglycan 1,Pelodiscus sinensis,Chinese soft-shelled turtle,XM_014572333.2,XP_014427819.1,,model,,default-seq
+102484090,DAG1,dystroglycan 1,Tupaia chinensis,Chinese tree shrew,XM_027769308.1,XP_027625109.1,,model,,default-seq
+102506080,DAG1,dystroglycan 1,Camelus ferus,Wild Bactrian camel,XM_032458505.1,XP_032314396.1,,model,,default-seq
+102536021,DAG1,dystroglycan 1,Vicugna pacos,alpaca,XM_006196306.3,XP_006196368.1,,model,,default-seq
+102560402,DAG1,dystroglycan 1,Alligator mississippiensis,American alligator,XM_014597974.2,XP_014453460.1,,model,,default-seq
+102684992,dag1,dystroglycan 1,Lepisosteus oculatus,spotted gar,XM_006630992.2,XP_006631055.1,,model,,default-seq
+102750272,DAG1,dystroglycan 1,Leptonychotes weddellii,Weddell seal,XM_006744535.2,XP_006744598.1,,model,,default-seq
+102768170,DAG1,dystroglycan 1,Myotis davidii,,XM_006770595.2,XP_006770658.1,,model,,default-seq
+102787690,LOC102787690,dystroglycan 1,Neolamprologus brichardi,,XM_035912550.1,XP_035768443.1,,model,,default-seq
+102818845,DAG1,dystroglycan 1,Chrysochloris asiatica,Cape golden mole,XM_006873600.1,XP_006873662.1,,model,,default-seq
+102877415,DAG1,dystroglycan 1,Elephantulus edwardii,Cape elephant shrew,XM_006892904.1,XP_006892966.1,,model,,default-seq
+102892833,DAG1,dystroglycan 1,Pteropus alecto,black flying fox,XM_006909098.3,XP_006909160.1,,model,,default-seq
+102922682,Dag1,dystroglycan 1,Peromyscus maniculatus bairdii,prairie deer mouse,XM_006978328.3,XP_006978390.1,,model,,default-seq
+102934505,DAG1,dystroglycan 1,Chelonia mydas,Green sea turtle,XM_037904101.2,XP_037760029.1,,model,,default-seq
+102953904,DAG1,dystroglycan 1,Panthera tigris,tiger,XM_042978950.1,XP_042834884.1,,model,,default-seq
+102980567,DAG1,dystroglycan 1,Physeter catodon,sperm whale,XM_007129852.4,XP_007129914.1,,model,,default-seq
+103018341,DAG1,dystroglycan 1,Balaenoptera acutorostrata,minke whale,XM_057554889.1,XP_057410872.1,,model,,default-seq
+103023672,dag1,dystroglycan 1,Astyanax mexicanus,Mexican tetra,XM_022682216.2,XP_022537937.2,,model,,default-seq
+103063333,DAG1,dystroglycan 1,Python bivittatus,Burmese python,XM_007428407.3,XP_007428469.1,,model,,default-seq
+103077123,DAG1,dystroglycan 1,Lipotes vexillifer,Yangtze River dolphin,XM_007446207.1,XP_007446269.1,,model,,default-seq
+103117236,DAG1,dystroglycan 1,Erinaceus europaeus,western European hedgehog,XM_007527252.2,XP_007527314.1,,model,,default-seq
+103176713,dag1,dystroglycan 1,Callorhinchus milii,elephant shark,XM_007890427.2,XP_007888618.2,,model,,default-seq
+103209473,DAG1,dystroglycan 1,Orycteropus afer afer,,XM_007955345.2,XP_007953536.1,,model,,default-seq
+103227635,DAG1,dystroglycan 1,Chlorocebus sabaeus,green monkey,XM_007984227.2,XP_007982418.2,,model,,default-seq
+103265508,DAG1,dystroglycan 1,Carlito syrichta,Philippine tarsier,XM_008063166.1,XP_008061357.1,,model,,default-seq
+103298814,DAG1,dystroglycan 1,Eptesicus fuscus,big brown bat,XM_054729538.1,XP_054585513.1,,model,,default-seq
+103386487,dag1,dystroglycan 1,Cynoglossus semilaevis,tongue sole,XM_008320779.3,XP_008319001.1,,model,,default-seq
+103464259,dag1,dystroglycan 1,Poecilia reticulata,guppy,XM_008408248.2,XP_008406470.1,,model,,default-seq
+103533123,DAG1,dystroglycan 1,Calypte anna,Anna's hummingbird,XM_030458342.1,XP_030314202.1,,model,,default-seq
+103553414,DAG1,dystroglycan 1,Equus przewalskii,Przewalski's horse,XM_008523979.1,XP_008522201.1,,model,,default-seq
+103589551,DAG1,dystroglycan 1,Galeopterus variegatus,Sunda flying lemur,XM_008571560.1,XP_008569782.1,,model,,default-seq
+103614245,DAG1,dystroglycan 1,Corvus brachyrhynchos,American crow,XM_017732331.1,XP_017587820.1,,model,,default-seq
+103674820,DAG1,dystroglycan 1,Ursus maritimus,polar bear,XM_008703783.2,XP_008702005.2,,model,,default-seq
+103750183,Dag1,dystroglycan 1,Nannospalax galili,Upper Galilee mountains blind mole rat,XM_008853178.3,XP_008851400.1,,model,,default-seq
+103757366,DAG1,dystroglycan 1,Manacus vitellinus,golden-collared manakin,XM_029958363.1,XP_029814223.1,,model,,default-seq
+103779896,DAG1,dystroglycan 1,Merops nubicus,carmine bee-eater,XM_008947540.1,XP_008945788.1,,model,,default-seq
+103802037,DAG1,dystroglycan 1,Acanthisitta chloris,rifleman,XM_009074477.1,XP_009072725.1,,model,,default-seq
+103816954,DAG1,dystroglycan 1,Serinus canaria,Common canary,XM_009090996.4,XP_009089244.1,,model,,default-seq
+103900458,DAG1,dystroglycan 1,Aptenodytes forsteri,emperor penguin,XM_009281147.2,XP_009279422.1,,model,,default-seq
+103912674,DAG1,dystroglycan 1,Pygoscelis adeliae,Adelie penguin,XM_009319033.1,XP_009317308.1,,model,,default-seq
+104022927,DAG1,dystroglycan 1,Nipponia nippon,crested ibis,XM_009476696.1,XP_009474971.1,,model,,default-seq
+104031456,DAG1,dystroglycan 1,Pelecanus crispus,Dalmatian pelican,XM_009483458.1,XP_009481733.1,,model,,default-seq
+104043936,DAG1,dystroglycan 1,Phalacrocorax carbo,great cormorant,XM_009503673.1,XP_009501968.1,,model,,default-seq
+104059042,DAG1,dystroglycan 1,Cuculus canorus,common cuckoo,XM_054076452.1,XP_053932427.1,,model,,default-seq
+104083154,DAG1,dystroglycan 1,Fulmarus glacialis,Northern fulmar,XM_009586551.1,XP_009584846.1,,model,,default-seq
+104132444,DAG1,dystroglycan 1,Egretta garzetta,little egret,XM_035901502.1,XP_035757395.1,,model,,default-seq
+104147846,DAG1,dystroglycan 1,Struthio camelus australis,,XM_009680728.1,XP_009679023.1,,model,,default-seq
+104167063,DAG1,dystroglycan 1,Cariama cristata,Red-legged seriema,XM_009707187.1,XP_009705489.1,,model,,default-seq
+104260562,DAG1,dystroglycan 1,Gavia stellata,red-throated loon,XM_009816321.1,XP_009814623.1,,model,,default-seq
+104294718,DAG1,dystroglycan 1,Charadrius vociferus,killdeer,XM_009894361.1,XP_009892663.1,,model,,default-seq
+104306648,DAG1,dystroglycan 1,Dryobates pubescens,Downy woodpecker,XM_009907636.2,XP_009905938.2,,model,,default-seq
+104322623,DAG1,dystroglycan 1,Haliaeetus albicilla,white-tailed eagle,XM_009925909.1,XP_009924211.1,,model,,default-seq
+104339554,DAG1,dystroglycan 1,Opisthocomus hoazin,,XM_009945712.1,XP_009944014.1,,model,,default-seq
+104348895,DAG1,dystroglycan 1,Leptosomus discolor,cuckoo roller,XM_009954278.1,XP_009952580.1,,model,,default-seq
+104368157,DAG1,dystroglycan 1,Tyto alba,Barn owl,XM_033008665.2,XP_032864556.1,,model,,default-seq
+104388098,DAG1,dystroglycan 1,Chaetura pelagica,chimney swift,XM_009996920.1,XP_009995222.1,,model,,default-seq
+104402450,DAG1,dystroglycan 1,Nestor notabilis,Kea,XM_010010334.1,XP_010008636.1,,model,,default-seq
+104462376,DAG1,dystroglycan 1,Pterocles gutturalis,yellow-throated sandgrouse,XM_010074292.1,XP_010072594.1,,model,,default-seq
+104492093,DAG1,dystroglycan 1,Buceros rhinoceros silvestris,,XM_010134600.1,XP_010132902.1,,model,,default-seq
+104517473,DAG1,dystroglycan 1,Antrostomus carolinensis,chuck-will's-widow,XM_010171789.2,XP_010170091.2,,model,,default-seq
+104548711,DAG1,dystroglycan 1,Mesitornis unicolor,brown roatelo,XM_010194806.1,XP_010193108.1,,model,,default-seq
+104555999,DAG1,dystroglycan 1,Colius striatus,speckled mousebird,XM_010199649.1,XP_010197951.1,,model,,default-seq
+104575997,DAG1,dystroglycan 1,Tinamus guttatus,white-throated tinamou,XM_010223347.1,XP_010221649.1,,model,,default-seq
+104613611,DAG1,dystroglycan 1,Phaethon lepturus,White-tailed tropicbird,XM_010290007.1,XP_010288309.1,,model,,default-seq
+104629711,DAG1,dystroglycan 1,Balearica regulorum gibbericeps,East African grey crowned-crane,XM_010298407.1,XP_010296709.1,,model,,default-seq
+104667323,DAG1,dystroglycan 1,Rhinopithecus roxellana,golden snub-nosed monkey,XM_010369681.2,XP_010367983.1,,model,,default-seq
+104683200,DAG1,dystroglycan 1,Corvus cornix cornix,,XM_010389911.4,XP_010388213.2,,model,,default-seq
+104828100,DAG1,dystroglycan 1,Haliaeetus leucocephalus,bald eagle,XM_010561550.1,XP_010559852.1,,model,,default-seq
+104856246,Dag1,dystroglycan 1,Fukomys damarensis,Damara mole-rat,XM_010615562.2,XP_010613864.1,,model,,default-seq
+104937743,dag1,dystroglycan 1,Larimichthys crocea,large yellow croaker,XM_019255326.2,XP_019110871.2,,model,,default-seq
+104997204,DAG1,dystroglycan 1,Bison bison bison,,XM_010851856.1,XP_010850158.1,,model,,default-seq
+105027179,dag1,dystroglycan 1,Esox lucius,northern pike,XM_010899140.5,XP_010897442.4,,model,,default-seq
+105080256,DAG1,dystroglycan 1,Camelus bactrianus,Bactrian camel,XM_010969178.2,XP_010967480.1,,model,,default-seq
+105087695,DAG1,dystroglycan 1,Camelus dromedarius,Arabian camel,XM_031470319.1,XP_031326179.1,,model,,default-seq
+105302390,DAG1,dystroglycan 1,Pteropus vampyrus,large flying fox,XM_011375425.2,XP_011373727.1,,model,,default-seq
+105480444,DAG1,dystroglycan 1,Macaca nemestrina,pig-tailed macaque,XM_011739327.1,XP_011737629.1,,model,,default-seq
+105509700,DAG1,dystroglycan 1,Colobus angolensis palliatus,,XM_011939079.1,XP_011794469.1,,model,,default-seq
+105540344,DAG1,dystroglycan 1,Mandrillus leucophaeus,drill,XM_011980898.1,XP_011836288.1,,model,,default-seq
+105573695,DAG1,dystroglycan 1,Cercocebus atys,sooty mangabey,XM_012033701.1,XP_011889091.1,,model,,default-seq
+105727696,DAG1,dystroglycan 1,Aotus nancymaae,Ma's night monkey,XM_012467731.2,XP_012323154.1,,model,,default-seq
+105805137,DAG1,dystroglycan 1,Propithecus coquereli,Coquerel's sifaka,XM_012637960.1,XP_012493414.1,,model,,default-seq
+105874967,DAG1,dystroglycan 1,Microcebus murinus,gray mouse lemur,XM_012771284.1,XP_012626738.1,,model,,default-seq
+105908864,dag1,dystroglycan 1,Clupea harengus,Atlantic herring,XM_012837425.3,XP_012692879.2,,model,,default-seq
+105917040,dag1,dystroglycan 1,Fundulus heteroclitus,mummichog,XM_012851715.3,XP_012707169.2,,model,,default-seq
+105994595,Dag1,dystroglycan 1,Dipodomys ordii,Ord's kangaroo rat,XM_013028193.1,XP_012883647.1,,model,,default-seq
+106048756,DAG1,dystroglycan 1,Anser cygnoides,Swan goose,XM_013200851.2,XP_013056305.2,,model,,default-seq
+106492183,DAG1,dystroglycan 1,Apteryx mantelli mantelli,,XM_013951974.1,XP_013807428.1,,model,,default-seq
+106510973,dag1,dystroglycan 1,Austrofundulus limnaeus,,XM_013999710.1,XP_013855164.1,,model,,default-seq
+106539361,DAG1,dystroglycan 1,Thamnophis sirtalis,,XM_014054145.1,XP_013909620.1,,model,,default-seq
+106583754,dag1,dystroglycan 1,Salmo salar,Atlantic salmon,XM_014168312.2,XP_014023787.1,,model,,default-seq
+106830692,DAG1,dystroglycan 1,Equus asinus,ass,XM_014840425.2,XP_014695911.1,,model,,default-seq
+106849245,DAG1,dystroglycan 1,Sturnus vulgaris,Common starling,XM_014869719.1,XP_014725205.1,,model,,default-seq
+106894699,DAG1,dystroglycan 1,Calidris pugnax,ruff,XM_014953533.1,XP_014809019.1,,model,,default-seq
+106929752,dag1,dystroglycan 1,Poecilia mexicana,,XM_015006866.1,XP_014862352.1,,model,,default-seq
+106936785,dag1,dystroglycan 1,Poecilia latipinna,sailfin molly,XM_015017988.1,XP_014873474.1,,model,,default-seq
+106979243,DAG1,dystroglycan 1,Acinonyx jubatus,cheetah,XM_027038722.2,XP_026894523.1,,model,,default-seq
+107107157,DAG1,dystroglycan 1,Gekko japonicus,,XM_015407410.1,XP_015262896.1,,model,,default-seq
+107143480,Dag1,dystroglycan 1,Marmota marmota marmota,Alpine marmot,XM_015487194.2,XP_015342680.1,,model,,default-seq
+107210427,DAG1,dystroglycan 1,Parus major,Great Tit,XM_015641223.3,XP_015496709.1,,model,,default-seq
+107289185,DAG1,dystroglycan 1,Protobothrops mucrosquamatus,,XM_015817889.1,XP_015673375.1,,model,,default-seq
+107319593,DAG1,dystroglycan 1,Coturnix japonica,Japanese quail,XM_015874565.2,XP_015730051.1,,model,,default-seq
+107384839,dag1,dystroglycan 1,Nothobranchius furzeri,turquoise killifish,XM_015958309.2,XP_015813795.2,,model,,default-seq
+107513352,DAG1,dystroglycan 1,Rousettus aegyptiacus,Egyptian rousette,XM_036218703.1,XP_036074596.1,,model,,default-seq
+107529453,DAG1,dystroglycan 1,Miniopterus natalensis,,XM_016202871.1,XP_016058357.1,,model,,default-seq
+108229015,dag1,dystroglycan 1,Kryptolebias marmoratus,mangrove rivulus,XM_037975065.1,XP_037830993.1,,model,,default-seq
+108255076,dag1,dystroglycan 1,Ictalurus punctatus,channel catfish,XM_017450728.3,XP_017306217.1,,model,,default-seq
+108286560,DAG1,dystroglycan 1,Cebus imitator,Panamanian white-faced capuchin,XM_017504507.2,XP_017359996.1,,model,,default-seq
+108393347,DAG1,dystroglycan 1,Manis javanica,Malayan pangolin,XM_017654096.2,XP_017509585.2,,model,,default-seq
+108415278,dag1,dystroglycan 1,Pygocentrus nattereri,red-bellied piranha,XM_037532342.1,XP_037388239.1,,model,,default-seq
+108499774,DAG1,dystroglycan 1,Lepidothrix coronata,blue-crowned manakin,XM_017819962.1,XP_017675451.1,,model,,default-seq
+108526986,DAG1,dystroglycan 1,Rhinopithecus bieti,black snub-nosed monkey,XM_017868076.1,XP_017723565.1,,model,,default-seq
+108803084,DAG1,dystroglycan 1,Nanorana parkeri,,XM_018574924.1,XP_018430426.1,,model,,default-seq
+108894863,dag1,dystroglycan 1,Lates calcarifer,barramundi perch,XM_018693484.2,XP_018549000.1,,model,,default-seq
+108931370,dag1,dystroglycan 1,Scleropages formosus,Asian bonytongue,XM_018747118.2,XP_018602634.1,,model,,default-seq
+109247807,DAG1,dystroglycan 1,Panthera pardus,leopard,XM_019416821.2,XP_019272366.2,,model,,default-seq
+109289183,DAG1,dystroglycan 1,Gavialis gangeticus,Gharial,XM_019505147.1,XP_019360692.1,,model,,default-seq
+109318324,DAG1,dystroglycan 1,Crocodylus porosus,Australian saltwater crocodile,XM_019547514.1,XP_019403059.1,,model,,default-seq
+109376050,DAG1,dystroglycan 1,Hipposideros armiger,great roundleaf bat,XM_019631716.1,XP_019487261.1,,model,,default-seq
+109522278,dag1,dystroglycan 1,Hippocampus comes,tiger tail seahorse,XM_019880686.1,XP_019736245.1,,model,,default-seq
+109576023,DAG1,dystroglycan 1,Bos indicus,zebu cattle,XM_019984311.1,XP_019839870.1,,model,,default-seq
+109692703,Dag1,dystroglycan 1,Castor canadensis,American beaver,XM_020173494.1,XP_020029083.1,,model,,default-seq
+109883770,dag1,dystroglycan 1,Oncorhynchus kisutch,coho salmon,XM_020475802.2,XP_020331391.1,,model,,default-seq
+109912070,dag1,dystroglycan 1,Rhincodon typus,whale shark,XM_048593769.1,XP_048449726.1,,model,,default-seq
+109966907,dag1,dystroglycan 1,Monopterus albus,swamp eel,XM_020612136.1,XP_020467792.1,,model,,default-seq
+110077092,DAG1,dystroglycan 1,Pogona vitticeps,central bearded dragon,XM_020789828.1,XP_020645487.1,,model,,default-seq
+110152366,DAG1,dystroglycan 1,Odocoileus virginianus,white-tailed deer,XM_020916085.1,XP_020771744.1,,model,,default-seq
+110171127,dag1,dystroglycan 1,Boleophthalmus pectinirostris,great blue-spotted mudskipper,XM_055160829.1,XP_055016804.1,,model,,default-seq
+110216898,DAG1,dystroglycan 1,Phascolarctos cinereus,koala,XM_020998943.1,XP_020854602.1,,model,,default-seq
+110301140,Dag1,dystroglycan 1,Mus caroli,Ryukyu mouse,XM_021171403.2,XP_021027062.1,,model,,default-seq
+110327199,Dag1,dystroglycan 1,Mus pahari,shrew mouse,XM_021205967.2,XP_021061626.1,,model,,default-seq
+110405048,DAG1,dystroglycan 1,Numida meleagris,helmeted guineafowl,XM_021409945.1,XP_021265620.1,,model,,default-seq
+110469931,DAG1,dystroglycan 1,Lonchura striata domestica,Bengalese finch,XM_021529173.1,XP_021384848.1,,model,,default-seq
+110528624,dag1,dystroglycan 1,Oncorhynchus mykiss,rainbow trout,XM_021610760.2,XP_021466435.2,,model,,default-seq
+110565056,Dag1,dystroglycan 1,Meriones unguiculatus,Mongolian gerbil,XM_021662644.1,XP_021518319.1,,model,,default-seq
+110577550,DAG1,dystroglycan 1,Neomonachus schauinslandi,Hawaiian monk seal,XM_021686895.1,XP_021542570.1,,model,,default-seq
+110959291,dag1,dystroglycan 1,Acanthochromis polyacanthus,spiny chromis,XM_022206100.2,XP_022061792.1,,model,,default-seq
+111144250,DAG1,dystroglycan 1,Enhydra lutris kenyoni,,XM_022498468.1,XP_022354176.1,,model,,default-seq
+111174393,DAG1,dystroglycan 1,Delphinapterus leucas,beluga whale,XM_022573135.1,XP_022428843.1,,model,,default-seq
+111219465,dag1,dystroglycan 1,Seriola dumerili,greater amberjack,XM_022742151.1,XP_022597872.1,,model,,default-seq
+111555438,DAG1,dystroglycan 1,Piliocolobus tephrosceles,Ugandan red Colobus,XM_023231510.2,XP_023087278.1,,model,,default-seq
+111581104,dag1,dystroglycan 1,Amphiprion ocellaris,clown anemonefish,XM_035956739.2,XP_035812632.1,,model,,default-seq
+111645430,dag1,dystroglycan 1,Seriola lalandi dorsalis,,XM_023394646.1,XP_023250414.1,,model,,default-seq
+111843608,dag1,dystroglycan 1,Paramormyrops kingsleyae,,XM_023811299.1,XP_023667067.1,,model,,default-seq
+111935204,DAG1,dystroglycan 1,Cyanistes caeruleus,blue tit,XM_023935559.1,XP_023791327.1,,model,,default-seq
+112069585,dag1,dystroglycan 1,Salvelinus alpinus,Arctic char,XM_024136925.1,XP_023992693.1,,model,,default-seq
+112102402,DAG1,dystroglycan 1,Terrapene carolina triunguis,Three-toed box turtle,XM_026657046.1,XP_026512831.1,,model,,default-seq
+112145007,dag1,dystroglycan 1,Oryzias melastigma,Indian medaka,XM_024269984.2,XP_024125752.1,,model,,default-seq
+112255083,dag1,dystroglycan 1,Oncorhynchus tshawytscha,Chinook salmon,XM_024428140.2,XP_024283908.1,,model,,default-seq
+112309526,DAG1,dystroglycan 1,Desmodus rotundus,common vampire bat,XM_024565702.3,XP_024421470.2,,model,,default-seq
+112394858,DAG1,dystroglycan 1,Neophocaena asiaeorientalis asiaeorientalis,Yangtze finless porpoise,XM_024737805.1,XP_024593573.1,,model,,default-seq
+112618331,DAG1,dystroglycan 1,Theropithecus gelada,gelada,XM_025375312.1,XP_025231097.1,,model,,default-seq
+112665787,DAG1,dystroglycan 1,Canis lupus dingo,dingo,XM_025455860.3,XP_025311645.2,,model,,default-seq
+112833749,DAG1,dystroglycan 1,Callorhinus ursinus,northern fur seal,XM_025885072.1,XP_025740857.1,,model,,default-seq
+112852451,DAG1,dystroglycan 1,Puma concolor,puma,XM_025915937.1,XP_025771722.1,,model,,default-seq
+112911464,DAG1,dystroglycan 1,Vulpes vulpes,red fox,XM_025988029.1,XP_025843814.1,,model,,default-seq
+112949142,DAG1,dystroglycan 1,Nothoprocta perdicaria,,XM_026041525.1,XP_025897310.1,,model,,default-seq
+112960584,DAG1,dystroglycan 1,Apteryx rowi,Okarito brown kiwi,XM_026054996.1,XP_025910781.1,,model,,default-seq
+112986983,DAG1,dystroglycan 1,Dromaius novaehollandiae,emu,XM_026106580.1,XP_025962365.1,,model,,default-seq
+113021812,dag1,dystroglycan 1,Astatotilapia calliptera,eastern happy,XM_026166564.1,XP_026022349.1,,model,,default-seq
+113039820,dag1,dystroglycan 1,Carassius auratus,goldfish,XM_026197913.1,XP_026053698.1,,model,,default-seq
+113129886,dag1,dystroglycan 1,Mastacembelus armatus,zig-zag eel,XM_026306095.2,XP_026161880.1,,model,,default-seq
+113154384,dag1,dystroglycan 1,Anabas testudineus,climbing perch,XM_026348560.1,XP_026204345.1,,model,,default-seq
+113179431,Dag1,dystroglycan 1,Urocitellus parryii,Arctic ground squirrel,XM_026384048.1,XP_026239833.1,,model,,default-seq
+113256878,DAG1,dystroglycan 1,Ursus arctos,brown bear,XM_026500844.4,XP_026356629.2,,model,,default-seq
+113415784,DAG1,dystroglycan 1,Notechis scutatus,mainland tiger snake,XM_026673335.1,XP_026529120.1,,model,,default-seq
+113454626,DAG1,dystroglycan 1,Pseudonaja textilis,,XM_026725985.1,XP_026581770.1,,model,,default-seq
+113484843,DAG1,dystroglycan 1,Athene cunicularia,burrowing owl,XM_026857520.1,XP_026713321.1,,model,,default-seq
+113538009,dag1,dystroglycan 1,Pangasianodon hypophthalmus,striped catfish,XM_026932807.3,XP_026788608.3,,model,,default-seq
+113572363,dag1,dystroglycan 1,Electrophorus electricus,electric eel,XM_027001848.2,XP_026857649.2,,model,,default-seq
+113615854,DAG1,dystroglycan 1,Lagenorhynchus obliquidens,Pacific white-sided dolphin,XM_027098809.1,XP_026954610.1,,model,,default-seq
+113656480,dag1,dystroglycan 1,Tachysurus fulvidraco,yellow catfish,XM_027167771.2,XP_027023572.1,,model,,default-seq
+113880847,DAG1,dystroglycan 1,Bos indicus x Bos taurus,hybrid cattle,XM_027523461.1,XP_027379262.1,,model,,default-seq
+113917357,DAG1,dystroglycan 1,Zalophus californianus,California sea lion,XM_027585090.2,XP_027440891.1,,model,,default-seq
+113945815,DAG1,dystroglycan 1,Corapipo altera,White-ruffed manakin,XM_027640394.1,XP_027496195.1,,model,,default-seq
+113975872,DAG1,dystroglycan 1,Neopelma chrysocephalum,saffron-crested tyrant-manakin,XM_027700408.1,XP_027556209.1,,model,,default-seq
+113994242,DAG1,dystroglycan 1,Pipra filicauda,Wire-tailed manakin,XM_027733113.2,XP_027588914.1,,model,,default-seq
+114024116,DAG1,dystroglycan 1,Vombatus ursinus,common wombat,XM_027837012.1,XP_027692813.1,,model,,default-seq
+114058766,DAG1,dystroglycan 1,Empidonax traillii,willow flycatcher,XM_027886438.1,XP_027742239.1,,model,,default-seq
+114091245,Dag1,dystroglycan 1,Marmota flaviventris,yellow-bellied marmot,XM_027933652.2,XP_027789453.1,,model,,default-seq
+114135260,dag1,dystroglycan 1,Xiphophorus couchianus,Monterrey platyfish,XM_028002366.1,XP_027858167.1,,model,,default-seq
+114225051,DAG1,dystroglycan 1,Eumetopias jubatus,Steller sea lion,XM_028124445.1,XP_027980246.1,,model,,default-seq
+114450729,dag1,dystroglycan 1,Parambassis ranga,Indian glassy fish,XM_028429061.1,XP_028284862.1,,model,,default-seq
+114466649,dag1,dystroglycan 1,Gouania willdenowi,blunt-snouted clingfish,XM_028452248.1,XP_028308049.1,,model,,default-seq
+114501541,DAG1,dystroglycan 1,Phyllostomus discolor,pale spear-nosed bat,XM_028518155.2,XP_028373956.1,,model,,default-seq
+114553930,dag1,dystroglycan 1,Perca flavescens,yellow perch,XM_028575406.1,XP_028431207.1,,model,,default-seq
+114591482,DAG1,dystroglycan 1,Podarcis muralis,Common wall lizard,XM_028718569.1,XP_028574402.1,,model,,default-seq
+114611878,Dag1,dystroglycan 1,Grammomys surdaster,,XM_028756663.1,XP_028612496.1,,model,,default-seq
+114668529,dag1,dystroglycan 1,Erpetoichthys calabaricus,reedfish,XM_028824323.2,XP_028680156.2,,model,,default-seq
+114705218,Dag1,dystroglycan 1,Peromyscus leucopus,white-footed mouse,XM_028886985.2,XP_028742818.1,,model,,default-seq
+114800711,dag1,dystroglycan 1,Denticeps clupeoides,denticle herring,XM_028998417.1,XP_028854250.1,,model,,default-seq
+114855227,dag1,dystroglycan 1,Betta splendens,Siamese fighting fish,XM_029150193.3,XP_029006026.1,,model,,default-seq
+114906933,DAG1,dystroglycan 1,Monodon monoceros,narwhal,XM_029241931.1,XP_029097764.1,,model,,default-seq
+115008181,dag1,dystroglycan 1,Cottoperca gobio,,XM_029431575.1,XP_029287435.1,,model,,default-seq
+115044007,dag1,dystroglycan 1,Echeneis naucrates,live sharksucker,XM_029502827.1,XP_029358687.1,,model,,default-seq
+115090502,DAG1,dystroglycan 1,Rhinatrema bivittatum,two-lined caecilian,XM_029599677.1,XP_029455537.1,,model,,default-seq
+115116398,dag1,dystroglycan 1,Oncorhynchus nerka,sockeye salmon,XM_029644890.1,XP_029500750.1,,model,,default-seq
+115150020,dag1,dystroglycan 1,Salmo trutta,river trout,XM_029692879.1,XP_029548739.1,,model,,default-seq
+115274021,DAG1,dystroglycan 1,Suricata suricatta,meerkat,XM_029917384.1,XP_029773244.1,,model,,default-seq
+115333233,DAG1,dystroglycan 1,Aquila chrysaetos chrysaetos,,XM_029995892.2,XP_029851752.1,,model,,default-seq
+115358865,dag1,dystroglycan 1,Myripristis murdjan,pinecone soldierfish,XM_030050954.1,XP_029906814.1,,model,,default-seq
+115407847,dag1,dystroglycan 1,Salarias fasciatus,jewelled blenny,XM_030118371.1,XP_029974231.1,,model,,default-seq
+115419957,dag1,dystroglycan 1,Sphaeramia orbicularis,orbiculate cardinalfish,XM_030135025.1,XP_029990885.1,,model,,default-seq
+115472024,DAG1,dystroglycan 1,Microcaecilia unicolor,,XM_030206056.1,XP_030061916.1,,model,,default-seq
+115508266,DAG1,dystroglycan 1,Lynx canadensis,Canada lynx,XM_030306757.1,XP_030162617.1,,model,,default-seq
+115557089,dag1,dystroglycan 1,Gadus morhua,Atlantic cod,XM_030374674.1,XP_030230534.1,,model,,default-seq
+115583198,dag1,dystroglycan 1,Sparus aurata,gilthead seabream,XM_030419737.1,XP_030275597.1,,model,,default-seq
+115614216,DAG1,dystroglycan 1,Strigops habroptila,Kakapo,XM_030500719.1,XP_030356579.1,,model,,default-seq
+115654953,DAG1,dystroglycan 1,Gopherus evgoodei,Goodes thornscrub tortoise,XM_030569879.1,XP_030425739.1,,model,,default-seq
+115776248,dag1,dystroglycan 1,Archocentrus centrarchus,flier cichlid,XM_030723860.1,XP_030579720.1,,model,,default-seq
+115814750,dag1,dystroglycan 1,Chanos chanos,milkfish,XM_030777690.1,XP_030633550.1,,model,,default-seq
+115858860,DAG1,dystroglycan 1,Globicephala melas,long-finned pilot whale,XM_030867119.1,XP_030722979.1,,model,,default-seq
+115908267,DAG1,dystroglycan 1,Camarhynchus parvulus,,XM_030956739.1,XP_030812599.1,,model,,default-seq
+116054830,dag1,dystroglycan 1,Sander lucioperca,pikeperch,XM_031306552.2,XP_031162412.2,,model,,default-seq
+116072012,Dag1,dystroglycan 1,Mastomys coucha,southern multimammate mouse,XM_031343186.1,XP_031199046.1,,model,,default-seq
+116241100,DAG1,dystroglycan 1,Phasianus colchicus,Ring-necked pheasant,XM_031611721.1,XP_031467581.1,,model,,default-seq
+116317059,dag1,dystroglycan 1,Oreochromis aureus,,XM_031735717.2,XP_031591577.1,,model,,default-seq
+116382870,dag1,dystroglycan 1,Anarrhichthys ocellatus,wolf-eel,XM_031846278.1,XP_031702138.1,,model,,default-seq
+116449265,DAG1,dystroglycan 1,Corvus moneduloides,New Caledonian crow,XM_032120614.1,XP_031976505.1,,model,,default-seq
+116473457,DAG1,dystroglycan 1,Hylobates moloch,silvery gibbon,XM_032161520.2,XP_032017411.1,,model,,default-seq
+116492924,DAG1,dystroglycan 1,Aythya fuligula,tufted duck,XM_032193934.1,XP_032049825.1,,model,,default-seq
+116503589,DAG1,dystroglycan 1,Thamnophis elegans,Western terrestrial garter snake,XM_032210104.1,XP_032065995.1,,model,,default-seq
+116559289,DAG1,dystroglycan 1,Sapajus apella,tufted capuchin,XM_032289835.1,XP_032145726.1,,model,,default-seq
+116577072,DAG1,dystroglycan 1,Mustela erminea,ermine,XM_032319787.1,XP_032175678.1,,model,,default-seq
+116636559,DAG1,dystroglycan 1,Phoca vitulina,harbor seal,XM_032411292.1,XP_032267183.1,,model,,default-seq
+116693155,dag1,dystroglycan 1,Etheostoma spectabile,orangethroat darter,XM_032521913.1,XP_032377804.1,,model,,default-seq
+116710146,dag1,dystroglycan 1,Xiphophorus hellerii,green swordtail,XM_032549003.1,XP_032404894.1,,model,,default-seq
+116762000,DAG1,dystroglycan 1,Phocoena sinus,vaquita,XM_032648588.1,XP_032504479.1,,model,,default-seq
+116792080,DAG1,dystroglycan 1,Chiroxiphia lanceolata,lance-tailed manakin,XM_032698704.1,XP_032554595.1,,model,,default-seq
+116831941,DAG1,dystroglycan 1,Chelonoidis abingdonii,Abingdon island giant tortoise,XM_032792280.1,XP_032648171.1,,model,,default-seq
+116873872,DAG1,dystroglycan 1,Lontra canadensis,Northern American river otter,XM_032868056.1,XP_032723947.1,,model,,default-seq
+116907572,Dag1,dystroglycan 1,Rattus rattus,black rat,XM_032910604.1,XP_032766495.1,,model,,default-seq
+116952402,DAG1,dystroglycan 1,Petromyzon marinus,sea lamprey,XM_032971753.1,XP_032827644.1,,model,,default-seq
+116983182,dag1,dystroglycan 1,Amblyraja radiata,thorny skate,XM_033036808.1,XP_032892699.1,,model,,default-seq
+117002505,DAG1,dystroglycan 1,Catharus ustulatus,Swainson's thrush,XM_033071683.2,XP_032927574.1,,model,,default-seq
+117036651,DAG1,dystroglycan 1,Rhinolophus ferrumequinum,greater horseshoe bat,XM_033131728.1,XP_032987619.1,,model,,default-seq
+117041584,DAG1,dystroglycan 1,Lacerta agilis,,XM_033140528.1,XP_032996419.1,,model,,default-seq
+117081448,DAG1,dystroglycan 1,Trachypithecus francoisi,Francois's langur,XM_033207397.1,XP_033063288.1,,model,,default-seq
+117256488,dag1,dystroglycan 1,Epinephelus lanceolatus,giant grouper,XM_033625927.1,XP_033481818.1,,model,,default-seq
+117351179,DAG1,dystroglycan 1,Geotrypetes seraphini,,XM_033926088.1,XP_033781979.1,,model,,default-seq
+117370647,dag1,dystroglycan 1,Periophthalmus magnuspinnatus,,XM_033966124.2,XP_033822015.1,,model,,default-seq
+117449598,dag1,dystroglycan 1,Pseudochaenichthys georgianus,South Georgia icefish,XM_034087363.1,XP_033943254.1,,model,,default-seq
+117482493,dag1,dystroglycan 1,Trematomus bernacchii,emerald rockcod,XM_034130579.1,XP_033986470.1,,model,,default-seq
+117506395,dag1,dystroglycan 1,Thalassophryne amazonica,,XM_034165898.1,XP_034021789.1,,model,,default-seq
+117679449,DAG1,dystroglycan 1,Pantherophis guttatus,,XM_034441383.1,XP_034297274.1,,model,,default-seq
+117693265,Dag1,dystroglycan 1,Arvicanthis niloticus,Nile rat,XM_034483733.1,XP_034339624.1,,model,,default-seq
+117731148,dag1,dystroglycan 1,Cyclopterus lumpus,lumpfish,XM_034533308.1,XP_034389199.1,,model,,default-seq
+117762177,dag1,dystroglycan 1,Hippoglossus hippoglossus,Atlantic halibut,XM_034586690.1,XP_034442581.1,,model,,default-seq
+117879854,DAG1,dystroglycan 1,Trachemys scripta elegans,,XM_034775304.1,XP_034631195.1,,model,,default-seq
+118005800,DAG1,dystroglycan 1,Mirounga leonina,Southern elephant seal,XM_034998066.1,XP_034853957.1,,model,,default-seq
+118080538,DAG1,dystroglycan 1,Zootoca vivipara,common lizard,XM_035105911.1,XP_034961802.1,,model,,default-seq
+118105142,dag1,dystroglycan 1,Hippoglossus stenolepis,Pacific halibut,XM_035152583.2,XP_035008474.1,,model,,default-seq
+118173520,DAG1,dystroglycan 1,Oxyura jamaicensis,ruddy duck,XM_035338144.1,XP_035194035.1,,model,,default-seq
+118211147,dag1,dystroglycan 1,Anguilla anguilla,European eel,XM_035388051.1,XP_035243942.1,,model,,default-seq
+118253654,DAG1,dystroglycan 1,Cygnus atratus,black swan,XM_035558223.2,XP_035414116.1,,model,,default-seq
+118309054,dag1,dystroglycan 1,Scophthalmus maximus,turbot,XM_047332735.1,XP_047188691.1,,model,,default-seq
+118328211,dag1,dystroglycan 1,Morone saxatilis,striped sea-bass,XM_035661831.1,XP_035517724.1,,model,,default-seq
+118376645,dag1,dystroglycan 1,Oncorhynchus keta,chum salmon,XM_052474147.1,XP_052330107.1,,model,,default-seq
+118541092,DAG1,dystroglycan 1,Halichoerus grypus,gray seal,XM_036100547.1,XP_035956440.1,,model,,default-seq
+118586639,Dag1,dystroglycan 1,Onychomys torridus,southern grasshopper mouse,XM_036191742.1,XP_036047635.1,,model,,default-seq
+118632934,DAG1,dystroglycan 1,Molossus molossus,Pallas's mastiff bat,XM_036266234.1,XP_036122127.1,,model,,default-seq
+118668478,DAG1,dystroglycan 1,Myotis myotis,,XM_036333551.1,XP_036189444.1,,model,,default-seq
+118691685,DAG1,dystroglycan 1,Molothrus ater,,XM_054516063.1,XP_054372038.1,,model,,default-seq
+118715669,DAG1,dystroglycan 1,Pipistrellus kuhlii,Kuhl's pipistrelle,XM_036432276.2,XP_036288169.1,,model,,default-seq
+118779380,dag1,dystroglycan 1,Megalops cyprinoides,Indo-Pacific tarpon,XM_036531451.1,XP_036387344.1,,model,,default-seq
+118799436,dag1,dystroglycan 1,Colossoma macropomum,tambaqui,XM_036559298.1,XP_036415191.1,,model,,default-seq
+118830757,DAG1,dystroglycan 1,Trichosurus vulpecula,common brushtail,XM_036737669.1,XP_036593564.1,,model,,default-seq
+118903313,DAG1,dystroglycan 1,Balaenoptera musculus,Blue whale,XM_036868243.1,XP_036724138.1,,model,,default-seq
+118908324,DAG1,dystroglycan 1,Manis pentadactyla,Chinese pangolin,XM_036877540.2,XP_036733435.2,,model,,default-seq
+118989476,DAG1,dystroglycan 1,Sturnira hondurensis,,XM_037049713.1,XP_036905608.1,,model,,default-seq
+119021300,dag1,dystroglycan 1,Acanthopagrus latus,yellowfin seabream,XM_037101508.1,XP_036957403.1,,model,,default-seq
+119036739,DAG1,dystroglycan 1,Artibeus jamaicensis,Jamaican fruit-eating bat,XM_037128665.2,XP_036984560.2,,model,,default-seq
+119135417,dag1,dystroglycan 1,Syngnathus acus,greater pipefish,XM_037272968.1,XP_037128863.1,,model,,default-seq
+119146850,DAG1,dystroglycan 1,Falco rusticolus,gyrfalcon,XM_037385138.1,XP_037241035.1,,model,,default-seq
+119229985,dag1,dystroglycan 1,Pungitius pungitius,ninespine stickleback,XM_037490890.1,XP_037346787.1,,model,,default-seq
+119260195,DAG1,dystroglycan 1,Talpa occidentalis,Iberian mole,XM_037529092.2,XP_037384989.1,,model,,default-seq
+119412887,dag1,dystroglycan 1,Nematolebias whitei,Rio pearlfish,XM_037679923.1,XP_037535851.1,,model,,default-seq
+119499007,dag1,dystroglycan 1,Sebastes umbrosus,honeycomb rockfish,XM_037788225.1,XP_037644153.1,,model,,default-seq
+119545257,DAG1,dystroglycan 1,Choloepus didactylus,southern two-toed sloth,XM_037850780.1,XP_037706708.1,,model,,default-seq
+119706010,DAG1,dystroglycan 1,Motacilla alba alba,,XM_038149041.1,XP_038004969.1,,model,,default-seq
+119794294,dag1,dystroglycan 1,Cyprinodon tularosa,,XM_038301776.1,XP_038157704.1,,model,,default-seq
+119810230,Dag1,dystroglycan 1,Arvicola amphibius,Eurasian water vole,XM_038323602.1,XP_038179530.1,,model,,default-seq
+119859042,DAG1,dystroglycan 1,Dermochelys coriacea,leatherback sea turtle,XM_038410655.2,XP_038266583.1,,model,,default-seq
+119885668,dag1,dystroglycan 1,Micropterus salmoides,largemouth bass,XM_038695816.1,XP_038551744.1,,model,,default-seq
+119950004,DAG1,dystroglycan 1,Tachyglossus aculeatus,Australian echidna,XM_038771868.1,XP_038627796.1,,model,,default-seq
+119973169,dag1,dystroglycan 1,Scyliorhinus canicula,smaller spotted catshark,XM_038810808.1,XP_038666736.1,,model,,default-seq
+120229269,DAG1,dystroglycan 1,Hyaena hyaena,striped hyena,XM_039228136.1,XP_039084067.1,,model,,default-seq
+120304007,DAG1,dystroglycan 1,Crotalus tigris,Tiger rattlesnake,XM_039334059.1,XP_039189993.1,,model,,default-seq
+120368579,DAG1,dystroglycan 1,Mauremys reevesii,Reeves's turtle,XM_039480774.1,XP_039336708.1,,model,,default-seq
+120477158,dag1,dystroglycan 1,Pimephales promelas,fathead minnow,XM_039668606.1,XP_039524540.1,,model,,default-seq
+120495690,DAG1,dystroglycan 1,Passer montanus,Eurasian tree sparrow,XM_039695469.1,XP_039551403.1,,model,,default-seq
+120540564,dag1,dystroglycan 1,Polypterus senegalus,gray bichir,XM_039771404.1,XP_039627338.1,,model,,default-seq
+120557529,dag1,dystroglycan 1,Perca fluviatilis,European perch,XM_039797943.1,XP_039653877.1,,model,,default-seq
+120582351,DAG1,dystroglycan 1,Pteropus giganteus,Indian flying fox,XM_039837747.1,XP_039693681.1,,model,,default-seq
+120758237,DAG1,dystroglycan 1,Hirundo rustica,Barn swallow,XM_040076266.2,XP_039932200.1,,model,,default-seq
+120807246,dag1,dystroglycan 1,Xiphias gladius,swordfish,XM_040159020.1,XP_040014954.1,,model,,default-seq
+120835131,dag1,dystroglycan 1,Gasterosteus aculeatus,three-spined stickleback,XM_040203738.1,XP_040059672.1,,model,,default-seq
+120868224,DAG1,dystroglycan 1,Oryx dammah,scimitar-horned oryx,XM_040246936.1,XP_040102870.1,,model,,default-seq
+120945002,DAG1,dystroglycan 1,Rana temporaria,common frog,XM_040358815.1,XP_040214749.1,,model,,default-seq
+120979750,DAG1,dystroglycan 1,Bufo bufo,common toad,XM_040408705.1,XP_040264639.1,,model,,default-seq
+121011201,DAG1,dystroglycan 1,Puma yagouaroundi,jaguarundi,XM_040445364.1,XP_040301298.1,,model,,default-seq
+121075572,DAG1,dystroglycan 1,Cygnus olor,mute swan,XM_040568993.1,XP_040424927.1,,model,,default-seq
+121087002,DAG1,dystroglycan 1,Falco naumanni,lesser kestrel,XM_040591547.1,XP_040447481.1,,model,,default-seq
+121165706,DAG1,dystroglycan 1,Ochotona curzoniae,black-lipped pika,XM_040994473.1,XP_040850407.1,,model,,default-seq
+121179187,dag1,dystroglycan 1,Toxotes jaculatrix,banded archerfish,XM_041033865.1,XP_040889799.1,,model,,default-seq
+121280308,dag1,dystroglycan 1,Carcharodon carcharias,great white shark,XM_041192173.1,XP_041048107.1,,model,,default-seq
+121347417,DAG1,dystroglycan 1,Onychostruthus taczanowskii,white-rumped snowfinch,XM_041426066.1,XP_041282000.1,,model,,default-seq
+121352897,DAG1,dystroglycan 1,Pyrgilauda ruficollis,rufous-necked snowfinch,XM_041466250.1,XP_041322184.1,,model,,default-seq
+121464179,Dag1,dystroglycan 1,Microtus oregoni,creeping vole,XM_041676839.1,XP_041532773.1,,model,,default-seq
+121494501,DAG1,dystroglycan 1,Vulpes lagopus,Arctic fox,XM_041761033.1,XP_041616967.1,,model,,default-seq
+121577917,dag1,dystroglycan 1,Coregonus clupeaformis,lake whitefish,XM_041891902.2,XP_041747836.2,,model,,default-seq
+121622143,dag1,dystroglycan 1,Chelmon rostratus,copperband butterflyfish,XM_041959008.1,XP_041814942.1,,model,,default-seq
+121637300,dag1,dystroglycan 1,Melanotaenia boesemani,Boeseman's rainbowfish,XM_041981355.1,XP_041837289.1,,model,,default-seq
+121659830,DAG1,dystroglycan 1,Corvus kubaryi,Mariana crow,XM_042018415.1,XP_041874349.1,,model,,default-seq
+121707437,dag1,dystroglycan 1,Alosa sapidissima,American shad,XM_042090007.1,XP_041945941.1,,model,,default-seq
+121921252,DAG1,dystroglycan 1,Sceloporus undulatus,fence lizard,XM_042449042.1,XP_042304976.1,,model,,default-seq
+121961054,dag1,dystroglycan 1,Plectropomus leopardus,leopard coralgrouper,XM_042510924.1,XP_042366858.1,,model,,default-seq
+122095549,Dag1,dystroglycan 1,Dipodomys spectabilis,banner-tailed kangaroo rat,XM_042665846.1,XP_042521780.1,,model,,default-seq
+122162723,DAG1,dystroglycan 1,Centrocercus urophasianus,Greater sage-grouse,XM_042823311.1,XP_042679245.1,,model,,default-seq
+122185026,DAG1,dystroglycan 1,Lagopus leucura,white-tailed ptarmigan,XM_042880480.1,XP_042736414.1,,model,,default-seq
+122214346,DAG1,dystroglycan 1,Panthera leo,lion,XM_042929366.1,XP_042785300.1,,model,,default-seq
+122327185,dag1,dystroglycan 1,Puntigrus tetrazona,Sumatra barb,XM_043222369.1,XP_043078304.1,,model,,default-seq
+122424327,DAG1,dystroglycan 1,Cervus canadensis,,XM_043442041.1,XP_043297976.1,,model,,default-seq
+122488712,DAG1,dystroglycan 1,Prionailurus bengalensis,leopard cat,XM_043590393.1,XP_043446328.1,,model,,default-seq
+122559152,dag1,dystroglycan 1,Chiloscyllium plagiosum,whitespotted bambooshark,XM_043708513.1,XP_043564448.1,,model,,default-seq
+122682541,DAG1,dystroglycan 1,Cervus elaphus,red deer,XM_043885365.1,XP_043741300.1,,model,,default-seq
+122731686,DAG1,dystroglycan 1,Dromiciops gliroides,monito del monte,XM_043971947.1,XP_043827882.1,,model,,default-seq
+122768394,dag1,dystroglycan 1,Solea senegalensis,Senegalese sole,XM_044024373.1,XP_043880308.1,,model,,default-seq
+122807154,DAG1,dystroglycan 1,Protopterus annectens,West African lungfish,XM_044078177.1,XP_043934112.1,,model,,default-seq
+122834014,dag1,dystroglycan 1,Gambusia affinis,western mosquitofish,XM_044122077.1,XP_043978012.1,,model,,default-seq
+122886970,dag1,dystroglycan 1,Siniperca chuatsi,mandarin fish,XM_044219751.1,XP_044075686.1,,model,,default-seq
+122909425,DAG1,dystroglycan 1,Neogale vison,American mink,XM_044253564.1,XP_044109499.1,,model,,default-seq
+122980662,dag1,dystroglycan 1,Thunnus albacares,yellowfin tuna,XM_044348891.1,XP_044204826.1,,model,,default-seq
+123034348,DAG1,dystroglycan 1,Varanus komodoensis,Komodo dragon,XM_044451682.1,XP_044307617.1,,model,,default-seq
+123230780,DAG1,dystroglycan 1,Gracilinanus agilis,Agile Gracile Mouse Opossum,XM_044656950.1,XP_044512885.1,,model,,default-seq
+123374197,DAG1,dystroglycan 1,Mauremys mutica,yellowpond turtle,XM_045023855.1,XP_044879790.1,,model,,default-seq
+123607489,DAG1,dystroglycan 1,Leopardus geoffroyi,Geoffroy's cat,XM_045496846.1,XP_045352802.1,,model,,default-seq
+123623272,DAG1,dystroglycan 1,Lemur catta,Ring-tailed lemur,XM_045530231.1,XP_045386187.1,,model,,default-seq
+123779835,DAG1,dystroglycan 1,Ursus americanus,American black bear,XM_045778384.1,XP_045634340.1,,model,,default-seq
+123830421,DAG1,dystroglycan 1,Phyllostomus hastatus,greater spear-nosed bat,XM_045856585.1,XP_045712541.1,,model,,default-seq
+123833797,DAG1,dystroglycan 1,Mirounga angustirostris,Northern elephant seal,XM_045862372.2,XP_045718328.1,,model,,default-seq
+123933084,DAG1,dystroglycan 1,Meles meles,Eurasian badger,XM_045992003.1,XP_045847959.1,,model,,default-seq
+123987393,dag1,dystroglycan 1,Micropterus dolomieu,smallmouth bass,XM_046076216.1,XP_045932172.1,,model,,default-seq
+124025515,dag1,dystroglycan 1,Oncorhynchus gorbuscha,pink salmon,XM_046338906.1,XP_046194862.1,,model,,default-seq
+124057098,dag1,dystroglycan 1,Scatophagus argus,,XM_046385222.1,XP_046241178.1,,model,,default-seq
+124084282,Dag1,dystroglycan 1,Marmota monax,woodchuck,XM_046431328.2,XP_046287284.1,,model,,default-seq
+124240201,DAG1,dystroglycan 1,Equus quagga,,XM_046663019.1,XP_046518975.1,,model,,default-seq
+124402304,dag1,dystroglycan 1,Silurus meridionalis,,XM_046875243.1,XP_046731199.1,,model,,default-seq
+124470692,dag1,dystroglycan 1,Hypomesus transpacificus,,XM_047024679.1,XP_046880635.1,,model,,default-seq
+124524043,DAG1,dystroglycan 1,Lynx rufus,bobcat,XM_047096046.1,XP_046952002.1,,model,,default-seq
+124856535,dag1,dystroglycan 1,Girardinichthys multiradiatus,,XM_047347060.1,XP_047203016.1,,model,,default-seq
+124992805,Dag1,dystroglycan 1,Sciurus carolinensis,gray squirrel,XM_047564055.1,XP_047420011.1,,model,,default-seq
+125006439,dag1,dystroglycan 1,Mugil cephalus,flathead mullet,XM_047582477.1,XP_047438433.1,,model,,default-seq
+125080128,DAG1,dystroglycan 1,Lutra lutra,Eurasian river otter,XM_047693991.1,XP_047549947.1,,model,,default-seq
+125124171,DAG1,dystroglycan 1,Phacochoerus africanus,Common warthog,XM_047774323.1,XP_047630279.1,,model,,default-seq
+125160559,DAG1,dystroglycan 1,Prionailurus viverrinus,fishing cat,XM_047849593.1,XP_047705549.1,,model,,default-seq
+125253201,dag1,dystroglycan 1,Megalobrama amblycephala,Wuchang bream,XM_048167051.1,XP_048023008.1,,model,,default-seq
+125301856,dag1,dystroglycan 1,Alosa alosa,allis shad,XM_048254665.1,XP_048110622.1,,model,,default-seq
+125331447,DAG1,dystroglycan 1,Corvus hawaiiensis,hawaiian crow,XM_048315454.1,XP_048171411.1,,model,,default-seq
+125342561,Dag1,dystroglycan 1,Perognathus longimembris pacificus,Pacific pocket mouse,XM_048334812.1,XP_048190769.1,,model,,default-seq
+125393035,Dag1,dystroglycan 1,Myodes glareolus,Bank vole,XM_048423041.1,XP_048278998.1,,model,,default-seq
+125428489,DAG1,dystroglycan 1,Sphaerodactylus townsendi,,XM_048488633.1,XP_048344590.1,,model,,default-seq
+125460290,dag1,dystroglycan 1,Stegostoma fasciatum,,XM_048547596.1,XP_048403553.1,,model,,default-seq
+125639449,DAG1,dystroglycan 1,Caretta caretta,Loggerhead turtle,XM_048856517.1,XP_048712474.1,,model,,default-seq
+125698576,DAG1,dystroglycan 1,Lagopus muta,rock ptarmigan,XM_048957064.1,XP_048813021.1,,model,,default-seq
+125747957,dag1,dystroglycan 1,Brienomyrus brachyistius,,XM_049023656.1,XP_048879613.1,,model,,default-seq
+125894650,dag1,dystroglycan 1,Epinephelus fuscoguttatus,brown-marbled grouper,XM_049586209.1,XP_049442166.1,,model,,default-seq
+125929353,DAG1,dystroglycan 1,Panthera uncia,snow leopard,XM_049640467.1,XP_049496424.1,,model,,default-seq
+125988320,dag1,dystroglycan 1,Syngnathus scovelli,Gulf pipefish,XM_049753355.1,XP_049609312.1,,model,,default-seq
+126014025,DAG1,dystroglycan 1,Suncus etruscus,white-toothed pygmy shrew,XM_049777335.1,XP_049633292.1,,model,,default-seq
+126049780,DAG1,dystroglycan 1,Accipiter gentilis,Northern goshawk,XM_049826751.1,XP_049682708.1,,model,,default-seq
+126063839,DAG1,dystroglycan 1,Elephas maximus indicus,,XM_049862270.1,XP_049718227.1,,model,,default-seq
+126385743,dag1,dystroglycan 1,Epinephelus moara,kelp grouper,XM_050037661.1,XP_049893618.1,,model,,default-seq
+126499812,Dag1,dystroglycan 1,Microtus fortis,reed vole,XM_050139184.1,XP_049995141.1,,model,,default-seq
+126638670,DAG1,dystroglycan 1,Myiozetetes cayanensis,,XM_050312741.1,XP_050168698.1,,model,,default-seq
+126948642,DAG1,dystroglycan 1,Macaca thibetana thibetana,,XM_050780761.1,XP_050636718.1,,model,,default-seq
+127021491,DAG1,dystroglycan 1,Gymnogyps californianus,California condor,XM_050904575.1,XP_050760532.1,,model,,default-seq
+127054161,DAG1,dystroglycan 1,Gopherus flavomarginatus,Mexican gopher tortoise,XM_050960082.1,XP_050816039.1,,model,,default-seq
+127153363,dag1,dystroglycan 1,Labeo rohita,rohu,XM_051094420.1,XP_050950377.1,,model,,default-seq
+127184419,Dag1,dystroglycan 1,Acomys russatus,golden spiny mouse,XM_051140809.1,XP_050996766.1,,model,,default-seq
+127236646,Dag1,dystroglycan 1,Phodopus roborovskii,desert hamster,XM_051204389.1,XP_051060346.1,,model,,default-seq
+127371989,dag1,dystroglycan 1,Dicentrarchus labrax,European seabass,XM_051415320.1,XP_051271280.1,,model,,default-seq
+127388125,DAG1,dystroglycan 1,Apus apus,common swift,XM_051627226.1,XP_051483186.1,,model,,default-seq
+127473496,DAG1,dystroglycan 1,Manacus candei,White-collared manakin,XM_051793153.1,XP_051649113.1,,model,,default-seq
+127520688,dag1,dystroglycan 1,Ctenopharyngodon idella,grass carp,XM_051909109.1,XP_051765069.1,,model,,default-seq
+127554771,DAG1,dystroglycan 1,Antechinus flavipes,yellow-footed antechinus,XM_051986621.1,XP_051842581.1,,model,,default-seq
+127571488,dag1,dystroglycan 1,Pristis pectinata,smalltooth sawfish,XM_052017891.1,XP_051873851.1,,model,,default-seq
+127607599,dag1,dystroglycan 1,Hippocampus zosterae,dwarf seahorse,XM_052076068.1,XP_051932028.1,,model,,default-seq
+127641381,dag1,dystroglycan 1,Xyrauchen texanus,razorback sucker,XM_052124360.1,XP_051980320.1,,model,,default-seq
+127688545,Dag1,dystroglycan 1,Apodemus sylvaticus,European woodmouse,XM_052187288.1,XP_052043248.1,,model,,default-seq
+128053542,DAG1,dystroglycan 1,Budorcas taxicolor,takin,XM_052646069.1,XP_052502029.1,,model,,default-seq
+128078759,DAG1,dystroglycan 1,Tympanuchus pallidicinctus,lesser prairie-chicken,XM_052679305.1,XP_052535265.1,,model,,default-seq
+128099066,Dag1,dystroglycan 1,Peromyscus californicus insignis,,XM_052720724.1,XP_052576684.1,,model,,default-seq
+128136928,DAG1,dystroglycan 1,Harpia harpyja,harpy eagle,XM_052777335.1,XP_052633295.1,,model,,default-seq
+128343201,DAG1,dystroglycan 1,Hemicordylus capensis,graceful crag lizard,XM_053291818.1,XP_053147793.1,,model,,default-seq
+128408105,DAG1,dystroglycan 1,Podarcis raffonei,Aeolian wall lizard,XM_053377328.1,XP_053233303.1,,model,,default-seq
+128442250,dag1,dystroglycan 1,Pleuronectes platessa,European plaice,XM_053424614.1,XP_053280589.1,,model,,default-seq
+128499788,DAG1,dystroglycan 1,Spea bombifrons,plains spadefoot toad,XM_053468708.1,XP_053324683.1,,model,,default-seq
+128511283,dag1,dystroglycan 1,Clarias gariepinus,North African catfish,XM_053484062.1,XP_053340037.1,,model,,default-seq
+128591676,DAG1,dystroglycan 1,Nycticebus coucang,slow loris,XM_053599347.1,XP_053455322.1,,model,,default-seq
+128624941,dag1,dystroglycan 1,Ictalurus furcatus,blue catfish,XM_053652834.1,XP_053508809.1,,model,,default-seq
+128666497,DAG1,dystroglycan 1,Bombina bombina,fire-bellied toad,XM_053721125.1,XP_053577100.1,,model,,default-seq
+128760113,dag1,dystroglycan 1,Synchiropus splendidus,mandarinfish,XM_053867131.1,XP_053723106.1,,model,,default-seq
+128794183,DAG1,dystroglycan 1,Vidua chalybeata,,XM_053953868.1,XP_053809843.1,,model,,default-seq
+128814181,DAG1,dystroglycan 1,Vidua macroura,Pin-tailed whydah,XM_053989785.1,XP_053845760.1,,model,,default-seq
+128841230,DAG1,dystroglycan 1,Malaclemys terrapin pileata,,XM_054036083.1,XP_053892058.1,,model,,default-seq
+128915461,DAG1,dystroglycan 1,Rissa tridactyla,black-legged kittiwake,XM_054215769.1,XP_054071744.1,,model,,default-seq
+128939761,DAG1,dystroglycan 1,Melozone crissalis,California towhee,XM_054280919.1,XP_054136894.1,,model,,default-seq
+128971757,DAG1,dystroglycan 1,Indicator indicator,,XM_054387406.1,XP_054243381.1,,model,,default-seq
+129033327,DAG1,dystroglycan 1,Pongo pygmaeus,Bornean orangutan,XM_054481662.1,XP_054337637.1,,model,,default-seq
+129087686,DAG1,dystroglycan 1,Pteronotus parnellii mesoamericanus,,XM_054594641.1,XP_054450616.1,,model,,default-seq
+129105795,dag1,dystroglycan 1,Anoplopoma fimbria,sablefish,XM_054616992.1,XP_054472967.1,,model,,default-seq
+129124874,DAG1,dystroglycan 1,Agelaius phoeniceus,red-winged blackbird,XM_054640030.1,XP_054496005.1,,model,,default-seq
+129186936,dag1,dystroglycan 1,Dunckerocampus dactyliophorus,ringed pipefish,XM_054785718.1,XP_054641693.1,,model,,default-seq
+129211341,DAG1,dystroglycan 1,Grus americana,Whooping crane,XM_054838258.1,XP_054694233.1,,model,,default-seq
+129327389,DAG1,dystroglycan 1,Eublepharis macularius,,XM_054975998.1,XP_054831973.1,,model,,default-seq
+129452803,dag1,dystroglycan 1,Misgurnus anguillicaudatus,oriental weatherfish,XM_055216830.1,XP_055072805.1,,model,,default-seq
+129481702,DAG1,dystroglycan 1,Symphalangus syndactylus,siamang,XM_055276812.1,XP_055132787.1,,model,,default-seq
+129521574,DAG1,dystroglycan 1,Nyctereutes procyonoides,raccoon dog,XM_055343198.1,XP_055199173.1,,model,,default-seq
+129547840,DAG1,dystroglycan 1,Moschus berezovskii,Chinese forest musk deer,XM_055413833.1,XP_055269808.1,,model,,default-seq
+129635369,DAG1,dystroglycan 1,Bubalus carabanensis,carabao,XM_055558315.1,XP_055414290.1,,model,,default-seq
+129693100,Dag1,dystroglycan 1,Psammomys obesus,fat sand rat,XM_055629725.1,XP_055485700.1,,model,,default-seq
+129704582,dag1,dystroglycan 1,Leucoraja erinacea,little skate,XM_055647802.1,XP_055503777.1,,model,,default-seq
+129815768,dag1,dystroglycan 1,Salvelinus fontinalis,brook trout,XM_055869879.1,XP_055725854.1,,model,,default-seq
+130037294,DAG1,dystroglycan 1,Sorex cinereus,cinereus shrew,XM_056129036.1,XP_055985011.1,,model,,default-seq
+130093613,dag1,dystroglycan 1,Rhinichthys klamathensis goyatoka,,XM_056260575.1,XP_056116550.1,,model,,default-seq
+130107088,dag1,dystroglycan 1,Lampris incognitus,smalleye Pacific opah,XM_056273492.1,XP_056129467.1,,model,,default-seq
+130147592,DAG1,dystroglycan 1,Falco biarmicus,lanner falcon,XM_056335002.1,XP_056190977.1,,model,,default-seq
+130179120,dag1,dystroglycan 1,Seriola aureovittata,,XM_056391889.1,XP_056247864.1,,model,,default-seq
+130199226,dag1,dystroglycan 1,Pseudoliparis swirei,,XM_056422531.1,XP_056278506.1,,model,,default-seq
+130215505,dag1,dystroglycan 1,Danio aesculapii,,XM_056447321.1,XP_056303296.1,,model,,default-seq
+130258173,DAG1,dystroglycan 1,Oenanthe melanoleuca,,XM_056501307.1,XP_056357282.1,,model,,default-seq
+130276219,DAG1,dystroglycan 1,Hyla sarda,,XM_056525252.1,XP_056381227.1,,model,,default-seq
+130402080,dag1,dystroglycan 1,Gadus chalcogrammus,walleye pollock,XM_056606178.1,XP_056462153.1,,model,,default-seq
+130430109,dag1,dystroglycan 1,Triplophysa dalaica,,XM_056759077.1,XP_056615055.1,,model,,default-seq
+130493343,DAG1,dystroglycan 1,Euleptes europaea,tarantolino,XM_056867057.1,XP_056723035.1,,model,,default-seq
+130524976,dag1,dystroglycan 1,Takifugu flavidus,sansaifugu,XM_057031595.1,XP_056887575.1,,model,,default-seq
+130548518,dag1,dystroglycan 1,Triplophysa rosa,,XM_057325351.1,XP_057181334.1,,model,,default-seq
+130574687,DAG1,dystroglycan 1,Malurus melanocephalus,red-backed fairy wren,XM_057368047.1,XP_057224030.1,,model,,default-seq
+130598338,DAG1,dystroglycan 1,Pezoporus wallicus,ground parrot,XM_057407647.1,XP_057263630.1,,model,,default-seq
+130834713,DAG1,dystroglycan 1,Hippopotamus amphibius kiboko,,XM_057705325.1,XP_057561308.1,,model,,default-seq
+130872928,Dag1,dystroglycan 1,Chionomys nivalis,European snow vole,XM_057767323.1,XP_057623306.1,,model,,default-seq
+131088102,DAG1,dystroglycan 1,Melospiza georgiana,,XM_058031919.1,XP_057887902.1,,model,,default-seq
+131106347,dag1,dystroglycan 1,Doryrhamphus excisus,bluestripe pipefish,XM_058055307.1,XP_057911290.1,,model,,default-seq
+131193006,DAG1,dystroglycan 1,Ahaetulla prasina,,XM_058172714.1,XP_058028697.1,,model,,default-seq
+131342672,dag1,dystroglycan 1,Hemibagrus wyckioides,,XM_058373795.1,XP_058229778.1,,model,,default-seq
+131416147,DAG1,dystroglycan 1,Diceros bicornis minor,,XM_058558387.1,XP_058414370.1,,model,,default-seq
+131461132,dag1,dystroglycan 1,Solea solea,common sole,XM_058632156.1,XP_058488139.1,,model,,default-seq
+131510158,DAG1,dystroglycan 1,Neofelis nebulosa,Clouded leopard,XM_058726916.1,XP_058582899.1,,model,,default-seq
+131530066,dag1,dystroglycan 1,Onychostoma macrolepis,,XM_058760144.1,XP_058616127.1,,model,,default-seq
+131562917,DAG1,dystroglycan 1,Ammospiza caudacuta,,XM_058812711.1,XP_058668694.1,,model,,default-seq
+131582073,DAG1,dystroglycan 1,Poecile atricapillus,Black-capped chickadee,XM_058844887.1,XP_058700870.1,,model,,default-seq

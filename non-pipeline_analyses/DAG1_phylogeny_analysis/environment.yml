@@ -1,0 +1,20 @@
+name: basic_phylogeny_analysis
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - biopython
+  - jupyterlab
+  - pandas
+  - seaborn
+  - snakemake
+  - mafft
+  - iqtree
+  - ete3
+  - emboss
+  - cd-hit
+  - baltic
+  - dna_features_viewer
+  - pymsaviz

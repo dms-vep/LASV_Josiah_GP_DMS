@@ -1,0 +1,7 @@
+__default__:
+    partition: campus-new
+    cpus: 16
+    time: 0-2
+    mem: 16000
+    name: "{rule}"
+    output: "logs_slurm/{rule}.{wildcards}.out"

@@ -1,0 +1,51 @@
+#################################################---START INPUT DATA---#######################################################
+
+# List of accessions file
+Ortholog_accession_csv: Configure/Input_Data/all_DAG1_orthologs_092923.csv
+
+# Size threshold filters
+# Putting a large upper limit to include
+# many different sized orthologs
+Genome_size_threshold_lower: 0
+Genome_size_threshold_upper: 1000000 
+
+# Sequences needed to be retained
+Protein_important_sequences: Configure/Input_Data/DAG1_important_protein_sequences_092923.fasta
+
+# Outgroup
+Outgroup: Petromyzon-marinus_XM_032971753_XP_032827644_2020-03-20 # Lamprey
+
+#################################################---END INPUT DATA---#########################################################
+
+#################################################---START OUTPUT DATA---######################################################
+
+# List of accession files
+mRNA_accession_list: Results/all_DAG1_mRNA_accessions.txt
+Protein_accession_list: Results/all_DAG1_protein_accessions.txt
+
+# Metadata output
+Metadata: Results/DAG1_metadata.tsv
+
+# Fasta file ouput
+CDS_sequences: Results/DAG1_CDS_fasta.fasta
+Protein_sequences: Results/DAG1_protein_fasta.fasta
+Reduced_protein_sequences: Results/reduced_DAG1_protein_fasta.fasta
+
+# Log outputs
+# Important_addition_log: Results/important_addition_log.txt
+
+# Alignment file output
+Protein_alignment: Results/DAG1_protein_alignment.fasta
+Reduced_protein_alignment: Results/reduced_DAG1_protein_alignment.fasta
+
+# Tree file params
+Protein_tree_prefix: Results/Protein_Tree/IQTree/protein_tree
+
+# Tree file output
+Protein_tree_output: Results/Protein_Tree/IQTree/protein_tree.iqtree
+
+# Figure file output
+Consensus_glycosylation_site: Results/Figures/consensus.svg
+Human_and_mastomys_msa: Results/Figures/human_mastomys_msa.svg
+
+#################################################---END OUTPUT DATA---########################################################
