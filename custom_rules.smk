@@ -66,6 +66,27 @@ rule averaged_ridgeplot_func_scores:
             &> {log}
         """
 
+rule visualize_mutation_distributions:
+    """
+    Create altair version of amino-acid count
+    distribution plots.
+    """
+    input:
+        variant_data = "results/variants/codon_variants.csv",
+        nb="notebooks/visualize_mutation_distributions.ipynb",
+    output:
+        nb="results/notebooks/visualize_mutation_distributions.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/visualize_mutation_distributions.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p variant_data {input.variant_data} \
+            &> {log}
+        """
+
 
 rule human_mastomys_correlation:
     """
@@ -76,13 +97,17 @@ rule human_mastomys_correlation:
         hek293T_scores="results/func_effects/averages/293T_entry_func_effects.csv",
         humanDAG1_scores="results/func_effects/averages/human_293T_entry_func_effects.csv",
         mastomysDAG1_scores="results/func_effects/averages/mastomys_293T_entry_func_effects.csv",
+        avg_shifts="results/func_effect_shifts/averages/aDG_comparison_shifts.csv", # dummy file
         nb="notebooks/human_mastomys_correlation.ipynb",
     params:
         MTS=2, # min_times_seen
         n_selections=8,
-        html_dir="results/DAG1_ortholog_correlations/"
+        shift_file_dir="results/func_effect_shifts/by_comparison/",
+        html_dir="results/DAG1_ortholog_correlations/",
     output:
         html_output="results/DAG1_ortholog_correlations/DAG1_ortholog_correlations.html",
+        multidms_shrinkage_plot="results/DAG1_ortholog_correlations/DAG1_shrinkage_plot.svg",
+        multidms_shift_profile="results/DAG1_ortholog_correlations/multidms_shift_profile.svg",
         nb="results/notebooks/human_mastomys_correlation.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -96,8 +121,11 @@ rule human_mastomys_correlation:
             -p mastomysDAG1_data_path {input.mastomysDAG1_scores} \
             -p MTS {params.MTS} \
             -p n_selections {params.n_selections} \
+            -p shift_file_dir {params.shift_file_dir} \
             -p html_dir {params.html_dir} \
             -p html_output {output.html_output} \
+            -p multidms_shrinkage_plot {output.multidms_shrinkage_plot} \
+            -p multidms_shift_profile {output.multidms_shift_profile} \
             &> {log}
         """
 
@@ -282,6 +310,59 @@ rule compare_to_natural:
             -p html_natural_vs_epitope_with_strong_sites {output.html_natural_vs_epitope_with_strong_sites} \
             &> {log}
         """
+
+rule natural_sequence_antigenic_analysis:
+    """
+    Compare dms data to natural sequences
+    to look if there is any antigenic selection.
+    """
+    input:
+        filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
+        filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
+        filtered_escape_2510C="results/filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv",
+        filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
+        filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
+        filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        GPC_tree_mutations="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_tree_mutations.csv",
+        GPC_FEL_results="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_FEL_results.json",
+        GPC_FUBAR_results="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_FUBAR_results.json",
+        natural_seq_metadata="non-pipeline_analyses/LASV_phylogeny_analysis/Results/LASV_S_segment_metadata.tsv",
+        natural_seq_alignment="non-pipeline_analyses/LASV_phylogeny_analysis/Results/LASV_GPC_protein_alignment.fasta",
+        nb="notebooks/natural_sequence_antigenic_analysis.ipynb",
+    params:
+        out_dir_natural="results/natural_isolate_escape/",
+        min_times_seen=2,
+        n_selections=8,
+    output:
+        ols_regression="results/natural_isolate_escape/ols_regression.html",
+        nb="results/notebooks/natural_sequence_antigenic_analysis.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    log:
+        "results/logs/natural_sequence_antigenic_analysis.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p filtered_escape_377H {input.filtered_escape_377H} \
+            -p filtered_escape_89F {input.filtered_escape_89F} \
+            -p filtered_escape_2510C {input.filtered_escape_2510C} \
+            -p filtered_escape_121F {input.filtered_escape_121F} \
+            -p filtered_escape_256A {input.filtered_escape_256A} \
+            -p filtered_escape_372D {input.filtered_escape_372D} \
+            -p func_scores {input.func_scores} \
+            -p GPC_tree_mutations {input.GPC_tree_mutations} \
+            -p GPC_FEL_results {input.GPC_FEL_results} \
+            -p GPC_FUBAR_results {input.GPC_FUBAR_results} \
+            -p natural_seq_metadata {input.natural_seq_metadata} \
+            -p natural_seq_alignment {input.natural_seq_alignment} \
+            -p out_dir_natural {params.out_dir_natural} \
+            -p min_times_seen {params.min_times_seen} \
+            -p n_selections {params.n_selections} \
+            -p ols_regression {output.ols_regression} \
+            &> {log}
+        """
+
 
 rule get_filtered_escape_CSVs:
     """
@@ -480,9 +561,10 @@ rule map_scores_onto_pdb_structure:
 
 
 docs["Additional analyses and data files"] = {
-    "Averaged functional score distributions by variant type" : {
+    "Variant mutation analysis" : {
         "Interactive plot showing averaged functional score distributions by variant type" : rules.averaged_ridgeplot_func_scores.output.html_output,
         "Notebook creating averaged functional score distributions" : rules.averaged_ridgeplot_func_scores.output.nb,
+        "Notebook creating altair version of mutation distribution" : rules.visualize_mutation_distributions.output.nb,
     },
     "Correlations of DAG1 ortholog functional selections" : {
         "Interactive plot showing correlations between DAG1 ortholog functional selections" : rules.human_mastomys_correlation.output.html_output,
@@ -497,7 +579,8 @@ docs["Additional analyses and data files"] = {
         "Notebook visualizing functional scores for different GPC regions" : rules.visualize_RBD_regions.output.nb,
     },
     "Comparisons of natural Lassa GPC diveristy to DMS data" : {
-        "Notebook analyzing natural sequence diversity in comparison to DMS data" : rules.compare_to_natural.output.nb,
+        "Notebook analyzing natural sequence data for sequences predicted antibody escape" : rules.compare_to_natural.output.nb,
+        "Notebook comparing natural sequence data and DMS data" : rules.natural_sequence_antigenic_analysis.output.nb,
         "Interactive plots comparing DMS data and natural sequence diversity" : {
             "Interactive plot showing correlation of natural diversity and functional scores" : rules.compare_to_natural.output.html_func_vs_natural,
             "Interactive plot showing correlation of functional scores and antibody escape" : rules.compare_to_natural.output.html_func_vs_escape,

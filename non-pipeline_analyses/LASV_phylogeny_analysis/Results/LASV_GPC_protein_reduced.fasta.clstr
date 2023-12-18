@@ -1,0 +1,639 @@
+>Cluster 0
+0	491aa, >Josiah_NC_004296_re... *
+1	491aa, >D501_OL774857_2003-... at 98.17%
+2	491aa, >M-natalensis_SLE_20... at 98.37%
+3	491aa, >M-natalensis-wt_SLE... at 98.78%
+4	491aa, >M-natalensis-wt_SLE... at 98.78%
+5	491aa, >Josiah-GPA_MW004547... at 100.00%
+6	491aa, >LF2384-NS-DIA-1_MN2... at 98.98%
+7	491aa, >807987_MG812631_198... at 97.96%
+8	491aa, >806827_MG812639_197... at 98.37%
+9	491aa, >806568_MG812643_197... at 98.98%
+10	491aa, >IRF0193_KY425638_re... at 100.00%
+11	491aa, >IRF0201_KY425641_re... at 100.00%
+12	491aa, >IRF0205_KY425643_re... at 100.00%
+13	491aa, >IRF0172_KY425650_re... at 100.00%
+14	491aa, >G502-SLE-2009_KM821... at 98.57%
+15	491aa, >G503-SLE-2009_KM821... at 97.96%
+16	491aa, >G610-SLE-2009_KM821... at 99.39%
+17	491aa, >G676-SLE-2009_KM821... at 98.78%
+18	491aa, >G692-SLE-2009_KM821... at 98.78%
+19	491aa, >G693-SLE-2009_KM821... at 99.39%
+20	491aa, >G733-SLE-2010_KM821... at 98.17%
+21	491aa, >G771-SLE-2010_KM821... at 99.19%
+22	491aa, >G808-SLE-2010_KM821... at 97.76%
+23	491aa, >G1190-SLE-2010_KM82... at 98.98%
+24	491aa, >G1618-SLE-2011_KM82... at 98.37%
+25	491aa, >G1646-SLE-2011_KM82... at 98.17%
+26	491aa, >G1647-SLE-2011_KM82... at 98.37%
+27	491aa, >G1727-SLE-2011_KM82... at 98.37%
+28	491aa, >G1897-SLE-2011_KM82... at 98.57%
+29	491aa, >G1932-SLE-2011_KM82... at 98.57%
+30	491aa, >G1959-SLE-2011_KM82... at 98.57%
+31	491aa, >G1960-SLE-2011_KM82... at 99.19%
+32	491aa, >G2147-SLE-2011_KM82... at 98.98%
+33	491aa, >G2165-SLE-2011_KM82... at 98.78%
+34	491aa, >G2184-SLE-2011_KM82... at 98.78%
+35	491aa, >G2197-SLE-2011_KM82... at 98.37%
+36	491aa, >G2259-SLE-2012_KM82... at 97.96%
+37	491aa, >G2263-SLE-2012_KM82... at 97.96%
+38	491aa, >G2280-SLE-2012_KM82... at 97.96%
+39	491aa, >G2295-SLE-2012_KM82... at 98.37%
+40	491aa, >G2318-SLE-2012_KM82... at 98.57%
+41	491aa, >G2384-SLE-2012_KM82... at 98.98%
+42	490aa, >G2392-SLE-2012_KM82... at 97.96%
+43	491aa, >G2405-SLE-2012_KM82... at 98.78%
+44	491aa, >G2427-SLE-2012_KM82... at 98.78%
+45	491aa, >G2511-SLE-2012_KM82... at 98.17%
+46	491aa, >G2557-SLE-2012_KM82... at 97.76%
+47	491aa, >G2565-SLE-2012_KM82... at 99.19%
+48	491aa, >G2587-SLE-2012_KM82... at 98.17%
+49	491aa, >G2612-SLE-2012_KM82... at 98.17%
+50	491aa, >G2615-SLE-2012_KM82... at 97.96%
+51	491aa, >G2723-SLE-2012_KM82... at 97.76%
+52	491aa, >G2868-SLE-2012_KM82... at 97.76%
+53	491aa, >G2903-SLE-2012_KM82... at 98.17%
+54	491aa, >G2906-SLE-2012_KM82... at 98.57%
+55	491aa, >G2944-SLE-2012_KM82... at 98.78%
+56	491aa, >G3010-SLE-2013_KM82... at 98.37%
+57	491aa, >G3016-SLE-2013_KM82... at 98.57%
+58	491aa, >G3076-SLE-2013_KM82... at 98.78%
+59	491aa, >G3106-SLE-2013_KM82... at 98.57%
+60	491aa, >G3110-SLE-2013_KM82... at 97.96%
+61	491aa, >G3148-SLE-2013_KM82... at 98.57%
+62	491aa, >G3151-SLE-2013_KM82... at 98.17%
+63	491aa, >G3157-SLE-2013_KM82... at 98.78%
+64	491aa, >G3170-SLE-2013_KM82... at 98.17%
+65	491aa, >G3206-SLE-2013_KM82... at 97.96%
+66	491aa, >G3222-SLE-2013_KM82... at 98.17%
+67	491aa, >G3229-SLE-2013_KM82... at 97.96%
+68	491aa, >G3248-SLE-2013_KM82... at 98.17%
+69	491aa, >G3253-SLE-2013_KM82... at 97.96%
+70	491aa, >G3278-SLE-2013_KM82... at 97.96%
+71	491aa, >G3283-SLE-2013_KM82... at 98.78%
+72	491aa, >LM395-SLE-2009_KM82... at 97.76%
+73	491aa, >LM774-SLE-2012_KM82... at 99.39%
+74	491aa, >LM776-SLE-2012_KM82... at 98.78%
+75	491aa, >LM778-SLE-2012_KM82... at 99.39%
+76	491aa, >LM779-SLE-2012_KM82... at 98.57%
+77	491aa, >Z0947-SLE-2011_KM82... at 98.78%
+78	491aa, >Z0948-SLE-2011_KM82... at 98.57%
+79	491aa, >Josiah_JN650517_rev... at 100.00%
+80	491aa, >Josiah_HQ688672_201... at 100.00%
+81	491aa, >recombinant_Josiah_... at 100.00%
+82	491aa, >Josiah_AY628203_rev... at 100.00%
+83	491aa, >NL_AY179173_2004-06... at 97.56%
+>Cluster 1
+0	491aa, >Mali_2009_OL774863_... *
+1	491aa, >Soromba-R_KF478765_... at 98.78%
+2	491aa, >Komina-R16_KF478767... at 98.17%
+>Cluster 2
+0	491aa, >M-natalensis_SLE_20... *
+1	491aa, >M-natalensis_SLE_20... at 97.76%
+2	491aa, >M-natalensis_SLE_20... at 97.56%
+3	491aa, >M-natalensis-wt_SLE... at 97.56%
+>Cluster 3
+0	491aa, >M-erythroleucus_SLE... *
+>Cluster 4
+0	491aa, >M-natalensis_SLE_20... *
+1	491aa, >G1200-LIB-2010_KM82... at 97.56%
+>Cluster 5
+0	491aa, >M-natalensis-wt_SLE... *
+1	491aa, >M-natalensis-wt_SLE... at 99.19%
+2	491aa, >M-natalensis-wt_SLE... at 99.39%
+>Cluster 6
+0	491aa, >L-sikapusi-wt_SLE_2... *
+>Cluster 7
+0	491aa, >M-natalensis-wt_SLE... *
+1	491aa, >M-natalensis-wt_SLE... at 97.56%
+>Cluster 8
+0	491aa, >M-natalensis-wt_SLE... *
+>Cluster 9
+0	491aa, >L-sikapusi-wt_SLE_2... *
+>Cluster 10
+0	491aa, >LASV_R124_MK656419_... *
+1	491aa, >LASV_R132_MK656420_... at 99.59%
+2	491aa, >Bamba-R114_KF478766... at 97.56%
+>Cluster 11
+0	491aa, >LASV_3715_MK656426_... *
+1	491aa, >Ouoma-R123_KF478768... at 98.37%
+>Cluster 12
+0	491aa, >LF18001_MH215279_20... *
+1	491aa, >LF11003_MG812653_20... at 99.19%
+2	491aa, >LF11011_MG812655_20... at 99.39%
+3	491aa, >LF16004_MG812663_20... at 99.19%
+4	491aa, >LF17013_MG812677_20... at 98.17%
+>Cluster 13
+0	491aa, >LF18002_MH215281_20... *
+1	491aa, >LF18037_MH215283_20... at 98.17%
+2	491aa, >LF18042_MH215289_20... at 98.78%
+3	491aa, >LF13007_MG812661_20... at 98.57%
+4	491aa, >LF16016_MG812665_20... at 98.57%
+5	491aa, >LF17001_MG812673_20... at 98.78%
+>Cluster 14
+0	491aa, >LF18040_MH215285_20... *
+1	491aa, >806829_MG812636_198... at 97.76%
+2	491aa, >803204_MG812648_197... at 97.76%
+>Cluster 15
+0	491aa, >LF18041_MH215287_20... *
+1	491aa, >812673_MG812650_201... at 98.57%
+>Cluster 16
+0	491aa, >807978_MG812632_198... *
+1	491aa, >LF17007_MG812667_20... at 98.17%
+>Cluster 17
+0	491aa, >806387_MG812645_198... *
+1	491aa, >GUINEA_Z-185a_KU978... at 99.80%
+2	491aa, >IRF0194_KY425635_re... at 99.80%
+3	491aa, >IRF0185_KY425642_re... at 99.80%
+4	491aa, >Macenta_AY628201_re... at 99.80%
+5	491aa, >Z148_AY628205_rever... at 99.19%
+>Cluster 18
+0	491aa, >LF13006_MG812657_20... *
+1	491aa, >LF17019_MG812669_20... at 97.56%
+>Cluster 19
+0	491aa, >LF17020_MG812670_20... *
+>Cluster 20
+0	491aa, >811606_MG812679_201... *
+>Cluster 21
+0	491aa, >807988_MG812685_199... *
+1	491aa, >Guinea_Faranah_KU97... at 100.00%
+2	491aa, >BA366_GU830839_2003... at 97.56%
+>Cluster 22
+0	490aa, >806593_MG812641_198... at 97.55%
+1	491aa, >LASV_H-sapiens-tc_N... *
+2	491aa, >LASV_H-sapiens-tc_N... at 99.19%
+3	491aa, >LASV_H-sapiens-tc_N... at 98.98%
+>Cluster 23
+0	491aa, >LASV_H-sapiens-tc_N... *
+>Cluster 24
+0	491aa, >LASV_H-sapiens-tc_N... *
+1	491aa, >LASV_H-sapiens-tc_N... at 97.96%
+>Cluster 25
+0	490aa, >6K-2_ON569369_2023-... at 97.76%
+1	490aa, >OW15K-2_ON569371_20... at 98.57%
+2	490aa, >57K-2_ON569375_2023... at 98.57%
+3	490aa, >63K-2_ON569379_2023... at 98.57%
+4	490aa, >P09_282_OL774859_20... at 98.78%
+5	490aa, >BEN-16081_MT193283_... at 97.96%
+6	490aa, >H-sapiens-wt_NGA_LA... at 98.98%
+7	490aa, >H-sapiens-wt_NGA_LA... at 98.98%
+8	490aa, >LASV_H-sapiens-tc_N... at 98.78%
+9	490aa, >LASV_H-sapiens-tc_N... at 98.16%
+10	490aa, >LASV_H-sapiens-tc_N... at 99.18%
+11	490aa, >LASV_H-sapiens-tc_N... at 98.98%
+12	490aa, >LASV_H-sapiens-tc_N... at 98.37%
+13	490aa, >LASV_H-sapiens-tc_N... at 99.39%
+14	490aa, >LASV_H-sapiens-tc_N... at 98.37%
+15	490aa, >LASV_H-sapiens-tc_N... at 99.39%
+16	490aa, >LASV_H-sapiens-tc_N... at 99.39%
+17	490aa, >LASV_H-sapiens-tc_N... at 98.37%
+18	490aa, >LASV_H-sapiens-tc_N... at 98.57%
+19	490aa, >LASV_H-sapiens-tc_N... at 98.78%
+20	490aa, >LASV_H-sapiens-tc_N... at 98.78%
+21	490aa, >LASV_H-sapiens-wt_N... at 98.37%
+22	490aa, >LASV_H-sapiens-tc_N... at 99.18%
+23	490aa, >LASV_H-sapiens-tc_N... at 98.16%
+24	490aa, >LASV_H-sapiens-wt_N... at 98.57%
+25	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+26	490aa, >LASV_H-sapiens-tc_N... at 99.18%
+27	490aa, >LASV_H-sapiens-tc_N... at 99.39%
+28	490aa, >LASV_H-sapiens-tc_N... at 98.98%
+29	490aa, >LASV_H-sapiens-wt_N... at 98.78%
+30	490aa, >LASV_H-sapiens-wt_N... at 98.78%
+31	490aa, >LASV_H-sapiens-wt_N... at 98.16%
+32	490aa, >LASV_H-sapiens-wt_N... at 98.37%
+33	490aa, >LASV_H-sapiens-wt_N... at 98.57%
+34	490aa, >LASV_H-sapiens-wt_N... at 98.78%
+35	490aa, >LASV_H-sapiens-wt_N... at 99.18%
+36	490aa, >LASV_H-sapiens-wt_N... at 98.16%
+37	490aa, >LASV_H-sapiens-wt_N... at 98.37%
+38	490aa, >LASV_H-sapiens-wt_N... at 99.18%
+39	490aa, >Nig16-10_LC388592_2... at 97.55%
+40	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+41	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+42	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+43	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+44	490aa, >H-sapiens-wt_NGA_20... at 98.98%
+45	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+46	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+47	490aa, >H-sapiens-wt_NGA_20... at 97.55%
+48	490aa, >H-sapiens-wt_NGA_20... at 97.76%
+49	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+50	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+51	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+52	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+53	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+54	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+55	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+56	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+57	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+58	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+59	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+60	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+61	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+62	490aa, >H-sapiens-wt_NGA_20... at 99.59%
+63	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+64	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+65	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+66	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+67	490aa, >H-sapiens-wt_NGA_20... at 98.98%
+68	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+69	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+70	490aa, >H-sapiens-wt_NGA_20... at 99.39%
+71	490aa, >H-sapiens-wt_NGA_20... at 99.39%
+72	490aa, >H-sapiens-wt_NGA_20... at 97.55%
+73	490aa, >H-sapiens-wt_NGA_20... at 99.39%
+74	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+75	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+76	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+77	490aa, >H-sapiens-wt_NGA_20... at 98.98%
+78	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+79	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+80	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+81	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+82	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+83	490aa, >H-sapiens-wt_NGA_20... at 98.98%
+84	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+85	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+86	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+87	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+88	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+89	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+90	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+91	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+92	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+93	490aa, >H-sapiens-wt_NGA_20... at 97.55%
+94	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+95	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+96	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+97	490aa, >H-sapiens-wt_NGA_20... at 99.59%
+98	490aa, >H-sapiens-wt_NGA_20... at 99.59%
+99	490aa, >H-sapiens-wt_NGA_20... at 98.98%
+100	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+101	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+102	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+103	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+104	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+105	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+106	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+107	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+108	490aa, >H-sapiens-wt_NGA_20... at 99.39%
+109	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+110	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+111	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+112	490aa, >H-sapiens-wt_NGA_20... at 97.76%
+113	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+114	490aa, >H-sapiens-wt_NGA_20... at 97.96%
+115	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+116	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+117	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+118	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+119	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+120	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+121	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+122	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+123	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+124	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+125	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+126	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+127	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+128	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+129	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+130	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+131	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+132	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+133	490aa, >H-sapiens-wt_NGA_20... at 99.39%
+134	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+135	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+136	490aa, >H-sapiens-wt_NGA_20... at 98.98%
+137	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+138	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+139	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+140	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+141	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+142	490aa, >H-sapiens-wt_NGA_20... at 98.78%
+143	490aa, >H-sapiens-wt_NGA_20... at 97.96%
+144	490aa, >H-sapiens-wt_NGA_20... at 99.59%
+145	490aa, >H-sapiens-wt_NGA_20... at 98.37%
+146	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+147	490aa, >H-sapiens-wt_NGA_20... at 97.76%
+148	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+149	490aa, >H-sapiens-wt_NGA_20... at 97.96%
+150	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+151	490aa, >Lassa_virus_H-sapie... at 98.98%
+152	490aa, >Lassa_virus_H-sapie... at 99.18%
+153	490aa, >Lassa_virus_H-sapie... at 98.37%
+154	490aa, >Lassa_virus_H-sapie... at 98.78%
+155	490aa, >Lassa_virus_H-sapie... at 98.57%
+156	490aa, >Lassa_virus_H-sapie... at 98.57%
+157	490aa, >Lassa_virus_H-sapie... at 98.57%
+158	490aa, >Lassa_virus_H-sapie... at 99.18%
+159	490aa, >Lassa_virus_H-sapie... at 98.98%
+160	490aa, >Lassa_virus_H-sapie... at 98.57%
+161	490aa, >Lassa_virus_H-sapie... at 98.16%
+162	490aa, >Lassa_virus_H-sapie... at 98.78%
+163	490aa, >Lassa_virus_H-sapie... at 98.78%
+164	490aa, >Lassa_virus_H-sapie... at 99.18%
+165	490aa, >Lassa_virus_H-sapie... at 98.78%
+166	490aa, >Lassa_virus_H-sapie... at 99.18%
+167	490aa, >Lassa_virus_H-sapie... at 98.37%
+168	490aa, >Lassa_virus_H-sapie... at 98.57%
+169	490aa, >Lassa_virus_H-sapie... at 97.96%
+170	491aa, >Lassa_virus_H-sapie... *
+171	490aa, >Lassa_virus_H-sapie... at 98.78%
+172	490aa, >Lassa_virus_H-sapie... at 98.78%
+173	490aa, >Lassa_virus_H-sapie... at 98.78%
+174	490aa, >Lassa_virus_H-sapie... at 98.78%
+175	490aa, >Lassa_virus_H-sapie... at 98.98%
+176	490aa, >Lassa_virus_H-sapie... at 98.57%
+177	490aa, >Lassa_virus_H-sapie... at 98.98%
+178	490aa, >Lassa_virus_H-sapie... at 99.18%
+179	490aa, >Lassa_virus_H-sapie... at 98.98%
+180	490aa, >Lassa_virus_H-sapie... at 99.18%
+181	490aa, >Lassa_virus_H-sapie... at 98.57%
+182	490aa, >Lassa_virus_H-sapie... at 98.37%
+183	490aa, >Lassa_virus_H-sapie... at 98.78%
+184	490aa, >Lassa_virus_H-sapie... at 98.37%
+185	490aa, >Lassa_virus_H-sapie... at 98.78%
+186	490aa, >Lassa_virus_H-sapie... at 98.98%
+187	490aa, >Lassa_virus_H-sapie... at 99.39%
+188	490aa, >Lassa_virus_H-sapie... at 99.39%
+189	490aa, >Lassa_virus_H-sapie... at 99.18%
+190	490aa, >Lassa_virus_H-sapie... at 98.57%
+191	490aa, >Lassa_virus_H-sapie... at 98.57%
+192	490aa, >Lassa_virus_H-sapie... at 98.37%
+193	490aa, >Lassa_virus_H-sapie... at 99.18%
+194	490aa, >Lassa_virus_H-sapie... at 98.37%
+195	490aa, >Lassa_virus_H-sapie... at 98.78%
+196	490aa, >Lassa_virus_H-sapie... at 98.78%
+197	490aa, >Lassa_virus_H-sapie... at 98.37%
+198	490aa, >Lassa_virus_H-sapie... at 99.39%
+199	490aa, >ISTH0009-NIG-2011_K... at 98.78%
+200	490aa, >ISTH0012-NIG-2011_K... at 98.98%
+201	490aa, >ISTH0047-NIG-2011_K... at 99.39%
+202	490aa, >ISTH0073-NIG-2011_K... at 99.18%
+203	490aa, >ISTH0230-NIG-2011_K... at 98.57%
+204	490aa, >ISTH0531-NIG-2011_K... at 98.16%
+205	490aa, >ISTH0595-NIG-2011_K... at 98.16%
+206	490aa, >ISTH1003-NIG-2011_K... at 99.39%
+207	490aa, >ISTH1038-NIG-2011_K... at 97.96%
+208	490aa, >ISTH1048-NIG-2011_K... at 98.98%
+209	490aa, >ISTH1058-NIG-2011_K... at 98.78%
+210	490aa, >ISTH1064-NIG-2011_K... at 99.18%
+211	490aa, >ISTH1069-NIG-2011_K... at 97.96%
+212	490aa, >ISTH1096-NIG-2012_K... at 98.78%
+213	490aa, >ISTH1107-NIG-2012_K... at 99.39%
+214	490aa, >ISTH1111-NIG-2011_K... at 98.16%
+215	490aa, >ISTH1121-NIG-2012_K... at 99.18%
+216	490aa, >ISTH1137-NIG-2011_K... at 98.78%
+217	490aa, >ISTH2010-NIG-2012_K... at 99.18%
+218	490aa, >ISTH2016-NIG-2012_K... at 99.18%
+219	490aa, >ISTH2020-NIG-2012_K... at 98.37%
+220	490aa, >ISTH2025-NIG-2012_K... at 99.39%
+221	490aa, >ISTH2031-NIG-2012_K... at 97.55%
+222	490aa, >ISTH2042-NIG-2012_K... at 98.78%
+223	490aa, >ISTH2046-NIG-2012_K... at 99.18%
+224	490aa, >ISTH2050-NIG-2012_K... at 98.98%
+225	490aa, >ISTH2057-NIG-2012_K... at 99.39%
+226	490aa, >ISTH2061-NIG-2012_K... at 98.98%
+227	490aa, >ISTH2064-NIG-2012_K... at 98.78%
+228	490aa, >ISTH2129-NIG-2012_K... at 98.78%
+229	490aa, >ISTH2217-NIG-2012_K... at 98.16%
+230	490aa, >ISTH2271-NIG-2012_K... at 98.98%
+231	490aa, >ISTH2304-NIG-2012_K... at 98.37%
+232	490aa, >ISTH2312-NIG-2012_K... at 97.55%
+233	490aa, >ISTH2316-NIG-2012_K... at 98.57%
+234	490aa, >ISTH2334-NIG-2012_K... at 99.18%
+235	490aa, >ISTH2358-NIG-2012_K... at 97.96%
+236	490aa, >ISTH2376-NIG-2012_K... at 98.37%
+237	490aa, >LASV003-NIG-2008_KM... at 98.57%
+238	490aa, >LASV006-NIG-2008_KM... at 98.37%
+239	490aa, >LASV035-NIG-2009_KM... at 99.39%
+240	490aa, >LASV042-NIG-2009_KM... at 98.78%
+241	490aa, >LASV045-NIG-2009_KM... at 99.18%
+242	490aa, >LASV046-NIG-2009_KM... at 99.39%
+243	490aa, >LASV049-NIG-2009_KM... at 98.37%
+244	490aa, >LASV052-NIG-2008_KM... at 98.57%
+245	490aa, >LASV056-NIG-2008_KM... at 98.57%
+246	490aa, >LASV058-NIG-2008_KM... at 99.59%
+247	490aa, >LASV063-NIG-2009_KM... at 98.57%
+248	490aa, >LASV221-NIG-2010_KM... at 98.78%
+249	490aa, >LASV224-NIG-2010_KM... at 98.16%
+250	490aa, >LASV225-NIG-2010_KM... at 98.78%
+251	490aa, >LASV229-NIG-2010_KM... at 98.16%
+252	490aa, >LASV237-NIG-2010_KM... at 98.37%
+253	490aa, >LASV239-NIG-2010_KM... at 98.98%
+254	490aa, >LASV241-NIG-2011_KM... at 98.98%
+255	490aa, >LASV242-NIG-2010_KM... at 98.57%
+256	490aa, >LASV245-NIG-2011_KM... at 99.18%
+257	490aa, >LASV246-NIG-2010_KM... at 97.76%
+258	490aa, >LASV250-NIG-2011_KM... at 99.39%
+259	490aa, >LASV251-NIG-2010_KM... at 98.57%
+260	490aa, >LASV253-NIG-2011_KM... at 98.78%
+261	490aa, >LASV254-NIG-2011_KM... at 97.96%
+262	490aa, >LASV256-NIG-2010_KM... at 98.37%
+263	490aa, >LASV263-NIG-2011_KM... at 99.59%
+264	490aa, >LASV267-NIG-2010_KM... at 98.78%
+265	490aa, >LASV271-NIG-2010_KM... at 98.78%
+266	490aa, >LASV274-NIG-2010_KM... at 99.18%
+267	490aa, >LASV711-NIG-2009_KM... at 98.57%
+268	490aa, >LASV716-NIG-2009_KM... at 98.78%
+269	490aa, >LASV719-NIG-2009_KM... at 99.39%
+270	490aa, >LASV736-NIG-2009_KM... at 97.76%
+271	490aa, >LASV737-NIG-2009_KM... at 99.39%
+272	490aa, >LASV738-NIG-2009_KM... at 98.57%
+273	490aa, >LASV966-NIG-2009_KM... at 97.96%
+274	490aa, >LASV967-NIG-2009_KM... at 98.16%
+275	490aa, >LASV969-NIG-2009_KM... at 98.37%
+276	490aa, >LASV971-NIG-2009_KM... at 98.98%
+277	490aa, >LASV975-NIG-2009_KM... at 98.98%
+278	490aa, >LASV976-NIG-2009_KM... at 97.96%
+279	490aa, >LASV977-NIG-2009_KM... at 98.78%
+280	490aa, >LASV978-NIG-2009_KM... at 98.98%
+281	490aa, >LASV979-NIG-2009_KM... at 98.78%
+282	490aa, >LASV981-NIG-2009_KM... at 98.78%
+283	490aa, >LASV982-NIG-2009_KM... at 98.37%
+284	490aa, >LASV988-NIG-2009_KM... at 98.37%
+285	490aa, >LASV989-NIG-2009_KM... at 98.57%
+286	490aa, >LASV990-NIG-2009_KM... at 99.39%
+287	490aa, >LASV992-NIG-2009_KM... at 98.57%
+288	490aa, >LASV993-NIG-2009_KM... at 98.57%
+289	490aa, >LASV1000-NIG-2009_K... at 98.98%
+290	490aa, >LASV1008-NIG-2009_K... at 98.57%
+291	490aa, >LASV1011-NIG-2009_K... at 98.78%
+292	490aa, >LASV1015-NIG-2009_K... at 99.39%
+293	490aa, >LASV1016-NIG-2009_K... at 98.57%
+294	490aa, >Nig08-A37_GU481074_... at 99.39%
+295	490aa, >Nig08-A41_GU481076_... at 98.57%
+296	490aa, >Nig08-A47_GU481078_... at 99.18%
+>Cluster 26
+0	491aa, >Lassa_virus_H-sapie... *
+>Cluster 27
+0	491aa, >G1442-SLE-2011_KM82... *
+1	491aa, >G1529-SLE-2011_KM82... at 97.56%
+>Cluster 28
+0	491aa, >G1774-SLE-2011_KM82... *
+>Cluster 29
+0	491aa, >G2141-SLE-2011_KM82... *
+>Cluster 30
+0	491aa, >G2222-SLE-2011_KM82... *
+1	491aa, >LM765-SLE-2012_KM82... at 97.56%
+>Cluster 31
+0	491aa, >G2363-SLE-2012_KM82... *
+1	491aa, >G3234-SLE-2013_KM82... at 97.56%
+>Cluster 32
+0	491aa, >G2431-SLE-2012_KM82... *
+>Cluster 33
+0	491aa, >G2554-SLE-2012_KM82... *
+>Cluster 34
+0	491aa, >G3034-SLE-2013_KM82... *
+>Cluster 35
+0	490aa, >Pinneo-NIG-1969_KM8... *
+1	490aa, >812285_MG812675_197... at 100.00%
+2	490aa, >Pinneo_AY628207_rev... at 100.00%
+3	490aa, >Acar_3080_AY628208_... at 99.80%
+>Cluster 36
+0	490aa, >GA391_OL774861_reve... *
+>Cluster 37
+0	490aa, >813877_OM140827_198... *
+>Cluster 38
+0	490aa, >813878_OM140829_200... *
+>Cluster 39
+0	490aa, >813888_OM140831_200... *
+1	490aa, >807876_MG812635_198... at 97.96%
+2	490aa, >Lassa_virus_H-sapie... at 98.16%
+3	490aa, >Weller_AY628206_rev... at 97.96%
+>Cluster 40
+0	490aa, >BEN-16069_MT193277_... *
+1	490aa, >BEN-16070_MT193278_... at 98.98%
+2	490aa, >BEN-16071_MT193279_... at 98.37%
+3	490aa, >BEN-16082_MT193280_... at 98.16%
+4	490aa, >BEN-16090_MT193281_... at 98.16%
+5	490aa, >BEN-16131_MT193282_... at 98.78%
+6	490aa, >BEN-14-26530_MT1932... at 98.37%
+7	490aa, >BEN-16-3488_MT19328... at 98.57%
+8	490aa, >Lassa_H-sapiens-tc_... at 98.57%
+9	490aa, >Togo_2016_7082_KU96... at 98.57%
+>Cluster 41
+0	490aa, >810801_MG812681_197... *
+1	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+2	490aa, >LASV_H-sapiens-tc_N... at 97.76%
+3	490aa, >LASV_H-sapiens-tc_N... at 97.76%
+4	490aa, >LASV_H-sapiens-tc_N... at 97.76%
+5	490aa, >LASV_H-sapiens-tc_N... at 97.76%
+6	490aa, >LASV_H-sapiens-tc_N... at 97.76%
+7	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+8	490aa, >Nig12-17_LC387468_2... at 97.55%
+9	490aa, >H-sapiens-wt_NGA_20... at 97.76%
+10	490aa, >Lassa_virus_H-sapie... at 97.76%
+11	490aa, >Lassa_virus_H-sapie... at 97.76%
+12	490aa, >Nig08-04_GU481068_2... at 97.55%
+>Cluster 42
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >LASV_H-sapiens-tc_N... at 97.55%
+2	490aa, >LASV_H-sapiens-tc_N... at 97.55%
+3	490aa, >LASV_H-sapiens-tc_N... at 98.16%
+4	490aa, >LASV_H-sapiens-tc_N... at 97.55%
+5	490aa, >Lassa_virus_H-sapie... at 97.96%
+>Cluster 43
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >LASV_H-sapiens-tc_N... at 98.98%
+2	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+3	490aa, >LASV_H-sapiens-tc_N... at 98.78%
+4	490aa, >LASV_H-sapiens-wt_N... at 98.57%
+5	490aa, >Lassa_virus_H-sapie... at 98.98%
+6	490aa, >Lassa_virus_H-sapie... at 98.98%
+>Cluster 44
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >LASV_H-sapiens-tc_N... at 98.78%
+2	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+3	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+4	490aa, >LASV_H-sapiens-tc_N... at 98.78%
+5	490aa, >LASV_H-sapiens-tc_N... at 97.76%
+6	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+7	490aa, >Lassa_virus_H-sapie... at 97.96%
+8	490aa, >Lassa_virus_H-sapie... at 97.96%
+>Cluster 45
+0	490aa, >LASV_H-sapiens-tc_N... *
+>Cluster 46
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >Lassa_virus_H-sapie... at 100.00%
+>Cluster 47
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >LASV_H-sapiens-tc_N... at 98.57%
+2	490aa, >LASV_H-sapiens-tc_N... at 97.55%
+3	490aa, >LASV_H-sapiens-wt_N... at 97.55%
+4	490aa, >H-sapiens-wt_NGA_20... at 99.18%
+>Cluster 48
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >NIGERIA_IKEJI_KU978... at 98.37%
+>Cluster 49
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >LASV_H-sapiens-tc_N... at 97.55%
+2	490aa, >LASV_H-sapiens-tc_N... at 98.16%
+3	490aa, >LASV_H-sapiens-tc_N... at 97.96%
+4	490aa, >LASV_H-sapiens-wt_N... at 97.76%
+5	490aa, >Nig13-04_LC387470_2... at 98.16%
+6	490aa, >Nig16-11_LC387484_2... at 97.55%
+7	490aa, >Nig16-13_LC387486_2... at 99.39%
+8	490aa, >H-sapiens-wt_NGA_20... at 97.76%
+9	490aa, >H-sapiens-wt_NGA_20... at 97.76%
+10	490aa, >H-sapiens-wt_NGA_20... at 97.76%
+11	490aa, >Lassa_virus_H-sapie... at 97.96%
+12	490aa, >Lassa_virus_H-sapie... at 98.16%
+>Cluster 50
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >Lassa_virus_H-sapie... at 100.00%
+>Cluster 51
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >Lassa_virus_H-sapie... at 100.00%
+>Cluster 52
+0	490aa, >LASV_H-sapiens-tc_N... *
+>Cluster 53
+0	490aa, >LASV_H-sapiens-tc_N... *
+>Cluster 54
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >LASV_H-sapiens-tc_N... at 98.16%
+2	490aa, >Lassa_virus_H-sapie... at 100.00%
+>Cluster 55
+0	490aa, >LASV_H-sapiens-tc_N... *
+>Cluster 56
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >LASV_H-sapiens-tc_N... at 100.00%
+2	490aa, >LASV_H-sapiens-tc_N... at 99.80%
+3	490aa, >ISTH2066-NIG-2012_K... at 100.00%
+>Cluster 57
+0	490aa, >LASV_H-sapiens-tc_N... *
+>Cluster 58
+0	490aa, >LASV_H-sapiens-tc_N... *
+1	490aa, >Nig14-03_LC387472_2... at 98.98%
+2	490aa, >Nig14-04_LC387474_2... at 98.57%
+3	490aa, >Nig14-06_LC387476_2... at 98.98%
+4	490aa, >Nig14-09_LC387478_2... at 98.98%
+5	490aa, >Nig14-19_LC387480_2... at 98.57%
+6	490aa, >Nig16-02_LC387482_2... at 98.57%
+7	490aa, >Nig16-14_LC387488_2... at 97.55%
+8	490aa, >H-sapiens-wt_NGA_20... at 98.57%
+9	490aa, >H-sapiens-wt_NGA_20... at 98.16%
+10	490aa, >Lassa_virus_H-sapie... at 98.16%
+11	490aa, >ISTH2094-NIG-2012_K... at 98.37%
+>Cluster 59
+0	490aa, >LASV_H-sapiens-wt_N... *
+1	490aa, >H-sapiens-wt_NGA_20... at 100.00%
+>Cluster 60
+0	490aa, >H-sapiens-wt_NGA_20... *
+1	490aa, >Lassa_virus_H-sapie... at 97.55%
+2	490aa, >Lassa_virus_H-sapie... at 99.59%
+>Cluster 61
+0	490aa, >Lassa_virus_H-sapie... *
+>Cluster 62
+0	490aa, >Lassa_virus_H-sapie... *
+>Cluster 63
+0	490aa, >Lassa_virus_H-sapie... *
+>Cluster 64
+0	490aa, >ISTH2037-NIG-2012_K... *
+>Cluster 65
+0	490aa, >LASV991-NIG-2009_KM... *
+>Cluster 66
+0	490aa, >Nig08-A18_GU481070_... *
+1	490aa, >Nig08-A19_GU481072_... at 97.76%

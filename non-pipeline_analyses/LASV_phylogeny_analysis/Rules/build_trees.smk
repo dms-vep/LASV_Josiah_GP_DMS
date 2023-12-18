@@ -12,11 +12,11 @@ rule build_S_segment_tree:
     all S segment sequences
     """
     input:
-        alignment = config["S_segment_alignment_deduplicated"],
-        log = config["Duplicate_removal_log"],
+        alignment = config["S_segment_alignment_deduplicated_with_outgroup"],
+        log = config["Duplicate_removal_log_with_outgroup"],
     params:
         prefix = config["S_segment_tree_prefix"],
-        outgroup = config["Outgroup"],
+        outgroup = config["Outgroup3"],
     output:
         config["S_segment_tree_output"],
     shell:
@@ -44,11 +44,11 @@ rule build_GPC_protein_tree:
     all GPC protein sequences
     """
     input:
-        alignment = config["GPC_protein_alignment_deduplicated"],
-        log = config["Duplicate_removal_log"],
+        alignment = config["GPC_protein_alignment_deduplicated_with_outgroup"],
+        log = config["Duplicate_removal_log_with_outgroup"],
     params:
         prefix = config["GPC_protein_tree_prefix"],
-        outgroup = config["Outgroup"],
+        outgroup = config["Outgroup3"],
     output:
         config["GPC_protein_tree_output"],
     shell:
@@ -194,6 +194,52 @@ rule build_GPC_codon_tree:
         #       '+G' Discrete Gamma model (Yang, 1994) with default 4 rate categories.
         #       The number of categories can be changed with e.g. +G8.
         #-st CODON codon model given a protein-coding DNA alignment
+        #-asr   Write ancestral sequences (by empirical Bayesian method) for all
+        #       nodes of the tree to .state file.
         #-quiet Silent mode, suppress printing to the screen. Note that .log file is
         #       still written.
-        "iqtree -s {input.alignment} -pre {params.prefix} -nt 10 -m MGK+G+F3X4 -st CODON -o {params.outgroup} -quiet"
+        "iqtree -s {input.alignment} -pre {params.prefix} -nt 10 -m MGK+G+F3X4 -st CODON -asr -o {params.outgroup} -quiet"
+
+
+rule build_GPC_codon_tree_with_outgroup:
+    """
+    This rule builds tree using IQtree for 
+    all GPC codon sequences and non LASV outgroup
+    """
+    input:
+        alignment = config["GPC_codon_alignment_deduplicated_with_outgroup"],
+        log = config["Duplicate_removal_log_with_outgroup"],
+    params:
+        prefix = config["GPC_codon_tree_with_outgroup_prefix"],
+        outgroup = config["Outgroup3"],
+    output:
+        config["GPC_codon_tree_with_outgroup_output"],
+    shell:
+        #-s     is the option to specify the name of the alignment file
+        #-pre   Specify a prefix for all output files. DEFAULT: either alignment file
+        #       name (-s) or partition file name (-q, -spp or -sp)
+        #-o     Specify an outgroup taxon name to root the tree. The output tree
+        #       in .treefile will be rooted accordingly. DEFAULT: first taxon in
+        #       alignment
+        #-nt    Specify the number of CPU cores for the multicore version. A
+        #       special option -nt AUTO will tell IQ-TREE to automatically
+        #       determine the best number of cores given the current data and
+        #       computer.
+        #-m     is the option to specify the model name to use during the analysis
+        #       Codon models:
+        #       '+MG' Nonsynonymous/synonymous (dn/ds) rate ratio (Muse and Gaut, 1994).
+        #       '+MGK' Like MG with additional transition/transversion (ts/tv) rate ratio.
+        #       Codon frequencies:
+        #       '+F3X4' Unequal nucleotide frequencies and unequal nt frequencies over three
+        #       codon positions. In AliSim, if users don’t supply an input alignment,
+        #       the base frequencies are randomly generated based on empirical
+        #       distributions, or users could specify the frequencies via
+        #       '+F3X4'{<freq_0>,...,<freq_11>}
+        #       '+G' Discrete Gamma model (Yang, 1994) with default 4 rate categories.
+        #       The number of categories can be changed with e.g. +G8.
+        #-st CODON codon model given a protein-coding DNA alignment
+        #-asr   Write ancestral sequences (by empirical Bayesian method) for all
+        #       nodes of the tree to .state file.
+        #-quiet Silent mode, suppress printing to the screen. Note that .log file is
+        #       still written.
+        "iqtree -s {input.alignment} -pre {params.prefix} -nt 10 -m MGK+G+F3X4 -st CODON -asr -o {params.outgroup} -quiet"

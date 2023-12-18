@@ -20,9 +20,8 @@ Protein_features: Configure/Input_Data/LASV_GPC_reference_NP_694870.gp
 # NC_005078 Machupo virus from NCBI virus ref sequence on 090523
 # Mammarenavirus juninense:
 # NC_005081 Junin virus from NCBI virus ref sequence on 090523
-Add_outgroups: False # True to add or False if not
-Outgroup_reference_genomes: Configure/Input_Data/Outgroup_S_references.fasta
-Outgroup_reference_metadata: Configure/Input_Data/Outgroup_S_references_metadata.tsv
+Outgroup_reference_genomes: Configure/Input_Data/Mopeia_S_references.fasta
+Outgroup_reference_metadata: Configure/Input_Data/Mopeia_S_references_metadata.tsv
 
 # Directory for DMS data
 DMS_data_dir: Configure/Input_Data/DMS_Data/
@@ -87,37 +86,50 @@ Temp_alignment_file: Results/temp_alignment_file.fasta
 
 # Metadata output
 Metadata: Results/LASV_S_segment_metadata.tsv
+Metadata_with_outgroup: Results/LASV_S_segment_metadata_with_outgroup.tsv
 
 # Fasta nucelotide file ouput
 Nucleotide_sequences: Results/LASV_S_segment_nucleotide.fasta
+Nucleotide_sequences_with_outgroup: Results/LASV_S_segment_nucleotide_with_outgroup.fasta
 
 # Fasta codon file output
 Codon_sequences: Results/LASV_GPC_codon.fasta
+Codon_sequences_with_outgroup: Results/LASV_GPC_codon_with_outgroup.fasta
 
 # Fasta protein file output
 Protein_sequences: Results/LASV_GPC_protein.fasta
+Protein_sequences_with_outgroup: Results/LASV_GPC_protein_with_outgroup.fasta
 Protein_reduced_sequences: Results/LASV_GPC_protein_reduced.fasta
 Protein_validation_sequences: Results/LASV_GPC_protein_validation_isolates.fasta
 
 # Log outputs
-Outgroup_addition_log: Results/outrgroup_addition_log.txt
+# Outgroup_addition_log: Results/outrgroup_addition_log.txt
 Sequence_verification_log: Results/sequence_verification_log.txt
+Sequence_verification_log_with_outgroup: Results/sequence_verification_log_with_outgroup.txt
 Duplicate_removal_log: Results/duplicate_removal_log.txt
+Duplicate_removal_log_with_outgroup: Results/duplicate_removal_log_with_outgroup.txt
 Validation_addition_log: Results/validation_addition_log.txt
 
 # Alignment file outputs
 S_segment_alignment: Results/LASV_S_segment_alignment.fasta
+S_segment_alignment_with_outgroup: Results/LASV_S_segment_alignment_with_outgroup.fasta
 GPC_protein_alignment: Results/LASV_GPC_protein_alignment.fasta
+GPC_protein_alignment_with_outgroup: Results/LASV_GPC_protein_alignment_with_outgroup.fasta
 GPC_protein_reduced_alignment: Results/LASV_GPC_protein_reduced_alignment.fasta
 GPC_protein_validation_alignment: Results/LASV_GPC_protein_validation_isolates_alignment.fasta
 GPC_codon_alignment: Results/LASV_GPC_codon_alignment.fasta
+GPC_codon_alignment_with_outgroup: Results/LASV_GPC_codon_alignment_with_outgroup.fasta
 GPC_codon_reduced_alignment: Results/LASV_GPC_codon_reduced_alignment.fasta
 # Deduplicated alignment file outputs
 S_segment_alignment_deduplicated: Results/LASV_S_segment_alignment_deduplicated.fasta
 GPC_protein_alignment_deduplicated: Results/LASV_GPC_protein_alignment_deduplicated.fasta
 GPC_codon_alignment_deduplicated: Results/LASV_GPC_codon_alignment_deduplicated.fasta
+S_segment_alignment_deduplicated_with_outgroup: Results/LASV_S_segment_alignment_deduplicated_with_outgroup.fasta
+GPC_protein_alignment_deduplicated_with_outgroup: Results/LASV_GPC_protein_alignment_deduplicated_with_outgroup.fasta
+GPC_codon_alignment_deduplicated_with_outgroup: Results/LASV_GPC_codon_alignment_deduplicated_with_outgroup.fasta
 # Alignment temp file outputs prior to fasta header edits
 GPC_protein_alignment_temp: Results/LASV_GPC_protein_alignment_temp.fasta
+GPC_protein_alignment_temp_with_outgroup: Results/LASV_GPC_protein_alignment_temp_with_outgroup.fasta
 GPC_protein_reduced_alignment_temp: Results/LASV_GPC_protein_reduced_alignment_temp.fasta
 
 # Tree file params
@@ -125,6 +137,7 @@ S_segment_tree_prefix: Results/S_segment_tree/IQTree/LASV_S_segment
 GPC_protein_tree_prefix: Results/GPC_protein_tree/IQTree/LASV_GPC_protein
 GPC_protein_reduced_tree_prefix: Results/GPC_protein_reduced_tree/IQTree/LASV_GPC_reduced_protein
 GPC_codon_tree_prefix: Results/GPC_codon_tree/IQTree/LASV_GPC_codon
+GPC_codon_tree_with_outgroup_prefix: Results/GPC_codon_tree_with_outgroup/IQTree/LASV_GPC_codon_with_outgroup
 GPC_codon_reduced_tree_prefix: Results/GPC_codon_reduced_tree/IQTree/LASV_GPC_reduced_codon
 Outgroup: Pinneo-NIG-1969_KM822128_1969-XX-XX
 Outgroup2: 812285_MG812675_1976-XX-XX # same GPC protein sequence as Pinneo-NIG-1969_KM822128_1969-XX-XX
@@ -136,6 +149,8 @@ S_segment_tree_output: Results/S_segment_tree/IQTree/LASV_S_segment.iqtree
 GPC_protein_tree_output: Results/GPC_protein_tree/IQTree/LASV_GPC_protein.iqtree
 GPC_protein_reduced_tree_output: Results/GPC_protein_reduced_tree/IQTree/LASV_GPC_reduced_protein.iqtree
 GPC_codon_tree_output: Results/GPC_codon_tree/IQTree/LASV_GPC_codon.iqtree
+GPC_codon_tree_with_outgroup_output: Results/GPC_codon_tree_with_outgroup/IQTree/LASV_GPC_codon_with_outgroup.iqtree
+GPC_codon_tree_with_outgroup_ancestors: Results/GPC_codon_tree_with_outgroup/IQTree/LASV_GPC_codon_with_outgroup.state
 GPC_codon_reduced_tree_output: Results/GPC_codon_reduced_tree/IQTree/LASV_GPC_reduced_codon.iqtree
 
 # Final figures
@@ -145,8 +160,14 @@ GPC_protein_reduced_tree_figure: Results/Figures/LASV_GPC_reduced_protein_tree.s
 GPC_protein_validation_alignment_figure: Results/Figures/validation_isolates_msa.svg
 Amino_acid_identity_to_josiah_figure: Results/Figures/amino_acid_identity.svg
 GPC_diversity_figure: Results/Figures/LASV_GPC_diversity.svg
+GPC_codon_full_tree_figure: Results/Figures/LASV_GPC_full_codon_tree.svg
 
 # Site level entropy and n effective amino acids
 GPC_protein_variation: Results/GPC_protein_variation.csv
+
+# Mutations counted along the tree
+GPC_tree_mutations: Results/GPC_tree_mutations.csv
+GPC_FUBAR_results: Results/GPC_FUBAR_results.json
+GPC_FEL_results: Results/GPC_FEL_results.json
 
 #################################################---END OUTPUT DATA---########################################################

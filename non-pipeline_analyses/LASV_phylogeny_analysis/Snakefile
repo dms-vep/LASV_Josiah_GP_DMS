@@ -35,15 +35,20 @@ rule all:
         config["GPC_protein_tree_output"],
         config["GPC_protein_reduced_tree_output"],
         config["GPC_codon_tree_output"],
+        config["GPC_codon_tree_with_outgroup_output"],
         config["GPC_codon_reduced_tree_output"],
         # Sequence variation
         config["GPC_protein_variation"],
+        config["GPC_tree_mutations"],
+        config["GPC_FUBAR_results"],
+        config["GPC_FEL_results"],
         # Figures
         config["GPC_protein_validation_alignment_figure"],
         config["GPC_codon_reduced_tree_figure"],
         config["GPC_protein_reduced_tree_figure"],
         config["Amino_acid_identity_to_josiah_figure"],
-        config["GPC_diversity_figure"]
+        config["GPC_diversity_figure"],
+        config["GPC_codon_full_tree_figure"],
 
 # Make DAG of rule execution
 rule make_DAG:

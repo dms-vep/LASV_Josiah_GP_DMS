@@ -32,3 +32,16 @@ rule create_reduced_tree_figure:
         config["GPC_protein_reduced_tree_figure"],
     notebook:
         "../Notebooks/visualize_reduced_tree.ipynb"
+
+
+rule create_full_tree_figure:
+    """
+    This rule runs a notebook to create
+    the final full codon tree figure.
+    """
+    input:
+        codon=config["GPC_codon_tree_output"],
+    output:
+        config["GPC_codon_full_tree_figure"],
+    notebook:
+        "../Notebooks/visualize_full_GPC_tree.ipynb"

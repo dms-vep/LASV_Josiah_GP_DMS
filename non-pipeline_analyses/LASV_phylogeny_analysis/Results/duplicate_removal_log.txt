@@ -1,0 +1,3 @@
+Results/LASV_S_segment_alignment.fasta processed a total of 605 sequences and retained 596 while removing 9 duplicates!
+Results/LASV_GPC_codon_alignment.fasta processed a total of 572 sequences and retained 515 while removing 57 duplicates!
+Results/LASV_GPC_protein_alignment.fasta processed a total of 572 sequences and retained 445 while removing 127 duplicates!

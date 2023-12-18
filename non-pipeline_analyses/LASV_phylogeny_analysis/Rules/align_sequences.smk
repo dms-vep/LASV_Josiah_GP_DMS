@@ -72,9 +72,26 @@ rule align_segment_sequences:
     """
     input:
         fasta_sequences = config["Nucleotide_sequences"],
-        output_log = config["Outgroup_addition_log"],
     output:
         alignment = config["S_segment_alignment"],
+    shell:
+        # --auto        Automatically selects an appropriate strategy from L-INS-i, 
+        #               FFT-NS-i and FFT-NS-2, according to data size. Default: off (always FFT-NS-2)
+        # --retree      Guide tree is built number times in the progressive 
+        #               stage. Valid with 6mer distance. Default: 2
+        # --maxiterate  Number cycles of iterative refinement are performed. Default: 0
+        # --quiet       Do not report progress. Default: off
+        "mafft --auto {input.fasta_sequences} > {output.alignment}"
+
+
+rule align_segment_sequences_with_outgroup:
+    """
+    This rule aligns all S segment sequences using MAFFT
+    """
+    input:
+        fasta_sequences = config["Nucleotide_sequences_with_outgroup"],
+    output:
+        alignment = config["S_segment_alignment_with_outgroup"],
     shell:
         # --auto        Automatically selects an appropriate strategy from L-INS-i, 
         #               FFT-NS-i and FFT-NS-2, according to data size. Default: off (always FFT-NS-2)
@@ -103,6 +120,24 @@ rule align_protein_sequences:
         "mafft --auto {input.fasta_sequences} > {output.alignment}"
 
 
+rule align_protein_sequences_with_outgroup:
+    """
+    This rule aligns all GPC protein sequences using MAFFT
+    """
+    input:
+        fasta_sequences = config["Protein_sequences_with_outgroup"],
+    output:
+        alignment = config["GPC_protein_alignment_temp_with_outgroup"],
+    shell:
+        # --auto        Automatically selects an appropriate strategy from L-INS-i, 
+        #               FFT-NS-i and FFT-NS-2, according to data size. Default: off (always FFT-NS-2)
+        # --retree      Guide tree is built number times in the progressive 
+        #               stage. Valid with 6mer distance. Default: 2
+        # --maxiterate  Number cycles of iterative refinement are performed. Default: 0
+        # --quiet       Do not report progress. Default: off
+        "mafft --auto {input.fasta_sequences} > {output.alignment}"
+
+
 rule create_codon_alignment:
     """
     This rule creates a codon aligmnet from the
@@ -113,6 +148,20 @@ rule create_codon_alignment:
         codon_sequences = config["Codon_sequences"],
     output:
         config["GPC_codon_alignment"]
+    script:
+        "../Scripts/create_codon_alignment.py"
+
+
+rule create_codon_alignment_with_outgroup:
+    """
+    This rule creates a codon aligmnet from the
+    codon sequences and protein alignment.
+    """
+    input: 
+        protein_alignment = config["GPC_protein_alignment_temp_with_outgroup"],
+        codon_sequences = config["Codon_sequences_with_outgroup"],
+    output:
+        config["GPC_codon_alignment_with_outgroup"]
     script:
         "../Scripts/create_codon_alignment.py"
 
@@ -141,6 +190,20 @@ rule edit_fasta_headers:
         protein_alignment = config["GPC_protein_alignment_temp"],
     output:
         protein_alignment = config["GPC_protein_alignment"],
+    script:
+        "../Scripts/edit_fasta_headers.py"
+
+
+rule edit_fasta_headers_with_outgroup:
+    """
+    This rule edits the protein alignment fasta
+    headers to remove the appended info from EMBOSS
+    getorf.
+    """
+    input: 
+        protein_alignment = config["GPC_protein_alignment_temp_with_outgroup"],
+    output:
+        protein_alignment = config["GPC_protein_alignment_with_outgroup"],
     script:
         "../Scripts/edit_fasta_headers.py"
 

@@ -12,7 +12,7 @@ import pandas as pd
 from Bio import SeqIO
 
 # Functions
-def add_metadata(input_metadata, input_outgroup_metadata):
+def add_metadata(input_metadata, input_outgroup_metadata, output_metadata):
 
     # Load metadata as dataframe
     metadata = pd.read_csv(input_metadata, sep="\t")
@@ -27,11 +27,19 @@ def add_metadata(input_metadata, input_outgroup_metadata):
     )
 
     # Write updated metadata to file
-    metadata.to_csv(input_metadata, sep="\t", index=False)
+    metadata.to_csv(output_metadata, sep="\t", index=False)
 
-def add_sequences(input_sequences, input_outgroup_sequences):
+def add_sequences(input_sequences, input_outgroup_sequences, output_sequences):
 
-    with open(input_sequences, "a+") as output_sequences:
+    with open(output_sequences, "w") as output_sequences:
+        # Write current sequences to new file
+        for curr_fasta in SeqIO.parse(input_sequences, "fasta"):
+            strain = str(curr_fasta.id)
+            sequence = str(curr_fasta.seq)
+            # Write current fasta sequence to output file
+            output_sequences.write(f">{strain}\n")
+            output_sequences.write(f"{sequence}\n")
+        # Write outgroup sequences to new file
         for curr_fasta in SeqIO.parse(input_outgroup_sequences, "fasta"):
             strain = str(curr_fasta.id)
             sequence = str(curr_fasta.seq)
@@ -53,26 +61,12 @@ def main():
     input_metadata = str(snakemake.input.metadata)
     input_outgroup_sequences = str(snakemake.input.outgroup_fasta_sequences)
     input_outgroup_metadata = str(snakemake.input.outgroup_metadata)
-    # Params
-    add_outgroup = snakemake.params.add_outgroups
     # Output files
-    output_log = str(snakemake.output.output_log)
+    output_sequences = str(snakemake.output.fasta_sequences)
+    output_metadata = str(snakemake.output.metadata)
 
-    log_text = ""
-
-    if add_outgroup == True:
-        add_metadata(input_metadata, input_outgroup_metadata)
-        add_sequences(input_sequences, input_outgroup_sequences)
-        log_text += "Outgroup data added!"
-    else:
-        log_text += "Outgroup data not added!"
-
-    # Write output log file
-    output_log_file = open(output_log, "w")
-    output_log_file.write(f"{log_text}\n")
-
-    # Close files
-    output_log_file.close()
+    add_metadata(input_metadata, input_outgroup_metadata, output_metadata)
+    add_sequences(input_sequences, input_outgroup_sequences, output_sequences)
 
 
 if __name__ == "__main__":

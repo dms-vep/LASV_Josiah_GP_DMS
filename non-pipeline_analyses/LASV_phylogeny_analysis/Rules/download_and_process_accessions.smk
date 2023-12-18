@@ -39,9 +39,8 @@ rule add_outgroup_references:
         metadata = config["Metadata"],
         outgroup_fasta_sequences = config["Outgroup_reference_genomes"],
         outgroup_metadata = config["Outgroup_reference_metadata"],
-    params:
-        add_outgroups = config["Add_outgroups"],
     output:
-        output_log = config["Outgroup_addition_log"]
+        fasta_sequences = config["Nucleotide_sequences_with_outgroup"],
+        metadata = config["Metadata_with_outgroup"],
     script:
         "../Scripts/add_outgroup_data.py"
