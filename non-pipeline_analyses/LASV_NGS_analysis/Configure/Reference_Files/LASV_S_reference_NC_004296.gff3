@@ -1,0 +1,7 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region NC_004296.1 1 3402
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=11620
+Josiah_NC_004296_2018-08-13_reverse_complement	RefSeq	CDS	56	1531	.	+	0	ID=cds-NP_694870.1;Parent=gene-LASVsSgp2;Dbxref=GenBank:NP_694870.1,GeneID:956585;Name=NP_694870.1;gbkey=CDS;locus_tag=LASVsSgp2;product=glycoprotein;protein_id=NP_694870.1
+Josiah_NC_004296_2018-08-13_reverse_complement	RefSeq	CDS	1593	3302	.	-	0	ID=cds-NP_694869.1;Parent=gene-LASVsSgp1;Dbxref=GenBank:NP_694869.1,GeneID:956584;Name=NP_694869.1;gbkey=CDS;locus_tag=LASVsSgp1;product=nucleoprotein;protein_id=NP_694869.1

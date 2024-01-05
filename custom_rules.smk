@@ -256,6 +256,7 @@ rule compare_to_natural:
         escape_top10_image_path="results/antibody_escape_profiles/natural_isolate_top10_escape_profiles.svg",
         escape_all_image_path="results/antibody_escape_profiles/natural_isolate_all_escape_profiles.svg",
         natural_escape="results/natural_isolate_escape/natural_isolate_escape.svg",
+        total_natural_escape="results/natural_isolate_escape/total_natural_site_escape.svg",
         html_func_vs_natural="results/natural_isolate_escape/func_vs_natural.html",
         html_func_vs_escape="results/natural_isolate_escape/func_vs_escape.html",
         html_func_vs_escape_all_abs="results/natural_isolate_escape/func_vs_escape_all_abs.html",
@@ -299,6 +300,7 @@ rule compare_to_natural:
             -p escape_top10_image_path {output.escape_top10_image_path} \
             -p escape_all_image_path {output.escape_all_image_path} \
             -p natural_escape {output.natural_escape} \
+            -p total_natural_escape {output.total_natural_escape} \
             -p html_func_vs_natural {output.html_func_vs_natural} \
             -p html_func_vs_escape {output.html_func_vs_escape} \
             -p html_func_vs_escape_all_abs {output.html_func_vs_escape_all_abs} \

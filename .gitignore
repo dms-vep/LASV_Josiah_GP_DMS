@@ -78,6 +78,7 @@ results/validation_plots/*
 !results/validation_plots/*.svg
 
 non-pipeline_analyses/pdb_viewing/*
+
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_codon_reduced_tree/*
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_reduced_tree/*
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_codon_tree/*
@@ -85,5 +86,9 @@ non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_codon_tree_with_outgro
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_tree/*
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/S_segment_tree/*
 !non-pipeline_analyses/LASV_phylogeny_analysis/Results/Figures/
+
 non-pipeline_analyses/DAG1_phylogeny_analysis/Results/*
 !non-pipeline_analyses/DAG1_phylogeny_analysis/Results/Figures/
+
+non-pipeline_analyses/LASV_NGS_analysis/Results/
+non-pipeline_analyses/LASV_NGS_analysis/Data/

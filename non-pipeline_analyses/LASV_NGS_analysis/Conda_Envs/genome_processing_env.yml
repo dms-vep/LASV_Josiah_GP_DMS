@@ -1,0 +1,10 @@
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - bbmap=38.86
+    - samtools=1.9
+    - bwa=0.7.17
+    - star=2.7.5
+    - hisat2=2.2.1

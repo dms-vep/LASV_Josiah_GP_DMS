@@ -1,0 +1,9 @@
+name: LASV_DeepSeq_Env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python
+  - snakemake

@@ -1,0 +1,59 @@
+# Description:
+# Main snakemake file that contains the output files and 
+# configures the order of rule execution.
+
+# Author:
+# Caleb Carr
+
+
+import pandas as pd 
+import os
+from snakemake.utils import min_version
+min_version("5.20.1")
+
+# Initialize config file global variable
+configfile: "Configure/config.yml"
+
+# Rules included from Rules/ directory 
+include: "Rules/common.smk"
+include: "Rules/reference_genomes.smk"
+include: "Rules/contaminant_genomes.smk"
+include: "Rules/sra_download.smk"
+include: "Rules/adapter_trimming_bbduk.smk"
+include: "Rules/adapter_trimming_fastp.smk"
+include: "Rules/adapter_trimming_cutadapt.smk"
+include: "Rules/reads_quality_filter_bbduk.smk"
+include: "Rules/remove_contaminants_bbsplit.smk"
+include: "Rules/quality_checking.smk"
+include: "Rules/identify_best_match_reference_bbsplit.smk"
+include: "Rules/alignment_bbmap.smk"
+include: "Rules/alignment_bwa_mem.smk"
+include: "Rules/alignment_star.smk"
+include: "Rules/alignment_hisat2.smk"
+include: "Rules/deduplicate_samtools_markdup.smk"
+include: "Rules/alignment_summary_samtools_mpileup.smk"
+include: "Rules/data_file_parsing.smk"
+include: "Rules/get_protein_coding_regions.smk"
+
+
+# Output files
+rule all:
+    """ This rule controls all the output files expected from the workflow. """
+    input: 
+        # Output for quality checked sample read data
+        directory("Results/Quality_Checking/MultiQC"),
+        # Output for mapping rates
+        "Results/Alignment_Stats/sample_mapping_rates.csv",
+        # Output for base calling
+        "Results/Sample_Data/SRR1635591/SRR1635591_mpileup_summary.csv",
+
+
+
+rule clean:
+    """ This rule removes the data and results files 
+        which resets the workflow back to the start. """
+    shell:
+        """
+        rm -rf Data/
+        rm -rf Results/
+        """

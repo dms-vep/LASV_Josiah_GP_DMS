@@ -1,0 +1,7 @@
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - python
+    - emboss=6.5.7

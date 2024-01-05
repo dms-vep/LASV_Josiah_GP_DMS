@@ -1,0 +1,151 @@
+#################################################---START SAMPLE DATA---#######################################################
+
+# Samples from Andersen et al 2014
+# PRJNA254017
+
+# Test dataset
+Samples: 
+    File: Configure/Sample_Files/LM395_KM822115.csv
+
+#################################################---END SAMPLE DATA---#########################################################
+
+#################################################---START REFERENCE GENOMES---#################################################
+# Reference Genomes
+Default_Reference: LII_KM821998_GPC_NP # Used lineage II because most sequences came from 2018 Nigeria outbreak of LII
+Gene_list: ['GPC', 'NP', 'Z', 'L']
+References: 
+    # # References used in Siddle et al 2018 for lineages II-IV
+    # LII_KM821998_GPC_NP:
+    #     Genes: Configure/Reference_Files/LII_KM821998_GPC_NP.fasta
+    # LIII_GU481072_GPC_NP:
+    #     Genes: Configure/Reference_Files/LIII_GU481072_GPC_NP.fasta
+    # LIV_KM821773_GPC_NP:
+    #     Genes: Configure/Reference_Files/LIV_KM821773_GPC_NP.fasta
+    # Josiah reference:
+    LIV_NC_004296_NC_004297_GPC_NP_Z_L:
+        Genes: Configure/Reference_Files/LIV_NC_004296_NC_004297_GPC_NP_Z_L.fasta
+        
+    
+# Provide optional gene names to replace accession numbers
+# for plotting. Must be in same order as the accession urls 
+# listed in the text files.
+Optional_Gene_Names:
+    # Options:
+    # 'yes_provide'
+    Provide_Gene_Names: yes_provide
+    Gene_Names: ['Glycoprotein', 'Nucleoprotein', 'Zinc-protein', 'Polymerase']
+
+
+    
+#################################################---END REFERENCE GENOMES---###################################################
+
+#################################################---START CONTAMINANT GENOMES---###############################################
+
+# Sample contaminants, specifically for human blood draws
+Sample_Contaminants:
+    Human:
+        Download_url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.fna.gz
+    Mastomys:
+        Download_url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/021/653/895/GCA_021653895.1_UFL_Mnatal_1.0/GCA_021653895.1_UFL_Mnatal_1.0_genomic.fna.gz
+    Staph_aureus:
+        Download_url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/013/425/GCF_000013425.1_ASM1342v1/GCF_000013425.1_ASM1342v1_genomic.fna.gz
+
+# Common contaminant in all NGS sequencing data
+Contaminants:
+    Phix: Configure/Contaminant_Files/phix174_ill.ref.fa.gz 
+    
+#################################################---END CONTAMINANT GENOMES---#################################################
+
+#################################################---START ADAPTER DATA---######################################################
+
+# default adapter list from bbmap suite
+Default_Adaptors: Configure/Adapter_Files/default_adapter_list.fa
+
+#################################################---END ADAPTER DATA---########################################################
+
+#################################################---START TOOL SETTINGS---#####################################################
+
+Adapter_Trimming:
+    # Options:
+    # 'yes_bbduk' and 'no_cutadapt' and 'no_fastp'
+    #                       or
+    # 'no_bbduk' and 'yes_cutadapt' and 'no_fastp'
+    #                       or
+    # 'no_bbduk' and 'no_cutadapt' and 'yes_fastp'
+    BBDuk: no_bbduk
+    Cutadapt: no_cutadapt
+    Fastp: yes_fastp
+
+Quality_Filtering:
+    # Options:
+    # 'yes_bbduk' => RECOMMENDED
+    BBDuk: yes_bbduk
+
+Contaminant_Removal:
+    # Options:
+    # 'yes_bbsplit' => RECOMMENDED
+    BBSplit: yes_bbsplit
+
+Reference_Checking:
+    # Options:
+    # 'yes_bbsplit' => RECOMMENDED
+    BBSplit: yes_bbsplit
+
+Alignment_Mapping:
+    # Options: 
+    # 'yes_bbmap' and 'no_bwa' and 'no_hisat2' and 'no_star'
+    #                           or
+    # 'no_bbmap' and 'yes_bwa' and 'no_hisat2' and 'no_star'
+    #                           or
+    # 'no_bbmap' and 'no_bwa' and 'yes_hisat2' and 'no_star'
+    #                           or
+    # 'no_bbmap' and 'no_bwa' and 'no_hisat2' and 'yes_star'
+    BBMap: no_bbmap
+    # This is a soft limit on the maximum size indels 
+    # found.
+    BBMap_maxindel: 2000
+    BWA: yes_bwa
+    HISAT2: no_hisat2
+    STAR: no_star
+    # This must be adjusted for small genomes
+    # when using the STAR aligner. The formula
+    # is: min(14, log2(genomeLength)/2 - 1)
+    STAR_genomeSAindexNbases: 4
+
+Deduplication:
+    # Options: 
+    # 'no_dedup' and 'no_samtools'
+    #           or
+    # 'yes_dedup' and 'yes_samtools'
+    No_Deduplication: yes_dedup
+    Samtools: yes_samtools
+
+Variant_Calling:
+    # Options:
+    # 'yes_samtools' => RECOMMENDED
+    Samtools: yes_samtools
+
+#################################################---END TOOL SETTINGS---#######################################################
+
+#################################################---START VARIANT CALLING PARAMETERS---########################################
+
+# ***NOTE: These parameters are not used for simple base calling***
+Variant_Parameters:
+    # Percentage at each position required
+    # to be counted as a base variant
+    Minor_Base_Frequency_cutoff: 2
+    # Percentage at each position required 
+    # to be counted as a indel
+    Insertion_Frequency_cutoff: 2
+    Deletion_Frequency_cutoff: 2
+    # Ratio of forward/(forward + reverse)
+    # required to be counted as a true
+    # variant (must be between min and max)
+    Strand_Bias_Ratio_Min: 0.3
+    Strand_Bias_Ratio_Max: 0.7
+    # Minimum depth at a position to
+    # be counted as a variant
+    Min_Pos_Depth: 50
+# ***NOTE: These parameters are not used for simple base calling***
+
+#################################################---END VARIANT CALLING PARAMETERS---##########################################

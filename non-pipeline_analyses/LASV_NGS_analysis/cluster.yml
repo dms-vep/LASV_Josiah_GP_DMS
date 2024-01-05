@@ -1,0 +1,41 @@
+
+__default__:
+    partition: campus-new
+    cpus: 1
+    time: 0-2
+    mem: 32000
+    name: "{rule}"
+    output: "logs_slurm/{rule}.{wildcards}.out"
+    # user: ccarr@fredhutch.edu
+    # mailtype: FAIL
+
+bbsplit_index_contaminant_genomes:
+    cpus: 16
+    mem: 32000
+
+bbsplit_remove_sample_contaminant_reads_PE:
+    cpus: 16
+    mem: 32000
+
+bbsplit_check_strain_type:
+    cpus: 16
+    mem: 32000
+
+bbmap_map_reads_to_ref_genome:
+    cpus: 16
+    mem: 32000
+
+bwa_mem_map_reads_to_ref_genome:
+    cpus: 16
+    mem: 32000
+
+hisat2_map_reads_to_ref_genome:
+    cpus: 16
+    mem: 32000
+
+star_map_reads_to_ref_genome:
+    cpus: 24
+    mem: 64000
+
+python_process_mpileup_file:
+    mem: 64000

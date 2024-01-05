@@ -1,0 +1,8 @@
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - fastp=0.20.1
+    - cutadapt=2.10
+    - bbmap=38.86
