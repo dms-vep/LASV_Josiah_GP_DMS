@@ -7331,7 +7331,7 @@ a.anchor-link {
     if (!diagrams.length) {
       return;
     }
-    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.0/mermaid.esm.min.mjs")).default;
+    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs")).default;
     const parser = new DOMParser();
 
     mermaid.initialize({
@@ -7523,8 +7523,6 @@ a.anchor-link {
 <span class="n">filtered_escape_372D</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">natural_sequence_variation</span> <span class="o">=</span> <span class="kc">None</span>
 
-<span class="n">min_times_seen</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="n">n_selections</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">out_dir</span> <span class="o">=</span> <span class="kc">None</span>
 
 <span class="n">pdb_func_min</span> <span class="o">=</span> <span class="kc">None</span>
@@ -7541,7 +7539,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=91fabe44">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=ab00b3cf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7550,7 +7548,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Parameters</span>
-<span class="n">func_scores</span> <span class="o">=</span> <span class="s2">"results/func_effects/averages/293T_entry_func_effects.csv"</span>
+<span class="n">func_scores</span> <span class="o">=</span> <span class="s2">"results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv"</span>
 <span class="n">pdb_file</span> <span class="o">=</span> <span class="s2">"data/7puy.pdb"</span>
 <span class="n">filtered_escape_377H</span> <span class="o">=</span> <span class="p">(</span>
     <span class="s2">"results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv"</span>
@@ -7573,8 +7571,6 @@ a.anchor-link {
 <span class="n">natural_sequence_variation</span> <span class="o">=</span> <span class="p">(</span>
     <span class="s2">"non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv"</span>
 <span class="p">)</span>
-<span class="n">min_times_seen</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">n_selections</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">out_dir</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/"</span>
 <span class="n">pdb_func_min</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/func_scores_min.pdb"</span>
 <span class="n">pdb_func_max</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/func_scores_max.pdb"</span>
@@ -7599,7 +7595,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># # Uncomment for running interactive</span>
-<span class="c1"># func_scores = "../results/func_effects/averages/293T_entry_func_effects.csv"</span>
+<span class="c1"># func_scores = "../results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv"</span>
 <span class="c1"># pdb_file = "../data/7puy.pdb"</span>
 
 <span class="c1"># filtered_escape_377H = "../results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv"</span>
@@ -7610,8 +7606,6 @@ a.anchor-link {
 <span class="c1"># filtered_escape_372D = "../results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv"</span>
 <span class="c1"># natural_sequence_variation = "../non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv"</span>
 
-<span class="c1"># min_times_seen = 2</span>
-<span class="c1"># n_selections = 8</span>
 <span class="c1"># out_dir = "../results/mapped_scores_onto_pdb/"</span>
 
 <span class="c1"># pdb_func_min = "../results/mapped_scores_onto_pdb/func_scores_min.pdb"</span>
@@ -7644,9 +7638,9 @@ a.anchor-link {
 
     <span class="n">natural_variation</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">natural_variation_file</span><span class="p">)</span>
 
-    <span class="n">natural_variation_aA</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"n_effective"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-    <span class="n">natural_variation_bB</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"n_effective"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-    <span class="n">natural_variation_cC</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"n_effective"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">natural_variation_aA</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"entropy"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">natural_variation_bB</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"entropy"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">natural_variation_cC</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"entropy"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     
     <span class="n">natural_variation_aA</span><span class="p">[</span><span class="s2">"chain"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">natural_variation_aA</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"A"</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">259</span> <span class="k">else</span> <span class="s2">"a"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -7671,17 +7665,17 @@ a.anchor-link {
     <span class="n">natural_variation</span> <span class="o">=</span> <span class="n">natural_variation</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">"site"</span> <span class="p">:</span> <span class="s2">"int"</span><span class="p">})</span> 
 
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Natural sequence variation:"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of effective amino acids: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of effective amino acids: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of effective amino acids: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Effective amino acid score range: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'n_effective'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of entropy: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'entropy'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of entropy: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'entropy'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of entropys: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'entropy'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Entropy score range: </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'entropy'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">natural_variation</span><span class="p">[</span><span class="s1">'entropy'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">()</span>
 
     <span class="n">polyclonal</span><span class="o">.</span><span class="n">pdb_utils</span><span class="o">.</span><span class="n">reassign_b_factor</span><span class="p">(</span>
         <span class="n">input_pdbfile</span><span class="o">=</span><span class="n">input_pdb_file</span><span class="p">,</span>
         <span class="n">output_pdbfile</span><span class="o">=</span><span class="n">output_pdb_file</span><span class="p">,</span>
         <span class="n">df</span><span class="o">=</span><span class="n">natural_variation</span><span class="p">,</span>
-        <span class="n">metric_col</span><span class="o">=</span><span class="s2">"n_effective"</span><span class="p">,</span>
+        <span class="n">metric_col</span><span class="o">=</span><span class="s2">"entropy"</span><span class="p">,</span>
         <span class="n">site_col</span><span class="o">=</span><span class="s2">"site"</span><span class="p">,</span>
         <span class="n">chain_col</span><span class="o">=</span><span class="s2">"chain"</span><span class="p">,</span>
     <span class="p">)</span>
@@ -7698,7 +7692,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">input_pdb_file</span><span class="p">,</span> <span class="n">output_pdb_file</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores_file</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">input_pdb_file</span><span class="p">,</span> <span class="n">output_pdb_file</span><span class="p">,</span> <span class="n">func_scores_file</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Function to map funcitonal scores to a pdb structure</span>
 <span class="sd">    using mut_escape_pdb_b_factor function from polyclonal.</span>
@@ -7710,7 +7704,7 @@ a.anchor-link {
     <span class="c1"># Filter for minimum selections, times seen and no stop codons</span>
     <span class="n">functional_scores</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">functional_scores</span><span class="o">.</span><span class="n">query</span><span class="p">(</span>
-            <span class="s2">"n_selections &gt;= @n_selections and times_seen &gt;= @min_times_seen and mutant != '*'"</span>
+            <span class="s2">"mutant != '*'"</span>
         <span class="p">)</span>
         <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"mutant"</span><span class="p">,</span> <span class="s2">"times_seen"</span><span class="p">,</span> <span class="s2">"wildtype"</span><span class="p">])</span>
         <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"site"</span><span class="p">])</span>
@@ -7862,8 +7856,8 @@ a.anchor-link {
 <span class="n">natural_variation_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_natural_variation</span><span class="p">,</span> <span class="n">natural_sequence_variation</span><span class="p">)</span>
 
 <span class="c1"># Functional scores mapped to pdb structure for scores less than and greater than 0</span>
-<span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func_min</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
-<span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func_max</span><span class="p">,</span> <span class="n">n_selections</span><span class="p">,</span> <span class="n">min_times_seen</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
+<span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func_min</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
+<span class="n">functional_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">pdb_func_max</span><span class="p">,</span> <span class="n">func_scores</span><span class="p">)</span>
 
 <span class="c1"># Antibody files</span>
 <span class="n">antibodies</span> <span class="o">=</span> <span class="p">[</span>
@@ -7899,22 +7893,40 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Natural sequence variation:
-50th percentile of effective amino acids: 1.0
-75th percentile of effective amino acids: 1.046662070004872
-90th percentile of effective amino acids: 1.350658160685738
-Effective amino acid score range: 1.0 to 3.591798972760884
+50th percentile of entropy: 0.0
+75th percentile of entropy: 0.0456061195273183
+90th percentile of entropys: 0.3005920000818175
+Entropy score range: -0.0 to 1.278653183606825
+
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Functional DMS scores:
+Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
+50th percentile of averaged functional scores: -1.666466111111111
+Functional score range: -3.9472499999999995 to 0.5542526315789473
 
 Functional DMS scores:
 Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
-50th percentile of averaged functional scores: -1.7703166666666668
-Functional score range: -4.15625 to 0.5850444444444444
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>50th percentile of averaged functional scores: -1.666466111111111
+Functional score range: -3.9472499999999995 to 0.5542526315789473
 
-Functional DMS scores:
-Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
-50th percentile of averaged functional scores: -1.7703166666666668
-Functional score range: -4.15625 to 0.5850444444444444
-
-2510C
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2510C
 Max summed escape: 60.446
 50th percentile of summed escape scores: 0.7111016
 75th percentile of summed escape scores: 1.4540045
@@ -7930,7 +7942,13 @@ Max summed escape: 28.1116
 95th percentile of summed escape scores: 8.046662
 99th percentile of summed escape scores: 16.366332500000002
 
-377H
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>377H
 Max summed escape: 75.161
 50th percentile of summed escape scores: 0.9938736400000001
 75th percentile of summed escape scores: 1.8978864999999998
@@ -7938,7 +7956,13 @@ Max summed escape: 75.161
 95th percentile of summed escape scores: 4.199772
 99th percentile of summed escape scores: 12.07215366000002
 
-256A
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>256A
 Max summed escape: 41.391
 50th percentile of summed escape scores: 0.34017499999999995
 75th percentile of summed escape scores: 0.79428
@@ -7954,7 +7978,13 @@ Max summed escape: 14.4083091
 95th percentile of summed escape scores: 1.3218732799999966
 99th percentile of summed escape scores: 3.404612768000001
 
-89F
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>89F
 Max summed escape: 39.7872
 50th percentile of summed escape scores: 0.632663
 75th percentile of summed escape scores: 1.4658175

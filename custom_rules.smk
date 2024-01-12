@@ -136,7 +136,7 @@ rule validation_titers:
     """
     input:
         titers="data/single_mutant_functional_validations.csv",
-        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        func_scores="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
         nb="notebooks/validation_titers.ipynb",
     params:
         out_dir="results/validation_plots/",
@@ -258,14 +258,10 @@ rule compare_to_natural:
         natural_escape="results/natural_isolate_escape/natural_isolate_escape.svg",
         total_natural_escape="results/natural_isolate_escape/total_natural_site_escape.svg",
         html_func_vs_natural="results/natural_isolate_escape/func_vs_natural.html",
-        html_func_vs_escape="results/natural_isolate_escape/func_vs_escape.html",
-        html_func_vs_escape_all_abs="results/natural_isolate_escape/func_vs_escape_all_abs.html",
         html_nat_mut_freqs_vs_escape="results/natural_isolate_escape/nat_mut_freqs_vs_escape.html",
         html_nat_mut_freqs_vs_escape_all_abs="results/natural_isolate_escape/nat_mut_freqs_vs_escape_all_abs.html",
         html_natural_vs_escape="results/natural_isolate_escape/natural_vs_escape.html",
         html_natural_vs_escape_all_abs="results/natural_isolate_escape/natural_vs_escape_all_abs.html",
-        html_natural_vs_epitope_escape="results/natural_isolate_escape/natural_vs_epitope_escape.html",
-        html_natural_vs_epitope_with_strong_sites="results/natural_isolate_escape/natural_vs_epitope_with_strong_sites.html",
         nb="results/notebooks/compare_to_natural_data.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -302,14 +298,10 @@ rule compare_to_natural:
             -p natural_escape {output.natural_escape} \
             -p total_natural_escape {output.total_natural_escape} \
             -p html_func_vs_natural {output.html_func_vs_natural} \
-            -p html_func_vs_escape {output.html_func_vs_escape} \
-            -p html_func_vs_escape_all_abs {output.html_func_vs_escape_all_abs} \
             -p html_nat_mut_freqs_vs_escape {output.html_nat_mut_freqs_vs_escape} \
             -p html_nat_mut_freqs_vs_escape_all_abs {output.html_nat_mut_freqs_vs_escape_all_abs} \
             -p html_natural_vs_escape {output.html_natural_vs_escape} \
             -p html_natural_vs_escape_all_abs {output.html_natural_vs_escape_all_abs} \
-            -p html_natural_vs_epitope_escape {output.html_natural_vs_epitope_escape} \
-            -p html_natural_vs_epitope_with_strong_sites {output.html_natural_vs_epitope_with_strong_sites} \
             &> {log}
         """
 
@@ -366,13 +358,15 @@ rule natural_sequence_antigenic_analysis:
         """
 
 
-rule get_filtered_escape_CSVs:
+rule get_filtered_CSVs:
     """
     Filter antibody escape data based on configuration 
     for displaying data to easily port to other analysis.
     """
     input:
-        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        func_scores_293T="results/func_effects/averages/293T_entry_func_effects.csv",
+        func_scores_human_293T="results/func_effects/averages/human_293T_entry_func_effects.csv",
+        func_scores_mastomys_293T="results/func_effects/averages/mastomys_293T_entry_func_effects.csv",
         escape_377H="results/antibody_escape/averages/377H_mut_effect.csv",
         escape_89F="results/antibody_escape/averages/89F_mut_effect.csv",
         escape_2510C="results/antibody_escape/averages/2510C_mut_effect.csv",
@@ -393,6 +387,7 @@ rule get_filtered_escape_CSVs:
         frac_models=1,
         out_dir="results/filtered_antibody_escape_CSVs/",
         out_dir_images="results/antibody_escape_profiles/",
+        out_dir_func="results/filtered_func_effect_CSVs/",
     output:
         filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
         filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
@@ -400,6 +395,9 @@ rule get_filtered_escape_CSVs:
         filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
         filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
         filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        filtered_func_293T="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
+        filtered_func_human_293T="results/filtered_func_effect_CSVs/human_293T_filtered_func_effects.csv",
+        filtered_func_mastomys_293T="results/filtered_func_effect_CSVs/mastomys_293T_filtered_func_effects.csv",
         func_effect_scale_bar="results/antibody_escape_profiles/func_effect_scale_bar.svg",
         escape_scale_bar="results/antibody_escape_profiles/escape_scale_bar.svg",
         saved_image_path="results/antibody_escape_profiles/antibody_escape_profiles.svg",
@@ -412,7 +410,9 @@ rule get_filtered_escape_CSVs:
     shell:
         """
         papermill {input.nb} {output.nb} \
-            -p func_scores {input.func_scores} \
+            -p func_scores_293T {input.func_scores_293T} \
+            -p func_scores_human_293T {input.func_scores_human_293T} \
+            -p func_scores_mastomys_293T {input.func_scores_mastomys_293T} \
             -p escape_377H {input.escape_377H} \
             -p escape_89F {input.escape_89F} \
             -p escape_2510C {input.escape_2510C} \
@@ -431,12 +431,16 @@ rule get_filtered_escape_CSVs:
             -p frac_models {params.frac_models} \
             -p out_dir {params.out_dir} \
             -p out_dir_images {params.out_dir_images} \
+            -p out_dir_func {params.out_dir_func} \
             -p filtered_escape_377H {output.filtered_escape_377H} \
             -p filtered_escape_89F {output.filtered_escape_89F} \
             -p filtered_escape_2510C {output.filtered_escape_2510C} \
             -p filtered_escape_121F {output.filtered_escape_121F} \
             -p filtered_escape_256A {output.filtered_escape_256A} \
             -p filtered_escape_372D {output.filtered_escape_372D} \
+            -p filtered_func_293T {output.filtered_func_293T} \
+            -p filtered_func_human_293T {output.filtered_func_human_293T} \
+            -p filtered_func_mastomys_293T {output.filtered_func_mastomys_293T} \
             -p func_effect_scale_bar {output.func_effect_scale_bar} \
             -p escape_scale_bar {output.escape_scale_bar} \
             -p saved_image_path {output.saved_image_path} \
@@ -505,7 +509,7 @@ rule map_scores_onto_pdb_structure:
     Map filtered functional and antibody scores onto pdb structure.
     """
     input:
-        func_scores="results/func_effects/averages/293T_entry_func_effects.csv",
+        func_scores="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
         pdb_file="data/7puy.pdb",
         filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
         filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
@@ -516,8 +520,6 @@ rule map_scores_onto_pdb_structure:
         natural_sequence_variation="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv",
         nb="notebooks/pdb_mapping.ipynb",
     params:
-        min_times_seen=2,
-        n_selections=8,
         out_dir="results/mapped_scores_onto_pdb/",
     output:
         pdb_func_min="results/mapped_scores_onto_pdb/func_scores_min.pdb",
@@ -546,8 +548,6 @@ rule map_scores_onto_pdb_structure:
             -p filtered_escape_256A {input.filtered_escape_256A} \
             -p filtered_escape_372D {input.filtered_escape_372D} \
             -p natural_sequence_variation {input.natural_sequence_variation} \
-            -p min_times_seen {params.min_times_seen} \
-            -p n_selections {params.n_selections} \
             -p out_dir {params.out_dir} \
             -p pdb_func_min {output.pdb_func_min} \
             -p pdb_func_max {output.pdb_func_max} \
@@ -585,25 +585,26 @@ docs["Additional analyses and data files"] = {
         "Notebook comparing natural sequence data and DMS data" : rules.natural_sequence_antigenic_analysis.output.nb,
         "Interactive plots comparing DMS data and natural sequence diversity" : {
             "Interactive plot showing correlation of natural diversity and functional scores" : rules.compare_to_natural.output.html_func_vs_natural,
-            "Interactive plot showing correlation of functional scores and antibody escape" : rules.compare_to_natural.output.html_func_vs_escape,
-            "Interactive plot showing correlation of functional scores and antibody escape across all antibodies" : rules.compare_to_natural.output.html_func_vs_escape_all_abs,
             "Interactive plot showing correlation of mutation frequencies and antibody escape" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape,
             "Interactive plot showing correlation of mutation frequencies and antibody escape across all antibodies" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape_all_abs,
             "Interactive plot showing correlation of natural diversity and antibody escape" : rules.compare_to_natural.output.html_natural_vs_escape,
             "Interactive plot showing correlation of natural diversity and antibody escape across all antibodies" : rules.compare_to_natural.output.html_natural_vs_escape_all_abs,
-            "Interactive plot showing correlation of natural diversity and antibody escape grouped by antibody epitopes" :  rules.compare_to_natural.output.html_natural_vs_epitope_escape,
-            "Interactive plot showing correlation of mutation frequencies and antibody escape grouped by antibody epitopes" : rules.compare_to_natural.output.html_natural_vs_epitope_with_strong_sites,
         },
     },
-    "Filtered antibody escape data" : {
-        "Notebook applying filters to antibody escape data" : rules.get_filtered_escape_CSVs.output.nb,
+    "Filtered antibody escape and functional data" : {
+        "Notebook applying filters to antibody escape and functinoal data" : rules.get_filtered_CSVs.output.nb,
         "Filtered antibody escape CSVs" : {
-            "CSV with filtered 377H antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_377H,
-            "CSV with filtered 89F antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_89F,
-            "CSV with filtered 2510C antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_2510C,
-            "CSV with filtered 121F antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_121F,
-            "CSV with filtered 256A antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_256A,
-            "CSV with filtered 372D antibody escape data" : rules.get_filtered_escape_CSVs.output.filtered_escape_372D,
+            "CSV with filtered 377H antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_377H,
+            "CSV with filtered 89F antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_89F,
+            "CSV with filtered 2510C antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_2510C,
+            "CSV with filtered 121F antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_121F,
+            "CSV with filtered 256A antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_256A,
+            "CSV with filtered 372D antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_372D,
+        },
+        "Filtered functional CSVs" : {
+            "CSV with filtered 293T effects" : rules.get_filtered_CSVs.output.filtered_func_293T,
+            "CSV with filtered human 293T effects" : rules.get_filtered_CSVs.output.filtered_func_human_293T,
+            "CSV with filtered mastomys 293T effects" : rules.get_filtered_CSVs.output.filtered_func_mastomys_293T,
         },
     },
     "Antibody escape stratified by distance to antibody" : {
