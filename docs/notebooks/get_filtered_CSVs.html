@@ -7610,7 +7610,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=5e2f6d15">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=ac0be024">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7808,7 +7808,7 @@ a.anchor-link {
 
     <span class="c1"># Write filtered escape to csv</span>
     <span class="k">if</span> <span class="n">output_file</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">escape_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">escape_df</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"wildtype"</span><span class="p">,</span> <span class="s2">"mutant"</span><span class="p">,</span> <span class="s2">"mutation"</span><span class="p">,</span> <span class="s2">"escape_median"</span><span class="p">,</span> <span class="s2">"escape_std"</span><span class="p">,</span> <span class="s2">"times_seen"</span><span class="p">,</span> <span class="s2">"n_models"</span><span class="p">,</span> <span class="s2">"frac_models"</span><span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
     <span class="c1"># Clip lower scores to 0</span>
     <span class="k">if</span> <span class="n">negative</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>

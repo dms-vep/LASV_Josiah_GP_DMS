@@ -60,10 +60,15 @@ results/antibody_escape/averages/*
 !results/summaries
 results/summaries/*
 !results/summaries/summary.csv
+!results/summaries/per_antibody_escape.csv
 
 !results/filtered_antibody_escape_CSVs
 results/filtered_antibody_escape_CSVs/*
 !results/filtered_antibody_escape_CSVs/*_filtered_mut_effect.csv
+
+!results/filtered_func_effect_CSVs/
+results/filtered_func_effect_CSVs/*
+!results/filtered_func_effect_CSVs/*_filtered_func_effects.csv
 
 !results/mapped_scores_onto_pdb/
 results/mapped_scores_onto_pdb/*
