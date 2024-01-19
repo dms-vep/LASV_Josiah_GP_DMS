@@ -262,6 +262,7 @@ rule compare_to_natural:
         html_nat_mut_freqs_vs_escape_all_abs="results/natural_isolate_escape/nat_mut_freqs_vs_escape_all_abs.html",
         html_natural_vs_escape="results/natural_isolate_escape/natural_vs_escape.html",
         html_natural_vs_escape_all_abs="results/natural_isolate_escape/natural_vs_escape_all_abs.html",
+        html_arevirumab_comparisons="results/antibody_escape_profiles/arevirumab_comparisons.html",
         nb="results/notebooks/compare_to_natural_data.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -302,6 +303,7 @@ rule compare_to_natural:
             -p html_nat_mut_freqs_vs_escape_all_abs {output.html_nat_mut_freqs_vs_escape_all_abs} \
             -p html_natural_vs_escape {output.html_natural_vs_escape} \
             -p html_natural_vs_escape_all_abs {output.html_natural_vs_escape_all_abs} \
+            -p html_arevirumab_comparisons {output.html_arevirumab_comparisons} \
             &> {log}
         """
 
@@ -472,6 +474,8 @@ rule escape_sites_stratified_by_antibody_distance:
         min_times_seen=2,
         n_selections=8,
     output:
+        func_vs_escape="results/antibody_escape_profiles/antibody_escape_vs_func_effect.html",
+        func_vs_escape_svg="results/antibody_escape_profiles/antibody_escape_vs_func_effect.svg",
         saved_image_path="results/antibody_escape_profiles/antibody_escape_by_distance.svg",
         func_distance_image_path="results/antibody_escape_profiles/func_effect_by_distance.svg",
         nb="results/notebooks/escape_vs_antibody_distance.ipynb",
@@ -498,6 +502,8 @@ rule escape_sites_stratified_by_antibody_distance:
             -p out_dir {params.out_dir} \
             -p min_times_seen {params.min_times_seen} \
             -p n_selections {params.n_selections} \
+            -p func_vs_escape {output.func_vs_escape} \
+            -p func_vs_escape_svg {output.func_vs_escape_svg} \
             -p saved_image_path {output.saved_image_path} \
             -p func_distance_image_path {output.func_distance_image_path} \
             &> {log}
@@ -582,14 +588,15 @@ docs["Additional analyses and data files"] = {
     },
     "Comparisons of natural Lassa GPC diveristy to DMS data" : {
         "Notebook analyzing natural sequence data for sequences predicted antibody escape" : rules.compare_to_natural.output.nb,
-        "Notebook comparing natural sequence data and DMS data" : rules.natural_sequence_antigenic_analysis.output.nb,
         "Interactive plots comparing DMS data and natural sequence diversity" : {
             "Interactive plot showing correlation of natural diversity and functional scores" : rules.compare_to_natural.output.html_func_vs_natural,
             "Interactive plot showing correlation of mutation frequencies and antibody escape" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape,
-            "Interactive plot showing correlation of mutation frequencies and antibody escape across all antibodies" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape_all_abs,
+            "Interactive plot showing correlation of mutation frequencies and antibody escape across Arevirumab-3 antibodies" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape_all_abs,
             "Interactive plot showing correlation of natural diversity and antibody escape" : rules.compare_to_natural.output.html_natural_vs_escape,
-            "Interactive plot showing correlation of natural diversity and antibody escape across all antibodies" : rules.compare_to_natural.output.html_natural_vs_escape_all_abs,
+            "Interactive plot showing correlation of natural diversity and antibody escape across Arevirumab-3 antibodies" : rules.compare_to_natural.output.html_natural_vs_escape_all_abs,
+            "Interactive plot showing correlation of escape across Arevirumab-3 antibodies" : rules.compare_to_natural.output.html_arevirumab_comparisons,
         },
+        "Notebook comparing natural sequence data and DMS data" : rules.natural_sequence_antigenic_analysis.output.nb,
     },
     "Filtered antibody escape and functional data" : {
         "Notebook applying filters to antibody escape and functinoal data" : rules.get_filtered_CSVs.output.nb,
@@ -608,6 +615,7 @@ docs["Additional analyses and data files"] = {
         },
     },
     "Antibody escape stratified by distance to antibody" : {
+        "Interactive plot showing antibody escape vs functional effect for antibody contacts" : rules.escape_sites_stratified_by_antibody_distance.output.func_vs_escape,
         "Notebook plotting escape by distance to antibody" : rules.escape_sites_stratified_by_antibody_distance.output.nb,
     },
     "Mapped data onto pdb structure" : {
