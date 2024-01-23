@@ -7539,7 +7539,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=eb4fac7f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=3429f220">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7778,6 +7778,14 @@ a.anchor-link {
     <span class="n">escape_scores</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">escape_scores_file</span><span class="p">)</span>
     <span class="n">antibody_name</span> <span class="o">=</span> <span class="n">escape_scores_file</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"_"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 
+    <span class="c1"># Filter escape df for low functional score mutations</span>
+    <span class="n">escape_scores</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">escape_scores</span>
+        <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"poor_cell_entry == False"</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="p">)</span>
+
     <span class="c1"># Add dummy phenotype column</span>
     <span class="n">escape_scores</span><span class="p">[</span><span class="s2">"phenotype"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"escape"</span>
     <span class="c1"># Clip lower scores to 0</span>
@@ -7922,19 +7930,19 @@ Functional score range: -3.9472499999999995 to 0.5542526315789473
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>2510C
 Max summed escape: 60.446
-50th percentile of summed escape scores: 0.48544
-75th percentile of summed escape scores: 1.3085139
-90th percentile of summed escape scores: 2.628772400000002
-95th percentile of summed escape scores: 4.284665029999998
-99th percentile of summed escape scores: 6.788935799999966
+50th percentile of summed escape scores: 0.7111016
+75th percentile of summed escape scores: 1.4540045
+90th percentile of summed escape scores: 2.94659655
+95th percentile of summed escape scores: 4.7213644
+99th percentile of summed escape scores: 8.3157475
 
 121F
 Max summed escape: 28.1116
-50th percentile of summed escape scores: 0.491025
-75th percentile of summed escape scores: 1.3884150000000002
-90th percentile of summed escape scores: 3.8417773200000003
-95th percentile of summed escape scores: 7.556483999999993
-99th percentile of summed escape scores: 14.828869199999918
+50th percentile of summed escape scores: 0.6246371500000001
+75th percentile of summed escape scores: 1.63940375
+90th percentile of summed escape scores: 4.2693080000000005
+95th percentile of summed escape scores: 8.046662
+99th percentile of summed escape scores: 16.366332500000002
 
 </pre>
 </div>
@@ -7944,11 +7952,11 @@ Max summed escape: 28.1116
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>377H
 Max summed escape: 75.161
-50th percentile of summed escape scores: 0.8355992
-75th percentile of summed escape scores: 1.724906665
-90th percentile of summed escape scores: 3.0847831
-95th percentile of summed escape scores: 4.174043449999999
-99th percentile of summed escape scores: 11.663523610000018
+50th percentile of summed escape scores: 0.9938736400000001
+75th percentile of summed escape scores: 1.8978864999999998
+90th percentile of summed escape scores: 3.2898198
+95th percentile of summed escape scores: 4.199772
+99th percentile of summed escape scores: 12.07215366000002
 
 </pre>
 </div>
@@ -7958,19 +7966,19 @@ Max summed escape: 75.161
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>256A
 Max summed escape: 41.391
-50th percentile of summed escape scores: 0.21659500000000004
-75th percentile of summed escape scores: 0.73089
-90th percentile of summed escape scores: 1.4335301200000012
-95th percentile of summed escape scores: 1.9657708679999997
-99th percentile of summed escape scores: 3.314246544599996
+50th percentile of summed escape scores: 0.34017499999999995
+75th percentile of summed escape scores: 0.79428
+90th percentile of summed escape scores: 1.4957976000000002
+95th percentile of summed escape scores: 2.0627069
+99th percentile of summed escape scores: 3.4858888263999974
 
 372D
 Max summed escape: 14.4083091
-50th percentile of summed escape scores: 0.09405820000000001
-75th percentile of summed escape scores: 0.392201238
-90th percentile of summed escape scores: 0.8627210000000001
-95th percentile of summed escape scores: 1.1711155500000001
-99th percentile of summed escape scores: 3.1871809800000106
+50th percentile of summed escape scores: 0.133123
+75th percentile of summed escape scores: 0.446243
+90th percentile of summed escape scores: 0.8795879600000001
+95th percentile of summed escape scores: 1.3218732799999966
+99th percentile of summed escape scores: 3.404612768000001
 
 </pre>
 </div>
@@ -7980,11 +7988,11 @@ Max summed escape: 14.4083091
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>89F
 Max summed escape: 39.7872
-50th percentile of summed escape scores: 0.4753
-75th percentile of summed escape scores: 1.274425
-90th percentile of summed escape scores: 2.715452
-95th percentile of summed escape scores: 5.294924999999999
-99th percentile of summed escape scores: 22.339094000000017
+50th percentile of summed escape scores: 0.632663
+75th percentile of summed escape scores: 1.4658175
+90th percentile of summed escape scores: 3.0181170000000024
+95th percentile of summed escape scores: 10.002647149999996
+99th percentile of summed escape scores: 22.726357400000012
 
 </pre>
 </div>

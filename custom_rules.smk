@@ -404,6 +404,7 @@ rule get_filtered_CSVs:
         escape_scale_bar="results/antibody_escape_profiles/escape_scale_bar.svg",
         saved_image_path="results/antibody_escape_profiles/antibody_escape_profiles.svg",
         validation_image_path="results/antibody_escape_profiles/validation_escape_profile.svg",
+        arevirumab_escape_profile="results/antibody_escape_profiles/arevirumab_escape_profile.svg",
         nb="results/notebooks/get_filtered_CSVs.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -447,6 +448,7 @@ rule get_filtered_CSVs:
             -p escape_scale_bar {output.escape_scale_bar} \
             -p saved_image_path {output.saved_image_path} \
             -p validation_image_path {output.validation_image_path} \
+            -p arevirumab_escape_profile {output.arevirumab_escape_profile} \
             &> {log}
         """
 
