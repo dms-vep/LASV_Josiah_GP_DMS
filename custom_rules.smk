@@ -539,6 +539,7 @@ rule map_scores_onto_pdb_structure:
         pdb_256A="results/mapped_scores_onto_pdb/256A_escape.pdb",
         pdb_372D="results/mapped_scores_onto_pdb/372D_escape.pdb",
         pdb_natural_variation="results/mapped_scores_onto_pdb/natural_variation.pdb",
+        pdb_arevirumab="results/mapped_scores_onto_pdb/arevirumab_escape.pdb",
         nb="results/notebooks/pdb_mapping.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
@@ -566,6 +567,7 @@ rule map_scores_onto_pdb_structure:
             -p pdb_256A {output.pdb_256A} \
             -p pdb_372D {output.pdb_372D} \
             -p pdb_natural_variation {output.pdb_natural_variation} \
+            -p pdb_arevirumab {output.pdb_arevirumab} \
             &> {log}
         """
 

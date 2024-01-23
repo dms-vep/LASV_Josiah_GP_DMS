@@ -7534,12 +7534,13 @@ a.anchor-link {
 <span class="n">pdb_256A</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pdb_372D</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">pdb_natural_variation</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">pdb_arevirumab</span> <span class="o">=</span> <span class="kc">None</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=3429f220">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=978b8cdf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7581,6 +7582,7 @@ a.anchor-link {
 <span class="n">pdb_256A</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/256A_escape.pdb"</span>
 <span class="n">pdb_372D</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/372D_escape.pdb"</span>
 <span class="n">pdb_natural_variation</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/natural_variation.pdb"</span>
+<span class="n">pdb_arevirumab</span> <span class="o">=</span> <span class="s2">"results/mapped_scores_onto_pdb/arevirumab_escape.pdb"</span>
 </pre></div>
 </div>
 </div>
@@ -7617,6 +7619,7 @@ a.anchor-link {
 <span class="c1"># pdb_256A = "../results/mapped_scores_onto_pdb/256A_escape.pdb"</span>
 <span class="c1"># pdb_372D = "../results/mapped_scores_onto_pdb/372D_escape.pdb"</span>
 <span class="c1"># pdb_natural_variation = "../results/mapped_scores_onto_pdb/natural_variation.pdb"</span>
+<span class="c1"># pdb_arevirumab = "../results/mapped_scores_onto_pdb/arevirumab_escape.pdb"</span>
 </pre></div>
 </div>
 </div>
@@ -7888,6 +7891,146 @@ a.anchor-link {
 <span class="c1"># Escape scores mapped to pdb structure</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">antibody</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">antibodies</span><span class="p">):</span>
     <span class="n">escape_scores_to_b_factors</span><span class="p">(</span><span class="n">pdb_file</span><span class="p">,</span> <span class="n">output_files</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="n">antibody</span><span class="p">)</span>
+
+<span class="c1"># Load arevirumab antibody files</span>
+<span class="n">escape_89F</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filtered_escape_89F</span><span class="p">)</span>
+<span class="n">escape_121F</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filtered_escape_121F</span><span class="p">)</span>
+<span class="n">escape_372D</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filtered_escape_372D</span><span class="p">)</span>
+
+<span class="c1"># Filter escape df for low functional score mutations</span>
+<span class="n">escape_89F</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">escape_89F</span>
+    <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"poor_cell_entry == False"</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Add dummy phenotype column</span>
+<span class="n">escape_89F</span><span class="p">[</span><span class="s2">"phenotype"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"escape"</span>
+<span class="c1"># Clip lower scores to 0</span>
+<span class="n">escape_89F</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span> <span class="o">=</span> <span class="n">escape_89F</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Calculate site sums</span>
+<span class="n">escape_89F</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">escape_89F</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"site"</span><span class="p">])</span>
+    <span class="o">.</span><span class="n">aggregate</span><span class="p">({</span>
+        <span class="s2">"escape_median"</span> <span class="p">:</span> <span class="s2">"sum"</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"escape_median"</span> <span class="p">:</span> <span class="s2">"89F_escape"</span><span class="p">})</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="c1"># Filter escape df for low functional score mutations</span>
+<span class="n">escape_121F</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">escape_121F</span>
+    <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"poor_cell_entry == False"</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Add dummy phenotype column</span>
+<span class="n">escape_121F</span><span class="p">[</span><span class="s2">"phenotype"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"escape"</span>
+<span class="c1"># Clip lower scores to 0</span>
+<span class="n">escape_121F</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span> <span class="o">=</span> <span class="n">escape_121F</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Calculate site sums</span>
+<span class="n">escape_121F</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">escape_121F</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"site"</span><span class="p">])</span>
+    <span class="o">.</span><span class="n">aggregate</span><span class="p">({</span>
+        <span class="s2">"escape_median"</span> <span class="p">:</span> <span class="s2">"sum"</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"escape_median"</span> <span class="p">:</span> <span class="s2">"121F_escape"</span><span class="p">})</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="c1"># Filter escape df for low functional score mutations</span>
+<span class="n">escape_372D</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">escape_372D</span>
+    <span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"poor_cell_entry == False"</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Add dummy phenotype column</span>
+<span class="n">escape_372D</span><span class="p">[</span><span class="s2">"phenotype"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"escape"</span>
+<span class="c1"># Clip lower scores to 0</span>
+<span class="n">escape_372D</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span> <span class="o">=</span> <span class="n">escape_372D</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Calculate site sums</span>
+<span class="n">escape_372D</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">escape_372D</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"site"</span><span class="p">])</span>
+    <span class="o">.</span><span class="n">aggregate</span><span class="p">({</span>
+        <span class="s2">"escape_median"</span> <span class="p">:</span> <span class="s2">"sum"</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"escape_median"</span> <span class="p">:</span> <span class="s2">"372D_escape"</span><span class="p">})</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="c1"># Merge frames</span>
+<span class="n">arevirumab_df</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">escape_89F</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+        <span class="n">escape_121F</span><span class="p">,</span>
+        <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">,</span>
+        <span class="n">on</span><span class="o">=</span><span class="s2">"site"</span><span class="p">,</span>
+        <span class="n">validate</span><span class="o">=</span><span class="s2">"one_to_one"</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">arevirumab_df</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">arevirumab_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+        <span class="n">escape_372D</span><span class="p">,</span>
+        <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">,</span>
+        <span class="n">on</span><span class="o">=</span><span class="s2">"site"</span><span class="p">,</span>
+        <span class="n">validate</span><span class="o">=</span><span class="s2">"one_to_one"</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># calculate average site escape</span>
+<span class="n">arevirumab_df</span><span class="p">[</span><span class="s2">"average_escape"</span><span class="p">]</span> <span class="o">=</span> <span class="n">arevirumab_df</span><span class="p">[[</span><span class="s2">"89F_escape"</span><span class="p">,</span> <span class="s2">"121F_escape"</span><span class="p">,</span> <span class="s2">"372D_escape"</span><span class="p">,]]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Arevirumab-3"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max summed escape: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="c1"># Verify max matches altair plots</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Top 25 escape sites: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">arevirumab_df</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="s2">"average_escape"</span><span class="p">,</span><span class="w"> </span><span class="n">keep</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)[</span><span class="s2">"site"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"95th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"99th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">arevirumab_df_aA</span> <span class="o">=</span> <span class="n">arevirumab_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">arevirumab_df_bB</span> <span class="o">=</span> <span class="n">arevirumab_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">arevirumab_df_cC</span> <span class="o">=</span> <span class="n">arevirumab_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="n">arevirumab_df_aA</span><span class="p">[</span><span class="s2">"chain"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">arevirumab_df_aA</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"A"</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">259</span> <span class="k">else</span> <span class="s2">"a"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">arevirumab_df_bB</span><span class="p">[</span><span class="s2">"chain"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">arevirumab_df_bB</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"B"</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">259</span> <span class="k">else</span> <span class="s2">"b"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">arevirumab_df_cC</span><span class="p">[</span><span class="s2">"chain"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">arevirumab_df_cC</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"C"</span> <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">259</span> <span class="k">else</span> <span class="s2">"c"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">arevirumab_df</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span>
+        <span class="n">arevirumab_df_aA</span><span class="p">,</span>
+        <span class="n">arevirumab_df_bB</span><span class="p">,</span>
+        <span class="n">arevirumab_df_cC</span><span class="p">,</span>
+    <span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">arevirumab_df</span> <span class="o">=</span> <span class="n">arevirumab_df</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">"site"</span> <span class="p">:</span> <span class="s2">"int"</span><span class="p">})</span> 
+
+<span class="n">polyclonal</span><span class="o">.</span><span class="n">pdb_utils</span><span class="o">.</span><span class="n">reassign_b_factor</span><span class="p">(</span>
+    <span class="n">input_pdbfile</span><span class="o">=</span><span class="n">pdb_file</span><span class="p">,</span>
+    <span class="n">output_pdbfile</span><span class="o">=</span><span class="n">pdb_arevirumab</span><span class="p">,</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">arevirumab_df</span><span class="p">,</span>
+    <span class="n">metric_col</span><span class="o">=</span><span class="s2">"average_escape"</span><span class="p">,</span>
+    <span class="n">site_col</span><span class="o">=</span><span class="s2">"site"</span><span class="p">,</span>
+    <span class="n">chain_col</span><span class="o">=</span><span class="s2">"chain"</span><span class="p">,</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7936,7 +8079,13 @@ Max summed escape: 60.446
 95th percentile of summed escape scores: 4.7213644
 99th percentile of summed escape scores: 8.3157475
 
-121F
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>121F
 Max summed escape: 28.1116
 50th percentile of summed escape scores: 0.6246371500000001
 75th percentile of summed escape scores: 1.63940375
@@ -7944,13 +8093,7 @@ Max summed escape: 28.1116
 95th percentile of summed escape scores: 8.046662
 99th percentile of summed escape scores: 16.366332500000002
 
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>377H
+377H
 Max summed escape: 75.161
 50th percentile of summed escape scores: 0.9938736400000001
 75th percentile of summed escape scores: 1.8978864999999998
@@ -7993,6 +8136,21 @@ Max summed escape: 39.7872
 90th percentile of summed escape scores: 3.0181170000000024
 95th percentile of summed escape scores: 10.002647149999996
 99th percentile of summed escape scores: 22.726357400000012
+
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Arevirumab-3
+Max summed escape: 16.800523
+Top 25 escape sites: [92, 111, 117, 119, 120, 121, 123, 124, 125, 127, 129, 133, 134, 135, 138, 147, 148, 149, 150, 153, 160, 248, 253, 254, 395]
+50th percentile of summed escape scores: 0.5627255
+75th percentile of summed escape scores: 1.2118645833333332
+90th percentile of summed escape scores: 3.296867933333334
+95th percentile of summed escape scores: 5.819094831666653
+99th percentile of summed escape scores: 11.130446778366668
 
 </pre>
 </div>
