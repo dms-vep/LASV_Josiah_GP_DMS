@@ -7610,7 +7610,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=7ceb49e0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=a6ded0c0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7791,12 +7791,10 @@ a.anchor-link {
     <span class="n">func_scores</span><span class="p">[</span><span class="s2">"mutation"</span><span class="p">]</span> <span class="o">=</span> <span class="n">func_scores</span><span class="p">[</span><span class="s2">"wildtype"</span><span class="p">]</span> <span class="o">+</span> <span class="n">func_scores</span><span class="p">[</span><span class="s2">"site"</span><span class="p">]</span> <span class="o">+</span> <span class="n">func_scores</span><span class="p">[</span><span class="s2">"mutant"</span><span class="p">]</span>
     <span class="n">func_scores_filter</span> <span class="o">=</span> <span class="n">func_scores</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">func_scores</span><span class="p">[</span><span class="s2">"effect"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">min_func_score</span><span class="p">][</span><span class="s2">"mutation"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
-    <span class="c1"># Filter escape df for minimum func score, min times seen</span>
+    <span class="c1"># Filter escape df for min times seen</span>
     <span class="c1"># min fraction of models, and no stop codons</span>
     <span class="n">escape_df</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">escape_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span>
-            <span class="p">(</span><span class="n">escape_df</span><span class="p">[</span><span class="s2">"mutation"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">func_scores_filter</span><span class="p">))</span>
-            <span class="o">&amp;</span>
             <span class="p">(</span><span class="n">escape_df</span><span class="p">[</span><span class="s2">"times_seen"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">min_times_seen</span><span class="p">)</span>
             <span class="o">&amp;</span>
             <span class="p">(</span><span class="n">escape_df</span><span class="p">[</span><span class="s2">"frac_models"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">frac_models</span><span class="p">)</span>
@@ -7805,11 +7803,37 @@ a.anchor-link {
         <span class="p">]</span>
         <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="p">)</span>
+    
+    <span class="c1"># Mark mutations that are below functional cutoff</span>
+    <span class="c1"># and replace measurements with NaN</span>
+    <span class="n">escape_df</span><span class="p">[</span><span class="s2">"poor_cell_entry"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">escape_df</span><span class="p">[</span><span class="s2">"mutation"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="kc">False</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">func_scores_filter</span> <span class="k">else</span> <span class="kc">True</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">escape_df</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">escape_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="s2">"NaN"</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">"poor_cell_entry"</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">escape_df</span><span class="p">[</span><span class="s2">"escape_std"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">escape_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="s2">"NaN"</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s2">"poor_cell_entry"</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">[</span><span class="s2">"escape_std"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
 
     <span class="c1"># Write filtered escape to csv</span>
     <span class="k">if</span> <span class="n">output_file</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">escape_df</span><span class="p">[[</span><span class="s2">"site"</span><span class="p">,</span> <span class="s2">"wildtype"</span><span class="p">,</span> <span class="s2">"mutant"</span><span class="p">,</span> <span class="s2">"mutation"</span><span class="p">,</span> <span class="s2">"escape_median"</span><span class="p">,</span> <span class="s2">"escape_std"</span><span class="p">,</span> <span class="s2">"times_seen"</span><span class="p">,</span> <span class="s2">"n_models"</span><span class="p">,</span> <span class="s2">"frac_models"</span><span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">escape_df</span><span class="p">[[</span>
+            <span class="s2">"site"</span><span class="p">,</span> 
+            <span class="s2">"wildtype"</span><span class="p">,</span> 
+            <span class="s2">"mutant"</span><span class="p">,</span> 
+            <span class="s2">"mutation"</span><span class="p">,</span> 
+            <span class="s2">"escape_median"</span><span class="p">,</span> 
+            <span class="s2">"escape_std"</span><span class="p">,</span> 
+            <span class="s2">"times_seen"</span><span class="p">,</span> 
+            <span class="s2">"n_models"</span><span class="p">,</span> 
+            <span class="s2">"frac_models"</span><span class="p">,</span>
+            <span class="s2">"poor_cell_entry"</span><span class="p">,</span>
+        <span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
+    <span class="c1"># Filter escape df for low functional score mutations</span>
+    <span class="n">escape_df</span> <span class="o">=</span> <span class="n">escape_df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"poor_cell_entry == False"</span><span class="p">)</span>
+    
     <span class="c1"># Clip lower scores to 0</span>
     <span class="k">if</span> <span class="n">negative</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
         <span class="n">escape_df</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span> <span class="o">=</span> <span class="n">escape_df</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
