@@ -598,7 +598,6 @@ docs["Additional analyses and data files"] = {
             "Interactive plot showing correlation of natural diversity and antibody escape across Arevirumab-3 antibodies" : rules.compare_to_natural.output.html_natural_vs_escape_all_abs,
             "Interactive plot showing correlation of escape across Arevirumab-3 antibodies" : rules.compare_to_natural.output.html_arevirumab_comparisons,
         },
-        "Notebook comparing natural sequence data and DMS data" : rules.natural_sequence_antigenic_analysis.output.nb,
     },
     "Filtered antibody escape and functional data" : {
         "Notebook applying filters to antibody escape and functinoal data" : rules.get_filtered_CSVs.output.nb,
