@@ -7540,7 +7540,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=978b8cdf">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=f0d124d3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7989,7 +7989,10 @@ a.anchor-link {
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Arevirumab-3"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max summed escape: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="c1"># Verify max matches altair plots</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Top 25 escape sites: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">arevirumab_df</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="s2">"average_escape"</span><span class="p">,</span><span class="w"> </span><span class="n">keep</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)[</span><span class="s2">"site"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Top 25 escape sites averaged across antibodies: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">arevirumab_df</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="s2">"average_escape"</span><span class="p">,</span><span class="w"> </span><span class="n">keep</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)[</span><span class="s2">"site"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Top 15 escape sites for 12.1F: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">arevirumab_df</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="s2">"121F_escape"</span><span class="p">,</span><span class="w"> </span><span class="n">keep</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)[</span><span class="s2">"site"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Top 15 escape sites 8.9F: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">arevirumab_df</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="s2">"89F_escape"</span><span class="p">,</span><span class="w"> </span><span class="n">keep</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)[</span><span class="s2">"site"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Top 15 escape sites 37.2D: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">arevirumab_df</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="s2">"372D_escape"</span><span class="p">,</span><span class="w"> </span><span class="n">keep</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)[</span><span class="s2">"site"</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"50th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.50</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"75th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"90th percentile of summed escape scores: </span><span class="si">{</span><span class="n">arevirumab_df</span><span class="p">[</span><span class="s1">'average_escape'</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.90</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -8062,16 +8065,16 @@ Functional score range: -3.9472499999999995 to 0.5542526315789473
 
 Functional DMS scores:
 Sites greater than 0: [101, 116, 125, 126, 128, 131, 149, 161]
-50th percentile of averaged functional scores: -1.666466111111111
-Functional score range: -3.9472499999999995 to 0.5542526315789473
-
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>2510C
+<pre>50th percentile of averaged functional scores: -1.666466111111111
+Functional score range: -3.9472499999999995 to 0.5542526315789473
+
+2510C
 Max summed escape: 60.446
 50th percentile of summed escape scores: 0.7111016
 75th percentile of summed escape scores: 1.4540045
@@ -8145,7 +8148,10 @@ Max summed escape: 39.7872
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Arevirumab-3
 Max summed escape: 16.800523
-Top 25 escape sites: [92, 111, 117, 119, 120, 121, 123, 124, 125, 127, 129, 133, 134, 135, 138, 147, 148, 149, 150, 153, 160, 248, 253, 254, 395]
+Top 25 escape sites averaged across antibodies: [92, 111, 117, 119, 120, 121, 123, 124, 125, 127, 129, 133, 134, 135, 138, 147, 148, 149, 150, 153, 160, 248, 253, 254, 395]
+Top 15 escape sites for 12.1F: [91, 92, 111, 127, 132, 134, 135, 139, 148, 149, 160, 248, 253, 334, 338]
+Top 15 escape sites 8.9F: [117, 119, 121, 123, 124, 125, 129, 135, 138, 141, 147, 148, 149, 150, 254]
+Top 15 escape sites 37.2D: [99, 120, 123, 129, 135, 142, 149, 156, 169, 177, 339, 343, 395, 397, 398]
 50th percentile of summed escape scores: 0.5627255
 75th percentile of summed escape scores: 1.2118645833333332
 90th percentile of summed escape scores: 3.296867933333334
