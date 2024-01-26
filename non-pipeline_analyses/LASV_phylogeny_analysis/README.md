@@ -47,7 +47,7 @@ conda env create -f pinned_environment.yml
 Then activate the conda environment with:
 
 ```
-conda activate basic_phylogeny_analysis
+conda activate phylogeny_analysis
 ```
 
 and then run the pipeline on a computing cluster with [slurm](https://slurm.schedmd.com/documentation.html), which uses the configuration specified in [cluster.yml](cluster.yml):

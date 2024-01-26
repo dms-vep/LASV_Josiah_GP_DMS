@@ -1,4 +1,4 @@
-name: basic_phylogeny_analysis
+name: phylogeny_analysis
 channels:
   - conda-forge
   - bioconda
@@ -15,6 +15,6 @@ dependencies:
   - ete3
   - emboss
   - cd-hit
-  - baltic
   - dna_features_viewer
   - pymsaviz
+  - hyphy

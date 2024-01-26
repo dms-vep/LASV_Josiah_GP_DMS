@@ -34,7 +34,7 @@ Only some of these results are tracked to save space (see [.gitignore](.gitignor
 The pipeline builds HTML documentation for the pipeline in [./docs/](docs), which is rendered via GitHub Pages at [https://dms-vep.github.io/LASV_Josiah_GP_DMS/](https://dms-vep.github.io/LASV_Josiah_GP_DMS/).
 
 ### Non-pipeline analyses
-All other non-pipeline analyses (library construction, phylogeny analysis, virus titers, and virus neutralization assays) are contained in [./non-pipeline_analyses/](non-pipeline_analyses).
+All other non-pipeline analyses (library construction, phylogeny analysis, virus titers, neutralization assays, etc.) are contained in [./non-pipeline_analyses/](non-pipeline_analyses).
 This directory is not part of the pipeline but contains code that must be run separately with its own [conda](https://docs.conda.io/) environments.
 
 ## Running the pipeline

@@ -1,0 +1,15 @@
+name: virus_titers_and_neuts
+
+dependencies:
+  - python
+  - jupyterlab
+  - pandas
+  - numpy
+  - seaborn
+  - scipy
+  - altair
+  - scikit-learn
+  - openpyxl
+  - pip
+  - pip:
+    - neutcurve==0.5.7
