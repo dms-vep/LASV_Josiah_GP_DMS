@@ -170,6 +170,7 @@ rule build_GPC_codon_tree:
         outgroup = config["Outgroup"],
     output:
         config["GPC_codon_tree_output"],
+        config["GPC_codon_tree_prefix"] + ".treefile",
     shell:
         #-s     is the option to specify the name of the alignment file
         #-pre   Specify a prefix for all output files. DEFAULT: either alignment file
@@ -214,6 +215,8 @@ rule build_GPC_codon_tree_with_outgroup:
         outgroup = config["Outgroup3"],
     output:
         config["GPC_codon_tree_with_outgroup_output"],
+        config["GPC_codon_tree_with_outgroup_ancestors"],
+        config["GPC_codon_tree_with_outgroup_prefix"] + ".treefile",
     shell:
         #-s     is the option to specify the name of the alignment file
         #-pre   Specify a prefix for all output files. DEFAULT: either alignment file
