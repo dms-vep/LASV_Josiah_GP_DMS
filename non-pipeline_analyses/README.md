@@ -4,6 +4,7 @@ The code and data used for library construction, phylogeny analysis, virus titer
 ## Repo organization
  
 * `DAG1_phylogeny_analysis` directory contains a fully automated snakemake pipeline that analyzes DAG1 vertebrate sequences. 
+* `GPC_antibodies` directory contains all anti-GPC antibody sequences used to produce the antibodies. 
 * `LASV_NGS_analysis` directory contains a fully automated snakemake pipeline that analyzes sequencing data for the LM395 strain. 
 * `LASV_phylogeny_analysis` directory contains a fully automated snakemake pipeline that analyzes all available Lassa virus strain sequences. 
 * `library_construction` directory contains directories for library design and initial PCR mutagenesis QC (using Sanger sequencing).

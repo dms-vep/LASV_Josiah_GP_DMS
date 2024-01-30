@@ -1,0 +1,477 @@
+LOCUS       8.9F_VH                 1491 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             1..504
+                     /label="Translation 1-504"
+     CDS             505..1491
+                     /label="Translation 505-1491"
+     CDS             505..1491
+                     /label="Translation 505-1491"
+     misc_feature    505..1479
+                     /label="IgG Constant ORF clean-up"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     misc_feature    1480..1491
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgaccaggg caccttgagg gagtctggtc caggactggt gaggccttcg
+      121 gagaccctgt ccctcacctg cggtgtctct ggttattcca tcagtagtgg ttactactgg
+      181 ggctggatcc ggcagccccc agggaagggg ctggagtgga ttgggaatat ctatcgtagt
+      241 gggagcacct actacaaccc gtccctcaag agtcgagtca ccgtctcaat agacacgtcc
+      301 aaaaaccagt tctccctgaa gttgaattct gtgaccgccg cagacacggc cgtgtattac
+      361 tgtgcgagat cgggtataaa agtggctgac gactattact acgaaatgga cgtctggggc
+      421 caagggaccg acgactactc ttacgctatg gacgtctggg gccaagggac cacggtcacc
+      481 gtctcctcag cctccaccaa gggcCCTTCC GTATTCCCTC TTGCTCCCTC CAGTAAGAGC
+      541 ACTAGCGGTG GGACAGCTGC ACTCGGcTGT CTCGTCAAAG ACTACTTCCC GGAGCCCGTA
+      601 ACTGTGTCtT GGAACTCCGG GGCCCTCACA TCAGGGGTTC ACACCTTTCC AGCCGTCCTG
+      661 CAATCCTCTG GTCTGTACTC TCTCTCTAGT GTGGTAACGG TCCCTTCATC CTCTCTCGGC
+      721 ACTCAGACCT ATATATGTAA TGTGAACCAC AAACCGAGCA ATACCAAGGT TGATAAGAAG
+      781 GTAGAGCCAA AGTCCTGTGA TAAGACGCAC ACTTGCCCAC CCTGTCCCGC TCCAGAACTC
+      841 TTGGGAGGAC CCAGCGTGTT TCTTTTCCCG CCCAAGCCTA AGGACACACT TATGATTAGT
+      901 CGAACTCCCG AAGTAACTTG CGTGGTCGTA GACGTAAGCC AcGAAGATCC GGAAGTCAAG
+      961 TTCAATTGGT ACGTCGACGG TGTCGAAGTG CACAATGCGA AAACAAAACC CCGCGAGGAA
+     1021 CAATATAATT CCACGTACAG GGTCGTAAGT GTCCTGACAG TCTTGCACCA GGACTGGTTG
+     1081 AATGGTAAGG AGTATAAGTG CAAGGTTTCT AACAAGGCTT TGCCCGCGCC tATAGAGAAG
+     1141 ACGATTTCCA AAGCGAAGGG ACAACCCAGG GAACCGCAAG TCTATACGCT GCCTCCcTCC
+     1201 AGAGACGAAC TCACAAAGAA TCAAGTGTCA CTTACTTGCC TTGTAAAGGG GTTCTACCCT
+     1261 AGCGACATTG CTGTGGAATG GGAGAGCAAC GGGCAACCCG AAAACAATTA TAAGACAACT
+     1321 CCTCCGGTCT TGGACAGTGA TGGGTCTTTC TTCCTTTATA GCAAGTTGAC TGTTGACAAA
+     1381 TCTCGCTGGC AACAGGGCAA CGTGTTTTCC TGTTCaGTGA TGCACGAGGC CCTTCATAAC
+     1441 CATTACACTC AAAAATCACT TAGCTTGTCT CCCGGCAAAT GATGACCTAG G
+//
+LOCUS       8.9F_VL                  735 bp ds-DNA     linear       09-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..723
+                     /label="Translation 13-723"
+     misc_feature    724..735
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgaccaggc agggctgact cagcctgcct ccgtgtctgg gtctcctgga
+      121 cagtcgatca ccatctcctg cactgcagcc aacagtgaca ttggtgattt taactttgtc
+      181 tcctggtacc aacagcgccc agacaaagcc cccaaactGa tggtttatga ggtcagcagt
+      241 cggccctcag gggtttctaa tcgcttctct ggctccaagt ctggcaacac ggcctccctg
+      301 acAatctctg ggctccaggc tgaggacgag gctgattatt actgcacctc Ctatacaagc
+      361 agTTCCactt ttgtcttcgg aactgggacc aaggtcaccg tGctGggtca gcccaaggcc
+      421 aaccccactg tcactctgtt cccgccctcc tctgaggagc ttcaagccaa caaggccaca
+      481 ctggtgtgtc tcataagtga cttctacccg ggagccgtga cagtggcctg gaaggcagat
+      541 agcagccccg tcaaggcggg agtggagacc accacaccct ccaaacaaag caacaacaag
+      601 tacgcggcca gcagctacct gagcctgacg cctgagcagt ggaagtccca cagaagctac
+      661 TCTtgccagg tcacgcaCga agggagcacc gtggagaaga cagtggcccc tacagaatgt
+      721 tcaTGATGAC CTAGG
+//
+LOCUS       12.1F_VH                1449 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..1449
+                     /label="Translation 1-1449"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..462
+                     /label="Translation 13-462"
+     CDS             463..1449
+                     /label="Translation 463-1449"
+     misc_feature    463..1437
+                     /label="IgG Constant ORF clean-up"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     misc_feature    1438..1449
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgaccaggt gcagctgcag gagtcgggcg caggactgtt gaagccttcg
+      121 gagaccctgt ccctcagttg cactgtcgaC ggtgagtcct tcaaCggttt cttctggacg
+      181 tggatccgcc agcccccagg gaagggtctg gagtggattg gagaaatcaa tcaCcttgca
+      241 agcaccggct acaacccgtc cctcaagagt cgagtcacca tttcagtaga cacgtccaag
+      301 aaccagttct ctttgaagtt gacctctgtg accgccgcgg acacggctgt gtattactgt
+      361 gcgagaggat acagctaCgg ttttgcCtgg cccaactacc actatttgga cgtctggggc
+      421 aaagggacca cggtcaccgt ctcctcagcc tccaccaagg gcCCTTCCGT ATTCCCTCTT
+      481 GCTCCCTCCA GTAAGAGCAC TAGCGGTGGG ACAGCTGCAC TCGGcTGTCT CGTCAAAGAC
+      541 TACTTCCCGG AGCCCGTAAC TGTGTCtTGG AACTCCGGGG CCCTCACATC AGGGGTTCAC
+      601 ACCTTTCCAG CCGTCCTGCA ATCCTCTGGT CTGTACTCTC TCTCTAGTGT GGTAACGGTC
+      661 CCTTCATCCT CTCTCGGCAC TCAGACCTAT ATATGTAATG TGAACCACAA ACCGAGCAAT
+      721 ACCAAGGTTG ATAAGAAGGT AGAGCCAAAG TCCTGTGATA AGACGCACAC TTGCCCACCC
+      781 TGTCCCGCTC CAGAACTCTT GGGAGGACCC AGCGTGTTTC TTTTCCCGCC CAAGCCTAAG
+      841 GACACACTTA TGATTAGTCG AACTCCCGAA GTAACTTGCG TGGTCGTAGA CGTAAGCCAc
+      901 GAAGATCCGG AAGTCAAGTT CAATTGGTAC GTCGACGGTG TCGAAGTGCA CAATGCGAAA
+      961 ACAAAACCCC GCGAGGAACA ATATAATTCC ACGTACAGGG TCGTAAGTGT CCTGACAGTC
+     1021 TTGCACCAGG ACTGGTTGAA TGGTAAGGAG TATAAGTGCA AGGTTTCTAA CAAGGCTTTG
+     1081 CCCGCGCCtA TAGAGAAGAC GATTTCCAAA GCGAAGGGAC AACCCAGGGA ACCGCAAGTC
+     1141 TATACGCTGC CTCCcTCCAG AGACGAACTC ACAAAGAATC AAGTGTCACT TACTTGCCTT
+     1201 GTAAAGGGGT TCTACCCTAG CGACATTGCT GTGGAATGGG AGAGCAACGG GCAACCCGAA
+     1261 AACAATTATA AGACAACTCC TCCGGTCTTG GACAGTGATG GGTCTTTCTT CCTTTATAGC
+     1321 AAGTTGACTG TTGACAAATC TCGCTGGCAA CAGGGCAACG TGTTTTCCTG TTCaGTGATG
+     1381 CACGAGGCCC TTCATAACCA TTACACTCAA AAATCACTTA GCTTGTCTCC CGGCAAATGA
+     1441 TGACCTAGG
+//
+LOCUS       12.1F_VL                 729 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..729
+                     /label="Translation 1-729"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..717
+                     /label="Translation 13-717"
+     misc_feature    409..717
+                     /label="IgKappa Constant region ORF clean-up"
+                     /ApEinfo_revcolor=#75c6a9
+                     /ApEinfo_fwdcolor=#75c6a9
+     misc_feature    718..729
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgacgaaac gacactcacg cagtctccag ccaccctgtc tttgtctcca
+      121 ggggagagag ccaccctctc ctgtagggcc agtcagagtg ttagcagcta cttagcctgg
+      181 taccaacaca aacctggcca ggctcccagg ctcctcatct aCggtgcatc aaagagggcc
+      241 actggcatcc cgtccaggtt cagtggcagt gggtctggga cagacttcag tctcacAatc
+      301 agcagcctag agcctgaaga ttttgcagtt tactactgtc agcaccgaag cgactggcgg
+      361 actaccttcg gccaagggac acgactggag attaaacgaa ctgtggctgc accatctgtc
+      421 ttTatcttcc cgccatctga tgagcagttg aaatctggaa ctgcctctgt tgtgtgcctg
+      481 ctgaataact tctatcccag agaggccaaa gtacagtgga aggtggataa cgccctccaa
+      541 tcgggtaact cccaggagag tgtcacagag caggacagca aggacagcac ctacagcctc
+      601 agcagcaccc tgacgctgag caaagcagac tacgagaaac acaaagtcta cgcctgcgaa
+      661 gtcacccaCc agggcctgag ctcgcccgtc acaaagagct tcaacagggg agagtgtTGA
+      721 TGACCTAGG
+//
+LOCUS       25.6A_VH                1446 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..1446
+                     /label="Translation 1-1446"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..459
+                     /label="Translation 13-459"
+     CDS             460..1446
+                     /label="Translation 460-1446"
+     misc_feature    460..1434
+                     /label="IgG Constant ORF clean-up"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     misc_feature    1435..1446
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgaccaggt gcagctgcag gagtcaggag gaggcctggt caaggctggg
+      121 gggtccctga gactctcctg tgcagcctct ggattTatgt tcgagagata tagccttcac
+      181 tgggtccgtc agactccagg caaggggctg gagtgggtct catccattag tagtcttagt
+      241 ggcagtcaca taaactacgc agactcagtg aagggccgat tcaccatctc cagagacaac
+      301 gccaagaatt cactgtctct gcaaatgaac agcctgagag tcgaagacac ggctatatat
+      361 tattgtgcga gagatcgacg ttcggggagt tcccccgtcc ccttggacgt ctggggccaa
+      421 gggaccacgg tcaccgtctc ctctgcctcc accaagggcC CTTCCGTATT CCCTCTTGCT
+      481 CCCTCCAGTA AGAGCACTAG CGGTGGGACA GCTGCACTCG GcTGTCTCGT CAAAGACTAC
+      541 TTCCCGGAGC CCGTAACTGT GTCtTGGAAC TCCGGGGCCC TCACATCAGG GGTTCACACC
+      601 TTTCCAGCCG TCCTGCAATC CTCTGGTCTG TACTCTCTCT CTAGTGTGGT AACGGTCCCT
+      661 TCATCCTCTC TCGGCACTCA GACCTATATA TGTAATGTGA ACCACAAACC GAGCAATACC
+      721 AAGGTTGATA AGAAGGTAGA GCCAAAGTCC TGTGATAAGA CGCACACTTG CCCACCCTGT
+      781 CCCGCTCCAG AACTCTTGGG AGGACCCAGC GTGTTTCTTT TCCCGCCCAA GCCTAAGGAC
+      841 ACACTTATGA TTAGTCGAAC TCCCGAAGTA ACTTGCGTGG TCGTAGACGT AAGCCAcGAA
+      901 GATCCGGAAG TCAAGTTCAA TTGGTACGTC GACGGTGTCG AAGTGCACAA TGCGAAAACA
+      961 AAACCCCGCG AGGAACAATA TAATTCCACG TACAGGGTCG TAAGTGTCCT GACAGTCTTG
+     1021 CACCAGGACT GGTTGAATGG TAAGGAGTAT AAGTGCAAGG TTTCTAACAA GGCTTTGCCC
+     1081 GCGCCtATAG AGAAGACGAT TTCCAAAGCG AAGGGACAAC CCAGGGAACC GCAAGTCTAT
+     1141 ACGCTGCCTC CcTCCAGAGA CGAACTCACA AAGAATCAAG TGTCACTTAC TTGCCTTGTA
+     1201 AAGGGGTTCT ACCCTAGCGA CATTGCTGTG GAATGGGAGA GCAACGGGCA ACCCGAAAAC
+     1261 AATTATAAGA CAACTCCTCC GGTCTTGGAC AGTGATGGGT CTTTCTTCCT TTATAGCAAG
+     1321 TTGACTGTTG ACAAATCTCG CTGGCAACAG GGCAACGTGT TTTCCTGTTC aGTGATGCAC
+     1381 GAGGCCCTTC ATAACCATTA CACTCAAAAA TCACTTAGCT TGTCTCCCGG CAAATGATGA
+     1441 CCTAGG
+//
+LOCUS       25.10C_VH               1440 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..1440
+                     /label="Translation 1-1440"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..453
+                     /label="Translation 13-453"
+     CDS             454..1440
+                     /label="Translation 454-1440"
+     misc_feature    454..1428
+                     /label="IgG Constant ORF clean-up"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     misc_feature    1429..1440
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgaccaggt gcagctgcag gagtctgggg gaggcctggt caagcctggg
+      121 gggtccctga gactctcctg tacagcctct ggattcaaTt tcaaCaaata taaTatgaac
+      181 tgggtccgcc aggctccagg gaaggggctg gagtgggtct catcTattag tgctcttagc
+      241 acttacatct attatgcaga ctcgctgaag ggccgattca ccgtctccag agacaacgcc
+      301 aagaactcac tgtttctgca aatgaacagc ctgagagacg acgacacggc tgtttattac
+      361 tgtgcgagag aaatacgacg tgccagtacc tggtccgccg acctctgggg ccgtggcact
+      421 ctggtcactg tctcctcagc ctccaccaag ggcCCTTCCG TATTCCCTCT TGCTCCCTCC
+      481 AGTAAGAGCA CTAGCGGTGG GACAGCTGCA CTCGGcTGTC TCGTCAAAGA CTACTTCCCG
+      541 GAGCCCGTAA CTGTGTCtTG GAACTCCGGG GCCCTCACAT CAGGGGTTCA CACCTTTCCA
+      601 GCCGTCCTGC AATCCTCTGG TCTGTACTCT CTCTCTAGTG TGGTAACGGT CCCTTCATCC
+      661 TCTCTCGGCA CTCAGACCTA TATATGTAAT GTGAACCACA AACCGAGCAA TACCAAGGTT
+      721 GATAAGAAGG TAGAGCCAAA GTCCTGTGAT AAGACGCACA CTTGCCCACC CTGTCCCGCT
+      781 CCAGAACTCT TGGGAGGACC CAGCGTGTTT CTTTTCCCGC CCAAGCCTAA GGACACACTT
+      841 ATGATTAGTC GAACTCCCGA AGTAACTTGC GTGGTCGTAG ACGTAAGCCA cGAAGATCCG
+      901 GAAGTCAAGT TCAATTGGTA CGTCGACGGT GTCGAAGTGC ACAATGCGAA AACAAAACCC
+      961 CGCGAGGAAC AATATAATTC CACGTACAGG GTCGTAAGTG TCCTGACAGT CTTGCACCAG
+     1021 GACTGGTTGA ATGGTAAGGA GTATAAGTGC AAGGTTTCTA ACAAGGCTTT GCCCGCGCCt
+     1081 ATAGAGAAGA CGATTTCCAA AGCGAAGGGA CAACCCAGGG AACCGCAAGT CTATACGCTG
+     1141 CCTCCcTCCA GAGACGAACT CACAAAGAAT CAAGTGTCAC TTACTTGCCT TGTAAAGGGG
+     1201 TTCTACCCTA GCGACATTGC TGTGGAATGG GAGAGCAACG GGCAACCCGA AAACAATTAT
+     1261 AAGACAACTC CTCCGGTCTT GGACAGTGAT GGGTCTTTCT TCCTTTATAG CAAGTTGACT
+     1321 GTTGACAAAT CTCGCTGGCA ACAGGGCAAC GTGTTTTCCT GTTCaGTGAT GCACGAGGCC
+     1381 CTTCATAACC ATTACACTCA AAAATCACTT AGCTTGTCTC CCGGCAAATG ATGACCTAGG
+//
+LOCUS       25.10C_VL                723 bp ds-DNA     linear       09-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             1..711
+                     /label="Translation 1-711"
+     CDS             13..402
+                     /label="Translation 13-402"
+     misc_feature    403..711
+                     /label="IgKappa Constant region ORF clean-up"
+                     /ApEinfo_revcolor=#75c6a9
+                     /ApEinfo_fwdcolor=#75c6a9
+     CDS             403..711
+                     /label="Translation 403-711"
+     misc_feature    712..723
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgacgaTat ccagatgacc cagtctccCA GCtccctgtc tgcCtctgtt
+      121 ggagacagag tGatTatcac ttgccgggca agtcagagca tcagcagctc tttaaattgg
+      181 tatcagcaga aaccagggaa agcccctaag ctcctgatct aCgctgcagt caatttggag
+      241 actggggtcc cgtcaaggtt cagtggcagt ggatttggga cagatttcac tctcgcTatc
+      301 agcaaCgtgc aacctgaaga ttttgcaact tactactgtc aacagagcga tactcggact
+      361 tttggccggg ggaccaagct ggacgtcaaa cgaactgtgg ctgcaccatc tgtcttTatc
+      421 ttcccgccat ctgatgagca gttgaaatct ggaactgcct ctgttgtgtg cctgctgaat
+      481 aacttctatc ccagagaggc caaagtacag tggaaggtgg ataacgccct ccaatcgggt
+      541 aactcccagg agagtgtcac agagcaggac agcaaggaca gcacctacag cctcagcagc
+      601 accctgacgc tgagcaaagc agactacgag aaacacaaag tctacgcctg cgaagtcacc
+      661 caCcagggcc tgagctcgcc cgtcacaaag agcttcaaca ggggagagtg tTGATGACCT
+      721 AGG
+//
+LOCUS       25.6A_VL                 735 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..735
+                     /label="Translation 1-735"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..723
+                     /label="Translation 13-723"
+     misc_feature    724..735
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgacctgcc tgtgctgact cagcctgcct ccgtgtctgg gtctcctgga
+      121 cagtcgatca ccatctcctg cactggaacc agcagtgacg ttggtgctta taactatgtc
+      181 tcctggtacc aacagcaccc aggcaaagcc cccaaactca taatttatga agtcaagatt
+      241 cggccgtcag gggtgtctaa tcgtttctct ggctccaagt ctggcaacac ggcctccctg
+      301 ACAatctctg ggctccaggc tgaggacgag gctgattatt tttgcagcTC Ctattcaacc
+      361 aacagccctt gggtgttcgg cggagggacg aaggtgaccg tcctacgtca gcccaaggct
+      421 gccccctcgg tcactctgtt cccaccctcc tctgaggagc ttcaagccaa caaggccaca
+      481 ctggtgtgtc tcataagtga cttctacccg ggagccgtga cagtggcctg gaaggcagat
+      541 agcagccccg tcaaggcggg agtggagacc accacaccct ccaaacaaag caacaacaag
+      601 tacgcggcca gcagctacct gagcctgacg cctgagcagt ggaagtccca cagaagctac
+      661 agctgccagg tcacgcaCga agggagcacc gtggagaaga cagtggcccc tacagaatgt
+      721 tcaTGATGAC CTAGG
+//
+LOCUS       37.2D_VH                1461 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..1461
+                     /label="Translation 1-1461"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             475..1461
+                     /label="Translation 475-1461"
+     misc_feature    475..1449
+                     /label="IgG Constant ORF clean-up"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     misc_feature    1450..1461
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgacgaagt gcagctggtg cagtctggag ctgaggtgaa gaagcctggg
+      121 gcttcagtga aggtgtcctg caaggcctct ggttacacct ttacgaaata cggaatcagc
+      181 tgggtgcgac aggcccctgg acaagggctt gagtggatgg gatggatcag cgcgtttaat
+      241 ggttacacaa ggtatggtca gagattccag ggcaaagtca ccatgaccac agacacatcc
+      301 acgaacacag cctctttgga ggtgaggacc ctgacatcta acgacacggc cgtctattac
+      361 tgtgcgagac aatatcccga ccaatatagt agcagcggtt ggccccgcct cttcgccatg
+      421 gacgtctggg gccaagggac cacggtGatc gtctccccag cctccaccaa gggcCCTTCC
+      481 GTATTCCCTC TTGCTCCCTC CAGTAAGAGC ACTAGCGGTG GGACAGCTGC ACTCGGcTGT
+      541 CTCGTCAAAG ACTACTTCCC GGAGCCCGTA ACTGTGTCtT GGAACTCCGG GGCCCTCACA
+      601 TCAGGGGTTC ACACCTTTCC AGCCGTCCTG CAATCCTCTG GTCTGTACTC TCTCTCTAGT
+      661 GTGGTAACGG TCCCTTCATC CTCTCTCGGC ACTCAGACCT ATATATGTAA TGTGAACCAC
+      721 AAACCGAGCA ATACCAAGGT TGATAAGAAG GTAGAGCCAA AGTCCTGTGA TAAGACGCAC
+      781 ACTTGCCCAC CCTGTCCCGC TCCAGAACTC TTGGGAGGAC CCAGCGTGTT TCTTTTCCCG
+      841 CCCAAGCCTA AGGACACACT TATGATTAGT CGAACTCCCG AAGTAACTTG CGTGGTCGTA
+      901 GACGTAAGCC AcGAAGATCC GGAAGTCAAG TTCAATTGGT ACGTCGACGG TGTCGAAGTG
+      961 CACAATGCGA AAACAAAACC CCGCGAGGAA CAATATAATT CCACGTACAG GGTCGTAAGT
+     1021 GTCCTGACAG TCTTGCACCA GGACTGGTTG AATGGTAAGG AGTATAAGTG CAAGGTTTCT
+     1081 AACAAGGCTT TGCCCGCGCC tATAGAGAAG ACGATTTCCA AAGCGAAGGG ACAACCCAGG
+     1141 GAACCGCAAG TCTATACGCT GCCTCCcTCC AGAGACGAAC TCACAAAGAA TCAAGTGTCA
+     1201 CTTACTTGCC TTGTAAAGGG GTTCTACCCT AGCGACATTG CTGTGGAATG GGAGAGCAAC
+     1261 GGGCAACCCG AAAACAATTA TAAGACAACT CCTCCGGTCT TGGACAGTGA TGGGTCTTTC
+     1321 TTCCTTTATA GCAAGTTGAC TGTTGACAAA TCTCGCTGGC AACAGGGCAA CGTGTTTTCC
+     1381 TGTTCaGTGA TGCACGAGGC CCTTCATAAC CATTACACTC AAAAATCACT TAGCTTGTCT
+     1441 CCCGGCAAAT GATGACCTAG G
+//
+LOCUS       37.2D_VL                 729 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..729
+                     /label="Translation 1-729"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     misc_feature    409..717
+                     /label="IgKappa Constant region ORF clean-up"
+                     /ApEinfo_revcolor=#75c6a9
+                     /ApEinfo_fwdcolor=#75c6a9
+     CDS             409..717
+                     /label="Translation 409-717"
+     misc_feature    718..729
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgacgaaac gacactcacg cagtctccag ccaccctgtc tgtgtctcca
+      121 ggggaaacag ccaccctctc ctgcagggcc agtcaaaatg ttatcaacaa cttagcctgg
+      181 taccagcaga aacctggcca ggctcccagg ctcctcattt aCggtgcatc caccagggcc
+      241 actggtatcc cagccaggtt cagtggcagt gggtctggga cagagttcac CctcacTatc
+      301 agcTCTatgc agtctgaaga ttttgcagtt tattactgtc agcaatataa Cgactggcct
+      361 cgaagttttg gccaggggac caggctggac atcagacgaa ctgtggctgc accatctgtc
+      421 ttTatcttcc cgccatctga tgagcagttg aaatctggaa ctgcctctgt tgtgtgcctg
+      481 ctgaataact tctatcccag agaggccaaa gtacagtgga aggtggataa cgccctccaa
+      541 tcgggtaact cccaggagag tgtcacagag caggacagca aggacagcac ctacagcctc
+      601 agcagcaccc tgacgctgag caaagcagac tacgagaaac acaaagtcta cgcctgcgaa
+      661 gtcacccaCc agggcctgag ctcgcccgtc acaaagagct tcaacagggg agagtgtTGA
+      721 TGACCTAGG
+//
+LOCUS       37.7H_VH                1446 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..1446
+                     /label="Translation 1-1446"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..459
+                     /label="Translation 13-459"
+     CDS             460..1446
+                     /label="Translation 460-1446"
+     misc_feature    460..1434
+                     /label="IgG Constant ORF clean-up"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     misc_feature    1435..1446
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgacgaggt gcagctggtg cagtctggag gaggcctggt caaggcgggg
+      121 gggtccctga ggctctcctg tgcagcctcc ggattcacat tcagcaccta cagtatgaac
+      181 tggatccgcc aggctccagg gaaggggctg gagtgggtcg cttccattag tagtcgaagt
+      241 ggcagtcaca taaactacgt agactcagtg aagggacgat tcaccatctc cagagacaac
+      301 gccagggact tattgtatct gcaaatgaac agcctgagag tcgacgactc ggctctctat
+      361 tactgtgcga gagatcgccg ttcggggact tctcccctcc ccttggacgt ctggggccaa
+      421 gggaccacgg tcaccgtctt ctcagcctcc accaagggcC CTTCCGTATT CCCTCTTGCT
+      481 CCCTCCAGTA AGAGCACTAG CGGTGGGACA GCTGCACTCG GcTGTCTCGT CAAAGACTAC
+      541 TTCCCGGAGC CCGTAACTGT GTCtTGGAAC TCCGGGGCCC TCACATCAGG GGTTCACACC
+      601 TTTCCAGCCG TCCTGCAATC CTCTGGTCTG TACTCTCTCT CTAGTGTGGT AACGGTCCCT
+      661 TCATCCTCTC TCGGCACTCA GACCTATATA TGTAATGTGA ACCACAAACC GAGCAATACC
+      721 AAGGTTGATA AGAAGGTAGA GCCAAAGTCC TGTGATAAGA CGCACACTTG CCCACCCTGT
+      781 CCCGCTCCAG AACTCTTGGG AGGACCCAGC GTGTTTCTTT TCCCGCCCAA GCCTAAGGAC
+      841 ACACTTATGA TTAGTCGAAC TCCCGAAGTA ACTTGCGTGG TCGTAGACGT AAGCCAcGAA
+      901 GATCCGGAAG TCAAGTTCAA TTGGTACGTC GACGGTGTCG AAGTGCACAA TGCGAAAACA
+      961 AAACCCCGCG AGGAACAATA TAATTCCACG TACAGGGTCG TAAGTGTCCT GACAGTCTTG
+     1021 CACCAGGACT GGTTGAATGG TAAGGAGTAT AAGTGCAAGG TTTCTAACAA GGCTTTGCCC
+     1081 GCGCCtATAG AGAAGACGAT TTCCAAAGCG AAGGGACAAC CCAGGGAACC GCAAGTCTAT
+     1141 ACGCTGCCTC CcTCCAGAGA CGAACTCACA AAGAATCAAG TGTCACTTAC TTGCCTTGTA
+     1201 AAGGGGTTCT ACCCTAGCGA CATTGCTGTG GAATGGGAGA GCAACGGGCA ACCCGAAAAC
+     1261 AATTATAAGA CAACTCCTCC GGTCTTGGAC AGTGATGGGT CTTTCTTCCT TTATAGCAAG
+     1321 TTGACTGTTG ACAAATCTCG CTGGCAACAG GGCAACGTGT TTTCCTGTTC aGTGATGCAC
+     1381 GAGGCCCTTC ATAACCATTA CACTCAAAAA TCACTTAGCT TGTCTCCCGG CAAATGATGA
+     1441 CCTAGG
+//
+LOCUS       37.7H_VL                 735 bp ds-DNA     linear       08-OCT-2019
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..735
+                     /label="Translation 1-735"
+     misc_feature    1..12
+                     /label="CMVR adapter"
+                     /ApEinfo_revcolor=#f58a5e
+                     /ApEinfo_fwdcolor=#f58a5e
+     CDS             13..723
+                     /label="Translation 13-723"
+     misc_feature    724..735
+                     /label="Double stop and CMVR adapter"
+                     /ApEinfo_revcolor=#faac61
+                     /ApEinfo_fwdcolor=#faac61
+ORIGIN
+        1 TCTAGAGCCA CCatggagac agacacactc ctgctatggg tactgctgct ctgggttcca
+       61 ggttccactg gtgaccagtc tgccctgact cagcctgcct ccgtgtctgg gtctcctgga
+      121 cagtcgatca ccatctcctg cactggaacc ggcagtgaca ttggtggtta taactttgtc
+      181 tcctggtacc aacagtatcc cggcaaagcc cccaaactca ttatttatga ggtccgtatt
+      241 cgggcctcag gggtttccaa tcgcttctct ggctccaagt ctggcaacac Cgcctccctg
+      301 acGatctctg gactccaggc tgaggacgag gctgattatt actgcaacAG Ctattcaatc
+      361 cacagccctt gggtgttcgg cggagggacc aagttgaccg tcctgcgtca gcccaaggct
+      421 gccccctcgg tcactctgtt cccaccctcc tctgaggagc ttcaagccaa caaggccaca
+      481 ctggtgtgtc tcataagtga cttctacccg ggagccgtga cagtggcctg gaaggcagat
+      541 agcagccccg tcaaggcggg agtggagacc accacaccct ccaaacaaag caacaacaag
+      601 tacgcggcca gcagctacct gagcctgacg cctgagcagt gggagtccca cagaagctac
+      661 agctgccagg tcacgcaCga agggagcacc gtggagaaga cagtggcccc tacagaatgt
+      721 tcaTGATGAC CTAGG
+//
