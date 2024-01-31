@@ -1,0 +1,62 @@
+# ======================================================== #
+#                                                          #
+#     Edit the information in this configuration file      #
+#                                                          #
+# ======================================================== #
+
+# ====== Info applying to the whole variant library ====== #
+organism: human immunodeficiency virus
+strain: BF520
+isolation_source: HEK-293T-rtTA
+collection_date: 2022/2023
+geographic_location: 'USA: Washington'
+sample_type: plasmid
+
+# ======== Info for Illumina barcodes BioSamples ======== #
+barcode_runs: 
+  
+  # Path to the barcoded runs csv file that will go into the BioSample
+  file_path: ../data/barcode_runs.csv
+  
+  # Edit this data that goes into the SRA metadata table for the BioSample
+  accession: SAMN33846201
+  sample_id_columns: [date, virus_batch, sample_type, antibody, antibody_concentration, replicate]
+  title_prefix: HIV Env BF520 Illumina barcode sequencing for sample  
+  description: Illumina barcode sequencing for HIV Env BF520
+  strategy: AMPLICON
+  source: SYNTHETIC
+  selection: PCR
+  layout: single
+  platform: ILLUMINA
+  model: NextSeq 2000
+
+  # Meaningful BioSample specific folder name for FTP upload
+  ftp_subfolder: HIV_Envelope_BF520_DMS_CD4bs_Illumina_barcodes
+
+
+# ========== Info for PacBio library BioSample ========== #
+pacbio_runs:
+  
+  # Path to the pacbio runs that will be included in the BioSample
+  file_path: ../data/PacBio_runs.csv
+ 
+  # This data goes into the SRA metadata table
+  accession: SAMN34031491
+  title_prefix: PacBio CCSs linking variants to barcodes for HIV Envelope BF520 deep mutational scanning for
+  description: PacBio CCSs of barcoded HIV Envelope BF520 variants
+  strategy: Synthetic-Long-Read
+  source: SYNTHETIC
+  selection: PCR
+  layout: single
+  platform: PACBIO_SMRT
+  model: PacBio Sequel II
+
+  # Meaningful BioSample specific folder name for FTP upload
+  ftp_subfolder: HIV_Envelope_BF520_DMS_PacBio_CCSs
+
+# =========== Info for uploading to SRA via FTP =========== #
+# These come from the SRA FTP upload instructions.
+ftp_username: subftp
+ftp_account_folder: uploads/caelanradford_gmail.com_VhnV29Z7
+
+  
