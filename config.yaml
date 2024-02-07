@@ -23,7 +23,7 @@ github_blob_url: https://github.com/dms-vep/LASV_Josiah_GP_DMS/blob/main
 # Some descriptions and metadata about the analysis.
 description: Deep mutational scanning of Lassa virus Josiah strain glycoprotein using a barcoded lentiviral platform
 year: 2023
-authors: Kate Crawford, Caleb Carr, and Jesse Bloom
+authors: "[Carr, Crawford, ..., Bloom](https://www.biorxiv.org/content/10.1101/2024.02.05.579020v1)"
 
 # ----------------------------------------------------------------------------
 # Site numbering, mutation classification, and neut standards

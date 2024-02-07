@@ -45,7 +45,7 @@ rule averaged_ridgeplot_func_scores:
         html_output="results/averaged_func_scores_ridgeplot/averaged_func_scores_ridgeplot.html",
         nb="results/notebooks/visualize_func_scores_by_variant_type.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/averaged_ridgeplot_func_scores.txt",
     shell:
@@ -77,7 +77,7 @@ rule visualize_mutation_distributions:
     output:
         nb="results/notebooks/visualize_mutation_distributions.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/visualize_mutation_distributions.txt",
     shell:
@@ -110,7 +110,7 @@ rule human_mastomys_correlation:
         multidms_shift_profile="results/DAG1_ortholog_correlations/multidms_shift_profile.svg",
         nb="results/notebooks/human_mastomys_correlation.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/human_mastomys_correlation.txt",
     shell:
@@ -144,7 +144,7 @@ rule validation_titers:
         saved_image_path="results/validation_plots/functional_validation_correlation.svg",
         nb="results/notebooks/validation_titers.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/validation_titers.txt",
     shell:
@@ -174,7 +174,7 @@ rule validation_neuts_89F:
         corr_image_path="results/validation_plots/89F_validation_correlation.svg",
         nb="results/notebooks/validation_neuts_89F.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/validation_neuts_89F.txt",
     shell:
@@ -206,7 +206,7 @@ rule visualize_RBD_regions:
         html_output="results/func_scores_distributions/func_scores_distributions.html",
         nb="results/notebooks/visualize_RBD_regions.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/visualize_RBD_regions.txt",
     shell:
@@ -265,7 +265,7 @@ rule compare_to_natural:
         html_arevirumab_comparisons="results/antibody_escape_profiles/arevirumab_comparisons.html",
         nb="results/notebooks/compare_to_natural_data.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/compare_to_natural.txt",
     shell:
@@ -334,7 +334,7 @@ rule natural_sequence_antigenic_analysis:
         ols_regression="results/natural_isolate_escape/ols_regression.html",
         nb="results/notebooks/natural_sequence_antigenic_analysis.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/natural_sequence_antigenic_analysis.txt",
     shell:
@@ -407,7 +407,7 @@ rule get_filtered_CSVs:
         arevirumab_escape_profile="results/antibody_escape_profiles/arevirumab_escape_profile.svg",
         nb="results/notebooks/get_filtered_CSVs.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/get_filtered_escape_CSVs.txt",
     shell:
@@ -482,7 +482,7 @@ rule escape_sites_stratified_by_antibody_distance:
         func_distance_image_path="results/antibody_escape_profiles/func_effect_by_distance.svg",
         nb="results/notebooks/escape_vs_antibody_distance.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/escape_sites_stratified_by_antibody_distance.txt",
     shell:
@@ -542,7 +542,7 @@ rule map_scores_onto_pdb_structure:
         pdb_arevirumab="results/mapped_scores_onto_pdb/arevirumab_escape.pdb",
         nb="results/notebooks/pdb_mapping.ipynb",
     conda:
-        os.path.join(config["pipeline_path"], "environment.yml"),
+        "data/custom_rules_environment.yml",
     log:
         "results/logs/map_scores_onto_pdb_structure.txt",
     shell:
