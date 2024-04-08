@@ -87,6 +87,88 @@ rule visualize_mutation_distributions:
             &> {log}
         """
 
+rule single_mutant_global_epistasis_analysis:
+    """
+    Create correlation plots of raw functional scores 
+    and functional effects from global epistasis model.
+    """
+    input:
+        func_effects = "results/func_effects/averages/293T_entry_func_effects.csv",
+        nb="notebooks/func_scores_vs_func_effects.ipynb",
+    params:
+        libA_1="LibA-220823-293T-1",
+        libA_2="LibA-220823-293T-2",
+        libA_3="LibA-220907-293T-1",
+        libA_4="LibA-220907-293T-2",
+        libB_1="LibB-220823-293T-1",
+        libB_2="LibB-220823-293T-2",
+        libB_3="LibB-220907-293T-1",
+        libB_4="LibB-220907-293T-2",
+        scores_dir="results/func_scores/",
+        effects_dir="results/func_effects/by_selection/",
+    output:
+        nb="results/notebooks/func_scores_vs_func_effects.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml")
+    log:
+        "results/logs/func_scores_vs_func_effects.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p libA_1 {params.libA_1} \
+            -p libA_2 {params.libA_2} \
+            -p libA_3 {params.libA_3} \
+            -p libA_4 {params.libA_4} \
+            -p libB_1 {params.libB_1} \
+            -p libB_2 {params.libB_2} \
+            -p libB_3 {params.libB_3} \
+            -p libB_4 {params.libB_4} \
+            -p scores_dir {params.scores_dir} \
+            -p effects_dir {params.effects_dir} \
+            &> {log}
+        """
+
+
+rule library_replicate_correlations:
+    """
+    Create correlation plots of library replicates.
+    """
+    input:
+        func_effects = "results/func_effects/averages/293T_entry_func_effects.csv",
+        nb="notebooks/library_func_effects_correlations.ipynb",
+    params:
+        libA_1="LibA-220823-293T-1",
+        libA_2="LibA-220823-293T-2",
+        libA_3="LibA-220907-293T-1",
+        libA_4="LibA-220907-293T-2",
+        libB_1="LibB-220823-293T-1",
+        libB_2="LibB-220823-293T-2",
+        libB_3="LibB-220907-293T-1",
+        libB_4="LibB-220907-293T-2",
+        effects_dir="results/func_effects/by_selection/",
+        MTS=2,
+    output:
+        nb="results/notebooks/library_func_effects_correlations.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml")
+    log:
+        "results/logs/library_func_effects_correlations.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p libA_1 {params.libA_1} \
+            -p libA_2 {params.libA_2} \
+            -p libA_3 {params.libA_3} \
+            -p libA_4 {params.libA_4} \
+            -p libB_1 {params.libB_1} \
+            -p libB_2 {params.libB_2} \
+            -p libB_3 {params.libB_3} \
+            -p libB_4 {params.libB_4} \
+            -p effects_dir {params.effects_dir} \
+            -p MTS {params.MTS} \
+            &> {log}
+        """
+
 
 rule human_mastomys_correlation:
     """
@@ -577,6 +659,8 @@ docs["Additional analyses and data files"] = {
         "Interactive plot showing averaged functional score distributions by variant type" : rules.averaged_ridgeplot_func_scores.output.html_output,
         "Notebook creating averaged functional score distributions" : rules.averaged_ridgeplot_func_scores.output.nb,
         "Notebook creating altair version of mutation distribution" : rules.visualize_mutation_distributions.output.nb,
+        "Notebook creating correlation plots between functional scores and functional effects derived from global epistasis model" : rules.single_mutant_global_epistasis_analysis.output.nb,
+        "Notebook creating library correlation plots" : rules.library_replicate_correlations.output.nb,
     },
     "Correlations of DAG1 ortholog functional selections" : {
         "Interactive plot showing correlations between DAG1 ortholog functional selections" : rules.human_mastomys_correlation.output.html_output,
@@ -602,7 +686,7 @@ docs["Additional analyses and data files"] = {
         },
     },
     "Filtered antibody escape and functional data" : {
-        "Notebook applying filters to antibody escape and functinoal data" : rules.get_filtered_CSVs.output.nb,
+        "Notebook applying filters to antibody escape and functional data" : rules.get_filtered_CSVs.output.nb,
         "Filtered antibody escape CSVs" : {
             "CSV with filtered 377H antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_377H,
             "CSV with filtered 89F antibody escape data" : rules.get_filtered_CSVs.output.filtered_escape_89F,
