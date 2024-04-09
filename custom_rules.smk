@@ -389,6 +389,30 @@ rule compare_to_natural:
             &> {log}
         """
 
+rule GPC_region_comparisons_to_natural:
+    """
+    Compare functional effects of mutations to 
+    natural variation for different GPC regions.
+    """
+    input:
+        natural_sequence_variation="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv",
+        filtered_func_293T="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
+        nb="notebooks/func_effects_vs_natural_variation.ipynb",
+    output:
+        nb="results/notebooks/func_effects_vs_natural_variation.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml")
+    log:
+        "results/logs/GPC_region_comparisons_to_natural.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p natural_sequence_variation {input.natural_sequence_variation} \
+            -p filtered_func_293T {input.filtered_func_293T} \
+            &> {log}
+        """
+
+
 rule natural_sequence_antigenic_analysis:
     """
     Compare dms data to natural sequences
@@ -676,6 +700,7 @@ docs["Additional analyses and data files"] = {
     },
     "Comparisons of natural Lassa GPC diveristy to DMS data" : {
         "Notebook analyzing natural sequence data for sequences predicted antibody escape" : rules.compare_to_natural.output.nb,
+        "Notebook comparing functional effects and natural sequence variation for different GPC regions" : rules.GPC_region_comparisons_to_natural.output.nb,
         "Interactive plots comparing DMS data and natural sequence diversity" : {
             "Interactive plot showing correlation of natural diversity and functional scores" : rules.compare_to_natural.output.html_func_vs_natural,
             "Interactive plot showing correlation of mutation frequencies and antibody escape" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape,
