@@ -412,6 +412,29 @@ rule GPC_region_comparisons_to_natural:
             &> {log}
         """
 
+rule func_effects_of_naturally_present_mutations:
+    """
+    Compare functional effects of mutations to 
+    naturally abundant GPC mutations.
+    """
+    input:
+        natural_GPC_sequence_alignment="non-pipeline_analyses/LASV_phylogeny_analysis/Results/LASV_GPC_protein_alignment.fasta",
+        filtered_func_293T="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
+        nb="notebooks/func_effects_of_naturally_present_mutations.ipynb",
+    output:
+        nb="results/notebooks/func_effects_of_naturally_present_mutations.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml")
+    log:
+        "results/logs/func_effects_of_naturally_present_mutations.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p natural_GPC_sequence_alignment {input.natural_GPC_sequence_alignment} \
+            -p filtered_func_293T {input.filtered_func_293T} \
+            &> {log}
+        """
+
 
 rule natural_sequence_antigenic_analysis:
     """
@@ -701,6 +724,7 @@ docs["Additional analyses and data files"] = {
     "Comparisons of natural Lassa GPC diveristy to DMS data" : {
         "Notebook analyzing natural sequence data for sequences predicted antibody escape" : rules.compare_to_natural.output.nb,
         "Notebook comparing functional effects and natural sequence variation for different GPC regions" : rules.GPC_region_comparisons_to_natural.output.nb,
+        "Notebook analyzing distribution of functional effects for mutations in natural GPCs" : rules.func_effects_of_naturally_present_mutations.output.nb,
         "Interactive plots comparing DMS data and natural sequence diversity" : {
             "Interactive plot showing correlation of natural diversity and functional scores" : rules.compare_to_natural.output.html_func_vs_natural,
             "Interactive plot showing correlation of mutation frequencies and antibody escape" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape,
