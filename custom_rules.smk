@@ -640,6 +640,47 @@ rule escape_sites_stratified_by_antibody_distance:
             &> {log}
         """
 
+rule escape_vs_functional_effects:
+    """
+    Compare antibody escape and functional effects
+    """
+    input:
+        filtered_escape_377H="results/filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
+        filtered_escape_89F="results/filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
+        filtered_escape_2510C="results/filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv",
+        filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
+        filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
+        filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        filtered_func_293T="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
+        Josiah_sequence="data/Josiah_nucleotide_reference_NC_004296.fasta",
+        nb="notebooks/escape_vs_func_effects.ipynb",
+    params:
+        out_dir="results/antibody_escape_profiles/",
+    output:
+        func_vs_escape="results/antibody_escape_profiles/antibody_escape_vs_func_effect_all_muts.html",
+        func_vs_escape_svg="results/antibody_escape_profiles/antibody_escape_vs_func_effect_all_muts.svg",
+        nb="results/notebooks/escape_vs_func_effects.ipynb",
+    conda:
+        "data/custom_rules_environment.yml",
+    log:
+        "results/logs/escape_vs_functional_effects.txt",
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p filtered_escape_377H {input.filtered_escape_377H} \
+            -p filtered_escape_89F {input.filtered_escape_89F} \
+            -p filtered_escape_2510C {input.filtered_escape_2510C} \
+            -p filtered_escape_121F {input.filtered_escape_121F} \
+            -p filtered_escape_256A {input.filtered_escape_256A} \
+            -p filtered_escape_372D {input.filtered_escape_372D} \
+            -p filtered_func_293T {input.filtered_func_293T} \
+            -p Josiah_sequence {input.Josiah_sequence} \
+            -p out_dir {params.out_dir} \
+            -p func_vs_escape {output.func_vs_escape} \
+            -p func_vs_escape_svg {output.func_vs_escape_svg} \
+            &> {log}
+        """
+
 
 rule map_scores_onto_pdb_structure:
     """
@@ -750,9 +791,13 @@ docs["Additional analyses and data files"] = {
             "CSV with filtered mastomys 293T effects" : rules.get_filtered_CSVs.output.filtered_func_mastomys_293T,
         },
     },
-    "Antibody escape stratified by distance to antibody" : {
+    "Antibody escape compared to functional effects" : {
+        "Interactive plot showing antibody escape vs functional effects" : rules.escape_vs_functional_effects.output.func_vs_escape,
         "Interactive plot showing antibody escape vs functional effect for antibody contacts" : rules.escape_sites_stratified_by_antibody_distance.output.func_vs_escape,
-        "Notebook plotting escape by distance to antibody" : rules.escape_sites_stratified_by_antibody_distance.output.nb,
+        "Analysis notebooks" : {
+            "Notebook plotting escape vs functional effects" : rules.escape_vs_functional_effects.output.nb,
+            "Notebook plotting escape by distance to antibody" : rules.escape_sites_stratified_by_antibody_distance.output.nb,
+        }
     },
     "Mapped data onto pdb structure" : {
         "Notebook mapping score onto pdb structure" : rules.map_scores_onto_pdb_structure.output.nb,
