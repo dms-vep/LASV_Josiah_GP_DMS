@@ -334,12 +334,13 @@ rule compare_to_natural:
         out_dir_natural="results/natural_isolate_escape/",
     output:
         neuts_image_path="results/validation_plots/validation_neut_curves_natural_isolates.svg",
+        neuts_256A_image_path="results/validation_plots/validation_neut_256A_curves_natural_isolates.svg",
         corr_image_path="results/validation_plots/natural_isolate_validation_correlation.svg",
+        corr_256A_image_path="results/validation_plots/natural_isolate_validation_256A_correlation.svg",
         escape_top10_image_path="results/antibody_escape_profiles/natural_isolate_top10_escape_profiles.svg",
         escape_all_image_path="results/antibody_escape_profiles/natural_isolate_all_escape_profiles.svg",
+        escape_all_256A_image_path="results/antibody_escape_profiles/natural_isolate_all_256A_escape_profiles.svg",
         natural_escape="results/natural_isolate_escape/natural_isolate_escape.svg",
-        total_natural_escape="results/natural_isolate_escape/total_natural_site_escape.svg",
-        html_func_vs_natural="results/natural_isolate_escape/func_vs_natural.html",
         html_nat_mut_freqs_vs_escape="results/natural_isolate_escape/nat_mut_freqs_vs_escape.html",
         html_nat_mut_freqs_vs_escape_all_abs="results/natural_isolate_escape/nat_mut_freqs_vs_escape_all_abs.html",
         html_natural_vs_escape="results/natural_isolate_escape/natural_vs_escape.html",
@@ -375,12 +376,13 @@ rule compare_to_natural:
             -p out_dir_escape {params.out_dir_escape} \
             -p out_dir_natural {params.out_dir_natural} \
             -p neuts_image_path {output.neuts_image_path} \
+            -p neuts_256A_image_path {output.neuts_256A_image_path} \
             -p corr_image_path {output.corr_image_path} \
+            -p corr_256A_image_path {output.corr_256A_image_path} \
             -p escape_top10_image_path {output.escape_top10_image_path} \
             -p escape_all_image_path {output.escape_all_image_path} \
+            -p escape_all_256A_image_path {output.escape_all_256A_image_path} \
             -p natural_escape {output.natural_escape} \
-            -p total_natural_escape {output.total_natural_escape} \
-            -p html_func_vs_natural {output.html_func_vs_natural} \
             -p html_nat_mut_freqs_vs_escape {output.html_nat_mut_freqs_vs_escape} \
             -p html_nat_mut_freqs_vs_escape_all_abs {output.html_nat_mut_freqs_vs_escape_all_abs} \
             -p html_natural_vs_escape {output.html_natural_vs_escape} \
@@ -398,7 +400,10 @@ rule GPC_region_comparisons_to_natural:
         natural_sequence_variation="non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_protein_variation.csv",
         filtered_func_293T="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
         nb="notebooks/func_effects_vs_natural_variation.ipynb",
+    params:
+        html_dir="results/func_scores_distributions/",
     output:
+        html_output="results/func_scores_distributions/func_scores_vs_natural_variation_by_region.html",
         nb="results/notebooks/func_effects_vs_natural_variation.ipynb",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml")
@@ -409,6 +414,8 @@ rule GPC_region_comparisons_to_natural:
         papermill {input.nb} {output.nb} \
             -p natural_sequence_variation {input.natural_sequence_variation} \
             -p filtered_func_293T {input.filtered_func_293T} \
+            -p html_dir {params.html_dir} \
+            -p html_output {output.html_output} \
             &> {log}
         """
 
@@ -767,7 +774,7 @@ docs["Additional analyses and data files"] = {
         "Notebook comparing functional effects and natural sequence variation for different GPC regions" : rules.GPC_region_comparisons_to_natural.output.nb,
         "Notebook analyzing distribution of functional effects for mutations in natural GPCs" : rules.func_effects_of_naturally_present_mutations.output.nb,
         "Interactive plots comparing DMS data and natural sequence diversity" : {
-            "Interactive plot showing correlation of natural diversity and functional scores" : rules.compare_to_natural.output.html_func_vs_natural,
+            "Interactive plot showing correlation of natural diversity and functions scores for different GPC regions" : rules.GPC_region_comparisons_to_natural.output.html_output,
             "Interactive plot showing correlation of mutation frequencies and antibody escape" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape,
             "Interactive plot showing correlation of mutation frequencies and antibody escape across Arevirumab-3 antibodies" : rules.compare_to_natural.output.html_nat_mut_freqs_vs_escape_all_abs,
             "Interactive plot showing correlation of natural diversity and antibody escape" : rules.compare_to_natural.output.html_natural_vs_escape,
