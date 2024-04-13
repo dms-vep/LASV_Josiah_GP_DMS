@@ -74,7 +74,10 @@ rule visualize_mutation_distributions:
     input:
         variant_data = "results/variants/codon_variants.csv",
         nb="notebooks/visualize_mutation_distributions.ipynb",
+    params:
+        out_dir="results/summary_of_libraries/",
     output:
+        out_file="results/summary_of_libraries/present_and_absent_mutations_in_DMS_libraries.csv",
         nb="results/notebooks/visualize_mutation_distributions.ipynb",
     conda:
         "data/custom_rules_environment.yml",
@@ -84,6 +87,8 @@ rule visualize_mutation_distributions:
         """
         papermill {input.nb} {output.nb} \
             -p variant_data {input.variant_data} \
+            -p out_dir {params.out_dir} \
+            -p out_file {output.out_file} \
             &> {log}
         """
 
@@ -524,6 +529,7 @@ rule get_filtered_CSVs:
         n_selections=8,
         frac_models=1,
         out_dir="results/filtered_antibody_escape_CSVs/",
+        out_dir_simplified="results/simplified_filtered_antibody_escape_CSVs/",
         out_dir_images="results/antibody_escape_profiles/",
         out_dir_func="results/filtered_func_effect_CSVs/",
     output:
@@ -533,6 +539,12 @@ rule get_filtered_CSVs:
         filtered_escape_121F="results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
         filtered_escape_256A="results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
         filtered_escape_372D="results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
+        simple_filtered_escape_377H="results/simplified_filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv",
+        simple_filtered_escape_89F="results/simplified_filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv",
+        simple_filtered_escape_2510C="results/simplified_filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv",
+        simple_filtered_escape_121F="results/simplified_filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv",
+        simple_filtered_escape_256A="results/simplified_filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv",
+        simple_filtered_escape_372D="results/simplified_filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv",
         filtered_func_293T="results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv",
         filtered_func_human_293T="results/filtered_func_effect_CSVs/human_293T_filtered_func_effects.csv",
         filtered_func_mastomys_293T="results/filtered_func_effect_CSVs/mastomys_293T_filtered_func_effects.csv",
@@ -569,6 +581,7 @@ rule get_filtered_CSVs:
             -p n_selections {params.n_selections} \
             -p frac_models {params.frac_models} \
             -p out_dir {params.out_dir} \
+            -p out_dir_simplified {params.out_dir_simplified} \
             -p out_dir_images {params.out_dir_images} \
             -p out_dir_func {params.out_dir_func} \
             -p filtered_escape_377H {output.filtered_escape_377H} \
@@ -577,6 +590,12 @@ rule get_filtered_CSVs:
             -p filtered_escape_121F {output.filtered_escape_121F} \
             -p filtered_escape_256A {output.filtered_escape_256A} \
             -p filtered_escape_372D {output.filtered_escape_372D} \
+            -p simple_filtered_escape_377H {output.simple_filtered_escape_377H} \
+            -p simple_filtered_escape_89F {output.simple_filtered_escape_89F} \
+            -p simple_filtered_escape_2510C {output.simple_filtered_escape_2510C} \
+            -p simple_filtered_escape_121F {output.simple_filtered_escape_121F} \
+            -p simple_filtered_escape_256A {output.simple_filtered_escape_256A} \
+            -p simple_filtered_escape_372D {output.simple_filtered_escape_372D} \
             -p filtered_func_293T {output.filtered_func_293T} \
             -p filtered_func_human_293T {output.filtered_func_human_293T} \
             -p filtered_func_mastomys_293T {output.filtered_func_mastomys_293T} \

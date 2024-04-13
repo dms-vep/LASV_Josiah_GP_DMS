@@ -7613,6 +7613,7 @@ a.anchor-link {
 <span class="n">frac_models</span> <span class="o">=</span> <span class="kc">None</span>
 
 <span class="n">out_dir</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">out_dir_simplified</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">out_dir_images</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">out_dir_func</span> <span class="o">=</span> <span class="kc">None</span>
 
@@ -7622,6 +7623,13 @@ a.anchor-link {
 <span class="n">filtered_escape_121F</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">filtered_escape_256A</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">filtered_escape_372D</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="n">simple_filtered_escape_377H</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">simple_filtered_escape_89F</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">simple_filtered_escape_2510C</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">simple_filtered_escape_121F</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">simple_filtered_escape_256A</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">simple_filtered_escape_372D</span> <span class="o">=</span> <span class="kc">None</span>
 
 <span class="n">filtered_func_293T</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="n">filtered_func_human_293T</span> <span class="o">=</span> <span class="kc">None</span>
@@ -7645,7 +7653,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=40131296">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=6c25cbb8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7678,6 +7686,7 @@ a.anchor-link {
 <span class="n">n_selections</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">frac_models</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">out_dir</span> <span class="o">=</span> <span class="s2">"results/filtered_antibody_escape_CSVs/"</span>
+<span class="n">out_dir_simplified</span> <span class="o">=</span> <span class="s2">"results/simplified_filtered_antibody_escape_CSVs/"</span>
 <span class="n">out_dir_images</span> <span class="o">=</span> <span class="s2">"results/antibody_escape_profiles/"</span>
 <span class="n">out_dir_func</span> <span class="o">=</span> <span class="s2">"results/filtered_func_effect_CSVs/"</span>
 <span class="n">filtered_escape_377H</span> <span class="o">=</span> <span class="p">(</span>
@@ -7697,6 +7706,24 @@ a.anchor-link {
 <span class="p">)</span>
 <span class="n">filtered_escape_372D</span> <span class="o">=</span> <span class="p">(</span>
     <span class="s2">"results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv"</span>
+<span class="p">)</span>
+<span class="n">simple_filtered_escape_377H</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/simplified_filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv"</span>
+<span class="p">)</span>
+<span class="n">simple_filtered_escape_89F</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/simplified_filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv"</span>
+<span class="p">)</span>
+<span class="n">simple_filtered_escape_2510C</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/simplified_filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv"</span>
+<span class="p">)</span>
+<span class="n">simple_filtered_escape_121F</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/simplified_filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv"</span>
+<span class="p">)</span>
+<span class="n">simple_filtered_escape_256A</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/simplified_filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv"</span>
+<span class="p">)</span>
+<span class="n">simple_filtered_escape_372D</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/simplified_filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv"</span>
 <span class="p">)</span>
 <span class="n">filtered_func_293T</span> <span class="o">=</span> <span class="s2">"results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv"</span>
 <span class="n">filtered_func_human_293T</span> <span class="o">=</span> <span class="p">(</span>
@@ -7743,6 +7770,7 @@ a.anchor-link {
 <span class="c1"># frac_models = 1</span>
 
 <span class="c1"># out_dir = "../results/filtered_antibody_escape_CSVs/"</span>
+<span class="c1"># out_dir_simplified = "../results/simplified_filtered_antibody_escape_CSVs/"</span>
 <span class="c1"># out_dir_images = "../results/antibody_escape_profiles/"</span>
 <span class="c1"># out_dir_func = "../results/filtered_func_effect_CSVs/"</span>
 
@@ -7752,6 +7780,13 @@ a.anchor-link {
 <span class="c1"># filtered_escape_121F = "../results/filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv"</span>
 <span class="c1"># filtered_escape_256A = "../results/filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv"</span>
 <span class="c1"># filtered_escape_372D = "../results/filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv"</span>
+
+<span class="c1"># simple_filtered_escape_377H = "../results/simplified_filtered_antibody_escape_CSVs/377H_filtered_mut_effect.csv"</span>
+<span class="c1"># simple_filtered_escape_89F = "../results/simplified_filtered_antibody_escape_CSVs/89F_filtered_mut_effect.csv"</span>
+<span class="c1"># simple_filtered_escape_2510C = "../results/simplified_filtered_antibody_escape_CSVs/2510C_filtered_mut_effect.csv"</span>
+<span class="c1"># simple_filtered_escape_121F = "../results/simplified_filtered_antibody_escape_CSVs/121F_filtered_mut_effect.csv"</span>
+<span class="c1"># simple_filtered_escape_256A = "../results/simplified_filtered_antibody_escape_CSVs/256A_filtered_mut_effect.csv"</span>
+<span class="c1"># simple_filtered_escape_372D = "../results/simplified_filtered_antibody_escape_CSVs/372D_filtered_mut_effect.csv"</span>
 
 <span class="c1"># filtered_func_293T = "../results/filtered_func_effect_CSVs/293T_filtered_func_effects.csv"</span>
 <span class="c1"># filtered_func_human_293T = "../results/filtered_func_effect_CSVs/human_293T_filtered_func_effects.csv"</span>
@@ -7808,6 +7843,7 @@ a.anchor-link {
     <span class="n">line_plot</span><span class="p">,</span>
     <span class="n">logo_plot</span><span class="p">,</span>
     <span class="n">output_file</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">simplified_output_file</span> <span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">sites</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">negative</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">color_contact_sites</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
@@ -7872,6 +7908,17 @@ a.anchor-link {
             <span class="s2">"frac_models"</span><span class="p">,</span>
             <span class="s2">"poor_cell_entry"</span><span class="p">,</span>
         <span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># Write simplified filtered escape to csv</span>
+    <span class="k">if</span> <span class="n">simplified_output_file</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">escape_df</span><span class="p">[[</span>
+            <span class="s2">"site"</span><span class="p">,</span> 
+            <span class="s2">"wildtype"</span><span class="p">,</span> 
+            <span class="s2">"mutant"</span><span class="p">,</span> 
+            <span class="s2">"mutation"</span><span class="p">,</span> 
+            <span class="s2">"escape_median"</span><span class="p">,</span>
+            <span class="s2">"poor_cell_entry"</span><span class="p">,</span>
+        <span class="p">]]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"escape_median"</span> <span class="p">:</span> <span class="s2">"escape"</span><span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"escape"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">simplified_output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
     <span class="c1"># Filter escape df for low functional score mutations</span>
     <span class="n">escape_df</span> <span class="o">=</span> <span class="n">escape_df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"poor_cell_entry == False"</span><span class="p">)</span>
@@ -8206,12 +8253,12 @@ a.anchor-link {
 <span class="p">]</span>
 
 <span class="n">antibody_output_files</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">filtered_escape_2510C</span><span class="p">,</span>
-    <span class="n">filtered_escape_121F</span><span class="p">,</span>
-    <span class="n">filtered_escape_377H</span><span class="p">,</span>
-    <span class="n">filtered_escape_256A</span><span class="p">,</span>
-    <span class="n">filtered_escape_372D</span><span class="p">,</span>
-    <span class="n">filtered_escape_89F</span><span class="p">,</span>
+    <span class="p">[</span><span class="n">filtered_escape_2510C</span><span class="p">,</span> <span class="n">simple_filtered_escape_2510C</span><span class="p">],</span>
+    <span class="p">[</span><span class="n">filtered_escape_121F</span><span class="p">,</span> <span class="n">simple_filtered_escape_121F</span><span class="p">],</span>
+    <span class="p">[</span><span class="n">filtered_escape_377H</span><span class="p">,</span> <span class="n">simple_filtered_escape_377H</span><span class="p">],</span>
+    <span class="p">[</span><span class="n">filtered_escape_256A</span><span class="p">,</span> <span class="n">simple_filtered_escape_256A</span><span class="p">],</span>
+    <span class="p">[</span><span class="n">filtered_escape_372D</span><span class="p">,</span> <span class="n">simple_filtered_escape_372D</span><span class="p">],</span>
+    <span class="p">[</span><span class="n">filtered_escape_89F</span><span class="p">,</span> <span class="n">simple_filtered_escape_89F</span><span class="p">],</span>
 <span class="p">]</span>
 
 <span class="n">contacts_files</span> <span class="o">=</span> <span class="p">[</span>
@@ -8226,6 +8273,8 @@ a.anchor-link {
 <span class="c1"># Make output dir if doesn't exist</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">out_dir</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir_simplified</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">out_dir_simplified</span><span class="p">)</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir_images</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">out_dir_images</span><span class="p">)</span>
 
@@ -8258,7 +8307,8 @@ a.anchor-link {
         <span class="n">frac_models</span><span class="p">,</span>
         <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
         <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
-        <span class="n">output_file</span> <span class="o">=</span> <span class="n">antibody_output_files</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+        <span class="n">output_file</span> <span class="o">=</span> <span class="n">antibody_output_files</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+        <span class="n">simplified_output_file</span> <span class="o">=</span> <span class="n">antibody_output_files</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
         <span class="n">color_contact_sites</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
     <span class="p">)</span>
 
