@@ -7653,7 +7653,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=4138eb66">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=bb96fbfe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7896,7 +7896,7 @@ a.anchor-link {
 
     <span class="c1"># Write filtered escape to csv</span>
     <span class="k">if</span> <span class="n">output_file</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">escape_df</span><span class="p">[[</span>
+        <span class="n">exported_csv</span> <span class="o">=</span> <span class="n">escape_df</span><span class="p">[[</span>
             <span class="s2">"site"</span><span class="p">,</span> 
             <span class="s2">"wildtype"</span><span class="p">,</span> 
             <span class="s2">"mutant"</span><span class="p">,</span> 
@@ -7907,7 +7907,10 @@ a.anchor-link {
             <span class="s2">"n_models"</span><span class="p">,</span> 
             <span class="s2">"frac_models"</span><span class="p">,</span>
             <span class="s2">"poor_cell_entry"</span><span class="p">,</span>
-        <span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="c1"># Add column with escape floored at 0</span>
+        <span class="n">exported_csv</span><span class="p">[</span><span class="s2">"escape_median_floor_zero"</span><span class="p">]</span> <span class="o">=</span> <span class="n">escape_df</span><span class="p">[</span><span class="s2">"escape_median"</span><span class="p">]</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">lower</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">exported_csv</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
     <span class="c1"># Write simplified filtered escape to csv</span>
     <span class="k">if</span> <span class="n">simplified_output_file</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
