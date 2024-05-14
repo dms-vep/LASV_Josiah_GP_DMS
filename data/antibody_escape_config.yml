@@ -764,22 +764,11 @@ avg_antibody_escape_default: &avg_antibody_escape_default
     avg_type: median
     per_model_tooltip: true
   plot_hide_stats: *plot_hide_stats_default
-  legend: |
-    Interactive plot of how mutations affect antibody escape.
-
-    Use the site zoom bar at the top to zoom in on specific sites. The line plot shows a summary statistic indicating escape at each site. The heat map shows escape for individual mutations, with parental amino-acid identities indicated by x and gray indicating non-measured mutations. Mouse over points for details.
-
-    Options at the bottom of the plot let you modify the display, such as by selecting how many different variants a mutation must be seen in to be shown (*minimum times_seen*), how many different experimental selections the mutation was measured in (*minimum n_models*), what site summary statistic to show, etc.
-
-    You can filter by the functional effects of mutations. Mutations removed by this filter are shown as dark gray squares in the heat map to distinguish unmeasured mutations from ones measured to be deleterious.
-
-    The minimum max of escape at site is useful to select the sites where mutations confer the most escape.
 
 # Define the antibodies/sera to average
 avg_antibody_escape:
   377H:
     <<: *avg_antibody_escape_default
-    title: Escape map for antibody 377H
     selections:
       # - LibA-220601-377H-1
       # - LibA-220601-377H-2
@@ -789,7 +778,6 @@ avg_antibody_escape:
       - LibB-220706-377H-2
   89F:
     <<: *avg_antibody_escape_default
-    title: Escape map for antibody 89F
     selections:
       - LibA-220706-89F-1
       - LibA-220706-89F-2
@@ -797,7 +785,6 @@ avg_antibody_escape:
       - LibB-220706-89F-2
   2510C:
     <<: *avg_antibody_escape_default
-    title: Escape map for antibody 2510C
     selections:
       - LibA-220728-2510C-1
       - LibA-220728-2510C-2
@@ -805,7 +792,6 @@ avg_antibody_escape:
       - LibB-220728-2510C-2
   121F:
     <<: *avg_antibody_escape_default
-    title: Escape map for antibody 121F
     selections:
       - LibA-220728-121F-1
       - LibA-220728-121F-2
@@ -815,7 +801,6 @@ avg_antibody_escape:
       # - LibB-230819-121F-1
   256A:
     <<: *avg_antibody_escape_default
-    title: Escape map for antibody 256A
     selections:
       - LibA-220728-256A-1
       - LibA-220728-256A-2
@@ -823,7 +808,6 @@ avg_antibody_escape:
       - LibB-220728-256A-2
   372D:
     <<: *avg_antibody_escape_default
-    title: Escape map for antibody 372D
     selections:
       - LibA-220823-372D-1
       - LibA-220823-372D-2

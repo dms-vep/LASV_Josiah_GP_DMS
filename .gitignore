@@ -90,6 +90,11 @@ results/validation_plots/*
 results/summary_of_libraries/*
 !results/summary_of_libraries/*.csv
 
+node_modules/
+!homepage/.vitepress/
+homepage/.vitepress/cache/
+homepage/.vitepress/dist/
+
 non-pipeline_analyses/pdb_viewing/*
 
 non-pipeline_analyses/LASV_phylogeny_analysis/Results/GPC_codon_reduced_tree/*

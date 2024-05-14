@@ -5,7 +5,7 @@
 # antibody escape alongside other assays (eg, functional effects of mutations).
 # --------------------------------------------------------------------------------------
 
-summary:
+phenotypes:
   min_times_seen: 2  # only include mutations with times_seen >= this
   min_frac_models: 1  # only include mutations in >= this fraction of models
   alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C','*']  # amino acids to include
@@ -14,37 +14,23 @@ summary:
   antibody_escape:  # show effects on antibody escape, empty dict if no antibodies being shown
     antibodies:  # name each set of antibodies
       stat: escape_median  # statistic to use for escape
-      positive_color: "#009E73"  # green
-      negative_color: "#F0E442"  # yellow
+      positive_color: "#56B4E9"  # light blue, positive heatmap color
+      negative_color: "#E69F00"  # orange, negative heatmap color
       max_at_least: 1  # make heatmap max at least
       min_at_least: -1  # make heatmap min at least this
       antibody_list:  # antibodies to include: keys name used for `avg_escape`, values name for plot
-        2510C: 2510C
-        121F: 121F 
-        377H: 377H
-        256A: 256A
-        372D: 372D 
-        89F: 89F
-
-        
-         
-  func_effects: # effects of mutations on function
-    Entry in 293T cells:  # name of functional selection
-      condition: 293T_entry  # condition specified in `avg_func_effects`
-      effect_type: func_effects  # "func_effects" or "latent_effects"
-      positive_color: "#56B4E9"  # light blue, positive heatmap color
-      negative_color: "#E69F00"  # orange, negative heatmap color
+        2510C: results/antibody_escape/averages/2510C_mut_effect.csv
+        121F: results/antibody_escape/averages/121F_mut_effect.csv 
+        377H: results/antibody_escape/averages/377H_mut_effect.csv
+        256A: results/antibody_escape/averages/256A_mut_effect.csv
+        372D: results/antibody_escape/averages/372D_mut_effect.csv
+        89F: results/antibody_escape/averages/89F_mut_effect.csv
+  other_phenotypes:
+    entry in 293T cells:  
+      csv: results/func_effects/averages/293T_entry_func_effects.csv  # CSV w data
+      stat: effect  # column to plot
+      positive_color: "#009E73"  # green
+      negative_color: "#F0E442"  # yellow
       max_at_least: 1
       min_at_least: 0
       init_min_value: -1.5  # initial min value in slider
-  other_assays: {} # other assays that we show, empty dict if no assays being shown
-  title: Effects of mutations to glycoprotein (GP) of Lassa virus Josiah strain on antibody escape and DG-mediated cell entry as measured in lentiviral deep mutational scanning
-  legend: |
-    This is is an interactive chart. Mouseover points for details and measurements, and
-    use the top zoom bar to zoom in on specific sites. The options at the bottom let you
-    only show escape for sites with some minimal functional effect, choose the site
-    summary metric, or floor the escape at zero.
-
-    The line plots at top show the escape at each site across all sera and for individual
-    sera, and the heatmaps show the effects of individual mutations on sera escape or
-    functions of the protein.

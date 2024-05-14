@@ -1,6 +1,13 @@
 # Config for analysis
 
 # ----------------------------------------------------------------------------
+# Configuration for VitePress homepage
+# https://github.com/dms-vep/dms-vep-pipeline-3/tree/main/homepage
+# ----------------------------------------------------------------------------
+homepage: homepage/public
+build_vitepress_homepage: true
+
+# ----------------------------------------------------------------------------
 # Relative paths from this directory containing the configuration (and where
 # you will run the pipeline) to the subdirectory where the pipeline submodule
 # is cloned, and where you build the docs. Typically your top-level
