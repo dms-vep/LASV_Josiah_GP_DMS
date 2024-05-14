@@ -3,7 +3,7 @@
 _*
 *.out
 
-!.gitignore
+!.github
 !.gitignore
 !.gitmodules
 
