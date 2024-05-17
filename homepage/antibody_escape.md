@@ -4,7 +4,7 @@ aside: true
 
 # Escape from monoclonal antibodies
 
-The plots below show how mutations affect neutralization by a panel of monoclonal antibodies (25.10C, 12.1F, 37.7H, 25.6A, 37.2D, and 8.9F). The plots are interactive, and allow you to zoom and mouseover sites and mutations. Positive values indicate reduced neutralization by antibody while negative values indicate more neutralization.
+The plots below show how mutations affect neutralization by a panel of monoclonal antibodies (25.10C, 12.1F, 37.7H, 25.6A, 37.2D, and 8.9F). The plots are interactive, and allow you to zoom and mouseover sites and mutations. Positive values indicate reduced neutralization by antibody while negative values indicate more neutralization. Note that the two different shades of gray in the heatmaps have differing meanings: light gray means a mutation was *missing (not measured)* in the library, whereas dark gray means a mutation *was measured but was so deleterious for cell entry* it is not possible to reliably estimate its effect on antibody escape (the threshold for how deleterious a mutation must be for cell entry to be shown in dark gray is controlled by the cell entry slider at the bottom of the plot).
 
 Here is an explanation of the key elements for each plot:
  - The zoom bar at the top of the plot shows different regions of GPC, and can be used to zoom in on specific sites.
