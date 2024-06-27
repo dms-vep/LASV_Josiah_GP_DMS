@@ -27,8 +27,9 @@ features:
 ---
 
 ## About this site
-This website contains interactive plots and numerical results from a [study](https://www.biorxiv.org/content/10.1101/2024.02.05.579020v1) that measures the effects of mutations to the glycoprotein complex (GPC) of the lineage IV Lassa virus Josiah strain on cell entry and antibody escape using [pseudovirus deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S0092867423001034?via%3Dihub).
-This study was led by Caleb Carr and Kate Crawford in the Bloom lab.
+This website contains interactive plots and numerical results from [pseudovirus deep mutational scanning](https://www.sciencedirect.com/science/article/pii/S0092867423001034?via%3Dihub) experiments that measure the effects of mutations to the glycoprotein complex (GPC) of the lineage IV Lassa virus Josiah strain on cell entry and antibody escape.
+
+The paper describing this study is [Carr, Crawford, et al (2024)](https://www.biorxiv.org/content/10.1101/2024.02.05.579020v1).
 
 The links in the boxes above take you to interactive plots or descriptions of different aspects of the study.
 For a high-level overview, see the [summary](summary){target="_self"} of how mutations affect cell entry and antibody escape.
