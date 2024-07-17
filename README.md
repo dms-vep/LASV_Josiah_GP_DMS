@@ -1,5 +1,5 @@
 # Deep mutational scanning of Lassa virus Josiah strain glycoprotein using a barcoded lentiviral platform
-See [Carr, Crawford, ..., Bloom](https://www.biorxiv.org/content/10.1101/2024.02.05.579020v1) for the paper describing this study. Note that this repository has been updated since the release of the pre-print posted above so there could be small differences between the paper and pipeline figures.  
+See [Carr, Crawford, ..., Bloom](https://www.cell.com/immunity/fulltext/S1074-7613(24)00319-4) for the paper describing this study. 
 
 For documentation of the analysis, see [https://dms-vep.github.io/LASV_Josiah_GP_DMS/](https://dms-vep.github.io/LASV_Josiah_GP_DMS/)
 
