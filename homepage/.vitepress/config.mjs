@@ -19,7 +19,7 @@ export default defineConfig({
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/dms-vep/LASV_Josiah_GP_DMS.git" }],
     footer: {
-      message: 'Study by <a href="https://www.cell.com/immunity/fulltext/S1074-7613(24)00319-4">Carr, Crawford, et al (2024), bioRxiv, DOI 10.1101/2024.02.05.579020</a>',
+      message: 'Study by <a href="https://www.cell.com/immunity/fulltext/S1074-7613(24)00319-4">Carr, Crawford, et al (2024)</a>',
     },
   },
 });
